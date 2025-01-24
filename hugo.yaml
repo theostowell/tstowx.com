@@ -2,3 +2,29 @@ baseURL: 'https://wip.fundamentalised.com/'
 languageCode: 'en-gb'
 title: 'Fundamentalised'
 theme: 'PaperMod'
+
+params:
+  defaultTheme: light
+  disableThemeToggle: true
+  HomeInfoParams:
+    Title: "Hi, I'm Theo Stowell, and welcome to Fundamentalised"
+    Content: "This is a site all about breaking the hard things in life down into their fundamentals, because often this is what we're missing, rather than something new and complex."
+  SocialIcons:
+    - name: 'Medium'
+      url: 'https://medium.com/@fundamentalised'
+      icon: 'fab fa-medium'
+      target: '_blank'
+    - name: 'Twitter'
+      url: 'https://twitter.com/fundamentalised'
+      icon: 'fab fa-twitter'
+      target: '_blank'
+    - name: 'YouTube'
+      url: 'https://youtube.com/@fundamentalised'
+      icon: 'fab fa-youtube'
+      target: '_blank'
+
+menu:
+  main:
+    - name: "Now"
+      url: "/now/"
+      weight: 1

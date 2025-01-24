@@ -6,6 +6,23 @@
     <description>Recent content on Fundamentalised</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-gb</language>
+    <lastBuildDate>Fri, 24 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What I&#39;m working on right now...</title>
+      <link>http://localhost:1313/now/</link>
+      <pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/now/</guid>
+      <description>&lt;p&gt;This &amp;rsquo;now&amp;rsquo; page, inspired by &lt;a href=&#34;https://nownownow.com/about&#34;&gt;nownownow.com&lt;/a&gt;&amp;rsquo;s concept, is a place for me to share what I&amp;rsquo;m working on, what I&amp;rsquo;m learning, and what I&amp;rsquo;m thinking about.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Right now, I&amp;rsquo;m working on&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Building a &lt;a href=&#34;https://wip.fundamentalised.com&#34;&gt;Fundamentalised&lt;/a&gt; site that I actually like and can use in the long term (unlike my last sites using beehiiv, Obsidian Publish, WordPress and Substack) using a combination of Hugo and Obsidian for writing and publishing the content. It&amp;rsquo;s largely inspired by Obsidian&amp;rsquo;s CEO &lt;a href=&#34;https://stephango.com&#34;&gt;Steph Ango&lt;/a&gt; who has a blinding personal site that I&amp;rsquo;m taking a lot of inspiration from at this starting point.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://parazettel.com&#34;&gt;PARAZETTEL&lt;/a&gt; is where I&amp;rsquo;m building a business around making a vault for Obsidian that people can download to learn to use Obsidian for themselves. It&amp;rsquo;s a combination of&lt;/li&gt;
+&lt;li&gt;I take photos of wildlife, landscapes and more recently my close friend&amp;rsquo;s basketball team. I travelled through Italy and Portugal last year and took photos there as well. You can check out more of my photo work by going to &lt;a href=&#34;https://theostowell.me&#34;&gt;https://theostowell.me&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;previously&#34;&gt;Previously&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;Not much really.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
