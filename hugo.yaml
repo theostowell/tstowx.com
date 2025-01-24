@@ -28,3 +28,7 @@ menu:
     - name: "Now"
       url: "/now/"
       weight: 1
+
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
