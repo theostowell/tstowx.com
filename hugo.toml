@@ -1,0 +1,4 @@
+baseURL = 'https://fundamentalised.com/'
+languageCode = 'en-gb'
+title = 'Fundamentalised'
+theme = 'PaperMod'
