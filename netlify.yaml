@@ -3,3 +3,8 @@ build:
   publish: public
   environment:
     HUGO_VERSION: 0.139.0
+
+context:
+  production:
+    environment:
+      GO_VERSION: "1.19"
