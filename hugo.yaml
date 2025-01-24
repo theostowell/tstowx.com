@@ -1,7 +1,7 @@
 baseURL: 'https://wip.fundamentalised.com/'
 languageCode: 'en-gb'
 title: 'Fundamentalised'
-theme: 'PaperMod'
+theme: PaperMod
 
 params:
   defaultTheme: light
