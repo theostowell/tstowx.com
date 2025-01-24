@@ -1,0 +1,12 @@
+{
+    "name": "fundamentalised",
+    "version": "1.0.0",
+    "dependencies": {},
+    "devDependencies": {
+      "hugo-bin": "^0.139.0"
+    },
+    "scripts": {
+      "build": "hugo"
+    }
+  }
+  
