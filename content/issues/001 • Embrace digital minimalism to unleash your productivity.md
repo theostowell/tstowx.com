@@ -1,9 +1,10 @@
 ---
 title: 001 • Embrace digital minimalism to unleash your productivity
 date: 2023-05-30
+section: issues
 draft: false
-section: posts/issues
 author: Theo Stowell
+url: issues/001
 ---
 It’s been a whole year since I first encountered Cal Newport’s book _Digital Minimalism_.
 

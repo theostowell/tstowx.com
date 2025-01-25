@@ -1,11 +1,11 @@
 {{- define "main" }}
 <header class="page-header">
-    <h1>{{ .Title }}</h1>
-    {{- if .Description }}
-    <div class="post-description">
-        {{ .Description }}
-    </div>
-    {{- end }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- end }}
 </header>
 
 {{- range .Pages.GroupByDate "2006" }}
@@ -49,5 +49,4 @@
     {{- end }}
 </div>
 {{- end }}
-
 {{- end }}

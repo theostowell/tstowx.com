@@ -2,8 +2,9 @@
 title: 002 • How to hack your dopamine levels for productivity
 date: 2023-06-02
 draft: false
-section: posts/issues
+section: issues
 author: Theo Stowell
+url: issues/002
 ---
 The neurotransmitter **dopamine** is the primary suspect for controlling how you approach completing tasks and focusing on your work.
 
@@ -54,9 +55,7 @@ What if we can’t afford to wait for our dopamine levels to recover?
 
 There is an alternative available, based on this principle:
 
-> _"If you were to take that state of being unmotivated, procrastinating, and actually do something that’s harder than being in that a motivated state, in other words, doing something that’s more effortful, even painful, you can rebound yourself out of that dopamine trough much more quickly."_
-> 
-> **Dr. Andrew Huberman**
+> _"If you were to take that state of being unmotivated, procrastinating, and actually do something that’s harder than being in that a motivated state, in other words, doing something that’s more effortful, even painful, you can rebound yourself out of that dopamine trough much more quickly."_ -- **Dr. Andrew Huberman**
 
 In short, **if you make your experience uncomfortable, it doesn’t take long before you appreciate normality as a comfortable state to be in again**.
 

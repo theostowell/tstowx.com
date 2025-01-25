@@ -5,28 +5,25 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2023-09-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/essays/have-you-ever-touched-chaos/</loc>
+    <loc>http://localhost:1313/essays/chaos/</loc>
     <lastmod>2023-09-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/essays/</loc>
     <lastmod>2023-09-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/essays/</loc>
-    <lastmod>2023-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/issues/002--how-to-hack-your-dopamine-levels-for-productivity/</loc>
+    <loc>http://localhost:1313/issues/002/</loc>
     <lastmod>2023-06-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/issues/</loc>
     <lastmod>2023-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/issues/001--embrace-digital-minimalism-to-unleash-your-productivity/</loc>
+    <loc>http://localhost:1313/issues/001/</loc>
     <lastmod>2023-05-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/now/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/now/</loc>
   </url>
 </urlset>

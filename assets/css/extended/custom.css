@@ -69,3 +69,11 @@
     font-size: 12px;
     color: var(--secondary);
 }
+
+#menu .active {
+    border-bottom: none; /* Remove the underline effect */
+}
+
+.logo {
+    padding-top: 10px; /* Add space above the logo */
+}

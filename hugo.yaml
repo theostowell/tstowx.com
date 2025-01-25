@@ -27,6 +27,15 @@ params:
   ShowReadingTime: true
   ShowBreadCrumbs: true
   ScrollToTop: false
+  mainSections:
+    - essays
+    - issues
+  customCSS:
+    - css/extended/custom.css
+  label:
+    icon: "logo-header.png"
+    iconHeight: 60
+    text: ""
 
 menu:
   main:

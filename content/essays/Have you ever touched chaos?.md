@@ -1,9 +1,10 @@
 ---
 title: Have you ever touched chaos?
 date: 2023-09-04
+section: essays
 author: Theo Stowell
 draft: false
-section: posts/essays
+url: essays/chaos
 ---
 Have you ever touched chaos?
 

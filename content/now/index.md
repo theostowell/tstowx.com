@@ -3,7 +3,7 @@ title: What I'm doing right now
 draft: false
 type: now
 layout: now
-ShowBreadCrumbs: false
+ShowBreadCrumbs: true
 author: Theo Stowell
 ---
 This 'now' page, inspired by [Derek Sivers](https://nownownow.com/about), is a place for me to share what I'm doing at the moment:
