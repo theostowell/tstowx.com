@@ -1,0 +1,28 @@
+{{- if not (.Param "hideFooter") }}
+<footer class="footer">
+    <hr class="footer-divider" />
+    <div class="newsletter-section">
+        <p class="newsletter-text">Subscribe to Fundamentalised below. You'll get new issues sent to your email address every weekend, as well as any essays that I publish...</p>
+        
+        <form action="https://app.convertkit.com/forms/YOUR_FORM_ID/subscriptions" method="POST" data-sv-form="YOUR_FORM_ID" data-uid="YOUR_USER_ID" data-format="inline" data-version="5" class="newsletter-form">
+            <div class="form-container">
+                <input type="email" name="email_address" placeholder="Email address..." required>
+                <button type="submit">Subscribe</button>
+            </div>
+        </form>
+        <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+    </div>
+
+    <span class="copyright">&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">Fundamentalised</a></span>
+</footer>
+{{- end }}
+
+{{- if (not site.Params.disableScrollToTop) }}
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+{{- end }}
+
+{{- partial "extend_footer.html" . }}

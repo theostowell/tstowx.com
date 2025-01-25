@@ -10,7 +10,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/404.html">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.66a923be0adde715aeb55a55fb7603eecc0528e6314be05335f78a20f2071d9f.css" integrity="sha256-Zqkjvgrd5xWutVpV&#43;3YD7swFKOYxS&#43;BTNfeKIPIHHZ8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -45,6 +45,16 @@
                     <span>Now</span>
                 </a>
             </li>
+            <li>
+                <a href="http://localhost:1313/issues/" title="Newsletter">
+                    <span>Newsletter</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/essays/" title="Essays">
+                    <span>Essays</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -53,62 +63,25 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Fundamentalised</a></span> · 
+    <hr class="footer-divider" />
+    <div class="newsletter-section">
+        <p class="newsletter-text">Subscribe to Fundamentalised below. You'll get new issues sent to your email address every weekend, as well as any essays that I publish...</p>
+        
+        <form action="https://app.convertkit.com/forms/YOUR_FORM_ID/subscriptions" method="POST" data-sv-form="YOUR_FORM_ID" data-uid="YOUR_USER_ID" data-format="inline" data-version="5" class="newsletter-form">
+            <div class="form-container">
+                <input type="email" name="email_address" placeholder="Email address..." required>
+                <button type="submit">Subscribe</button>
+            </div>
+        </form>
+        <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+    </div>
 
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+    <span class="copyright">&copy; 2025 <a href="http://localhost:1313/">Fundamentalised</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-</body>
+</a></body>
 
 </html>

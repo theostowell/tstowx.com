@@ -6,23 +6,56 @@
     <description>Recent content on Fundamentalised</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 24 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What I&#39;m working on right now...</title>
+      <title>Have you ever touched chaos?</title>
+      <link>http://localhost:1313/posts/essays/have-you-ever-touched-chaos/</link>
+      <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/essays/have-you-ever-touched-chaos/</guid>
+      <description>&lt;p&gt;Have you ever touched chaos?&lt;/p&gt;
+&lt;p&gt;The sense that the universe stretches before you to oblivion, realising we are but a feather in a hurricane.&lt;/p&gt;
+&lt;p&gt;We try to introduce order.&lt;/p&gt;
+&lt;p&gt;Language, with its finite characters and vocabulary.&lt;/p&gt;
+&lt;p&gt;Music, with its rhythms and repetition.&lt;/p&gt;
+&lt;p&gt;But in the end, we’re all trying to make sense of something that cannot be made sense of.&lt;/p&gt;
+&lt;p&gt;The void is senseless.&lt;/p&gt;
+&lt;p&gt;We fall so far short of comprehending universal truth.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>002 • How to hack your dopamine levels for productivity</title>
+      <link>http://localhost:1313/posts/issues/002--how-to-hack-your-dopamine-levels-for-productivity/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/issues/002--how-to-hack-your-dopamine-levels-for-productivity/</guid>
+      <description>&lt;p&gt;The neurotransmitter &lt;strong&gt;dopamine&lt;/strong&gt; is the primary suspect for controlling how you approach completing tasks and focusing on your work.&lt;/p&gt;
+&lt;p&gt;Perhaps you feel lazy. Or perhaps you feel pumped and ready to work.&lt;/p&gt;
+&lt;p&gt;Regardless, it’s the fluctuating levels of dopamine in your body controlling your motivation in the present moment.&lt;/p&gt;
+&lt;p&gt;The molecule creates a sense of &lt;strong&gt;craving&lt;/strong&gt; for something, &lt;strong&gt;jolting you into motion&lt;/strong&gt; towards obtaining whatever this something might be.&lt;/p&gt;
+&lt;p&gt;Understanding this system and being able to take advantage of it has massive potential for hacking how much work you can get done. Control your dopamine responses to different activities and you start to &lt;strong&gt;become addicted to doing productive work&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>001 • Embrace digital minimalism to unleash your productivity</title>
+      <link>http://localhost:1313/posts/issues/001--embrace-digital-minimalism-to-unleash-your-productivity/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/issues/001--embrace-digital-minimalism-to-unleash-your-productivity/</guid>
+      <description>&lt;p&gt;It’s been a whole year since I first encountered Cal Newport’s book &lt;em&gt;Digital Minimalism&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;A whole year since it &lt;strong&gt;radically changed&lt;/strong&gt; my relationship with technology.&lt;/p&gt;
+&lt;p&gt;A whole year of progress &lt;strong&gt;beyond what I thought I was capable of&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Here’s what the book taught me, from the digital declutter to reclaiming free time, and the actionable advice that you too can put in place to use technology without being swallowed.&lt;/p&gt;
+&lt;p&gt;Let’s dive in…&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What I&#39;m doing right now</title>
       <link>http://localhost:1313/now/</link>
-      <pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/now/</guid>
-      <description>&lt;p&gt;This &amp;rsquo;now&amp;rsquo; page, inspired by &lt;a href=&#34;https://nownownow.com/about&#34;&gt;nownownow.com&lt;/a&gt;&amp;rsquo;s concept, is a place for me to share what I&amp;rsquo;m working on, what I&amp;rsquo;m learning, and what I&amp;rsquo;m thinking about.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Right now, I&amp;rsquo;m working on&lt;/strong&gt;:&lt;/p&gt;
+      <description>&lt;p&gt;This &amp;rsquo;now&amp;rsquo; page, inspired by &lt;a href=&#34;https://nownownow.com/about&#34;&gt;Derek Sivers&lt;/a&gt;, is a place for me to share what I&amp;rsquo;m doing at the moment:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Building a &lt;a href=&#34;https://wip.fundamentalised.com&#34;&gt;Fundamentalised&lt;/a&gt; site that I actually like and can use in the long term (unlike my last sites using beehiiv, Obsidian Publish, WordPress and Substack) using a combination of Hugo and Obsidian for writing and publishing the content. It&amp;rsquo;s largely inspired by Obsidian&amp;rsquo;s CEO &lt;a href=&#34;https://stephango.com&#34;&gt;Steph Ango&lt;/a&gt; who has a blinding personal site that I&amp;rsquo;m taking a lot of inspiration from at this starting point.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://parazettel.com&#34;&gt;PARAZETTEL&lt;/a&gt; is where I&amp;rsquo;m building a business around making a vault for Obsidian that people can download to learn to use Obsidian for themselves. It&amp;rsquo;s a combination of&lt;/li&gt;
-&lt;li&gt;I take photos of wildlife, landscapes and more recently my close friend&amp;rsquo;s basketball team. I travelled through Italy and Portugal last year and took photos there as well. You can check out more of my photo work by going to &lt;a href=&#34;https://theostowell.me&#34;&gt;https://theostowell.me&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m building a &lt;a href=&#34;https://wip.fundamentalised.com&#34;&gt;Fundamentalised&lt;/a&gt; site (this one) that I actually like and can use in the long term (unlike my last sites using beehiiv, Obsidian Publish, WordPress and Substack) using a combination of Hugo and Obsidian for writing and publishing the content. It&amp;rsquo;s largely inspired by Obsidian&amp;rsquo;s CEO &lt;a href=&#34;https://stephango.com&#34;&gt;Steph Ango&lt;/a&gt; whose personal site is the main inspiration for many of the elements of this one.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://parazettel.com&#34;&gt;PARAZETTEL&lt;/a&gt; is where I&amp;rsquo;m building a business around making a vault for Obsidian that people can download to learn to use Obsidian for themselves. It&amp;rsquo;s a system that. combines Tiago Forte&amp;rsquo;s PARA Method and Niklas Luhmann&amp;rsquo;s Zettelkasten to make the most of both worlds. You can &lt;a href=&#34;https://parazettel.com/signup&#34;&gt;sign up for an email intro&lt;/a&gt; for free.&lt;/li&gt;
+&lt;li&gt;I take photos of wildlife, landscapes and more recently my close friend&amp;rsquo;s basketball team. I travelled through Italy and Portugal last year and took photos there as well. You can check out more of my photo work by going to &lt;a href=&#34;https://theostowell.me&#34;&gt;https://theostowell.me&lt;/a&gt; or following me &lt;a href=&#34;https://instagram.com/theostowell&#34;&gt;on Instagram&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;previously&#34;&gt;Previously&amp;hellip;&lt;/h2&gt;
-&lt;p&gt;Not much really.&lt;/p&gt;</description>
+&lt;p&gt;Thanks for being here!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

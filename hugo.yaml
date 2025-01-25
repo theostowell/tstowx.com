@@ -7,7 +7,7 @@ params:
   defaultTheme: light
   disableThemeToggle: true
   HomeInfoParams:
-    Title: "Hi, I'm Theo Stowell, and welcome to Fundamentalised"
+    Title: Hi, I'm Theo Stowell, and welcome to Fundamentalised
     Content: "This is a site all about breaking the hard things in life down into their fundamentals, because often this is what we're missing, rather than something new and complex."
   SocialIcons:
     - name: 'Medium'
@@ -22,13 +22,29 @@ params:
       url: 'https://youtube.com/@fundamentalised'
       icon: 'fab fa-youtube'
       target: '_blank'
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  ScrollToTop: false
 
 menu:
   main:
     - name: "Now"
       url: "/now/"
       weight: 1
+    - name: "Newsletter"
+      url: "/issues/"
+      weight: 2
+    - name: "Essays"
+      url: "/essays/"
+      weight: 3
 
 module:
   imports:
     - path: github.com/adityatelange/hugo-PaperMod
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

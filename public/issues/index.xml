@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Newsletter issues on Fundamentalised</title>
+    <link>http://localhost:1313/issues/</link>
+    <description>Recent content in Newsletter issues on Fundamentalised</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 02 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/issues/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>002 • How to hack your dopamine levels for productivity</title>
+      <link>http://localhost:1313/posts/issues/002--how-to-hack-your-dopamine-levels-for-productivity/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/issues/002--how-to-hack-your-dopamine-levels-for-productivity/</guid>
+      <description>&lt;p&gt;The neurotransmitter &lt;strong&gt;dopamine&lt;/strong&gt; is the primary suspect for controlling how you approach completing tasks and focusing on your work.&lt;/p&gt;
+&lt;p&gt;Perhaps you feel lazy. Or perhaps you feel pumped and ready to work.&lt;/p&gt;
+&lt;p&gt;Regardless, it’s the fluctuating levels of dopamine in your body controlling your motivation in the present moment.&lt;/p&gt;
+&lt;p&gt;The molecule creates a sense of &lt;strong&gt;craving&lt;/strong&gt; for something, &lt;strong&gt;jolting you into motion&lt;/strong&gt; towards obtaining whatever this something might be.&lt;/p&gt;
+&lt;p&gt;Understanding this system and being able to take advantage of it has massive potential for hacking how much work you can get done. Control your dopamine responses to different activities and you start to &lt;strong&gt;become addicted to doing productive work&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>001 • Embrace digital minimalism to unleash your productivity</title>
+      <link>http://localhost:1313/posts/issues/001--embrace-digital-minimalism-to-unleash-your-productivity/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/issues/001--embrace-digital-minimalism-to-unleash-your-productivity/</guid>
+      <description>&lt;p&gt;It’s been a whole year since I first encountered Cal Newport’s book &lt;em&gt;Digital Minimalism&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;A whole year since it &lt;strong&gt;radically changed&lt;/strong&gt; my relationship with technology.&lt;/p&gt;
+&lt;p&gt;A whole year of progress &lt;strong&gt;beyond what I thought I was capable of&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Here’s what the book taught me, from the digital declutter to reclaiming free time, and the actionable advice that you too can put in place to use technology without being swallowed.&lt;/p&gt;
+&lt;p&gt;Let’s dive in…&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

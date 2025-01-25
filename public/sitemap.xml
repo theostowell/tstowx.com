@@ -3,10 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/essays/have-you-ever-touched-chaos/</loc>
+    <lastmod>2023-09-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2023-09-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/essays/</loc>
+    <lastmod>2023-09-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/issues/002--how-to-hack-your-dopamine-levels-for-productivity/</loc>
+    <lastmod>2023-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/issues/</loc>
+    <lastmod>2023-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/issues/001--embrace-digital-minimalism-to-unleash-your-productivity/</loc>
+    <lastmod>2023-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/now/</loc>
-    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
