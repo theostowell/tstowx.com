@@ -1,8 +1,9 @@
 build:
-  command: npm install && npm run build
+  command: git submodule update --init --recursive && hugo
   publish: public
   environment:
-    HUGO_VERSION: 0.139.0
+    HUGO_VERSION: 0.139.1
+
 
 context:
   production:
