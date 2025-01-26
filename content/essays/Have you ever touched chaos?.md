@@ -69,17 +69,3 @@ Reality is at the same time pre-destined and whatever you want it to be.
 Life at the same time is meaningless and means everything.
 
 Treasure every second.
-
----
-
-*Subscribe to Fundamentalised below. You'll get new issues sent to your email address every weekend, as well as any essays that I publish...*
-
-<form action="https://app.convertkit.com/forms/YOUR_FORM_ID/subscriptions" method="POST" data-sv-form="YOUR_FORM_ID" data-uid="YOUR_USER_ID" data-format="inline" data-version="5">
-  <div style="display: flex; max-width: 400px; margin: 20px 0;">
-    <input type="email" name="email_address" placeholder="Email address..." required style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px 0 0 4px;">
-    <button type="submit" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 0 4px 4px 0; cursor: pointer;">Subscribe</button>
-  </div>
-</form>
-
-<!-- ConvertKit Script (add this after your form) -->
-<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>

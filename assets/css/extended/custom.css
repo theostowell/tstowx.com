@@ -2,7 +2,7 @@
     position: relative;
     max-width: calc(var(--main-width) + var(--gap) * 2);
     margin: auto;
-    padding: var(--gap);
+    padding: calc(var(--gap) * 0.5); /* Reduced padding */
     text-align: center;
 }
 
@@ -26,12 +26,12 @@
     display: flex;
     max-width: calc(var(--main-width) * 0.5);
     width: 100%;
-    margin: calc(var(--gap) * 0.75) 0;
+    margin: calc(var(--gap) * 0.5) 0; /* Reduced margin */
 }
 
 .form-container input {
     flex: 1;
-    padding: calc(var(--gap) * 0.5);
+    padding: calc(var(--gap) * 0.25); /* Reduced padding */
     border: 1px solid var(--border);
     border-radius: var(--radius) 0 0 var(--radius);
     background: var(--theme);
@@ -41,7 +41,7 @@
 }
 
 .form-container button {
-    padding: calc(var(--gap) * 0.5) var(--gap);
+    padding: calc(var(--gap) * 0.25) var(--gap); /* Reduced padding */
     background: var(--primary);
     color: var(--theme);
     border: none;

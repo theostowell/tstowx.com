@@ -72,6 +72,3 @@ This understanding of the motivation and reward system gives you a great perspec
 Now stop reading and **put the knowledge into action**.
 
 Thank you for your time.
-
----
-

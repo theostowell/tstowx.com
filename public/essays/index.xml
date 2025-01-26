@@ -1,26 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0">
   <channel>
-    <title>Short essays on Fundamentalised</title>
-    <link>http://localhost:1313/essays/</link>
-    <description>Recent content in Short essays on Fundamentalised</description>
-    <generator>Hugo -- 0.142.0</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/essays/index.xml" rel="self" type="application/rss+xml" />
+    <title>Fundamentalised - Essays</title>
+    <link>http://localhost:1313/</link>
+    <description>Latest essays from Fundamentalised</description>
+    
     <item>
       <title>Have you ever touched chaos?</title>
       <link>http://localhost:1313/essays/chaos/</link>
-      <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/essays/chaos/</guid>
-      <description>&lt;p&gt;Have you ever touched chaos?&lt;/p&gt;
-&lt;p&gt;The sense that the universe stretches before you to oblivion, realising we are but a feather in a hurricane.&lt;/p&gt;
-&lt;p&gt;We try to introduce order.&lt;/p&gt;
-&lt;p&gt;Language, with its finite characters and vocabulary.&lt;/p&gt;
-&lt;p&gt;Music, with its rhythms and repetition.&lt;/p&gt;
-&lt;p&gt;But in the end, we’re all trying to make sense of something that cannot be made sense of.&lt;/p&gt;
-&lt;p&gt;The void is senseless.&lt;/p&gt;
-&lt;p&gt;We fall so far short of comprehending universal truth.&lt;/p&gt;</description>
+      <description>Have you ever touched chaos?
+The sense that the universe stretches before you to oblivion, realising we are but a feather in a hurricane.
+We try to introduce order.
+Language, with its finite characters and vocabulary.
+Music, with its rhythms and repetition.
+But in the end, we’re all trying to make sense of something that cannot be made sense of.
+The void is senseless.
+We fall so far short of comprehending universal truth.
+</description>
+      <pubDate>Mon, 04 Sep 2023 00:00:00 UTC</pubDate>
     </item>
+    
   </channel>
 </rss>

@@ -10,7 +10,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/tags/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fb982b57edb0104c01760699a1f044188e227d3f1ee41daf42d18c4c1808311e.css" integrity="sha256-&#43;5grV&#43;2wEEwBdgaZofBEGI4ifT8e5B2vQtGMTBgIMR4=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bdc574dee3042ca04fb49a48389bb8c3f676ee0e6b4ea03859baa0b6e4ce144d.css" integrity="sha256-vcV03uMELKBPtJpIOJu4w/Z27g5rTqA4WbqgtuTOFE0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -67,23 +67,53 @@
 </ul>
     </main>
     
-<footer class="footer">
+<footer class="footer" style="text-align: center;">
     <hr class="footer-divider" />
-    <div class="newsletter-section">
-        <p class="newsletter-text">Subscribe to Fundamentalised below. You'll get new issues sent to your email address every weekend, as well as any essays that I publish...</p>
+    <div class="newsletter-section" style="display: flex; flex-direction: column; align-items: center;">
+        <p class="newsletter-text" style="text-align: center;">Subscribe to Fundamentalised below. You'll get new issues sent to your email address every weekend, as well as any essays that I publish...</p>
         
-        <form action="https://app.convertkit.com/forms/YOUR_FORM_ID/subscriptions" method="POST" data-sv-form="YOUR_FORM_ID" data-uid="YOUR_USER_ID" data-format="inline" data-version="5" class="newsletter-form">
-            <div class="form-container">
-                <input type="email" name="email_address" placeholder="Email address..." required>
-                <button type="submit">Subscribe</button>
-            </div>
+        <form
+          action="https://api.convertkit.com/v3/forms/6456278/subscribe"
+          method="post"
+          class="convertkit-form"
+          id="convertkit-form"
+          style="display: flex; max-width: 600px; margin: 20px 0; justify-content: center;"
+        >
+          <label for="ck-email" style="display: none;">Enter your email</label>
+          <input type="email" name="email" id="ck-email" placeholder="Email address..." required style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px 0 0 4px;" />
+          <button type="submit" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 0 4px 4px 0; cursor: pointer;">Subscribe</button>
+          <p style="display: none;">
+            <a href="https://convertkit.com" target="_blank">Powered by ConvertKit.</a>
+          </p>
         </form>
-        <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
     </div>
 
-    <span class="copyright">&copy; 2025 <a href="http://localhost:1313/">Fundamentalised</a></span>
+    <script>
+    document.getElementById('convertkit-form').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+
+      var email = document.getElementById('ck-email').value;
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://api.convertkit.com/v3/forms/6456278/subscribe', true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            alert('Subscription successful (check your inbox to confirm)!');
+          } else {
+            alert('There was an error with your subscription. Please try again.');
+          }
+        }
+      };
+
+      xhr.send(JSON.stringify({ email: email }));
+    });
+    </script>
+
+    <span class="copyright" style="text-align: center;">&copy; 2025 <a href="http://localhost:1313/">Fundamentalised</a></span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g" style="text-align: center; display: block; margin: 0 auto;">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>

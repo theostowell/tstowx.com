@@ -7,7 +7,7 @@ params:
   defaultTheme: light
   disableThemeToggle: true
   HomeInfoParams:
-    Title: Hi, I'm Theo Stowell, and welcome to Fundamentalised
+    Title: Hi, I'm Theo Stowell. Welcome to Fundamentalised...
     Content: "This is a site all about breaking the hard things in life down into their fundamentals, because often this is what we're missing, rather than something new and complex."
   SocialIcons:
     - name: 'Medium'
@@ -23,7 +23,7 @@ params:
       icon: 'fab fa-youtube'
       target: '_blank'
   ShowShareButtons: false
-  ShowPostNavLinks: true
+  ShowPostNavLinks: false
   ShowReadingTime: true
   ShowBreadCrumbs: true
   ScrollToTop: false
@@ -32,10 +32,6 @@ params:
     - issues
   customCSS:
     - css/extended/custom.css
-  label:
-    icon: "logo-header.png"
-    iconHeight: 60
-    text: ""
 
 menu:
   main:
@@ -48,6 +44,14 @@ menu:
     - name: "Essays"
       url: "/essays/"
       weight: 3
+
+outputs:
+  home:
+    - HTML
+    - RSS
+  section:
+    - HTML
+    - RSS
 
 module:
   imports:
