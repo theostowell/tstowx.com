@@ -101,41 +101,41 @@ Thanks for being here!">
         <p class="newsletter-text" style="text-align: center;">Subscribe to Fundamentalised below. You'll get new issues sent to your email address every weekend, as well as any essays that I publish...</p>
         
         <form
-          action="https://api.convertkit.com/v3/forms/6456278/subscribe"
+          action="https://buttondown.com/api/emails/embed-subscribe/fundamentalised"
           method="post"
-          class="convertkit-form"
-          id="convertkit-form"
-          style="display: flex; max-width: 600px; margin: 20px 0; justify-content: center;"
+          class="embeddable-buttondown-form"
+          id="buttondown-form"
+          style="display: flex; max-width: 400px; margin: 20px 0; justify-content: center;"
         >
-          <label for="ck-email" style="display: none;">Enter your email</label>
-          <input type="email" name="email" id="ck-email" placeholder="Email address..." required style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px 0 0 4px;" />
+          <label for="bd-email" style="display: none;">Enter your email</label>
+          <input type="email" name="email" id="bd-email" placeholder="Email address..." required style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px 0 0 4px;" />
           <button type="submit" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 0 4px 4px 0; cursor: pointer;">Subscribe</button>
           <p style="display: none;">
-            <a href="https://convertkit.com" target="_blank">Powered by ConvertKit.</a>
+            <a href="https://buttondown.com/refer/fundamentalised" target="_blank">Powered by Buttondown.</a>
           </p>
         </form>
     </div>
 
     <script>
-    document.getElementById('convertkit-form').addEventListener('submit', function(event) {
+    document.getElementById('buttondown-form').addEventListener('submit', function(event) {
       event.preventDefault(); 
 
-      var email = document.getElementById('ck-email').value;
+      var email = document.getElementById('bd-email').value;
       var xhr = new XMLHttpRequest();
-      xhr.open('POST', 'https://api.convertkit.com/v3/forms/6456278/subscribe', true);
-      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.open('POST', 'https://buttondown.com/api/emails/embed-subscribe/fundamentalised', true);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
       xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
           if (xhr.status === 200) {
-            alert('Subscription successful (check your inbox to confirm)!');
+            alert('Subscription successful!');
           } else {
             alert('There was an error with your subscription. Please try again.');
           }
         }
       };
 
-      xhr.send(JSON.stringify({ email: email }));
+      xhr.send('email=' + encodeURIComponent(email));
     });
     </script>
 
