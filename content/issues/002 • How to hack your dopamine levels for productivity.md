@@ -1,8 +1,8 @@
 ---
 title: 002 • How to hack your dopamine levels for productivity
 date: 2023-06-02
-draft: false
 section: issues
+draft: false
 author: Theo Stowell
 url: issues/002
 ---
@@ -25,9 +25,7 @@ _Note: Huberman Lab has an excellent podcast episode on harnessing the neuroscie
 There are two main categories:
 
 - **Receival of a reward**
-    
 - **Prediction of a reward**
-    
 
 Reward receival can be from many things that you experience every day. It’s well known that substances such as cocaine and nicotine cause a large spike in dopamine. Your dopamine can also be spiked by seeing positively stimulating content on **social media**, in **video games** and **on television**.
 
