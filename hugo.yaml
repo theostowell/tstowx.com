@@ -7,14 +7,15 @@ params:
   defaultTheme: light
   disableThemeToggle: true
   HomeInfoParams:
-    Title: Hi, I'm Theo Stowell. Welcome to Fundamentalised...
-    Content: "This is a site all about breaking the hard things in life down into their fundamentals, because often this is what we're missing, rather than something new and complex."
+    Title: I'm Theo Stowell, and this is Fundamentalised
+    Content: "Reversing entropy, mastering life's fundamentals -- I found that I was learning the same lessons again and again in life. So I decided to focus on mastering these fundamentals rather than getting caught up in complexity. This website is the best place to follow this journey as it develops..."
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
     favicon32x32: "/favicon-32x32.png"
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/safari-pinned-tab.svg"
+  defaultOGImage: "/og-image.png"
   SocialIcons:
     - name: 'Medium'
       url: 'https://medium.com/@fundamentalised'
@@ -38,6 +39,7 @@ params:
     - issues
   customCSS:
     - css/extended/custom.css
+  env: production
 
 menu:
   main:
