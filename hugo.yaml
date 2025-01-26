@@ -1,4 +1,4 @@
-baseURL: 'https://wip.fundamentalised.com/'
+baseURL: 'https://fundamentalised.com/'
 languageCode: 'en-gb'
 title: 'Fundamentalised by Theo Stowell'
 theme: PaperMod
@@ -7,7 +7,7 @@ params:
   defaultTheme: light
   disableThemeToggle: true
   HomeInfoParams:
-    Title: I'm Theo Stowell, and this is Fundamentalised
+    Title: I'm Theo Stowell, and this is Fundamentalised (SITE IS WIP)
     Content: "Reversing entropy, mastering life's fundamentals -- I found that I was learning the same lessons again and again in life. So I decided to focus on mastering these fundamentals rather than getting caught up in complexity. This website is the best place to follow this journey as it develops..."
   assets:
     favicon: "/favicon.ico"
