@@ -1,6 +1,6 @@
 baseURL: 'https://wip.fundamentalised.com/'
 languageCode: 'en-gb'
-title: 'Fundamentalised'
+title: 'Fundamentalised by Theo Stowell'
 theme: PaperMod
 
 params:
@@ -20,9 +20,9 @@ params:
       url: 'https://medium.com/@fundamentalised'
       icon: 'fab fa-medium'
       target: '_blank'
-    - name: 'Twitter'
-      url: 'https://twitter.com/fundamentalised'
-      icon: 'fab fa-twitter'
+    - name: 'X'
+      url: 'https://x.com/fundamentalised'
+      icon: 'fab fa-x'
       target: '_blank'
     - name: 'YouTube'
       url: 'https://youtube.com/@fundamentalised'
