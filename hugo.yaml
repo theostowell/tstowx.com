@@ -58,6 +58,12 @@ menu:
       url: "/essays/"
       weight: 3
 
+privacy:
+  x:
+    disable: false
+    enableDNT: false
+    simple: true
+
 outputs:
   home:
     - HTML
