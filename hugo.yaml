@@ -15,7 +15,8 @@ params:
     favicon32x32: "/favicon-32x32.png"
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/safari-pinned-tab.svg"
-  defaultOGImage: "/og-image.png"
+  cover:
+    image: "/og-image.png"
   SocialIcons:
     - name: 'Medium'
       url: 'https://medium.com/@fundamentalised'
