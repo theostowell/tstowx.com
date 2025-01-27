@@ -6,7 +6,9 @@ theme: PaperMod
 params:
   defaultTheme: light
   disableThemeToggle: true
-  description: "*Reversing entropy; mastering life's fundamentals* • Join Theo Stowell on a journey to understand and master the () that shape our lives."
+  cover:
+    image: "/og-image.png"
+  description: "Reversing entropy; mastering life's fundamentals • Join Theo Stowell on a journey to understand and master the core principles (fundamentals) that shape our lives."
   HomeInfoParams:
     Title: I'm Theo Stowell, and this is Fundamentalised (SITE IS WIP)
     Content: |
@@ -19,8 +21,6 @@ params:
     favicon32x32: "/favicon-32x32.png"
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/safari-pinned-tab.svg"
-  cover:
-    image: "/og-image.png"
   SocialIcons:
     - name: 'Medium'
       url: 'https://medium.com/@fundamentalised'
