@@ -1,5 +1,5 @@
 ---
-title: 003 · Enhance your creativity by capturing ideas effectively
+title: 003 • Enhance your creativity by capturing ideas effectively
 date: 2023-06-09
 section: issues
 draft: false
