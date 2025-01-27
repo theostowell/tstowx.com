@@ -14,9 +14,7 @@ params:
   HomeInfoParams:
     Title: I'm Theo Stowell, and this is Fundamentalised (SITE IS WIP)
     Content: |
-      "***Reversing entropy; mastering life's fundamentals***" -- I found that I was learning the same lessons again and again in life. So I decided to focus on mastering these fundamentals rather than getting caught up in complexity. 
-      
-      This website is the best place to follow this journey as it develops. It's still a work in progress as of right now, but I'm working on getting it up and running as fast as I can...
+      ***Reversing entropy; mastering life's fundamentals*** -- I always find myself re-learning lessons in life, so I began to prioritise getting the basics right rather than being tangled up in complexity. And I've been writing about it the whole way...
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
