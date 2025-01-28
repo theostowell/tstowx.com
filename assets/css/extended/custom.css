@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    background-color: white;
 }
 
 .form-container {
@@ -29,15 +30,13 @@
     margin: calc(var(--gap) * 0.5) 0; /* Reduced margin */
 }
 
-.form-container input {
-    flex: 1;
-    padding: calc(var(--gap) * 0.25); /* Reduced padding */
-    border: 1px solid var(--border);
-    border-radius: var(--radius) 0 0 var(--radius);
-    background: var(--theme);
-    color: var(--primary);
-    font-size: 13px;
-    line-height: 24px;
+.form-container {
+    display: flex;
+    max-width: 400px;
+    margin: 20px 0;
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
 }
 
 .form-container button {
@@ -80,4 +79,8 @@
 
 .nav {
     max-width: calc(var(--main-width) + var(--gap) * 2);
+}
+
+.footer {
+    background-color: #f5f5f5;
 }
