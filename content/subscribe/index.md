@@ -15,4 +15,4 @@ Subscribe to Fundamentalised below. You'll get new issues sent to your email add
 </form>
 <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 
-If that’s not enough, you can also follow me on [Twitter](https://twitter.com/fundamentalised/), [Medium](https://medium.com/@fundamentalised), [YouTube](https://youtube.com/@fundamentalised/) and [LinkedIn](https://www.linkedin.com/in/theostowell) for assorted short content!
+If that’s not enough, you can also follow me on [Twitter](https://twitter.com/fundamentalised/), [Medium](https://medium.com/@fundamentalised), [YouTube](https://youtube.com/@fundamentalised/) and [LinkedIn](https://www.linkedin.com/in/theostowell) for assorted short content.
