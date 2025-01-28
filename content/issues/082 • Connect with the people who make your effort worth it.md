@@ -41,7 +41,6 @@ Have a good week,
 ## What you should watch this week…
 
 {{< youtube PDUn3L-Z8ao >}}
-https://youtu.be/PDUn3L-Z8ao
 
 A couple of months ago, a close friend Archit gave a TED talk at the University of Lodz about the importance of having a ‘village’ around you to buffer you against feeling alone.
 
