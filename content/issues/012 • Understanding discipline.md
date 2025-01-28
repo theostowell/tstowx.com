@@ -4,7 +4,7 @@ date: 2023-08-11
 section: issues
 draft: false
 author: Theo Stowell
-url: issues/011
+url: issues/012
 ---
 Everyone wants improved discipline.
 
