@@ -9,7 +9,7 @@ cover:
 params:
   defaultTheme: light
   disableThemeToggle: true
-  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: true
   images: ["/og-image.png"]
   description: "Reversing entropy; mastering life's fundamentals • Join Theo Stowell on a journey to understand the core elements (fundamentals) of the human experience."
   HomeInfoParams:
