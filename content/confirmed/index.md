@@ -1,6 +1,7 @@
 ---
 title: You're on the list!
 draft: false
+showFooter: false
 ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false

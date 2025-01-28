@@ -1,9 +1,31 @@
-.newsletter-section {
+.footer-newsletter-section {
     position: relative;
-    max-width: calc(var(--main-width) + var(--gap) * 3); /* Increased max-width */
+    max-width: 100%;
     margin: auto;
-    padding: calc(var(--gap) * 0.5); /* Reduced padding */
+    margin-top: calc(var(--gap) * 0.75);
+    padding: calc(var(--gap) * 0.25);
     text-align: center;
+}
+
+.page-newsletter-section {
+    position: relative;
+    max-width: 100%;
+    margin: 2rem 0;
+    margin-top: 2rem;
+    padding: calc(var(--gap) * 0.5);
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px 0;
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+    flex-direction: row;
+    gap: 8px;
 }
 
 .newsletter-text {
@@ -11,7 +33,7 @@
     font-size: 13px;
     line-height: 24px;
     color: var(--secondary);
-    max-width: calc(var(--main-width) * 0.85); /* Increased max-width */
+    max-width: calc(var(--main-width) * 0.8);
     margin-left: auto;
     margin-right: auto;
 }
@@ -21,38 +43,6 @@
     justify-content: center;
     position: relative;
     background-color: white;
-}
-
-.form-container {
-    display: flex;
-    max-width: calc(var(--main-width) * 0.7); /* Increased max-width */
-    width: 100%;
-    margin: calc(var(--gap) * 0.5) 0; /* Reduced margin */
-}
-
-.form-container {
-    display: flex;
-    max-width: 400px;
-    margin: 20px 0;
-    background-color: white;
-    padding: 8px;
-    border-radius: 4px;
-}
-
-.form-container button {
-    padding: calc(var(--gap) * 0.25) var(--gap); /* Reduced padding */
-    background: var(--primary);
-    color: var(--theme);
-    border: none;
-    border-radius: 0 var(--radius) var(--radius) 0;
-    cursor: pointer;
-    transition: opacity 0.2s;
-    font-size: 13px;
-    line-height: 24px;
-}
-
-.form-container button:hover {
-    opacity: 0.8;
 }
 
 .footer-divider {
@@ -70,11 +60,11 @@
 }
 
 #menu .active {
-    border-bottom: none; /* Remove the underline effect */
+    border-bottom: none;
 }
 
 .logo {
-    padding-top: 10px; /* Add space above the logo */
+    padding-top: 10px;
 }
 
 .nav {
@@ -82,5 +72,11 @@
 }
 
 .footer {
-    background-color: #f5f5f5;
+    background-color: #eeeeee;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--gap);
 }
