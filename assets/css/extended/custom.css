@@ -77,3 +77,7 @@
 .logo {
     padding-top: 10px; /* Add space above the logo */
 }
+
+.nav {
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+}
