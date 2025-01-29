@@ -1,5 +1,5 @@
 ---
-title: Thanks!
+title: Thank you
 draft: false
 hideFooter: true
 ShowShareButtons: false
