@@ -1,0 +1,20 @@
+{{- define "main" }}
+<article class="error-single">
+  <header class="post-header">
+    <h1 class="post-title">
+      404 Page not found
+    </h1>
+    <div class="post-description">
+      Oops! It seems you've wandered into uncharted territory.
+    </div>
+  </header>
+
+  <div class="post-content">
+    <p>The page you're looking for doesn't exist. Don't worry though, you can head back to the <a href="https://fundamentalised.com">homepage</a> to try and find what you're looking for.</p>
+  </div>
+</article>
+{{- end }}
+
+{{- define "title" }}
+404 • Page not found | {{ site.Title }}
+{{- end }}
