@@ -10,7 +10,7 @@ Hello again! I’m sorry this email is coming to you so late in the day. It was 
 
 My city is experiencing heavy rain so I went out with my housemate to see the flood damage at a local park…
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F497e1905-e9e3-4861-9ce0-20048f72328b_848x636.png)
+![](/attachments/497e1905-e9e3-4861-9ce0-20048f72328b_848x636.jpg)
 
 That was about the most exciting thing that happened to me over the last week - I’ll try and provide some value for you in the rest of the issue, also based on events from the rest of the week…
 

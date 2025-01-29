@@ -56,7 +56,7 @@ So I realised I had to forget these features, reign in my ego and, first and for
 
 A useful rule for this is using the 80/20 rule or the Pareto Principle. [I talked about this in a previous issue](https://fundamentalised.com/issues/006/) in more detail but, in short, it suggests focusing on the 20% of activities that you can do that will provide 80% of the output.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcd1aec33-6ab2-451b-88be-a41d7c31a262_4032x3024.jpeg)
+![](/attachments/cd1aec33-6ab2-451b-88be-a41d7c31a262_4032x3024.jpg)
 
 For [PARAZETTEL](https://parazettel.com/) this is simply to make sure the product is as good as possible, that there’s an effective funnel in place for when I launch and that nothing goes hideously wrong.
 

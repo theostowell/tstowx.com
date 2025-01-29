@@ -6,7 +6,8 @@ draft: false
 author: Theo Stowell
 url: issues/025
 ---
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F47eff88b-294b-4229-b90d-90ca2e374e9d_848x553.png)
+
+![](/attachments/47eff88b-294b-4229-b90d-90ca2e374e9d_848x553.png)
 
 This is what my computer screen looked like for most of this afternoon…
 

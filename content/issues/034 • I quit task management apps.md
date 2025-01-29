@@ -6,8 +6,6 @@ draft: false
 author: Theo Stowell
 url: issues/034
 ---
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fac0e10cc-a612-45ad-9a07-e0a9ea6caf64_848x636.png)
-
 For the last month or so, I've not been using a task management app.
 
 Cue the gasps of horror.

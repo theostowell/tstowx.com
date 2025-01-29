@@ -59,7 +59,7 @@ Ruthlessly cutting down the accounts that you’re exposed to will allow you to 
 
 Most social media platforms immediately present you with an endless scroll of content on their homepage. It’ll contain content from people you follow, but it’ll also show **content that the algorithm thinks will resonate with you** (i.e. spike your dopamine to make you stay on the platform longer).
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc735d308-e273-4e5d-82be-343ffd55c309_1160x870.png)
+![](/attachments/c735d308-e273-4e5d-82be-343ffd55c309_1160x870.jpg)
 
 Luckily, there’s a way to change this. Most platforms have the option to alter your home feed so that you’re only exposed to content from accounts that you’re following.
 

@@ -5,8 +5,9 @@ section: issues
 draft: false
 author: Theo Stowell
 url: issues/042
+cover.image: /attachments/3faf3766-019f-4aeb-9cd8-c6ccab5bce74_848x477.jpg
 ---
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3faf3766-019f-4aeb-9cd8-c6ccab5bce74_848x477.png)
+![](/attachments/3faf3766-019f-4aeb-9cd8-c6ccab5bce74_848x477.jpg)
 
 I give too much of my time to the near future and the recent past.
 

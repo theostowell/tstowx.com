@@ -32,7 +32,7 @@ How much of the information that you consume do you end up working with? I'd wag
 
 Spend more time doing the things that are going to share your original perspective with more people. Write, publish, teach.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F185d285a-993f-4493-a166-d917588db383_848x636.png)
+•••
 
 We're in a drought of depth. 
 

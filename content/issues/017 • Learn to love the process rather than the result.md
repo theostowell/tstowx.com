@@ -6,7 +6,7 @@ draft: false
 author: Theo Stowell
 url: issues/017
 ---
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F78c7cbda-813b-4c7c-a2cf-99f00c0a54b9_1600x1200.png)
+![](/attachments/78c7cbda-813b-4c7c-a2cf-99f00c0a54b9_1600x1200.jpg)
 
 Two months of building my product PARAZETTEL have come to a close.
 

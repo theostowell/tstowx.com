@@ -14,7 +14,7 @@ Optimising my screen time was something I was sure would improve things for me. 
 
 In this issue, I wanted to share three minimalist principles that have had a massive impact on my progress this year, in making me happier, healthier and wealthier.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F226af7dd-7e7e-4141-9c4e-2aeee03c68a4_848x1131.png)
+![](/attachments/226af7dd-7e7e-4141-9c4e-2aeee03c68a4_848x1131.jpg)
 
 ## You can only focus on one thing at a time.
 

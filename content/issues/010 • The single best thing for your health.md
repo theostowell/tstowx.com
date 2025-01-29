@@ -14,7 +14,7 @@ What was I doing?
 
 At that point in time, I was with 8 friends in a small caravan in **Great Langdale**, in the heart of the **Lake District** in **northern England**.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fef3dc5c8-5ea5-466b-ab59-451beb51e208_1160x872.png)
+![](/attachments/ef3dc5c8-5ea5-466b-ab59-451beb51e208_1160x872.jpg)
 
 No mobile signal, very weak wifi. I’m talking 60-seconds-to-send-a-tweet wifi.
 

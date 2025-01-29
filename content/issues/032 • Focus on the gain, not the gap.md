@@ -28,8 +28,6 @@ Regard your life as an unfinished product (because it is) and learn to appreciat
 
 I'll see you next week!
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd4591fc8-fcfc-4bda-8b5c-ff8862315b55_848x1131.png)
-
 ---
 
 ## This week’s updates…

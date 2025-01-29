@@ -6,7 +6,7 @@ draft: false
 author: Theo Stowell
 url: issues/039
 ---
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d888408-f3ef-41d9-a5e6-6ca5c6c7ddb1_848x636.png)
+![](/attachments/8d888408-f3ef-41d9-a5e6-6ca5c6c7ddb1_848x636.jpg)
 
 Welcome back,
 
@@ -14,7 +14,7 @@ This is a quick trick that I’ve been refining recently to make sure that I’m
 
 I make use of a piece of software called Cold Turkey Micromanager. Developed by Felix, the same person who made Cold Turkey Blocker, this is a simple program with one function. To lock you into certain apps when you need to focus.
 
-You see, I’ve used [Cold Turkey Blocker](https://fundamentalised.com/the-3-apps-responsible-for-building-my-life/) for a long time to block certain websites that regularly distract me. I have a list that is blocked permanently, a list that is blocked until 10 am and a list that is blocked until 1 pm.
+You see, I’ve used [Cold Turkey Blocker](https://medium.com/@fundamentalised/the-3-apps-responsible-for-building-my-life-c26f1a06f7f0) for a long time to block certain websites that regularly distract me. I have a list that is blocked permanently, a list that is blocked until 10 am and a list that is blocked until 1 pm.
 
 But you can still get distracted by obscure sites on the internet that you didn’t know you needed to block. They’re rabbit holes that suck your time away almost as effectively as the sites that normally distract you.
 

@@ -20,8 +20,6 @@ As well as this, it's going to be further tailored to the type of audience that 
 
 If you don't follow me on Twitter you can do so by clicking the icon on the footer of this email.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5554fe57-7900-41a5-90d3-6e06ec1cffcd_4032x3024.jpeg)
-
 I will continue in the new Fundamentalised style and give you a roundup of what I've done this week. Enjoy, and I'll be in your inbox again next Friday. Cheers!
 
 ---

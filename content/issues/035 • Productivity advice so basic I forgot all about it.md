@@ -18,7 +18,7 @@ Here's what I like to do to make sure I'm feeling my best...
 
 Note that I'm not here to push any certain new activity upon you. It's worth pointing out that some of the greatest changes to your well-being are made when you simplify and give things up. That being said, here's what I like to do to make sure I'm feeling my best...
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2ef2265e-24b2-4102-8ee8-73cf26ac382c_848x636.png)
+![](/attachments/2ef2265e-24b2-4102-8ee8-73cf26ac382c_848x636.jpg)
 
 ## Diet and exercise
 

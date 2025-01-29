@@ -48,4 +48,4 @@ Until next week,
 
 ## What the sunrise looked like from my window this morning…
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffb11d5b2-b01d-4f29-acf3-dee7f24d7f2f_848x636.png)
+![](/attachments/fb11d5b2-b01d-4f29-acf3-dee7f24d7f2f_848x636.jpg)

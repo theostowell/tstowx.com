@@ -6,8 +6,6 @@ draft: false
 author: Theo Stowell
 url: issues/036
 ---
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4e20a896-1733-4c6a-94ef-948d66d3d734_848x1131.png)
-
 Hey all,
 
 This issue is about how to think for yourself, and why you should be doing so.

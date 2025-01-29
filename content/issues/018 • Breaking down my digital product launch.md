@@ -118,7 +118,7 @@ There were also lots of inquiries hitting my inbox, so much of the weekend was s
 
 Then the launch weekend finished. I sent a closing email and leaned back in my chair.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fec046cf3-de37-4b85-8e64-b1a4c3b6b095_1346x658.png)
+![](/attachments/ec046cf3-de37-4b85-8e64-b1a4c3b6b095_1346x658.png)
 
 For someone who’d never earned internet money before May, I was very satisfied with this result
 

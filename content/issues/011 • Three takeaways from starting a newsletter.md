@@ -22,8 +22,6 @@ The trick is to relate these stories to the audience’s experiences, so they ca
 
 An example of this came recently when [I wrote an issue about the purchase of my new MacBook](https://fundamentalised.com/issues/007/) - I told the story of how my productivity decreased when moving to the new device, but there was an important message about the nature of getting work done underlying it.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2c178b77-84d9-4f36-95de-dbd0d5bfbe23_1160x1546.png)
-
 I concluded by telling people to build meaningfully in public rather than tinkering with systems in the dark where nobody can see, providing advice and value alongside the story.
 
 My newsletter issues are quite short too, so I’ve learned to condense their contents to something less than what I might publish on Medium, whilst trying to provide more value.

@@ -22,7 +22,7 @@ Over the last couple of months, I’ve begun to realise the power of a true netw
 
 I’ve connected with some very driven, progress-minded people. **YouTubers**, **agency builders**, **podcasters** and **coaches.**
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40f4a5a0-0495-46d2-a89e-e7336f3b115f_1160x870.png)
+![](/attachments/40f4a5a0-0495-46d2-a89e-e7336f3b115f_1160x870.jpg)
 
 I wanted to share some tips relating to how I came to interact with people like this - how to find them and make sure that you all get along well so that you can get the most value out of your relationships with each other…
 

@@ -14,8 +14,6 @@ I will touch upon some more practical uses of this, as well as some limitations 
 
 Recently I've used this to good effect to reduce emotions of stress of a close person in my life. It helps if you can offer advice or your thoughts on a situation, but truly understanding and empathising can be enough to help.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4e6132ed-9916-4f22-adb7-af97b3c0b5d7_848x505.png)
-
 Whether sharing a positive emotional burden with someone or a negative one, you should be outside of your mind for the experience. Try to understand how the person empathised with is feeling and do your best to improve their experience through your understanding.
 
 Your wants and desires don't enter the equation at all. They're not relevant. What's important right now is that you enter the emotional frame of the other and attempt to improve what they're experiencing.

@@ -24,7 +24,7 @@ Everything centres on my new website that I built for Fundamentalised - [fundam
 
 This newsletter's going to serve more as an actual newsletter rather than an extension of my article-writing exploits. Every Friday I'll give you an insight into what I've been working on that week, as well as mentioning all the pieces I've written and including content that I've consumed recently and recommend.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0cc3fdc4-4e3a-4ade-8c57-345ca294dbdf_4032x3024.jpeg)
+![](/attachments/0cc3fdc4-4e3a-4ade-8c57-345ca294dbdf_4032x3024.jpg)
 
 That way, the newsletter is still a valuable list to subscribe to. If you don't want to go chasing me around different social platforms trying to find my newest work, I'll curate it every Friday.
 

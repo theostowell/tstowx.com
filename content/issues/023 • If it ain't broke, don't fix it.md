@@ -18,8 +18,6 @@ Before making this decision, I was not sure how I was going to continue to monet
 
 University takes up a lot of my time with studying and spending time with people. PARAZETTEL itself was built over the summer whilst I had a free house for months at a time.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fce035a33-9e28-4c0b-a8de-10aab52fee33_848x1131.png)
-
 Another new endeavour - ghostwriting, for example - would need the same amount of solitude to focus on completing the goal.
 
 Thus I'm iterating something I already know has the potential to be a successful product. This is the lesson of today's newsletter - sometimes you don't have to start anew, just build upon what you know already works. This is great advice when you already have things going on, without the time to invest in becoming proficient in a completely new skill.

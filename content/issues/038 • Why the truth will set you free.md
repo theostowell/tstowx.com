@@ -6,8 +6,6 @@ draft: false
 author: Theo Stowell
 url: issues/038
 ---
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F50c4aedc-602a-470b-ab68-c7acd2f10667_848x848.png)
-
 Being truthful.
 
 It’s easy to it’s something you should do, but less easy to embody.

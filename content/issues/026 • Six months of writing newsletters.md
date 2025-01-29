@@ -10,8 +10,6 @@ Happy Friday all, and welcome to quite a special issue of Fundamentalised,
 
 This issue is the 26th I've released, meaning that I've now been publishing a newsletter for half a year. It's gone quickly, but when I look back I can see how much progress has been made.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9bb55d1d-0455-49d6-813f-0ed3d1137e93_848x636.png)
-
 Let me tell you the story...
 
 I started publishing on Medium at the start of 2023 sharing insights about anything that I thought might be of interest or use to other people. Quickly, I realised that everyone had newsletters, and thought it might be a good thing if I had my own. After all, audiences on other platforms were rented, as everyone preaches.

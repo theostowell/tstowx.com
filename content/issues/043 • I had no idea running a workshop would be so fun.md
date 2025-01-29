@@ -6,7 +6,7 @@ draft: false
 author: Theo Stowell
 url: issues/043
 ---
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd607a9e3-265f-4638-85d2-468269fab98c_848x477.png)
+![](/attachments/d607a9e3-265f-4638-85d2-468269fab98c_848x477.jpg)
 
 ---
 

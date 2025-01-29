@@ -6,8 +6,6 @@ draft: false
 author: Theo Stowell
 url: issues/028
 ---
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F230c6fb2-5419-4d58-928d-a22f1486d117_848x636.png)
-
 Happy Friday all,
 
 It's fast closing in upon the end of the year.
