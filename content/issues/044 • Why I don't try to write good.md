@@ -44,6 +44,6 @@ Have a great week!
 
 ## Journal excerpt of the week…
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F713b34a7-7b62-4217-81ca-43f45448388c_1160x653.png)
+![](/attachments/713b34a7-7b62-4217-81ca-43f45448388c_1160x653.jpg)
 
 _”More often than not the main reason for my journaling is not to gain some profound insight, it’s to chat utter balls about life at large so I don’t have to focus on work. Sometimes insights come from this and sometimes they do not. Better than making a bad decision whilst my brain’s scattered.”_

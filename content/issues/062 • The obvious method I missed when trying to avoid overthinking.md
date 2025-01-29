@@ -44,7 +44,7 @@ The more you drag work out, the more you’re going to struggle to enter deep fo
 
 #### **Sponsored by [​PARAZETTEL for Obsidian](https://parazettel.com/)**
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb342f8df-ce22-464b-99d2-008abec3302f_2560x1440.jpeg)
+![](/attachments/b342f8df-ce22-464b-99d2-008abec3302f_2560x1440.jpg)
 
 _I've spent **the last year** building and improving PARAZETTEL since its first launch. Because I don't mention it much in the newsletter, I thought I'd dedicate a little spot to mention it in this issue._
 

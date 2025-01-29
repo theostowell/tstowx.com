@@ -58,8 +58,8 @@ Look out for more content from me now that I’m back home and planning to write
 
 Although I've not written a lot in the last few weeks, I have been taking photos. Here are some of my favourites from the trip…
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4f83f0bb-ff21-44e2-8571-2088fb0cf79d_1160x1160.jpeg)
+![](/attachments/4f83f0bb-ff21-44e2-8571-2088fb0cf79d_1160x1160.jpg)
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5b2ab83d-cd34-4456-84bb-b59b0f736c71_1160x774.jpeg)
+![](/attachments/5b2ab83d-cd34-4456-84bb-b59b0f736c71_1160x774.jpg)
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F893c3e7d-befd-449f-bee9-c8b90371d8a7_1160x1160.jpeg)
+![](/attachments/893c3e7d-befd-449f-bee9-c8b90371d8a7_1160x1160.jpg)

@@ -28,11 +28,11 @@ The reason I’m talking about this…
 
 Before this weekend just gone, the last and only time I’d gone outside of the UK was a school exchange in the south of France back in October 2018.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F31932832-6285-463d-82d3-153535da1993_1160x1740.jpeg)
+![](/attachments/31932832-6285-463d-82d3-153535da1993_1160x1740.jpg)
 
 I loved it and since that moment have wanted to go and explore more of the world. The opportunity to begin this again came just after my university exams finished last Thursday. My university housemates and I went for a weekend in Brussels, Belgium to celebrate the end of the year.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fec931d16-b062-456e-9886-94b1ecce466c_1080x1350.jpeg)
+![](/attachments/ec931d16-b062-456e-9886-94b1ecce466c_1080x1350.jpg)
 
 This trip was fun - we saw the best of Brussels and met some great people. But it wasn’t over-planned. I didn’t write down the tasks for the day in my notebook like normal, I didn’t manage to hit the gym like I would back home in Sheffield. I didn’t eat as clean as I would have done if it were just normal life.
 

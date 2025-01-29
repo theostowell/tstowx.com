@@ -10,7 +10,7 @@ The other day I walked from Sheffield to Manchester with my university housemate
 
 I’m not kidding. Here’s the route…
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F00a93c3d-bc01-401b-bf7a-566b4f1ecb7c_638x636.jpeg)
+![](/attachments/00a93c3d-bc01-401b-bf7a-566b4f1ecb7c_638x636.jpg)
 
 But how did this come about? Having talked about it since March, we were wondering whether a walk like this was possible and how hard it was going to be.
 
@@ -45,6 +45,8 @@ Thanks as always for reading Fundamentalised and sorry I was so late with the is
 ## Some clips from the walk to Manchester…
 
 {{< youtube KFhFK1mq-qs >}}
+
+*I published this at a much later date, but thought I’d include it whilst building the new Fundamentalised website rather than adding all the individual clips.*
 
 ---
 

@@ -71,8 +71,8 @@ My friend is an amazing, kind, patient and caring person and it was very special
 
 ## My favourite pieces from the van Gogh exhibition
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f8354e5-74d4-42db-9673-90382b8d4603_4032x3024.jpeg)
+![](/attachments/1f8354e5-74d4-42db-9673-90382b8d4603_4032x3024.jpg)
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6d6b40c-d3a9-4bf1-91b8-9dc2da31e472_4032x3024.jpeg)
+![](/attachments/c6d6b40c-d3a9-4bf1-91b8-9dc2da31e472_4032x3024.jpg)
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F88d0f167-26be-4de9-9735-e35113ae4fcc_4032x3024.jpeg)
+![](/attachments/88d0f167-26be-4de9-9735-e35113ae4fcc_4032x3024.jpg)

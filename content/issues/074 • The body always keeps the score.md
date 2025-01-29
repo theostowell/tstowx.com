@@ -34,7 +34,7 @@ Last Sunday I played football down in Chesterfield like I normally do, but a few
 
 There were no calories in my body until later that afternoon, and I paid the price when, later that night, my body started to shut down. I had headaches, fatigue, nausea and chills. After sleeping 11 hours solid I began to feel a little better again, but it was yet another sign not to neglect physical signals…
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4d6e24fc-aab0-4113-a350-e6b7b8e48bf2_750x788.jpeg)
+![](/attachments/4d6e24fc-aab0-4113-a350-e6b7b8e48bf2_750x788.jpg)
 
 Anyway, I’ve jumped back on the bandwagon of better health decision-making, and have added some zinc into the supplement stack (and a better form of magnesium than the previously mentioned one) to make sure that I’m getting the best sleep and recovery that I can.
 

@@ -21,7 +21,7 @@ That's the key. The goal is not perfection, it's putting one metaphorical foot i
 
 ---
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d2b3a78-225c-49be-a038-340f665bea35_1160x652.png)
+![](8d2b3a78-225c-49be-a038-340f665bea35_1160x652.jpg)
 
 Let's quickly address what inspired this issue…
 

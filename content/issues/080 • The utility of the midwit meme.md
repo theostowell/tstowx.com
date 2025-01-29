@@ -10,17 +10,17 @@ For the longest time, my phone and laptop's background wallpapers were just plai
 
 Now they look like this…
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F45738e4d-ba6f-4ab7-bb14-7daeafbab4b8_2940x1912.png)
+![](/attachments/45738e4d-ba6f-4ab7-bb14-7daeafbab4b8_2940x1912.jpg)
 
 This is the midwit meme. And it’s a better mental heuristic than it might appear. The first time I came across it was in the context of productivity…
 
-![Is “Just Use Apple Notes” the Solution to Your Productivity Problems?](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc0fca7f2-8073-4ae1-9bc3-c7cc60cb45fe_1200x963.jpeg "Is “Just Use Apple Notes” the Solution to Your Productivity Problems?")
+![](/attachments/c0fca7f2-8073-4ae1-9bc3-c7cc60cb45fe_1200x963.jpg)
 
 But there are countless other examples…
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe713cb90-7f69-47a2-bff4-0740decac4df_675x499.png)
+![](/attachments/e713cb90-7f69-47a2-bff4-0740decac4df_675x499.jpg)
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7a7ca5c0-7066-4ea0-a265-23bb46722c0f_675x499.png)
+![](/attachments/7a7ca5c0-7066-4ea0-a265-23bb46722c0f_675x499.jpg)
 
 There is so much to be taken away from the lesson here. We’re all striving to be the sage on the right. But we can’t ever get there. Every one of us is the person in the middle metaphorically, but we can shortcut our route to the same result as the sage by doing the stupidly simple thing, whether we think it’s right or not.
 

@@ -54,7 +54,7 @@ Started adding subtitles to these, seeing as every single video I watch seems to
 
 I’m running out of past issues right now but my mother says that a parakeet has been visiting our garden bird feeder regularly so maybe I’ll have images of that after I head back home from uni for Christmas soon…
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F15d1658a-cdd1-4b0a-a092-ba6d30d0effa_480x640.jpeg)
+![](/attachments/15d1658a-cdd1-4b0a-a092-ba6d30d0effa_480x640.jpg)
 
 ---
 

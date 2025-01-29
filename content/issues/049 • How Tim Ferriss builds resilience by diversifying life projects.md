@@ -50,4 +50,4 @@ See you next week!
 
 ## Quote of the week...
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe31424a5-a9b9-4118-9c56-e41eada7dac9_1000x562.png)
+![](/attachments/e31424a5-a9b9-4118-9c56-e41eada7dac9_1000x562.jpg)
