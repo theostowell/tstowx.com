@@ -58,6 +58,9 @@ menu:
     - name: "Essays"
       url: "/essays/"
       weight: 3
+    - name: "Subscribe"
+      url: "/subscribe/"
+      weight: 4
 
 privacy:
   x:
