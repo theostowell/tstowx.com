@@ -4,10 +4,13 @@ draft: false
 author: Theo Stowell
 ShowShareButtons: false
 ---
-
 This page is going to serve as a place where I can keep track of how I’ve built this website and developed it over time. I’ll add to it every time I make a considerable change or addition…
 
-## 2025-01-28
+## 2025-01-30
+
+Just a few small changes in the last couple of days. Created a new signup form for the [subscription](https://fundamentalised.com/subscribe/) page and added it to the main menu. I posted the first email for the new site just yesterday and it had good opens and clicks and other engagement (not sure if this is to do with the new site or the fact that I’ve gone back to using ConvertKit).
+
+## 2025-01-28 (Genesis)
 
 I’ve been building this site for the last four days or so, getting it up to speed with the entirety of Fundamentalised content (most of today has been spent copying issues and essays across).
 
