@@ -6,9 +6,6 @@ ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ---
-
-Subscribe to Fundamentalised below. You'll get new issues sent to your email address every weekend, as well as any essays that I publish...
-
 <div class="page-newsletter-section">
     <script async data-uid="cdae17a95f" src="https://fundamentalised.kit.com/cdae17a95f/index.js"></script>
 </div>
