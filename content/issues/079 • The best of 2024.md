@@ -48,7 +48,7 @@ Don’t get me wrong, I still love the idea of having my own website and agree w
 
 I started recording YouTube videos for these issues back in June, and since then I have taken them off of YouTube and put them as locally saved videos in the Substack issues. Again, since then, specifically last week, I realised how foolish this was and started putting issues back on YouTube, embedding them in the issues. Here’s last week’s one…
 
-{{< youtube CkE-qhBZWpw >}}
+{{< youtube dXAE0pc71do >}}
 
 ***Read the issue - [078 • One step after the other, no matter the time of year](https://fundamentalised.com/issues/078/)***
 
