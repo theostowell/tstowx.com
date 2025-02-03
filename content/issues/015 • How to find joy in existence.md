@@ -18,7 +18,7 @@ Nothing exists except your actions in the present moment.
 
 After dedicating your psychic energy (what Csikszentmihalyi calls attention) towards achieving and maintaining flow, you’re drained. But you emerge from the activity fulfilled.
 
-![](/attachments/5570c285-b111-4e86-9059-3759d8110eaf_3088x2320.jpg)
+![](/attachments/5570c285-b111-4e86-9059-3759d8110eaf_3088x2320.webp)
 
 You’ve given order to chaos in your small corner of the world and have strengthened your sense of self because of it.
 

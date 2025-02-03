@@ -16,7 +16,7 @@ I made the trip out to the shopping mall at Meadowhall on the outskirts of Sheff
 
 Half an hour later I got back on the tram with a **13-inch MacBook Air M2**.
 
-![](/attachments/3063e776-42fd-4f09-b00e-855a5f675aee_768x1024.jpg)
+![](/attachments/3063e776-42fd-4f09-b00e-855a5f675aee_768x1024.webp)
 
 *“Great”,* I thought, *“my productivity’s going to be through the roof with this new piece of kit.”*
 
