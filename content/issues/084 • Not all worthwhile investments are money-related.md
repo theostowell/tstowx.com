@@ -1,6 +1,6 @@
 ---
 title: 084 • Not all investments are money-related
-date: 2025-02-02
+date: 2025-02-03
 section: issues
 draft: false
 author: Theo Stowell
