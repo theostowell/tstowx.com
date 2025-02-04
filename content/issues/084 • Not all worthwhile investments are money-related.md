@@ -1,5 +1,5 @@
 ---
-title: 084 • Not all investments are money-related
+title: 084 • Not all worthwhile investments are money-related
 date: 2025-02-03
 section: issues
 draft: false
