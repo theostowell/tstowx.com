@@ -13,9 +13,9 @@ params:
   images: ["/og-image.png"]
   description: "Reversing entropy; mastering life's fundamentals • Join Theo Stowell in figuring out and making the most of the core elements (fundamentals) of the human experience."
   HomeInfoParams:
-    Title: I'm Theo 👋, and this is 🧬 Fundamentalised, where I share my take on the 💁‍♂️ human experience...
+    Title: I'm Theo Stowell, and this is Fundamentalised
     Content: |
-      ***Reversing entropy; mastering life's fundamentals*** -- I find myself re-learning lessons in life, so I began to prioritise getting the basics (fundamentals) right. And I've been writing about it the whole way...
+      ***Reversing entropy; mastering life's fundamentals*** • I find myself re-learning lessons in life, so I began to prioritise getting the basics (fundamentals) right. And I've been writing about it the whole way...
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
