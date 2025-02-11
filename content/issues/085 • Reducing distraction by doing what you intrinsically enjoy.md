@@ -1,5 +1,5 @@
 ---
-title: 085 • Doing what you intrinsically enjoy to stop distraction
+title: 085 • Reducing distraction by doing what you intrinsically enjoy
 date: 2025-02-11
 section: issues
 draft: false
