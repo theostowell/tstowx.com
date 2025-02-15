@@ -3,6 +3,8 @@ title: About Theo and Fundamentalised
 draft: false
 author: Theo Stowell
 ShowShareButtons: false
+ShowReadingTime: false
+ShowBreadCrumbs: false
 ---
 For the last two years, the Fundamentalised brand has included talking about my life and its learning lessons, here on this newsletter, and teaching people about productivity and personal knowledge management, over [at PARAZETTEL](https://parazettel.com/).
 
