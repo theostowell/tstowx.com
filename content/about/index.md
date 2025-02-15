@@ -1,7 +1,6 @@
 ---
 title: About Theo and Fundamentalised
 draft: false
-author: Theo Stowell
 ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
