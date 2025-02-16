@@ -19,7 +19,7 @@ But remixing is more than producing a song.
 
 Remixing is one of the most common forms of creativity. It's very hard to have a completely original idea. More common a creative feat is to remix. To take one or more pre-existing things and turn them into something that's never been seen before.
 
-Even people we consider revolutionary need to 'stand on the shoulders of giants'...
+Even people we consider revolutionary need to 'stand on the shoulders of giants'... Sigma
 
 > _"If I have seen further than others, it is by standing on the shoulders of giants. To myself, I am only a child playing on the beach, while vast oceans of truth lay undiscovered before me."_ — **Sir Isaac Newton**
 
