@@ -40,12 +40,22 @@ Luckily for you, if you use my link below, you can get 60 days of free Readwise 
 
 ![](/attachments/b30163d2-ca51-4885-bd3d-77e8873419ad_1200x628.png)
 
-**Healf** - [Click this link](https://drops.shop/fundamentalised/healf) to see my essentials and get 10% off everything on Healf’s website
+**Healf** - [Click this link](https://healf.com/pages/creator/fundamentalised?cc=fundamentalised) to see my essentials and get 10% off everything on Healf’s website
 
-This is where I get all my health-related essentials. Right now I like to buy in bulk to make sure I don’t distract myself with all the health goodies on their website on a monthly basis.
+This is where I get all my health-related products including supplements and protein powder. Right now I like to buy in bulk to make sure I don’t distract myself with all the health goodies on their website on a monthly basis.
 
 Either way, you can see the products I recommend by going to the link above - once you’ve clicked, you get **10% off** of the products I recommend, as well as **anything else that catches your eye** on their website.
 
+## Links
+
+### Creators
+
+[Aidan Helfant](https://www.aidanhelfant.com/) - Aidan is someone that I connected with quite early into my journey into PKM and note-taking, specifically in Obsidian.
+
+I went on Aidan’s podcast back in 2023 to talk about PARAZETTEL’s early days and what I’d learned going through studying at university…
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6EpQ0b5cpw08HAVoQIJDji?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 ---
 
-**P.S.** _Some of the links on this page are affiliate links. This changes nothing about the fact that all the tools and services on this page are first-rate and that I started using them myself without any kind of financial incentive. After so long mentioning them, I reached out to partner up. It seemed like a natural progression, and I vouch for everything on this list. Email me if you have any questions about them @[theo@fundamentalised.com](mailto:theo@fundamentalised.com) — Thanks!_
+**P.S.** _Some of the links on this page are affiliate links. This changes nothing about the fact that all the tools and services on this page are first-rate and that I started using them myself without any kind of financial incentive. After so long mentioning them, I reached out to partner up. It seemed like a natural progression, and I vouch for everything on this list. Email me if you have any questions about them @ [theo@fundamentalised.com](mailto:theo@fundamentalised.com) — Thanks!_

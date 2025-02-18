@@ -6,7 +6,6 @@ draft: false
 author: Theo Stowell
 url: issues/033
 ---
-
 ![](/attachments/6731137b-db56-4279-a138-c2db6b43b225_848x576.jpg)
 
 Here's the thing...
