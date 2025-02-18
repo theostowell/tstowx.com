@@ -2,7 +2,7 @@
 title: 086 • Two low-effort productivity hacks
 date: 2025-02-18
 section: issues
-draft: true
+draft: false
 author: Theo Stowell
 url: issues/086
 ---
