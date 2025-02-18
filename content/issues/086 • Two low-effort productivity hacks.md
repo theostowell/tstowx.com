@@ -57,8 +57,8 @@ A short video today, seeing as I wrote the issue from Poland whilst I was going 
 
 ## Pictures from last week…
 
-![](/attachments/IMG_6069 1.webp)
-![](/attachments/IMG_6236 1.webp)
-![](/attachments/IMG_6266 1.webp)
-![](/attachmentsIMG_6270 1.webp)
-![](/attachments/IMG_6396 1.webp)
+![](/attachments/IMG_6069.webp)
+![](/attachments/IMG_6236.webp)
+![](/attachments/IMG_6266.webp)
+![](/attachmentsIMG_6270.webp)
+![](/attachments/IMG_6396.webp)
