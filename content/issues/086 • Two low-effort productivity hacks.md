@@ -49,7 +49,7 @@ Talk soon,
 
 {{< youtube Se-vSpfsmow >}}
 
-***Read the issue - [# 085 • Reducing distraction by doing what you intrinsically enjoy](https://fundamentalised.com/issues/085/)***
+***Read the issue - [085 • Reducing distraction by doing what you intrinsically enjoy](https://fundamentalised.com/issues/085/)***
 
 A short video today, seeing as I wrote the issue from Poland whilst I was going full steam ahead doing things there rather than sitting down and working.
 

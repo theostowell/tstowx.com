@@ -39,7 +39,7 @@ This section, inspired by [Derek Sivers](https://nownownow.com/about), is a plac
 
 - I’ve just finished building a brand new [Fundamentalised](https://wip.fundamentalised.com) site (this one) that I actually like and can use in the long term (unlike my last sites using beehiiv, Obsidian Publish, WordPress and Substack). It's largely inspired by Obsidian's CEO [Steph Ango](https://stephango.com) whose personal site is the main inspiration for many of the elements of this one. I’m still getting used to working in this new environment and I’m sure you’ll see a number of changes around the place as I make things better in the near future.
 - [PARAZETTEL](https://parazettel.com) is where I'm building a business around making a vault for Obsidian that people can download to learn to use Obsidian for themselves. It's a system that. combines Tiago Forte's PARA Method and Niklas Luhmann's Zettelkasten to make the most of both worlds. You can [sign up for an email intro](https://parazettel.com/signup) for free.
-- I take photos of wildlife, landscapes and more recently my close friend's basketball team. I travelled through Italy and Portugal last year and took photos there as well. You can check out more of my photo work by going to https://theostowell.me or following me [on Instagram](https://instagram.com/theostowell).
+- I take photos of wildlife, landscapes and more recently my close friend's basketball team. I travelled through Italy and Portugal last year and took photos there as well. You can check out more of my photo work by going to https://tstowphoto.com or following me [on Instagram](https://instagram.com/theostowell).
 
 Thanks for being here!
 
