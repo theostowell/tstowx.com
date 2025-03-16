@@ -6,10 +6,9 @@ draft: false
 author: Theo Stowell
 url: issues/088
 ---
-
 *Sorry for a week’s hiatus from writing newsletter issues 🙏 - I’ll explain why it happened at the end of this one, but for now…*
 
-Although I don’t travel abroad very much (true, although ironic to say having just [come back from Poland](https://fundamentalised.com/issues/085/)), I travel through the UK quite a lot
+Although I don’t travel abroad very much (true, although ironic to say having just [come back from Poland](https://fundamentalised.com/issues/085/)), I travel through the UK quite regularly.
 
 The weekend before last, for example, I headed from my home in Sheffield, all the way to Oxford to watch my brother row in the second-largest inter-college rowing event of the year.
 
