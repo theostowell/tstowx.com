@@ -58,7 +58,7 @@ I hope that by making my case in this issue, you believe it too,
 
 ## Last week’s issue (extended cut)…
 
-{{< youtube zlxT91s3iYA >}}
+{{< youtube zhg4xGXc9kE >}}
 
 ***Read the issue - [088 • Book a long trip to get work done](https://fundamentalised.com/issues/088/)***
 
