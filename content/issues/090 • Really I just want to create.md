@@ -6,9 +6,9 @@ draft: true
 author: Theo Stowell
 url: issues/090
 ---
-Recently I've been battling the administrative tasks behind posting and sharing ideas online, as well as online business. 
+Recently I've been battling the administrative tasks behind creating content and running a business online...
 
-After I launched the PARAZETTEL Community a few weeks back, aside from creating one more course which I [launched the past weekend](https://skool.com/parazettel), I feel as though I've just been poking around with pointless tweaks and admin that aren't ever going to make a significant difference in the business. 
+After I launched the PARAZETTEL Community a few weeks back, aside from creating one more course which I [launched the past weekend](https://skool.com/parazettel), I feel as though I've just been poking around with pointless tweaks and admin that aren't ever going to make a significant difference in the business.
 
 This prompted me to think about what I actually want out of going on this journey, and I realised that I just want to create what I want, every day, without being tied to a certain something or another.
 
@@ -28,7 +28,11 @@ Another thing that's been weighing on my mind recently is that of social media (
 
 ---
 
-There's a change that I want to make to Fundamentalised soon too, I'll email you in the coming days to let you know about this.
+There's a change coming to Fundamentalised soon too, I'll email you in the coming days to let you know about this.
+
+It has quite a lot to do with what I've covered in the issue above and keeping things simplified but I won't jump the gun, rather let you know in full when I reach out at some point in the coming days.
+
+-- Theo
 
 ---
 
@@ -38,7 +42,7 @@ There's a change that I want to make to Fundamentalised soon too, I'll email you
 
 ***Read the issue - [000 • Issue name](https://fundamentalised.com/issues/)***
 
-I put all of these back up on YouTube again. What was I thinking in taking them down?! A little bit of a head loss on my part here but we're up and running again, and maybe some new subscribers will start coming in as well.
+I put all of these back up on YouTube again. What was I thinking in taking them down?! A little bit of a head loss on my part here but we're up and running again.
 
 ---
 
@@ -48,7 +52,7 @@ Somewhat fittingly, it's *Down and Out in Paris and London* by George Orwell, a 
 
 My friend and I are looking to head to the city after I'm done with graduation, so it feels like a relevant read to get myself in the mood for perhaps having to live a little more rough than I've been used to in order to establish a foothold for the rest of life.
 
-I also picked up *Nausea* by Jeanconsumption on the platforms, they seem to be weighing on my mind a lot.
+I also picked up *Nausea* by Jean-Paul Sartre
 
 ---
 

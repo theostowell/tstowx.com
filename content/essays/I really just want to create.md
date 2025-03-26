@@ -2,7 +2,7 @@
 title: I really just want to create
 date: 2025-03-21
 section: essays
-draft: false
+draft: true
 author: Theo Stowell
 url: essays/want-to-create
 ---
