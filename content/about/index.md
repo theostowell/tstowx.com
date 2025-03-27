@@ -5,6 +5,10 @@ ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ---
+***NOTE**: Right now, I'm not writing or recording new Fundamentalised issues. You can check out [fundamentalised.com/hiatus](https://fundamentalised.com/hiatus) to learn more about why this is.*
+
+---
+
 For the last two years, the Fundamentalised brand has included talking about my life and its learning lessons, here on this newsletter, and teaching people about productivity and personal knowledge management, over [at PARAZETTEL](https://parazettel.com/).
 
 ![](/attachments/f6a485de-42fa-48c8-99e4-18208a67a0e8_1200x630.webp)
@@ -13,7 +17,7 @@ For the last two years, the Fundamentalised brand has included talking about my 
 > 
 > _Unless it comes unasked out of your heart and your mind and your mouth and your gut, don’t do it.” —_ **Charles Bukowski**
 
-You can find out more about PARAZETTEL over on its own site, so I won’t bore you by speaking about it. But what is this publication specifically?
+You can find out more about PARAZETTEL over [on its own site](https://parazettel.com), so I won’t bore you by speaking about it. But what is this publication specifically?
 
 It started as a newsletter, back when I wrote regularly on Medium, sharing my ideas about productivity, creativity and living a fulfilled lifestyle with my audience there.
 
@@ -25,7 +29,7 @@ I’ve moved this body of work about many times since starting to write it, but 
 
 So what do I write about?
 
-It varies. This newsletter has become an outlet for my more personal and informal writing that I’ve been wanting to get out there simply because I think they’re good ideas.
+It varies. This newsletter has become an outlet for my more personal and informal writing that I’ve been wanting to get out there simply because I think they’re good ideas. There needed to be a space that allowed me to create work that didn't really fit into the frame of the business.
 
 The name Fundamentalised sets it out as well as anything (and yes I’m from the UK so it _is_ Fundamentalised with an S not a Z) - I believe the value to be found in life comes from doing a few things (fundamentals) well. There’s also the idea that the best way to tackle a more complicated problem is to break it down into constituent parts so that it’s ‘Fundamentalised’ if you will.
 
@@ -35,11 +39,17 @@ So I share insights into whatever I’m trying to Fundamentalise at the time of 
 
 ## Now
 
-This section, inspired by [Derek Sivers](https://nownownow.com/about), is a place for me to share what I'm doing at the moment:
+This section, inspired by [Derek Sivers](https://nownownow.com/about), is a place for me to share what I'm doing at the moment. I've started doing this in a journal-style timeline, to make it easier to follow along with:
 
-- The [PARAZETTEL Community](https://www.skool.com/parazettel-community-4498/about) is my newest branch of the productivity and personal knowledge management business. I built a vault for Obsidian but after a while realised a done-for-you solution was only a fraction of what I could provide, thus this new direction.
-- I’ve just finished building a brand new [Fundamentalised](https://wip.fundamentalised.com) site (this one) that I actually like and can use in the long term (unlike my last sites using beehiiv, Obsidian Publish, WordPress and Substack). It's largely inspired by Obsidian's CEO [Steph Ango](https://stephango.com) whose personal site is the main inspiration for many of the elements of this one. I’m still getting used to working in this new environment and I’m sure you’ll see a number of changes around the place as I make things better in the near future.
-- I take photos of wildlife, landscapes and more recently my close friend's basketball team. I travelled through Italy and Portugal last year and took photos there as well. You can check out more of my photo work by going to https://tstowphoto.com or following me [on Instagram](https://instagram.com/theostowell).
+**2025-03-27** - I've just added this new journal style section to the website, and as of what I've been doing this year (since the start of this year), it's been very busy...
+
+I built the [PARAZETTEL Community](https://parazettel.com) most recently, launching at the start of March, but before that (back at the end of January), I [built out this entire Fundamentalised website](https://fundamentalised.com/issues/083/) too. 
+
+Right now I'm just outlining these two projects to get you up to speed with this new style of tracking my current work efforts!
+
+---
+
+When this section gets too long to read comfortably, I'm going to backlog it in [fundamentalised.com/journal](https://fundamentalised.com). There's nothing in there right now, rather this is a reminder to myself to get it done.
 
 Thanks for being here!
 

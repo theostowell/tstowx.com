@@ -48,4 +48,4 @@ Either way, I appreciate you reading, as always, and I’ll see you next week!
 
 {{< youtube 9C_JSIavCx4 >}}
 
-***Read the issue - [# 082 • Connect with the people who make your effort worth it](https://fundamentalised.com/issues/082)***
+***Read the issue - [082 • Connect with the people who make your effort worth it](https://fundamentalised.com/issues/082)***

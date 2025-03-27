@@ -90,3 +90,48 @@
     color: var(--primary);
     text-decoration: underline;
 }
+
+/* Default link color is black */
+a {
+    color: #000000;
+}
+
+/* In-text links in content areas get accent color */
+.post-content a {
+    color: #8b7ec8;
+}
+
+.post-content a:hover {
+    color: #786cac;
+}
+
+/* Navigation links stay black */
+.nav a {
+    color: black;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+/* Post/essay titles stay black */
+.post-entry .entry-header h2 a {
+    color: #000000;
+}
+
+/* RSS icons stay black */
+.entry-footer .entry-link {
+    color: #000000;
+}
+
+/* Social icons stay black */
+.social-icons a {
+    color: #000000;
+}
+
+/* Ensure hover states remain black */
+.post-entry .entry-header h2 a:hover,
+.entry-footer .entry-link:hover,
+.social-icons a:hover {
+    color: #000000;
+}

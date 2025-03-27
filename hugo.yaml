@@ -15,7 +15,8 @@ params:
   HomeInfoParams:
     Title: I'm Theo Stowell, and this is Fundamentalised
     Content: |
-      ***Reversing entropy; mastering life's fundamentals*** • I find myself re-learning lessons in life, so I began to prioritise getting the basics (fundamentals) right. And I've been writing about it the whole way...
+      ***Reversing entropy; mastering life's fundamentals*** • I find myself re-learning lessons in life, so I began to prioritise getting the basics (fundamentals) right. And I've been writing about it the whole way. 
+      ***NOTE**: I'm not writing or recording new issues right now. Go to to [fundamentalised.com/hiatus](https://fundamentalised.com/hiatus) to learn more*...
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
@@ -23,17 +24,13 @@ params:
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/safari-pinned-tab.svg"
   SocialIcons:
-    - name: 'Medium'
-      url: 'https://medium.com/@fundamentalised'
-      icon: 'fab fa-medium'
-      target: '_blank'
     - name: 'X'
       url: 'https://x.com/fundamentalised'
       icon: 'fab fa-x'
       target: '_blank'
-    - name: 'YouTube'
-      url: 'https://youtube.com/@fundamentalised'
-      icon: 'fab fa-youtube'
+    - name: 'LinkedIn'
+      url: 'https://www.linkedin.com/in/theostowell'
+      icon: 'fab fa-linkedin'
       target: '_blank'
   ShowShareButtons: false
   ShowPostNavLinks: false
