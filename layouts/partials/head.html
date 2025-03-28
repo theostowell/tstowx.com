@@ -38,6 +38,8 @@
 
 {{- if not (in (string .Site.BaseURL) "localhost") }}
 <script defer src="https://cloud.umami.is/script.js" data-website-id="69597df9-b190-4c59-9583-cca48c7eeab5"></script>
+<script defer data-domain="fundamentalised.com" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 {{- end }}
 
 {{- /* Styles */}}
