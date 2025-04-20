@@ -41,6 +41,14 @@ So I share insights into whatever I’m trying to Fundamentalise at the time of 
 
 This section, inspired by [Derek Sivers](https://nownownow.com/about), is a place for me to share what I'm doing at the moment. I've started doing this in a journal-style timeline, to make it easier to follow along with:
 
+**2025-04-20** - Updated the https://parazettel.com website to contain all the information for the new business offer of the [PARAZETTEL Community](https://skool.com/parazettel), as well as the PARAZETTEL for Obsidian vault - https://parazettel.com/vault.
+
+Also fixed up the backend of the business and finished the email sequence that you get when you signup at https://parazettel.com/signup.
+
+Started to work more on the university work of finishing my research project and revising for exams because the final couple of months of my education is now in swing. I need to graduate with a bang so that I can keep moving with momentum into the new season of life. Hopefully after that, the [hiatus](https://fundamentalised.com/hiatus) will end and I'll be back to posting the content around the topics that currently interest me every week.
+
+•
+
 **2025-03-27** - I've just added this new journal style section to the website, and as of what I've been doing this year (since the start of this year), it's been very busy...
 
 I built the [PARAZETTEL Community](https://parazettel.com) most recently, launching at the start of March, but before that (back at the end of January), I [built out this entire Fundamentalised website](https://fundamentalised.com/issues/083/) too. 
