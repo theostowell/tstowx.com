@@ -1,5 +1,5 @@
 ---
-title: Curriculum Vitae
+title: Theo Stowell - Curriculum Vitae
 draft: false
 hideFooter: true
 ShowShareButtons: false
