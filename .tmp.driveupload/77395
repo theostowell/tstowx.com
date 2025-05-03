@@ -1,0 +1,117 @@
+0000000000000000000000000000000000000000 553fba7fc97f2bcd89ef2ed9db296dc44c57a3c3 theostowell <theo@fundamentalised.com> 1737732286 +0000	commit (initial): Site initialisation
+553fba7fc97f2bcd89ef2ed9db296dc44c57a3c3 5805004419f2eb4a9bdcf33bfd42c566f37f2dd5 theostowell <theo@fundamentalised.com> 1737732784 +0000	commit: Removed default theme
+5805004419f2eb4a9bdcf33bfd42c566f37f2dd5 a99c65d4ef613d69ae5dbb6de3aa2fdb84991b0c theostowell <theo@fundamentalised.com> 1737742344 +0000	commit: Change from toml to yaml
+a99c65d4ef613d69ae5dbb6de3aa2fdb84991b0c f8a6783c01d43922e34980e7f0c4585dde325dca theostowell <theo@fundamentalised.com> 1737748618 +0000	commit: Home and now pages
+f8a6783c01d43922e34980e7f0c4585dde325dca 20e70fe3d948f7b8281de3f4eb749de3cdb75647 theostowell <theo@fundamentalised.com> 1737748944 +0000	commit: Add Netlify config
+20e70fe3d948f7b8281de3f4eb749de3cdb75647 0fd506836ec23f1e8b67c6af0961416ee2018df9 theostowell <theo@fundamentalised.com> 1737749820 +0000	commit: Added package.json
+0fd506836ec23f1e8b67c6af0961416ee2018df9 d970b58769defd4f5268d6382815c4170b319bfa theostowell <theo@fundamentalised.com> 1737749922 +0000	commit: Netlify config build change
+d970b58769defd4f5268d6382815c4170b319bfa f1d36c38b4243441c382025c225efd83a4a3d2f2 theostowell <theo@fundamentalised.com> 1737750360 +0000	commit: Add theme as module
+f1d36c38b4243441c382025c225efd83a4a3d2f2 e6a6c70a9e139777c45c6b110c0302be3584b337 theostowell <theo@fundamentalised.com> 1737750619 +0000	commit: Update Netlify configuration to include GO_VERSION for production environment
+e6a6c70a9e139777c45c6b110c0302be3584b337 73895f31bf0368a6aee5fba7be054f789332d3a4 theostowell <theo@fundamentalised.com> 1737750878 +0000	commit: Update Go version in go.mod from 1.23.5 to 1.23
+73895f31bf0368a6aee5fba7be054f789332d3a4 6ca2c49e7b9e6d39b90043e1988a270dd2a2d0a9 theostowell <theo@fundamentalised.com> 1737752749 +0000	commit: Update theme format in hugo.yaml to remove quotes
+6ca2c49e7b9e6d39b90043e1988a270dd2a2d0a9 60e6fe7cab93d28aec0a69576850b55fe0aceb3b theostowell <theo@fundamentalised.com> 1737753880 +0000	commit: Update GO_VERSION in Netlify configuration from 1.19 to 1.23
+60e6fe7cab93d28aec0a69576850b55fe0aceb3b 6875db92110ef536bc2bffec9e1b88165ce6c034 theostowell <theo@fundamentalised.com> 1737763212 +0000	commit: Update Hugo version and build command in Netlify configuration
+6875db92110ef536bc2bffec9e1b88165ce6c034 d9eb409965df398c07ab98962654015d596d06ba theostowell <theo@fundamentalised.com> 1737763611 +0000	commit: Add PaperMod theme as a submodule in both themes and root directory
+d9eb409965df398c07ab98962654015d596d06ba c26c75a34943a4896d3bd80f67b341e6bd52c940 theostowell <theo@fundamentalised.com> 1737764481 +0000	commit: Create .gitignore and add .obsidian/*
+c26c75a34943a4896d3bd80f67b341e6bd52c940 5264eb4f25453c48ccae31050e851d4a9492f5a4 theostowell <theo@fundamentalised.com> 1737764990 +0000	commit: 2025-01-25 00:29:48: Committed from Obsidian to see if it works (edited Now page)
+5264eb4f25453c48ccae31050e851d4a9492f5a4 4d7f843f1b72c0c40d60a744a2147061839b7448 theostowell <theo@fundamentalised.com> 1737813337 +0000	commit: Update site configuration and content structure
+4d7f843f1b72c0c40d60a744a2147061839b7448 4d1cb9a9815f7f722aee02d9feed6f051b3d8cd7 theostowell <theo@fundamentalised.com> 1737841645 +0000	commit: Restructure site content and update site configuration
+4d1cb9a9815f7f722aee02d9feed6f051b3d8cd7 89dbf6c4106802b8168dae450a8dfe6609de1baf theostowell <theo@fundamentalised.com> 1737850546 +0000	commit: Refactor newsletter signup and site-wide styling
+89dbf6c4106802b8168dae450a8dfe6609de1baf 65935f2a5ccfcc90033cf339130e3b545453269f theostowell <theo@fundamentalised.com> 1737901192 +0000	commit: Remove hugo-PaperMod submodule
+65935f2a5ccfcc90033cf339130e3b545453269f 70a25605685c2b9186aa2b7244eb33ab9aa44d28 theostowell <theo@fundamentalised.com> 1737924477 +0000	commit: Add favicon and site manifest assets
+70a25605685c2b9186aa2b7244eb33ab9aa44d28 2d3add873537c0fc50d26dbae4db5d4ae775a622 theostowell <theo@fundamentalised.com> 1737925558 +0000	commit: Update site branding to include full name and update social media icons
+2d3add873537c0fc50d26dbae4db5d4ae775a622 34c2d240e6bec4f34f4c29f6846e7abf20a41868 theostowell <theo@fundamentalised.com> 1737928811 +0000	commit: Add new essay and update site metadata for SEO and social sharing
+34c2d240e6bec4f34f4c29f6846e7abf20a41868 8e11d98a472cf685dd86401d0fed42b71fb43ac2 theostowell <theo@fundamentalised.com> 1737931916 +0000	commit: Update base URL and add WIP notice to homepage
+8e11d98a472cf685dd86401d0fed42b71fb43ac2 0d58c95e541a1fcce03970cb47e8fe89c5af4a1e theostowell <theo@fundamentalised.com> 1737931966 +0000	commit: Remove "(SITE IS WIP – BEAR WITH ME)" from homepage title
+0d58c95e541a1fcce03970cb47e8fe89c5af4a1e 84ac9c27b4bd100c6fc522818e376fa567ac9887 theostowell <theo@fundamentalised.com> 1737969781 +0000	commit: Add Umami analytics and fix CSS resource concatenation syntax
+84ac9c27b4bd100c6fc522818e376fa567ac9887 969b7b87b1d1d9ceb8016ca7fad3b27f4b083e7d theostowell <theo@fundamentalised.com> 1737970102 +0000	commit: Fix CSS resource concatenation syntax error
+969b7b87b1d1d9ceb8016ca7fad3b27f4b083e7d cfc0402b3c9273060e8552503ebf163996a940c9 theostowell <theo@fundamentalised.com> 1737972663 +0000	commit: Add full content to RSS feeds for essays and issues
+cfc0402b3c9273060e8552503ebf163996a940c9 8ea8ed8ef7a971687a66f1ffd2445a17c7cfa0ac theostowell <theo@fundamentalised.com> 1737974785 +0000	commit: Remove deleted issue 003 and update references
+8ea8ed8ef7a971687a66f1ffd2445a17c7cfa0ac 52171cc10266378fc52cf5c4237198d61b4f70a9 theostowell <theo@fundamentalised.com> 1737979794 +0000	commit: Add image to issue 007 and update RSS feed layout
+52171cc10266378fc52cf5c4237198d61b4f70a9 3b21a6106a73edbf99f06aa23e8ef2595d7a4670 theostowell <theo@fundamentalised.com> 1737989216 +0000	commit: Update Hugo configuration for cover image
+3b21a6106a73edbf99f06aa23e8ef2595d7a4670 d38ef1943d8a3c79541cb86e33a4411fddfde523 theostowell <theo@fundamentalised.com> 1737989322 +0000	commit: Update homepage content with italicized subtitle
+d38ef1943d8a3c79541cb86e33a4411fddfde523 87ae2f45a24aa4f30cfaf8a3102ef2febbe6a2f1 theostowell <theo@fundamentalised.com> 1737989688 +0000	commit: Enhance homepage content with more descriptive WIP note
+87ae2f45a24aa4f30cfaf8a3102ef2febbe6a2f1 da25cde87648abeaeb2c17861b1988b9b82d4a41 theostowell <theo@fundamentalised.com> 1737989973 +0000	commit: Update homepage configuration and cover image path
+da25cde87648abeaeb2c17861b1988b9b82d4a41 b4efda6a22dbfe14a299ec5ce89dce3179608ee9 theostowell <theo@fundamentalised.com> 1737990066 +0000	commit: Minor homepage content punctuation adjustment
+b4efda6a22dbfe14a299ec5ce89dce3179608ee9 9f93c5e5331f3a1fd8b34375704ccdf02fb1f549 theostowell <theo@fundamentalised.com> 1737991379 +0000	commit: Add site description and adjust cover image path
+9f93c5e5331f3a1fd8b34375704ccdf02fb1f549 ac6d3881f8dab050124dfcb3632c0b0b5ae92d8e theostowell <theo@fundamentalised.com> 1737991603 +0000	commit: Refine site description and adjust cover image configuration
+ac6d3881f8dab050124dfcb3632c0b0b5ae92d8e 632da89fa14c4df1bb2556d0f402c718e2d8f35d theostowell <theo@fundamentalised.com> 1737992299 +0000	commit: Refactor site metadata and update description
+632da89fa14c4df1bb2556d0f402c718e2d8f35d 04e8e7292b72a3c567ef0f974c4da23c52978c84 theostowell <theo@fundamentalised.com> 1737992704 +0000	commit: Add header logo and emphasize homepage subtitle
+04e8e7292b72a3c567ef0f974c4da23c52978c84 b6ccc96aafd20efc80c07a59862538698d2a3b56 theostowell <theo@fundamentalised.com> 1737993647 +0000	commit: Add newsletter issues 008, 009, 010, and 011
+b6ccc96aafd20efc80c07a59862538698d2a3b56 8ee5857da2674a915dac17bc813fb1733958ab96 theostowell <theo@fundamentalised.com> 1737994512 +0000	commit: Update homepage content with refined description
+8ee5857da2674a915dac17bc813fb1733958ab96 5666933246365964df52f240c0025a710e690a9b theostowell <theo@fundamentalised.com> 1737994552 +0000	commit: Remove WIP note from homepage title
+5666933246365964df52f240c0025a710e690a9b 9e6548a52b1348cfdaa7981e0b7c2f49ee58b1a1 theostowell <theo@fundamentalised.com> 1737995680 +0000	commit: Add new essays exploring personal growth, creativity, and life philosophy
+9e6548a52b1348cfdaa7981e0b7c2f49ee58b1a1 5c3fc7457eae0ea62210780349d88df2b1de74cd theostowell <theo@fundamentalised.com> 1737996489 +0000	commit: Add newsletter issues 012-017 exploring discipline, content creation, and personal growth
+5c3fc7457eae0ea62210780349d88df2b1de74cd 87583f08395154c0a73dcc559cf801fa437e33a0 theostowell <theo@fundamentalised.com> 1738016980 +0000	commit: Add newsletter issues 018-030 covering digital product launch, personal growth, and productivity insights
+87583f08395154c0a73dcc559cf801fa437e33a0 f641e15611cfc699265c58bd15b59f984598e193 theostowell <theo@fundamentalised.com> 1738019462 +0000	commit: Add newsletter issue 031: Year-end reflection and 2024 outlook
+f641e15611cfc699265c58bd15b59f984598e193 68238b205e55175547a778f7e5d27d1b1edd8ff5 theostowell <theo@fundamentalised.com> 1738083818 +0000	commit: Update site configuration and add new content pages
+68238b205e55175547a778f7e5d27d1b1edd8ff5 c0e3f8246e600cc17e207890366aec8e34bd475f theostowell <theo@fundamentalised.com> 1738084081 +0000	commit: Remove outdated video attachment 053.mp4
+c0e3f8246e600cc17e207890366aec8e34bd475f 68238b205e55175547a778f7e5d27d1b1edd8ff5 theostowell <theo@fundamentalised.com> 1738084443 +0000	reset: moving to HEAD~
+68238b205e55175547a778f7e5d27d1b1edd8ff5 f641e15611cfc699265c58bd15b59f984598e193 theostowell <theo@fundamentalised.com> 1738084449 +0000	reset: moving to HEAD~
+f641e15611cfc699265c58bd15b59f984598e193 74889b69be148591c9518b637069d763a8f07725 theostowell <theo@fundamentalised.com> 1738084490 +0000	commit: Update site configuration and add new content pages
+74889b69be148591c9518b637069d763a8f07725 f490733e3260f9f3e1502fba23b680679df3a13f theostowell <theo@fundamentalised.com> 1738086619 +0000	commit: Enhance RSS functionality and update site configuration
+f490733e3260f9f3e1502fba23b680679df3a13f 67ac71de01376d494727fb090f53f1e2d235b9c5 theostowell <theo@fundamentalised.com> 1738087275 +0000	commit: Add direct YouTube link to newsletter issue 082
+67ac71de01376d494727fb090f53f1e2d235b9c5 cacf99f567b89e4596502632ea17ec5a65a979cd theostowell <theo@fundamentalised.com> 1738092538 +0000	commit: Content updates: 2025-01-28 19:28:58
+cacf99f567b89e4596502632ea17ec5a65a979cd fcde174c2287e9d26337debe62115a4bba0aa274 theostowell <theo@fundamentalised.com> 1738094873 +0000	commit: Content updates: 2025-01-28 20:07:53
+fcde174c2287e9d26337debe62115a4bba0aa274 3ac03009a183412f7bddab7005364c4773f6eac8 theostowell <theo@fundamentalised.com> 1738098456 +0000	commit: Content updates: 2025-01-28 21:07:36
+3ac03009a183412f7bddab7005364c4773f6eac8 b6611972ad11c90f2c6114d9dd5654a9daad4f20 theostowell <theo@fundamentalised.com> 1738100196 +0000	commit: Update newsletter subscription form and site navigation styling
+b6611972ad11c90f2c6114d9dd5654a9daad4f20 485ca5c790a7095a99d2915e01e63e18a25ce6bd theostowell <theo@fundamentalised.com> 1738101213 +0000	commit: Improve newsletter subscription form with user feedback and styling
+485ca5c790a7095a99d2915e01e63e18a25ce6bd 81216de1d6a432a38fa2d71b35efa0e9b16e1d69 theostowell <theo@fundamentalised.com> 1738102099 +0000	commit: Update ConvertKit subscription form with additional classes and attributes
+81216de1d6a432a38fa2d71b35efa0e9b16e1d69 6a863a3a27e21805ea3ece9e5b8b48788f5cc68f theostowell <theo@fundamentalised.com> 1738102781 +0000	commit: Reorder ConvertKit script placement in subscription forms
+6a863a3a27e21805ea3ece9e5b8b48788f5cc68f 39303be676cb679b695d10ca588f988d35d486e5 theostowell <theo@fundamentalised.com> 1738107591 +0000	commit: Refactor newsletter form and footer styling across site
+39303be676cb679b695d10ca588f988d35d486e5 6af12d5eedfca620724133926aad92d5e0dd197f theostowell <theo@fundamentalised.com> 1738108403 +0000	commit: Content updates: 2025-01-28 23:53:23
+6af12d5eedfca620724133926aad92d5e0dd197f f806a77abf085c2cfa16153a05201f6901278518 theostowell <theo@fundamentalised.com> 1738142565 +0000	commit: Content updates: 2025-01-29 09:22:45
+f806a77abf085c2cfa16153a05201f6901278518 96f382cf0c04c864e9229b0cff3dc343951b50eb theostowell <theo@fundamentalised.com> 1738143563 +0000	commit: Content updates: 2025-01-29 09:39:23
+96f382cf0c04c864e9229b0cff3dc343951b50eb 04001017f00952f55dab26f4fc0d32a82c37aa27 theostowell <theo@fundamentalised.com> 1738146924 +0000	commit: Content updates: 2025-01-29 10:35:24
+04001017f00952f55dab26f4fc0d32a82c37aa27 867e079f341537d4c73d9d99b39016b68e7f77c7 theostowell <theo@fundamentalised.com> 1738147413 +0000	commit: Content updates: 2025-01-29 10:43:33
+867e079f341537d4c73d9d99b39016b68e7f77c7 c399488c6883371e1296c006f39068abd9296302 theostowell <theo@fundamentalised.com> 1738147631 +0000	commit: Content updates: 2025-01-29 10:47:11
+c399488c6883371e1296c006f39068abd9296302 e88bb3d31e3fd55fff111b36a6ee102784d3aa24 theostowell <theo@fundamentalised.com> 1738150404 +0000	commit: Content updates: 2025-01-29 11:33:24
+e88bb3d31e3fd55fff111b36a6ee102784d3aa24 ab67abc7e37111ab77e2c417761e431c823661d0 theostowell <theo@fundamentalised.com> 1738187799 +0000	commit: Add 404 page and update footer and custom CSS
+ab67abc7e37111ab77e2c417761e431c823661d0 c51bc9b6e6acab977deb7755e0945b5aa793fb56 theostowell <theo@fundamentalised.com> 1738188402 +0000	commit: Update Umami analytics tracking ID
+c51bc9b6e6acab977deb7755e0945b5aa793fb56 947e91f46eb873505e3b732d6a01817daf5add86 theostowell <theo@fundamentalised.com> 1738188661 +0000	commit: Update site description for clarity and engagement
+947e91f46eb873505e3b732d6a01817daf5add86 1a445fd169cd59ae85d3960aaacc3026d2d11d88 theostowell <theo@fundamentalised.com> 1738238225 +0000	commit: Update newsletter subscription script ID
+1a445fd169cd59ae85d3960aaacc3026d2d11d88 0b989a5730f8b0162a4725b594380320f1a6b07f theostowell <theo@fundamentalised.com> 1738241177 +0000	commit: Content updates: 2025-01-30 12:46:17
+0b989a5730f8b0162a4725b594380320f1a6b07f b068a22987979f6265c3b53492b8804cdef61ff9 theostowell <theo@fundamentalised.com> 1738270852 +0000	commit: Add Subscribe page to site navigation
+b068a22987979f6265c3b53492b8804cdef61ff9 7af435c50a29287f11dd7be071f14aab8158c19c theostowell <theo@fundamentalised.com> 1738274167 +0000	commit: Content updates: 2025-01-30 21:56:07
+7af435c50a29287f11dd7be071f14aab8158c19c 46560e11ac71f831f1e210f039742efd5dacbf26 theostowell <theo@fundamentalised.com> 1738396296 +0000	commit: Content updates: 2025-02-01 07:51:35
+46560e11ac71f831f1e210f039742efd5dacbf26 9214d9e27070c89cdefc4f44a0c51bc5dd1c1176 theostowell <theo@fundamentalised.com> 1738403015 +0000	commit: Content updates: 2025-02-01 09:43:35
+9214d9e27070c89cdefc4f44a0c51bc5dd1c1176 1363085df0d65abee0bda5df71d05be82fc59acb theostowell <theo@fundamentalised.com> 1738508415 +0000	commit: Content updates: 2025-02-02 15:00:15
+1363085df0d65abee0bda5df71d05be82fc59acb e3b93f8ad173cbf3cc06ae8094079ea6318a9f49 theostowell <theo@fundamentalised.com> 1738534042 +0000	commit: Update newsletter subscription script ID in footer
+e3b93f8ad173cbf3cc06ae8094079ea6318a9f49 f0a6ff014633f9a7f5f68efdf1574a69dc9aeb43 theostowell <theo@fundamentalised.com> 1738534309 +0000	commit: Update newsletter subscription script ID in footer
+f0a6ff014633f9a7f5f68efdf1574a69dc9aeb43 3854af6254e48481a7d063672085f68b20d9beb1 theostowell <theo@fundamentalised.com> 1738604961 +0000	commit: Content updates: 2025-02-03 17:49:21
+3854af6254e48481a7d063672085f68b20d9beb1 d7969d6648d037b6d85f9c805ac43c56bc210f9c theostowell <theo@fundamentalised.com> 1738604973 +0000	commit: Content updates: 2025-02-03 17:49:33
+d7969d6648d037b6d85f9c805ac43c56bc210f9c a9800aaabe8acb75454ab240b2f46812f2552fdd theostowell <theo@fundamentalised.com> 1738660688 +0000	commit: Content updates: 2025-02-04 09:18:08
+a9800aaabe8acb75454ab240b2f46812f2552fdd a10eb0ce6ca2838d8b29275b449c58350b2a5314 theostowell <theo@fundamentalised.com> 1738847300 +0000	commit: Chore: Update .gitignore and homepage title
+a10eb0ce6ca2838d8b29275b449c58350b2a5314 0c4a9fc607196f8ce7de064a4aeef4e331507a22 theostowell <theo@fundamentalised.com> 1738847553 +0000	commit: Update homepage title with refined personal description
+0c4a9fc607196f8ce7de064a4aeef4e331507a22 9180b87df83fcf8ed31afba716739c99ffb5ea02 theostowell <theo@fundamentalised.com> 1738847767 +0000	commit: Refine homepage title description
+9180b87df83fcf8ed31afba716739c99ffb5ea02 281b436d3442ccf6e76fc28028537b2839b75c2a theostowell <theo@fundamentalised.com> 1738847812 +0000	commit: Remove homepage content description
+281b436d3442ccf6e76fc28028537b2839b75c2a 04a4ad271a0cd6a8a48f19b3536112172ab1b4f6 theostowell <theo@fundamentalised.com> 1738847978 +0000	commit: Add homepage content description with core philosophy
+04a4ad271a0cd6a8a48f19b3536112172ab1b4f6 012957a63adf7e533a5d74a6866539a1b620d3c2 theostowell <theo@fundamentalised.com> 1738849153 +0000	commit: Adjust homepage title emoji and spacing
+012957a63adf7e533a5d74a6866539a1b620d3c2 890ee29f41a3a9fd20a5f600721f8927ba51ea36 theostowell <theo@fundamentalised.com> 1738849658 +0000	commit: Update homepage title and content description
+890ee29f41a3a9fd20a5f600721f8927ba51ea36 e2fbfc55894f6eee1bcd99d8c33a261731e00d95 theostowell <theo@fundamentalised.com> 1739287083 +0100	commit: Content updates: 2025-02-11 16:18:03
+e2fbfc55894f6eee1bcd99d8c33a261731e00d95 f987febc30dedd3f7bb49c8cbb3ea3527d4706bd theostowell <theo@fundamentalised.com> 1739288482 +0100	commit: Content updates: 2025-02-11 16:41:22
+f987febc30dedd3f7bb49c8cbb3ea3527d4706bd fd692ec84b2cb47ab45a04293b8a5f06528da386 theostowell <theo@fundamentalised.com> 1739632181 +0000	commit: Content updates: 2025-02-15 15:09:41
+fd692ec84b2cb47ab45a04293b8a5f06528da386 17424322bc296303a1b1f4b5e0a0fe6c38c3763c theostowell <theo@fundamentalised.com> 1739632287 +0000	commit: Content updates: 2025-02-15 15:11:27
+17424322bc296303a1b1f4b5e0a0fe6c38c3763c b625e1c84485330d92ffc60e454f9a889875b0f6 theostowell <theo@fundamentalised.com> 1739709585 +0000	commit: Content updates: 2025-02-16 12:39:45
+b625e1c84485330d92ffc60e454f9a889875b0f6 4e7686996f8928673ca69f3fa722782872773536 theostowell <theo@fundamentalised.com> 1739709720 +0000	commit: Content updates: 2025-02-16 12:42:00
+4e7686996f8928673ca69f3fa722782872773536 64b289fe8cd6d21d63b85d6499f23c9157fcdcf0 theostowell <theo@fundamentalised.com> 1739893981 +0000	commit: Content updates: 2025-02-18 15:53:01
+64b289fe8cd6d21d63b85d6499f23c9157fcdcf0 3e6a00046ded8d03e58bfbf7639415fbe979c3a8 theostowell <theo@fundamentalised.com> 1739894079 +0000	commit: Content updates: 2025-02-18 15:54:39
+3e6a00046ded8d03e58bfbf7639415fbe979c3a8 80655a921bed90f33e3136d7c20a09b20962c01b theostowell <theo@fundamentalised.com> 1739894365 +0000	commit: Content updates: 2025-02-18 15:59:25
+80655a921bed90f33e3136d7c20a09b20962c01b d5dbd7730fac239d7055c8bbdeaa60d4a850dd46 theostowell <theo@fundamentalised.com> 1739894545 +0000	commit: Content updates: 2025-02-18 16:02:25
+d5dbd7730fac239d7055c8bbdeaa60d4a850dd46 d004a18b3c7e5abebe06e194fe385188a65b51fd theostowell <theo@fundamentalised.com> 1739894665 +0000	commit: Content updates: 2025-02-18 16:04:25
+d004a18b3c7e5abebe06e194fe385188a65b51fd 4beb2ee8076b7051e76285ea2c13e494ff4c53f4 theostowell <theo@fundamentalised.com> 1740063679 +0000	commit: Content updates: 2025-02-20 15:01:19
+4beb2ee8076b7051e76285ea2c13e494ff4c53f4 821932ea7c222c004bf5c225e82e991c13e014f9 theostowell <theo@fundamentalised.com> 1740403248 +0000	commit: Add conditional Umami analytics script loading
+821932ea7c222c004bf5c225e82e991c13e014f9 81222396c89996b059b030f6fbba89ec22579315 theostowell <theo@fundamentalised.com> 1740486163 +0000	commit: Content updates: 2025-02-25 12:22:43
+81222396c89996b059b030f6fbba89ec22579315 5c9eb44380d4ac8f9820a918a8425b888e230419 theostowell <theo@fundamentalised.com> 1741599462 +0000	commit: Content updates: 2025-03-10 09:37:42
+5c9eb44380d4ac8f9820a918a8425b888e230419 01e4e8ff5f36bbcc191f5dee2bfb14f0c4c3d95c theostowell <theo@fundamentalised.com> 1741637148 +0000	commit: Content updates: 2025-03-10 20:05:48
+01e4e8ff5f36bbcc191f5dee2bfb14f0c4c3d95c a63076fe2dcacc4bdefc7e54f47ac18b6b914ebf theostowell <theo@fundamentalised.com> 1742156980 +0000	commit: Content updates: 2025-03-16 20:29:40
+a63076fe2dcacc4bdefc7e54f47ac18b6b914ebf 1006e8c1a5c7688c91ef442903ac2ad6c69a2721 theostowell <theo@fundamentalised.com> 1742929564 +0000	commit: Content updates: 2025-03-25 19:06:04
+1006e8c1a5c7688c91ef442903ac2ad6c69a2721 2fb1f003a41395f6c62fc087f2c4807c95349d80 theostowell <theo@fundamentalised.com> 1742990717 +0000	commit: Content updates: 2025-03-26 12:05:17
+2fb1f003a41395f6c62fc087f2c4807c95349d80 98a96977d1e1cead8cecfc66c66b5a89de146297 theostowell <theo@fundamentalised.com> 1743005500 +0000	commit: Content updates: 2025-03-26 16:11:40
+98a96977d1e1cead8cecfc66c66b5a89de146297 4a5ea76683654991c43a922881ab00dc53cf1a4f theostowell <theo@fundamentalised.com> 1743088291 +0000	commit: Content updates: 2025-03-27 15:11:31
+4a5ea76683654991c43a922881ab00dc53cf1a4f c0f49de4e52903655afdf7b5908efcdd4bfa00e6 theostowell <theo@fundamentalised.com> 1743149092 +0000	commit: Add Plausible analytics script to head.html
+c0f49de4e52903655afdf7b5908efcdd4bfa00e6 6f35e0ac50560c95ee790a4b84c7f9fa6c4bcf49 theostowell <theo@fundamentalised.com> 1743151558 +0000	commit: Content updates: 2025-03-28 08:45:58
+6f35e0ac50560c95ee790a4b84c7f9fa6c4bcf49 3aabf6e468cca8d95cd18f64adb817eb9e2e4618 theostowell <theo@fundamentalised.com> 1743151574 +0000	commit: Content updates: 2025-03-28 08:46:14
+3aabf6e468cca8d95cd18f64adb817eb9e2e4618 1c0498fc82abe560b23bc462d8fd3421c204975a theostowell <theo@fundamentalised.com> 1745154266 +0100	commit: Content updates: 2025-04-20 14:04:26
+1c0498fc82abe560b23bc462d8fd3421c204975a e3dc4e43c488cecd7a541501095bb6df00b46920 theostowell <theo@fundamentalised.com> 1746301257 +0100	commit: Content updates: 2025-05-03 20:40:57
+e3dc4e43c488cecd7a541501095bb6df00b46920 c1976abe797c8dcfd2405a8d271ec6c5c1989bd3 theostowell <theo@fundamentalised.com> 1746301537 +0100	commit: Content updates: 2025-05-03 20:45:37

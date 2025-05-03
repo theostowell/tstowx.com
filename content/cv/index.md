@@ -1,7 +1,7 @@
 ---
 title: Curriculum Vitae
 draft: false
-hideFooter: false
+hideFooter: true
 ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
