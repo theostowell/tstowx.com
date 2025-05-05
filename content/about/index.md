@@ -41,6 +41,10 @@ So I share insights into whatever I’m trying to Fundamentalise at the time of 
 
 This section, inspired by [Derek Sivers](https://nownownow.com/about), is a place for me to share what I'm doing at the moment. I've started doing this in a journal-style timeline, to make it easier to follow along with:
 
+**2025-05-05** - More recently, I've been updating the website to be more in-line with writing roles that I might potentially pick up after university. I'd like to be able to share my work with a wider audience and build more of a reputation and portfolio because the craft is something that I love doing every day.
+
+•
+
 **2025-04-20** - Updated the https://parazettel.com website to contain all the information for the new business offer of the [PARAZETTEL Community](https://skool.com/parazettel), as well as the PARAZETTEL for Obsidian vault - https://parazettel.com/vault.
 
 Also fixed up the backend of the business and finished the email sequence that you get when you signup at https://parazettel.com/signup.
