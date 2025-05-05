@@ -1,5 +1,5 @@
 ---
-title: Subscribe to the newsletter
+title: 
 draft: false
 hideFooter: true
 ShowShareButtons: false
