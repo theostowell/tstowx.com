@@ -14,7 +14,7 @@ Online content writer specialising in topics including technology, productivity 
 
 **2022 - 2025**: Bachelor's Degree in **Zoology** at **The University of Sheffield** including 1st class literature review *Assessing the reintroduction of the Eurasian Beaver (Castor fiber) across Britain* (Overall Grade Classification Pending)
 
-**2020 - 2022**: A-Levels in **Biology**, **Mathematics**, **Photography** and **Physics** at **Castle School Sixth Form** (Grades $A^{*}AAA$ Respectively)
+**2020 - 2022**: A-Levels in **Biology**, **Mathematics**, **Photography** and **Physics** at **Castle School Sixth Form** (Grades A*AAA Respectively)
 
 **2021 - 2022**: Extended Project Qualification at **Castle School Sixth Form**, on the question *Does the positive impact of rewilding extend beyond conservation benefit?* (Grade C)
 
