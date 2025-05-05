@@ -36,20 +36,15 @@
 <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
 {{- end }}
 
-{{- if not (in (string .Site.BaseURL) "localhost") }}
-<script defer src="https://cloud.umami.is/script.js" data-website-id="69597df9-b190-4c59-9583-cca48c7eeab5"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZDR7MYMS3"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const hash = window.location.hash;
-    if (hash) {
-      const target = document.querySelector(`[data-anchor="${hash.substring(1)}"]`);
-      if (target) {
-        setTimeout(() => target.scrollIntoView({ behavior: "smooth" }), 500);
-      }
-    }
-  });
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZDR7MYMS3');
 </script>
-{{- end }}
 
 {{- /* Styles */}}
 
