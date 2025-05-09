@@ -44,6 +44,8 @@ params:
     - css/extended/custom.css
   env: production
 
+googleAnalytics: "G-4ZDR7MYMS3"
+
 menu:
   main:
     - name: "About"
