@@ -10,7 +10,7 @@ Right now I'm taking a break from writing and filming newsletters.
 
 Here's why...
 
-{{< youtube id fSkFa1_Kuzs >}}
+
 
 ---
 
