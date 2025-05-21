@@ -13,10 +13,10 @@ params:
   images: ["/og-image.png"]
   description: "Reversing entropy; mastering life's fundamentals • Join Theo Stowell in figuring out and making the most of the core elements (fundamentals) of the human experience..."
   HomeInfoParams:
-    Title: I'm Theo, a writer and entrepreneur from the UK
+    Title: I'm Theo, a writer and entrepreneur based in Reading, UK
     Content: |
       ***Reversing entropy; mastering life's fundamentals*** • I find myself re-learning lessons in life, so I began to prioritise getting the basics (fundamentals) right. And I've been writing about it the whole way. 
-      ***NOTE**: I'm not writing or recording new issues right now. Go to to [fundamentalised.com/hiatus](https://fundamentalised.com/hiatus) to learn more*...
+      ***NOTE**: I'm not writing or recording new issues right now. Go to [fundamentalised.com/hiatus](https://fundamentalised.com/hiatus) to learn more*...
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
