@@ -98,11 +98,11 @@ a {
 
 /* In-text links in content areas get accent color */
 .post-content a {
-    color: #8b7ec8;
+    color: #000000;
 }
 
 .post-content a:hover {
-    color: #786cac;
+    color: #000000;
 }
 
 /* Navigation links stay black */
