@@ -8,7 +8,7 @@ cover:
 
 params:
   defaultTheme: light
-  disableThemeToggle: false
+  disableThemeToggle: true
   ShowFullTextinRSS: true
   images: ["/opengraph.png"]
   description: "Reversing entropy; mastering life's fundamentals • Join Theo Stowell in figuring out and making the most of the core elements (fundamentals) of the human experience..."
