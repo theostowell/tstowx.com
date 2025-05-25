@@ -6,8 +6,6 @@ ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ---
-## Summary
-
 Content writer specialising in topics including technology, productivity, knowledge management and lifestyle (500,000+ words published, 150,000+ reads), with experience crafting website copy and social media CTAs for online-centric businesses. Former conservation volunteer for over 5 years, collecting avian high tide roost numbers used used in RSPB reports. Zoology graduate from Top-5 UK university (UoSheffield, as per the Guardian, 2023) including a 1st-class literature review on UK beaver reintroduction.
 
 ## Education
