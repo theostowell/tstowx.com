@@ -1,10 +1,10 @@
-baseURL: 'https://fundamentalised.com/'
+baseURL: 'https://theostowell.me/'
 languageCode: 'en-gb'
 title: 'Fundamentalised by Theo Stowell'
 theme: PaperMod
 
 cover:
-  image: "/og-image.png"
+  image: "/opengraph.png"
 
 params:
   defaultTheme: light
