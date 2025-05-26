@@ -1,12 +1,11 @@
 {
     "name": "fundamentalised",
     "version": "1.0.0",
-    "dependencies": {},
     "devDependencies": {
-      "hugo-bin": "^0.139.0"
+        "babel-core": "^6.26.3",
+        "hugo-bin": "^0.139.0"
     },
     "scripts": {
-      "build": "hugo"
+        "build": "hugo"
     }
-  }
-  
+}
