@@ -15,7 +15,7 @@ params:
   HomeInfoParams:
     Title: I'm Theo, a (content and copy-)writer and entrepreneur based in Reading, UK
     Content: |
-      ***Things are changing around here. You might have noticed the new branding and domain. Fundamentalised will live on though, just bear with me as I make the changes. You can still sign up in the footer. 
+      ***Things are changing around here. You might have noticed the new branding and domain. Fundamentalised will live on though, just bear with me as I make the changes. You can still sign up in the footer.*** 
       ***NOTE**: I'm not writing or recording new issues right now. Go to [theostowell.me/hiatus](https://theostowell.me/hiatus) to learn more*...
   assets:
     favicon: "/favicon.ico"
