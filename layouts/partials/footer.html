@@ -1,13 +1,14 @@
 {{- if and (not (.Param "hideFooter")) (ne .Layout "404") }}
-<footer class="footer" style="text-align: center;">
+<footer class="footer" style="text-align: center; padding-top: 2rem;">
     <div class="footer-newsletter-section">
-        <h3>Subscribe to the Fundamentalised newsletter...</h3>
-        <div id="custom-substack-embed"></div>
+        <h2 style="margin-bottom: 0.5rem;">Subscribe to the Fundamentalised newsletter...</h2>
+        <p style="margin-bottom: 1.5rem;">As well as the short essays on this site, I publish a newsletter about what I've been doing, and the lessons I've been learning from doing so. Right now we're on hiatus because of university exams, but you can still read past issues...</p>
+        <div id="custom-substack-embed" style="margin-bottom: 1.5rem;"></div>
     </div>
     <script>
         window.CustomSubstackWidget = {
             substackUrl: "fundamentalised.substack.com",
-            placeholder: "example@gmail.com",
+            placeholder: "Email address...",
             buttonText: "Subscribe",
             theme: "custom",
             colors: {
@@ -20,7 +21,7 @@
     </script>
     <script src="https://substackapi.com/widget.js" async></script>
     <div>
-        <span class="copyright">&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">Fundamentalised</a></span>
+        <span class="copyright">&copy; {{ now.Year }} Theo Stowell</span>
     </div>
 </footer>
 {{- end }}
