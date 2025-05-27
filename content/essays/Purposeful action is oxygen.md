@@ -6,7 +6,7 @@ draft: false
 author: Theo Stowell
 url: essays/action-is-oxygen
 ---
-I've tried building a meditation habit many times. It never works out in the long-term and although it's good for clearing and controlling my mind in thei moment, there's something I've found that's better...
+I've tried building a meditation habit many times. It never works out in the long-term and although it's good for clearing and controlling my mind in the moment, there's something I've found that's better...
 
 Just doing the things that matter.
 

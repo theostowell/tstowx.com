@@ -1,18 +1,38 @@
 {{- if and (not (.Param "hideFooter")) (ne .Layout "404") }}
 <footer class="footer" style="text-align: center;">
     <div class="footer-newsletter-section">
-        <script async data-uid="a45f9ddeda" src="https://fundamentalised.kit.com/a45f9ddeda/index.js"></script>
+        <h3>Subscribe to the Fundamentalised newsletter...</h3>
+        <div id="custom-substack-embed"></div>
     </div>
-    <span class="copyright">&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">Fundamentalised</a></span>
+    <script>
+        window.CustomSubstackWidget = {
+            substackUrl: "fundamentalised.substack.com",
+            placeholder: "example@gmail.com",
+            buttonText: "Subscribe",
+            theme: "custom",
+            colors: {
+                primary: "#000000",
+                input: "#FFFFFF",
+                email: "#000000",
+                text: "#FFFFFF",
+            }
+        };
+    </script>
+    <script src="https://substackapi.com/widget.js" async></script>
+    <div>
+        <span class="copyright">&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">Fundamentalised</a></span>
+    </div>
 </footer>
 {{- end }}
 
 {{- if (not site.Params.disableScrollToTop) }}
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g" style="text-align: center; display: block; margin: 0 auto;">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
+<div>
+    <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g" style="text-align: center; display: block; margin: 0 auto;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </a>
+</div>
 {{- end }}
 
 {{- partial "extend_footer.html" . }}
