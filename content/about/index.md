@@ -9,7 +9,7 @@ ShowBreadCrumbs: false
 
 ---
 
-I'm Theo. Right [now](https://theostowell.me/about#now), I'm transitioning out of full-time education at The University of Sheffield, looking to work full time on projects that I love.
+I'm Theo. Right [now](https://theostowell.me/about#now), I'm transitioning out of full-time education at the University of Sheffield, looking to work full time on projects that I love.
 
 Right back at the start of my degree, in 2023, I started sharing my growing ideas around productivity and knowledge management to a small online audience. This grew and grew, and I kept sharing. Before long, I'd built a business, called [PARAZETTEL](https://parazettel.com) around this.
 
