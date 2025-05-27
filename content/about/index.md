@@ -9,31 +9,11 @@ ShowBreadCrumbs: false
 
 ---
 
-For the last two years, the Fundamentalised brand has included talking about my life and its learning lessons, here on this newsletter, and teaching people about productivity and personal knowledge management, over [at PARAZETTEL](https://parazettel.com/).
+I'm Theo. Right [now](https://theostowell.me/about#now), I'm transitioning out of full-time education at The University of Sheffield, looking to work full time on projects that I love.
 
-![](/attachments/f6a485de-42fa-48c8-99e4-18208a67a0e8_1200x630.webp)
+Right back at the start of my degree, in 2023, I started sharing my growing ideas around productivity and knowledge management to a small online audience. This grew and grew, and I kept sharing. Before long, I'd built a business, called [PARAZETTEL](https://parazettel.com) around this.
 
-> ”_If it doesn’t come bursting out of you in spite of everything, don’t do it._
-> 
-> _Unless it comes unasked out of your heart and your mind and your mouth and your gut, don’t do it.” —_ **Charles Bukowski**
-
-You can find out more about PARAZETTEL over [on its own site](https://parazettel.com), so I won’t bore you by speaking about it. But what is this publication specifically?
-
-It started as a newsletter, back when I wrote regularly on Medium, sharing my ideas about productivity, creativity and living a fulfilled lifestyle with my audience there.
-
-In those days, all I knew was that I was supposed to capture emails from those reading my work. I had no idea where to take things with writing online.
-
-The newsletter was simply an extension of my article-writing endeavours. The content I was sharing with subscribers was indistinguishable from the other stuff I was sharing more widely on other platforms.
-
-I’ve moved this body of work about many times since starting to write it, but my most recent project of building a static website with the assistance of AI has meant that https://fundamentalised.com has become the perfect spot to remain for a very long time - I can write site content in Obsidian and push it to production automatically, and I’m not locked into any other platform.
-
-So what do I write about?
-
-It varies. This newsletter has become an outlet for my more personal and informal writing that I’ve been wanting to get out there simply because I think they’re good ideas. There needed to be a space that allowed me to create work that didn't really fit into the frame of the business.
-
-The name Fundamentalised sets it out as well as anything (and yes I’m from the UK so it _is_ Fundamentalised with an S not a Z) - I believe the value to be found in life comes from doing a few things (fundamentals) well. There’s also the idea that the best way to tackle a more complicated problem is to break it down into constituent parts so that it’s ‘Fundamentalised’ if you will.
-
-So I share insights into whatever I’m trying to Fundamentalise at the time of writing, adding useful links to the other work I’ve published over the week as well as links to things I’ve consumed and found useful or interesting.
+Now I'm looking to maintain this business, but I need new ways to learn new ideas around knowledge management. That's why I've started to move out into the freelance content-writing field.
 
 ---
 
