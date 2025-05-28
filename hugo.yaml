@@ -53,9 +53,12 @@ menu:
     - name: "Writing"
       url: "/essays/"
       weight: 2
-    - name: "Subscribe"
-      url: "/subscribe/"
+    - name: "Newsletter"
+      url: "https://www.fundamentalised.com/"
       weight: 3
+    - name: "Services"
+      url: "/services/"
+      weight: 4
 
 privacy:
   x:
