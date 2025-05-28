@@ -1,11 +1,11 @@
 ---
-title: About Theo and Fundamentalised
+title: About Theo
 draft: false
 ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ---
-***NOTE**: Right now, I'm not writing or recording new Fundamentalised issues. You can check out [fundamentalised.com/hiatus](https://fundamentalised.com/hiatus) to learn more about why this is.*
+***NOTE**: I'm not writing or recording new Fundamentalised issues at the moment. You can check out [fundamentalised.com/hiatus](https://www.fundamentalised.com/p/hiatus) to learn more about why this is.*
 
 ---
 
@@ -17,9 +17,15 @@ Now I'm looking to maintain this business, but I need new ways to learn new idea
 
 ---
 
-## Now
+## What I'm working on now...
 
 This section, inspired by [Derek Sivers](https://nownownow.com/about), is a place for me to share what I'm doing at the moment. I've started doing this in a journal-style timeline, to make it easier to follow along with:
+
+**2025-05-28** - As I mentioned in the previous point, there have been changes happening around here. As of today I've pretty much finished changing things from a publication-centric website to a personal portfolio/brand website. Fundamentalised lives on [as a Substack](https://www.fundamentalised.com), which hopefully should help its growth through the community features.
+
+My personal short essays remain here, and I'm going to finish up adding and removing relevant bits and pieces in the next couple of days or so, when I get fed up of revising for my exams.
+
+•
 
 **2025-05-05** - More recently, I've been updating the website to be more in-line with writing roles that I might potentially pick up after university. I'd like to be able to share my work with a wider audience and build more of a reputation and portfolio because the craft is something that I love doing every day.
 
