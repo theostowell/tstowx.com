@@ -53,7 +53,7 @@ menu:
     - name: "Services"
       url: "/services/"
       weight: 2
-    - name: "Writing"
+    - name: "Essays"
       url: "/essays/"
       weight: 3
     - name: "Newsletter"
