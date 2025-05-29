@@ -11,7 +11,7 @@ params:
   disableThemeToggle: true
   ShowFullTextinRSS: true
   images: ["/opengraph.png"]
-  description: "This website is under construction. Thanks for your patience."
+  description: "Theo Stowell is a writer and entrepreneur based in Reading, UK. On this site you can find an intro, short essays, links to services and products, and more..."
   HomeInfoParams:
     Title: I'm Theo–a writer and entrepreneur based in Reading, UK
     Content: |
@@ -50,14 +50,14 @@ menu:
     - name: "About"
       url: "/about/"
       weight: 1
-    - name: "Writing"
-      url: "/essays/"
-      weight: 2
-    - name: "Newsletter"
-      url: "https://www.fundamentalised.com/"
-      weight: 3
     - name: "Services"
       url: "/services/"
+      weight: 2
+    - name: "Writing"
+      url: "/essays/"
+      weight: 3
+    - name: "Newsletter"
+      url: "https://www.fundamentalised.com/"
       weight: 4
 
 privacy:
