@@ -14,3 +14,6 @@ Here are links to some public-facing examples of my work, including articles, em
 
 ## Articles
 
+The article that the quote at the top of the page was written about is my most viewed on Medium, and can be found at the link here.
+
+***give an image of the stats and numbers that this piece did.
