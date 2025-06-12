@@ -4,3 +4,5 @@ resources/
 public/
 **/.DS_Store
 node_modules/
+/static/.DS_Store
+/Users/theostowell/theostowell.me/static/.DS_Store
