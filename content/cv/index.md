@@ -6,11 +6,11 @@ ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ---
-Content writer specialising in topics including technology, productivity, knowledge management and lifestyle (500,000+ words published, 150,000+ reads), with experience crafting website copy and social media CTAs for online-centric businesses. Former conservation volunteer for over 5 years, collecting avian high tide roost numbers used used in RSPB reports. Zoology graduate from Top-5 UK university (UoSheffield, as per the Guardian, 2023) including a 1st-class literature review on UK beaver reintroduction.
+Content writer specialising in topics including technology, productivity, knowledge management and lifestyle (500,000+ words published, 150,000+ reads), with experience crafting website copy and social media CTAs for online-centric businesses. Former conservation volunteer for over 5 years, collecting avian high tide roost data used used in an RSPB report. Zoology graduate from Top-5 UK university (UoSheffield, as per *The Guardian*, 2023) including a 1st-class literature review on beaver reintroduction efforts in the UK.
 
 ## Education
 
-**2022 - 2025**: Bachelor's Degree in **Zoology** at **The University of Sheffield** including 1st class literature review *Assessing the reintroduction of the Eurasian Beaver (Castor fiber) across Britain* (Overall Grade Classification Pending)
+**2022 - 2025**: Bachelor's Degree in **Zoology** at **The University of Sheffield** including 1st class literature review *Assessing the reintroduction of the Eurasian Beaver (Castor fiber) across Britain* (Overall Grade Classification Expected 11 July 2025)
 
 **2020 - 2022**: A-Levels in **Biology**, **Mathematics**, **Photography** and **Physics** at **Castle School Sixth Form** (Grades A*AAA Respectively)
 
@@ -50,8 +50,8 @@ Continued weekly writing, filming and publication of a personal blog/newsletter,
 
 ### Digital Skills
 
-Very high literacy in any standard digital environment; entry-level R competency for stats, using RStudio; highly competent use of creative tools such as Adobe Photoshop and Adobe Lightroom; real-world experience commercial marketing and web design tools such as Google Analytics, Google Search Console, Kit (fmr. ConvertKit) and WordPress.
+Very high literacy in any standard digital environment; entry-level R competency for stats, using RStudio; highly competent use of creative tools such as Adobe Photoshop, Lightroom and Premiere Pro for photo and video editing; real-world experience using commercial marketing and web design tools such as Google Analytics, Google Search Console, Kit (fmr. ConvertKit) and WordPress.
 
 ### Characteristics
 
-High agency, committed, encouraging, takes the initiative, calm, present and optimistic.
+High-agency, committed, encouraging, takes the initiative, calm, present and optimistic.
