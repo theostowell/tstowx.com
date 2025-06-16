@@ -5,10 +5,9 @@ ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ---
+I'm Theo. At the moment, I'm transitioning out of full-time education at the University of Sheffield, looking to work full time on projects that I love.
 
-I'm Theo. [At the moment](https://theostowell.me/about#now), I'm transitioning out of full-time education at the University of Sheffield, looking to work full time on projects that I love.
-
-Right back at the start of my degree, in 2023, I started sharing my growing ideas around productivity and knowledge management to a small online audience. This grew and grew, and I kept sharing. Before long, I'd built a business, called [PARAZETTEL](https://parazettel.com) around this.
+Right back at the start of my degree, in 2023, I started sharing my growing ideas around productivity and knowledge management to a small online audience. This grew and grew, and I kept sharing. Before long, I'd built a business around this, called [PARAZETTEL](https://parazettel.com).
 
 Now I'm looking to maintain this business, but I need new ways to learn new ideas around knowledge management. That's why I've started to move out into the freelance content-writing field.
 
@@ -17,6 +16,10 @@ Now I'm looking to maintain this business, but I need new ways to learn new idea
 ## What I'm working on now...
 
 This section, inspired by [Derek Sivers](https://nownownow.com/about), is a place for me to share what I'm doing at the moment. I've started doing this in a journal-style timeline, to make it easier to follow along with:
+
+**2025-06-16** - I sat my final university exam last Friday. As of right now, for the first time in my life, there's nothing concrete on the horizon. It's a little alarming, but I'm very excited for what's to come!
+
+•
 
 **2025-05-28** - As I mentioned in the previous point, there have been changes happening around here. As of today I've pretty much finished changing things from a publication-centric website to a personal portfolio/brand website. Fundamentalised lives on [as a Substack](https://www.fundamentalised.com), which hopefully should help its growth through the community features.
 
