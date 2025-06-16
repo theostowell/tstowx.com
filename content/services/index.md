@@ -10,15 +10,23 @@ I'm an all-round creative and marketer, and can provide any related service for 
 
 ---
 
-**Email marketing** - Founding [PARAZETTEL](https://parazettel.com), I built an education business from the ground up, through organic written content and later video content. 
+## Email Marketing
+
+Founding [PARAZETTEL](https://parazettel.com), I built an education business from the ground up, through organic written content and later video content. 
 
 Despite this, the business wouldn't have gotten to where it is today if it wasn't for email marketing. Making use of my followers' inboxes allowed me to gain access to what a select handful of eager volunteers thought about the product pre-release, and integrate their changes, before having a successful first launch back in September 2023 ([read the highlights of this first email marketing sequence here](https://drive.proton.me/urls/XPM3HCC5R8#NKg7ByvLvvq5)).
+
+Our first launch, using this sequence, was during the summer/autumn of 2023 with the actual launch weekend starting on Friday 15th and lasting until the end of Sunday 17th.
+
+The emails went to 145-160 people depending upon whether you look at the start/end of the weekend. Here are the results...
+
+![[CleanShot 2025-06-16 at 09.05.16@2x.png]]
 
 Over the time since then, I've upgraded and re-launched the PARAZETTEL for Obsidian vault two more times, because I believe in focusing on and improving what works, and earlier this year I launched
 
 ---
 
-Content Writing
+## Content Writing
 
 > *"So, which was more valuable to my life, the NYTimes Russia coverage or Theo’s article on tagging strategies in Obsidian? Obviously this tagging article."* - **Tony Stubblebine**, CEO @ Medium.com
 
@@ -26,8 +34,6 @@ Content Writing
 
 The outbound marketing for the above parazettel to gain leads, was primarily informational article writing on https://medium.com/@theostowell
 
-## Articles
-
-The article that the quote at the top of the page was written about is my most viewed on Medium, and can be found at the link here.
+The article that the quote at the top of the page was written about is my most viewed on Medium, and can be found at 
 
 ***give an image of the stats and numbers that this piece did.
