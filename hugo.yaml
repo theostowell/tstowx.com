@@ -49,12 +49,15 @@ menu:
     - name: "About"
       url: "/about/"
       weight: 1
+    - name: "Services & Portfolio"
+      url: "/services/"
+      weight: 2
     - name: "Essays"
       url: "/essays/"
-      weight: 2
+      weight: 3
     - name: "Newsletter"
       url: "https://www.fundamentalised.com/"
-      weight: 3
+      weight: 4
 
 privacy:
   x:
