@@ -20,7 +20,7 @@ Our first launch, using this sequence, was during the summer/autumn of 2023 with
 
 The emails went to 145-160 people depending upon whether you look at the start/end of the weekend. Here are the results...
 
-![[CleanShot 2025-06-16 at 09.05.16@2x.png]]
+![](/attachments/CleanShot 2025-06-16 at 09.05.16@2x.png)
 
 Over the time since then, I've upgraded and re-launched the PARAZETTEL for Obsidian vault two more times, because I believe in focusing on and improving what works, and earlier this year I launched
 
@@ -38,4 +38,4 @@ The article that the quote at the top of this section was written about is my mo
 
 And this piece returned the following stats...
 
-![[CleanShot 2025-06-16 at 09.12.13@2x.png]]
+![](/attachments/CleanShot 2025-06-16 at 09.12.13@2x.png)
