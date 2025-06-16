@@ -49,7 +49,7 @@ menu:
     - name: "About"
       url: "/about/"
       weight: 1
-    - name: "Services & Portfolio"
+    - name: "Services"
       url: "/services/"
       weight: 2
     - name: "Essays"
