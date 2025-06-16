@@ -34,6 +34,8 @@ Over the time since then, I've upgraded and re-launched the PARAZETTEL for Obsid
 
 The outbound marketing for the above parazettel to gain leads, was primarily informational article writing on https://medium.com/@theostowell
 
-The article that the quote at the top of the page was written about is my most viewed on Medium, and can be found at 
+The article that the quote at the top of this section was written about is my most viewed on Medium, and can be found at https://medium.com/obsidian-observer/supercharge-your-tagging-in-obsidian-with-the-secret-basb-bonus-chapter-ab68a92d2666.
 
-***give an image of the stats and numbers that this piece did.
+And this piece returned the following stats...
+
+![[CleanShot 2025-06-16 at 09.12.13@2x.png]]
