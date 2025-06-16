@@ -47,10 +47,10 @@ Right now I'm just outlining these two projects to get you up to speed with this
 
 ---
 
-When this section gets too long to read comfortably, I'm going to backlog it in [fundamentalised.com/journal](https://fundamentalised.com). There's nothing in there right now, rather this is a reminder to myself to get it done.
+When this section gets too long to read comfortably, I'm going to backlog it in [theostowell.me/journal](https://theostowell.me). There's nothing in there right now, rather this is a reminder to myself to get it done.
 
 Thanks for being here!
 
 -- Theo
 
-**P.S.** *You can reach out to me via email at [theo@fundamentalised.com](mailto:theo@fundamentalised.com). I'd be very happy to hear from you.*
+**P.S.** *You can reach out to me via email at [theo@theostowell.me](mailto:theo@theostowell.me). I'd be very happy to hear from you.*
