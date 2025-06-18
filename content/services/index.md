@@ -6,7 +6,7 @@ ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ---
-I'm an all-round creative and marketer, and can provide the following services for your business. Email theo@theostowell.me if you want any further information...
+I'm an all-round creative and marketer, and can provide the following services for your business. Email theo@theostowell.me if you want any further information (go to [tstowphoto.com](https://tstowphoto.com/) for photo and video services)...
 
 ---
 
@@ -71,5 +71,3 @@ Across both of these, as well as the Medium posting above, I've had to develop c
 ---
 
 Get in touch if any of the above is what your business is looking for. I'm at theo@theostowell.me and will respond within 24 hours.
-
-Have a look at [tstowphoto.com](https://tstowphoto.com) if the commercial photo and video side of social media is better related to the services you're after.
