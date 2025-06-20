@@ -2,10 +2,17 @@
 title: Curriculum Vitae
 draft: false
 hideFooter: true
+layout: redirect
 ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
+redirect_url: https://drive.proton.me/urls/1TVZGQ7ZAM#ZSoh996zl5VE
 ---
+
+<iframe src="/attachments/Curriculum Vitae.pdf" width="100%" height="600px">
+  This browser does not support PDFs. Please download the PDF to view it: <a href="/attachments/Curriculum Vitae.pdf">Download PDF</a>.
+</iframe>
+
 Content writer specialising in topics including technology, productivity, knowledge management and lifestyle (500,000+ words published, 150,000+ reads), with experience crafting website copy and social media CTAs for online-centric businesses. Former conservation volunteer for over 5 years, collecting avian high tide roost data used used in an RSPB report. Zoology graduate from Top-5 UK university (UoSheffield, as per *The Guardian*, 2023) including a 1st-class literature review on beaver reintroduction efforts in the UK.
 
 ## Education
