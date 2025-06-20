@@ -3,7 +3,7 @@ title: Curriculum Vitae
 draft: false
 hideFooter: true
 layout: redirect
-redirect_to: "https://drive.proton.me/urls/1TVZGQ7ZAM#ZSoh996zl5VE"
+redirect_to: "/attachments/Curriculum Vitae.pdf"
 ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
