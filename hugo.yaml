@@ -11,9 +11,9 @@ params:
   disableThemeToggle: true
   ShowFullTextinRSS: true
   images: ["/opengraph.png"]
-  description: "Theo Stowell is a writer and entrepreneur based in Reading, UK. On this site you can find an intro, short essays, links to services and products, and more..."
+  description: "Theo Stowell is a content/copy writer and marketer based in Reading, UK. On this site you can find an intro, short essays, links to services and products, and more..."
   HomeInfoParams:
-    Title: I'm Theo–a writer and entrepreneur based in Reading, UK
+    Title: I'm Theo–a writer and marketer based in Reading, UK
     Content: |
       For the last three years I've worked on projects like [PARAZETTEL](https://parazettel.com/?utm_source=theostowell.me&utm_medium=referral) and [Fundamentalised](https://fundamentalised.com/), using writing to educate and grow an audience. Now I'm looking to take these skills and apply them further to other opportunities. Head to [Services](/services) to learn more about what I can do for you, or read some short pieces here...
   assets:
