@@ -20,7 +20,9 @@ The emails went to 145-160 people depending upon whether you look at the start/e
 
 ![](/attachments/lemonsqueezypzlaunchstats.png)
 
-This created a return of £7.17 per subscriber minimum, well over the education industry standard of $1-3 per month per email subscriber. This was to an audience that didn't exist eight months prior, which was when I first started publishing on Medium
+This created a return of £7.17 per subscriber minimum, well over the education industry standard of $1-3 per month per email subscriber. This was to an audience that didn't exist eight months prior, when I first started writing.
+
+Currently the email marketing is majority automated, with the welcome/information sequence doing the heavy lifting in terms of building reputability and converting ([you can read it here](https://drive.proton.me/urls/MX4NCDKYZ0#Qnr50ftw3uWB)). There are also RSS automations that notify subscribers when new content hits the Medium account and YouTube channel.
 
 So how did I build this audience? Through informational content writing (a lot of it)...
 
