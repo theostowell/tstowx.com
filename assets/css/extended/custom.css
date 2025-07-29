@@ -186,3 +186,17 @@ body.list .main > * {
 .home-info .entry-content p:last-child {
     margin-bottom: 0;
 }
+
+/* Left-align social icons in home info */
+.home-info .entry-footer {
+    text-align: left;
+}
+
+/* Center-align footer content */
+.footer {
+    text-align: center;
+}
+
+.footer-newsletter-section {
+    text-align: center;
+}
