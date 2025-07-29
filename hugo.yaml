@@ -10,6 +10,7 @@ params:
   defaultTheme: light
   disableThemeToggle: true
   ShowFullTextinRSS: true
+  hideFooter: true
   images: ["/opengraph.png"]
   description: "Theo Stowell is a content/copy writer, photographer and marketer based in Bristol, UK. On this site you can find an intro, short essays, links to services and products, and more..."
   HomeInfoParams:

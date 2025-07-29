@@ -160,3 +160,20 @@ a {
 .social-icons a:hover {
     color: #000000;
 }
+
+/* Hide header on home page */
+body.list .header {
+    display: none;
+}
+
+/* Center home info content vertically */
+body.list .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+body.list .main > * {
+    width: 100%;
+}
