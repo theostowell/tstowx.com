@@ -171,9 +171,18 @@ body.list .main {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 90vh;
+    min-height: 0vh;
 }
 
 body.list .main > * {
     width: 100%;
+}
+
+/* Add spacing between paragraphs in home info */
+.home-info .entry-content p {
+    margin-bottom: 1rem;
+}
+
+.home-info .entry-content p:last-child {
+    margin-bottom: 0;
 }
