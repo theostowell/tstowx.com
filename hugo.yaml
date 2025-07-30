@@ -64,10 +64,10 @@ googleAnalytics: "G-4ZDR7MYMS3"
 
 menu:
   main:
-    - name: "Photo & Video"
+    - name: "Visual Media"
       url: "https://tstowphoto.com"
       weight: 1
-    - name: "Fundamentalised"
+    - name: "Newsletter"
       url: "https://www.fundamentalised.com/?utm_source=theostowell.me&utm_medium=referral"
       weight: 2
     - name: "PARAZETTEL"
