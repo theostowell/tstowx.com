@@ -15,19 +15,15 @@ params:
   HomeInfoParams:
     Title: I'm Theo–an entrepreneur and creator from the UK
     Content: |
-      For the last three years l've worked on projects like PARAZETTEL and Fundamentalised, using writing to educate and grow an audience.
+      For three years, I've built projects like [PARAZETTEL](https://parazettel.com/?utm_source=theostowell.me&utm_medium=referral) (teaching knowledge management and productivity) and [Fundamentalised](https://fundamentalised.com/?utm_source=theostowell.me&utm_medium=referral) (documenting my journey), growing audiences through writing, whilst completing my BSc in Zoology at Sheffield University.
+      
+      This September, I've got a flight booked to Thailand. The goal is to scale my businesses and connect with others doing similar work, taking advantage of Southeast Asia's strong remote work culture.
+      
+      I've also been [shooting photos and video](https://tstowphoto.com?utm_source=theostowell.me&utm_medium=referral) since childhood. Now it's mainly for commercial venues and events, though I still pursue wildlife, landscape, and urban photography when possible.
 
-      At the same time I was studying at the University of Sheffield, for a BSc in Zoology. Recently I graduated, and have booked a flight to Thailand for this September. 
+      I'm documenting this journey through the [Fundamentalised newsletter](https://fundamentalised.com?utm_source=theostowell.me&utm_medium=referral). Subscribe by going to the link or just give your email in the entry form below.
 
-      The goal out in Asia is to connect with people that will help me scale my businesses, feeding off the strong entrepreneurship and remote work culture that can be found there.
-
-      I've also been shooting photos and video from a very young age and continue to do this now, largely for commercial venues and events. 
-
-      Although I still maintain my love for wildlife, landscape and urban photography in general, and continue to shoot these whenever I get the chance.
-
-      I'm documenting this entire journey (and have been) in the Fundamentalised newsletter and will continue to tell the story whilst I'm travelling and working. If it's something you want keep up with, you can go directly to the newsletter, or supply your email in the entry box at the footer of this page.
-
-      Looking forward, I'm not sure how things are going to go. I've not travelled outside of Europe before, and my business isn't at a massive scale. But it's going to be interesting, and I'll learn a lot.
+      This is my first trip outside Europe and my business is still in the very early stages of growing, but I'm excited to experience new things and see where it leads.
 
       -- Theo
   assets:
@@ -68,18 +64,12 @@ googleAnalytics: "G-4ZDR7MYMS3"
 
 menu:
   main:
-    - name: "About"
-      url: "/about/"
+    - name: "Photo + Video"
+      url: "https://tstowphoto.com"
       weight: 1
-    - name: "Services"
-      url: "/services/"
-      weight: 2
-    - name: "Essays"
-      url: "/essays/"
-      weight: 3
     - name: "Newsletter"
-      url: "https://www.fundamentalised.com/"
-      weight: 4
+      url: "https://www.fundamentalised.com/?utm_source=theostowell.me&utm_medium=referral"
+      weight: 2
 
 privacy:
   x:
