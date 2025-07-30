@@ -1,6 +1,6 @@
 ---
 title: About Theo
-draft: false
+draft: true
 ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
