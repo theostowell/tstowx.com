@@ -15,13 +15,13 @@ params:
   HomeInfoParams:
     Title: I'm Theo–an entrepreneur and creator from the UK
     Content: |
-      For three years, I've built projects like [PARAZETTEL](https://parazettel.com/?utm_source=theostowell.me&utm_medium=referral) (teaching knowledge management and productivity) and [Fundamentalised](https://fundamentalised.com/?utm_source=theostowell.me&utm_medium=referral) (documenting my journey), growing audiences through writing, whilst completing my BSc in Zoology at Sheffield University.
+      For three years, I've built projects like [PARAZETTEL](https://parazettel.com/?utm_source=theostowell.me&utm_medium=referral) (teaching note-taking and productivity) and [Fundamentalised](https://fundamentalised.com/?utm_source=theostowell.me&utm_medium=referral) (documenting progress and lessons), growing an online audience through writing, whilst completing my BSc in Zoology at the University of Sheffield.
       
-      This September, I've got a flight booked to Thailand. The goal is to scale my businesses and connect with others doing similar work, taking advantage of Southeast Asia's strong remote work culture.
+      And this summer I graduated, so I've booked a flight booked to Thailand in September. The goal is to scale my businesses and connect with others doing similar things, taking advantage of Southeast Asia's strong remote work culture.
       
       I've also been [shooting photos and video](https://tstowphoto.com?utm_source=theostowell.me&utm_medium=referral) since childhood. Now it's mainly for venues and events, though I still pursue wildlife and landscape photography (my first creative loves) when possible.
 
-      This journey's most comprehensive documentation will be in the [Fundamentalised newsletter](https://fundamentalised.com?utm_source=theostowell.me&utm_medium=referral). Subscribe by going to the link or just give your email in the entry form below. You can also go to the socials for more specific content (IG for photos, X for words etc.).
+      This journey's most comprehensive documentation will be in the [Fundamentalised newsletter](https://fundamentalised.com?utm_source=theostowell.me&utm_medium=referral). Subscribe by going to the link or just give your email in the entry form below. You can also go to the socials for shorter stuff.
 
       This is my first trip outside Europe and my business is still in the very early stages of growing, but I'm excited to experience new things and see where it leads.
 
@@ -64,12 +64,15 @@ googleAnalytics: "G-4ZDR7MYMS3"
 
 menu:
   main:
-    - name: "Photo + Video"
+    - name: "Photo & Video"
       url: "https://tstowphoto.com"
       weight: 1
-    - name: "Newsletter"
+    - name: "Fundamentalised"
       url: "https://www.fundamentalised.com/?utm_source=theostowell.me&utm_medium=referral"
       weight: 2
+    - name: "PARAZETTEL"
+      url: "https://parazettel.com"
+      weight: 3
 
 privacy:
   x:
