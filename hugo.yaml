@@ -64,7 +64,7 @@ googleAnalytics: "G-4ZDR7MYMS3"
 
 menu:
   main:
-    - name: "Visual Media"
+    - name: "Portfolio"
       url: "https://tstowphoto.com"
       weight: 1
     - name: "Newsletter"
