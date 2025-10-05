@@ -1,39 +1,45 @@
 {{- if and (not (.Param "hideFooter")) (ne .Layout "404") }}
 <footer class="footer" style="text-align: center; padding-top: 2.5rem;">
     <div class="footer-newsletter-section" style="max-width: 600px; margin: 0 auto;">
-        <h1 style="margin-bottom: 0.5rem;">Subscribe to the <a href="https://fundamentalised.substack.com/">Fundamentalised newsletter</a>...</h1>
-        <p style="margin-bottom: 1.5rem;">As well as the short essays on this site, I publish a newsletter about what I've been doing, and the lessons I've been learning...</p>
-        <div id="custom-substack-embed" style="margin-bottom: 0.5rem;"></div>
-    </div>
-    <script>
-        window.CustomSubstackWidget = {
-            substackUrl: "fundamentalised.substack.com",
-            placeholder: "Email address...",
-            buttonText: "Subscribe",
-            theme: "custom",
-            colors: {
-                primary: "#000000",
-                input: "#FFFFFF",
-                email: "#000000",
-                text: "#FFFFFF",
-            }
-        };
-    </script>
-    <script src="https://substackapi.com/widget.js" async></script>
-    <div>
-        <span class="copyright">&copy; {{ now.Year }} Theo Stowell</span>
-    </div>
-</footer>
-{{- end }}
+        <section class="newsletter-section" style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <h2 style="margin-bottom: 0.5rem; font-size: 1.5rem; font-weight: 600;">
+                Subscribe to the 
+                <a href="https://fundamentalised.substack.com/" target="_blank" rel="noopener" style="color: inherit;">
+                    Fundamentalised newsletter
+                </a>
+            </h2>
+            <p style="margin-bottom: 1.5rem; color: #555; font-size: 1.05rem;">
+                In addition to the short essays on this site, I publish a newsletter about what I've been doing and the lessons I've been learning. Join for deeper insights and updates!
+            </p>
+            <div id="custom-substack-embed" style="margin-bottom: 0.5rem;"></div>
+            <div data-supascribe-embed-id="81241532914" data-supascribe-subscribe style="margin-bottom: 1.5rem;"></div>
+        </section>
 
-{{- if (not site.Params.disableScrollToTop) }}
-<div>
-    <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g" style="text-align: center; display: block; margin: 0 auto;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-            <path d="M12 6H0l6-6z" />
-        </svg>
-    </a>
-</div>
+        <!-- Supascribe Script -->
+        <script src="https://js.supascribe.com/v1/loader/0MUY7feAFJOFq9Bm3HsyDx8RKi92.js" async></script>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <span class="copyright" style="color: #888; font-size: 0.95rem;">
+                &copy; {{ now.Year }} Theo Stowell
+            </span>
+        </div>
+
+        {{- if (not site.Params.disableScrollToTop) }}
+        <div style="text-align: center; margin-top: 1rem;">
+            <a href="#top"
+               aria-label="Go to top"
+               title="Go to Top (Alt + G)"
+               class="top-link"
+               id="top-link"
+               accesskey="g"
+               style="display: inline-block;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor" width="32" height="16">
+                    <path d="M12 6H0l6-6z" />
+                </svg>
+            </a>
+        </div>
+        {{- end }}
+    </footer>
 {{- end }}
 
 {{- partial "extend_footer.html" . }}
