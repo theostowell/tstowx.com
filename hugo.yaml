@@ -1,4 +1,4 @@
-baseURL: 'https://theostowell.me/'
+baseURL: 'https://tstowx.com/'
 languageCode: 'en-gb'
 title: 'Theo Stowell'
 theme: PaperMod
@@ -15,17 +15,17 @@ params:
   HomeInfoParams:
     Title: I'm Theo–a serial creator and entrepreneur from the UK, now living and travelling in Southeast Asia
     Content: |
-      For three years, I've built projects like [PARAZETTEL](https://parazettel.com/?utm_source=theostowell.me&utm_medium=referral) (teaching note-taking and productivity) and [Fundamentalised](https://fundamentalised.com/?utm_source=theostowell.me&utm_medium=referral) (documenting progress and lessons), growing an online audience through writing, whilst completing my BSc in Zoology at the University of Sheffield.
+      For three years, I've built projects like [PARAZETTEL](https://parazettel.com/?utm_source=tstowx.com&utm_medium=referral) (teaching note-taking and productivity) and [Fundamentalised](https://fundamentalised.com/?utm_source=tstowx.com&utm_medium=referral) (documenting progress and lessons), growing an online audience through writing, whilst completing my BSc in Zoology at the University of Sheffield.
       
       And this summer I graduated, so in September, I jumped on a one-way flight to Thailand. 
       
       As of writing this (5th October 2025), I'm still here. The goal is to scale my businesses and connect with others doing similar things, taking advantage of Southeast Asia's strong remote work culture.
       
-      I've also been [shooting photos and video](https://tstowphoto.com?utm_source=theostowell.me&utm_medium=referral) since childhood. Now it's mainly for venues and events, though I still pursue wildlife and landscape photography (my first creative loves) when possible. 
+      I've also been [shooting photos and video](https://tstowphoto.com?utm_source=tstowx.com&utm_medium=referral) since childhood. Now it's mainly for venues and events, though I still pursue wildlife and landscape photography (my first creative loves) when possible. 
       
       Out here, though, it's more city life and other street topics that gain the most of my attention.
 
-      This journey's most comprehensive documentation will be in the [Fundamentalised newsletter (now travel blog really)](https://fundamentalised.com?utm_source=theostowell.me&utm_medium=referral). 
+      This journey's most comprehensive documentation will be in the [Fundamentalised newsletter (now travel blog really)](https://fundamentalised.com?utm_source=tstowx.com&utm_medium=referral). 
       
       Subscribe by going to the link or just give your email in the entry form at the bottom of this page. You can also go to the socials for shorter stuff - I've started posting reels (infrequently) on Instagram, and have been trying to keep a few other places updated now and again too.
 
@@ -78,7 +78,7 @@ menu:
       url: "https://tstowphoto.com"
       weight: 1
     - name: "Newsletter"
-      url: "https://www.fundamentalised.com/?utm_source=theostowell.me&utm_medium=referral"
+      url: "https://www.fundamentalised.com/?utm_source=tstowx.com&utm_medium=referral"
       weight: 2
     - name: "PARAZETTEL"
       url: "https://parazettel.com"
