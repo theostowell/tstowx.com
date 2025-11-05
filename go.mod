@@ -1,4 +1,4 @@
-module github.com/theostowell/fundamentalised
+module github.com/theostowell/tstowx
 
 go 1.23
 
