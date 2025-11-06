@@ -274,3 +274,80 @@ body.list .main > * {
     color: #333;
     text-decoration: none;
 }
+
+/* Essays vertical layout */
+.essays-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.essays-full-width-header {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.essays-full-width-header h1 {
+    margin-bottom: 1rem;
+}
+
+.essays-full-width-header .post-description {
+    font-size: 1.1rem;
+    color: var(--secondary);
+}
+
+.essays-vertical-list {
+    width: 100%;
+    display: block;
+}
+
+.essay-year-group {
+    margin-bottom: 3rem;
+}
+
+.essay-year-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #000000;
+    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.essay-month-group {
+    margin-bottom: 2rem;
+}
+
+.essay-month-heading {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.essay-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.essay-list-item {
+    margin-bottom: 1.25rem;
+}
+
+.essay-list-item a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 1.65rem;
+}
+
+.essay-list-item a:hover {
+    text-decoration: underline;
+}
+
+.essay-list-item .essay-meta {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--secondary);
+}

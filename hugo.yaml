@@ -80,8 +80,8 @@ menu:
     - name: "Portfolio"
       url: "https://tstowphoto.com"
       weight: 1
-    - name: "Newsletter"
-      url: "https://www.fundamentalised.com/?utm_source=tstowx.com&utm_medium=referral"
+    - name: "Essays"
+      url: "/essays"
       weight: 2
     - name: "PARAZETTEL"
       url: "https://parazettel.com"
