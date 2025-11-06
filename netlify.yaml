@@ -9,3 +9,9 @@ context:
   production:
     environment:
       GO_VERSION: "1.23"
+
+redirects:
+  - from: /fundamentalised
+    to: https://buttondown.com/tstowx/archive
+    status: 301
+    force: true
