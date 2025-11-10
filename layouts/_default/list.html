@@ -42,6 +42,10 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
+{{- if .IsHome }}
+{{- partial "recent_essays.html" . }}
+{{- end }}
+
 {{- if not .IsHome }}
 {{- $pages := union .RegularPages .Sections }}
 

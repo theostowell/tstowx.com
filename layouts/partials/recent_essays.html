@@ -1,0 +1,23 @@
+{{- $essays := where site.RegularPages "Section" "essays" | first 5 }}
+{{- if $essays }}
+<div class="recent-essays-section">
+  <header class="recent-essays-header">
+    <h2>Recent Essays</h2>
+  </header>
+
+  <ul class="essay-list">
+    {{- range $essays }}
+    <li class="essay-list-item">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <div class="essay-meta">
+        {{- partial "post_meta.html" . -}}
+      </div>
+    </li>
+    {{- end }}
+  </ul>
+
+  <div class="view-more-container">
+    <a href="/essays/" class="view-more-button">View more essays</a>
+  </div>
+</div>
+{{- end }}
