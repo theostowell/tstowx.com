@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.24)  18 JUN 2025 12:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.24)  11 NOV 2025 13:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -747,8 +747,6 @@ Package hyperref Info: Link coloring ON on input line 80.
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.
 fd)
-(/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd
-)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 ) [1
 
@@ -756,24 +754,23 @@ fd)
 al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/loca
 l/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local
 /texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/loca
-l/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}{/usr/local
-/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}]
-Underfull \hbox (badness 10000) in alignment at lines 180--180
+l/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}]
+Underfull \hbox (badness 10000) in alignment at lines 179--179
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 185--185
+Underfull \hbox (badness 10000) in alignment at lines 184--184
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 190--190
+Underfull \hbox (badness 10000) in alignment at lines 189--189
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 195--195
+Underfull \hbox (badness 10000) in alignment at lines 194--194
 [][]
  []
 
@@ -789,11 +786,11 @@ Package logreq Info: Writing requests to '"Curriculum Vitae".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20566 strings out of 474181
- 374584 string characters out of 5745946
+ 20547 strings out of 474181
+ 374033 string characters out of 5745946
  1944457 words of memory out of 5000000
- 42642 multiletter control sequences out of 15000+600000
- 563944 words of font info for 55 fonts, out of 8000000 for 9000
+ 42628 multiletter control sequences out of 15000+600000
+ 563636 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,11n,81p,1207b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
@@ -807,10 +804,10 @@ pe1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
 public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pu
 blic/cm-super/sfrm2488.pfb>
-Output written on "Curriculum Vitae.pdf" (2 pages, 161431 bytes).
+Output written on "Curriculum Vitae.pdf" (2 pages, 161858 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 112 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
