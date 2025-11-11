@@ -11,6 +11,12 @@ The now page is where I give updates on what I've been doing. The front page is 
 
 So here's the now page, as inspired by [Derek Sivers](). It's going to be like a public diary for me.
 
----
+•••
 
-I've been working very hard, have lived in Da Nang for a month now. In a couple of weeks, I'm going to be heading to China to meet a friend, going to Macau, Hong Kong and a few places further inland.
+**2025-11-11**: Okay so I've been in Da Nang for around a month now. I've refactored [tstowx.com](https://tstowx.com) and the personal brand a little bit.
+
+We've stopped Fundamentalised so that publishing personal stuff feels a little bit more natural, and I do more of it.
+
+The business was neglected 😭 a little bit when I first arrived here, but in the last couple of weeks I've really dialled in getting the [new website](https://parazettel.com) set up, along with the new funnel for the community and upstream cohort.
+
+Am planning to head to China in just about a week, and before this I'll spend a couple of days in Hanoi, which I think will be cool. After this, I don't know what will happen. It depends largely on the cohort and its success.
