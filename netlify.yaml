@@ -12,6 +12,10 @@ context:
 
 redirects:
   - from: /fundamentalised
-    to: https://buttondown.com/tstowx/archive
+    to: https://buttondown.com/tstowx/archive/
+    status: 301
+    force: true
+  - from: /fundamentalised/
+    to: https://buttondown.com/tstowx/archive/
     status: 301
     force: true
