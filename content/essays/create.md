@@ -1,6 +1,6 @@
 ---
 title: Create, create, create
-date: 2025-05-21
+date: 2025-10-05
 draft: false
 hideFooter: false
 ShowShareButtons: true
