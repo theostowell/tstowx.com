@@ -14,11 +14,11 @@ params:
   disableThemeToggle: true
   ShowFullTextinRSS: true
   images: ["/opengraph.png"]
-  description: "Theo Stowell is a content/copy writer, photographer and marketer based in Bristol, UK. On this site you can find an intro, short essays, links to services and products, and more..."
+  description: Theo Stowell - Entrepreneur and serial creator
   HomeInfoParams:
     Title: Entrepreneur and serial creator
     Content: |
-      I'm Theo - recently graduated (BSc Zoology), now travelling Southeast Asia building PARAZETTEL, an info-business I started at the same time as studying the degree.
+      I'm Theo - recently graduated (BSc Zoology), now travelling Southeast Asia building [PARAZETTEL](https://parazettel.com), an info-business I started whilst I was studying.
 
       Now, at the same time as growing the business, I'm writing essays, making videos and sending emails (after discontinuing [Fundamentalised](https://tstowx.com/fundamentalised), my newsletter of two-and-a-half years). You can read some of the more polished work on this website, by scrolling below.
 
