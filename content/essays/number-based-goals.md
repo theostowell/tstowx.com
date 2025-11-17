@@ -1,5 +1,5 @@
 ---
-title: On receiving hate
+title: The real reason why you set number-based goals
 date: 2023-10-21
 draft: false
 hideFooter: false
