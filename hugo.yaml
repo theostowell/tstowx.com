@@ -48,7 +48,7 @@ params:
   ShowBreadCrumbs: true
   ScrollToTop: false
   mainSections:
-    - essays
+    - writing
   customCSS:
     - css/extended/custom.css
   env: production

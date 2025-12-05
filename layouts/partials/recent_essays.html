@@ -1,8 +1,8 @@
-{{- $essays := where site.RegularPages "Section" "essays" | first 5 }}
+{{- $essays := where site.RegularPages "Section" "writing" | first 5 }}
 {{- if $essays }}
 <div class="recent-essays-section">
   <header class="recent-essays-header">
-    <h2>Recent Essays</h2>
+    <h2>Recent Writing</h2>
   </header>
 
   <ul class="essay-list">
@@ -17,7 +17,7 @@
   </ul>
 
   <div class="view-more-container">
-    <a href="/essays/" class="view-more-button">View more essays</a>
+    <a href="/writing/" class="view-more-button">View more writing</a>
   </div>
 </div>
 {{- end }}
