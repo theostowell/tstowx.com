@@ -30,20 +30,16 @@ params:
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/safari-pinned-tab.svg"
   SocialIcons:
-    - name: 'X'
-      url: 'https://x.com/fundamentalised'
-      icon: 'fab fa-x'
-      target: '_blank'
     - name: 'LinkedIn'
-      url: 'https://www.linkedin.com/in/theostowell'
+      url: 'https://www.linkedin.com/in/tstowx'
       icon: 'fab fa-linkedin'
       target: '_blank'
     - name: 'YouTube'
-      url: 'https://www.youtube.com/@theostowell'
+      url: 'https://www.youtube.com/@tstowx'
       icon: 'fab fa-youtube'
       target: '_blank'
     - name: 'Instagram'
-      url: 'https://www.instagram.com/theostowell'
+      url: 'https://www.instagram.com/tstowx'
       icon: 'fab fa-instagram'
       target: '_blank'
   ShowShareButtons: false
@@ -57,17 +53,15 @@ params:
     - css/extended/custom.css
   env: production
 
-googleAnalytics: "G-4ZDR7MYMS3"
-
 menu:
   main:
     - name: "/now"
       url: "/now"
       weight: 1
-    - name: "Essays"
-      url: "/essays"
+    - name: "Writing"
+      url: "/writing"
       weight: 2
-    - name: "Portfolio"
+    - name: "Photos"
       url: "https://tstowphoto.com"
       weight: 3
     - name: "PARAZETTEL"
