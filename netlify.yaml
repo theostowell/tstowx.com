@@ -11,6 +11,10 @@ context:
       GO_VERSION: "1.23"
 
 redirects:
+  - from: /essays/*
+    to: /writing/:splat
+    status: 301
+    force: true
   - from: /fundamentalised
     to: https://buttondown.com/tstowx/archive/
     status: 301
