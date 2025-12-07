@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
+/* Prevent horizontal scrollbar from full-bleed elements */
+html, body {
+    overflow-x: hidden;
+}
+
 .footer-newsletter-section {
     position: relative;
     max-width: 100%;
@@ -396,6 +401,83 @@ body.list .main > * {
     color: white;
 }
 
+/* Recent photos section on home page */
+.recent-photos-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.recent-photos-header {
+    margin-bottom: 2rem;
+}
+
+.recent-photos-header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.recent-photos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.recent-photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.recent-photo-item a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.recent-photo-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.recent-photo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recent-photo-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    width: 100%;
+}
+
+.recent-photo-title h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .recent-photos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recent-photo-image {
+        height: 250px;
+    }
+}
+
 /* Photos section styles */
 .photos-container {
     display: flex;
@@ -431,6 +513,7 @@ body.list .main > * {
     position: relative;
     overflow: hidden;
     display: block;
+    border-radius: 4px;
 }
 
 .photo-grid-uniform-item a {
@@ -475,33 +558,23 @@ body.list .main > * {
 .photo-page-container {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
 }
 
 .photo-page-container .page-header {
-    max-width: var(--main-width);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--gap);
-    padding-right: var(--gap);
-    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .photo-page-container .post-content {
-    max-width: var(--main-width);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--gap);
-    padding-right: var(--gap);
-    width: 100%;
+    margin-bottom: 1rem;
 }
 
 /* Justified gallery styles */
 #gallery {
     margin-top: 2rem;
     margin-bottom: 4rem;
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     padding-left: 0;
     padding-right: 0;
 }

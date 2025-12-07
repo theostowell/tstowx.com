@@ -1,5 +1,6 @@
 ---
-title: "Gallery"
+title: "Galleries"
 date: 2024-12-19
-description: "Some pages with images around wider topic"
+description: "Images categorised by subject, rather than by specific project..."
+images: ["/opengraph-photos.png"]
 ---
