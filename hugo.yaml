@@ -62,7 +62,7 @@ menu:
       url: "/writing"
       weight: 2
     - name: "Photos"
-      url: "https://tstowphoto.com"
+      url: "/photos"
       weight: 3
     - name: "PARAZETTEL"
       url: "https://parazettel.com"

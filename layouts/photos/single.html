@@ -1,0 +1,74 @@
+{{- define "main" }}
+<div class="photo-page-container">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+  {{- end }}
+
+  {{- $images := .Resources.Match "*.jpg" }}
+  {{- if gt (len $images) 0 }}
+  <div id="gallery" style="visibility: hidden; height: 1px; overflow: hidden">
+    {{- range $images }}
+    <div class="gallery-item">
+      <a href="{{ .Permalink }}" class="lightbox-trigger">
+        <img src="{{ .Permalink }}" alt="{{ .Name }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
+      </a>
+    </div>
+    {{- end }}
+  </div>
+
+  {{- /* Lightbox container */ -}}
+  <div id="lightbox" class="lightbox" style="display: none;">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <script src="/js/justified-gallery.js"></script>
+  <script>
+    // Lightbox functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxClose = document.querySelector('.lightbox-close');
+      const triggers = document.querySelectorAll('.lightbox-trigger');
+
+      triggers.forEach(trigger => {
+        trigger.addEventListener('click', function(e) {
+          e.preventDefault();
+          lightbox.style.display = 'flex';
+          lightboxImg.src = this.href;
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.style.display = 'none';
+      }
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox || e.target === lightboxImg) {
+          closeLightbox();
+        }
+      });
+
+      // Bind escape key to close lightbox
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+          closeLightbox();
+        }
+      });
+    });
+  </script>
+  {{- end }}
+</div>
+{{- end }}

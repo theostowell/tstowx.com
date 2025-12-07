@@ -395,3 +395,194 @@ body.list .main > * {
     border-color: #333;
     color: white;
 }
+
+/* Photos section styles */
+.photos-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.photos-header {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.photos-header h1 {
+    margin-bottom: 1rem;
+}
+
+.photos-header .post-description {
+    font-size: 1.1rem;
+    color: var(--secondary);
+}
+
+/* Uniform grid for list pages (project/gallery thumbnails) */
+.photo-grid-uniform {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.photo-grid-uniform-item {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.photo-grid-uniform-item a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.photo-grid-uniform-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo-grid-uniform-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-grid-uniform-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    width: 100%;
+}
+
+.photo-grid-uniform-title h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* Individual photo page styles */
+.photo-page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.photo-page-container .page-header {
+    max-width: var(--main-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+    width: 100%;
+}
+
+.photo-page-container .post-content {
+    max-width: var(--main-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+    width: 100%;
+}
+
+/* Justified gallery styles */
+#gallery {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.gallery-item {
+    position: absolute;
+    overflow: hidden;
+}
+
+.gallery-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+    color: #bbb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .photo-grid-uniform {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 0.75rem;
+    }
+
+    .photo-grid-uniform-image {
+        height: 250px;
+    }
+
+    .lightbox-close {
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-grid-uniform {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+}
