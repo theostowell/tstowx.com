@@ -13,6 +13,8 @@ So here's the now page, as inspired by [Derek Sivers](). It's going to be like a
 
 •••
 
+**2025-12-14**: It's the weekend of pre-order launch for my book [Minimal Note-Taking](https://parazettel.com/book) that's now upcoming. Have been working hard on this right now, and have also decided to sort out some volunteering so that I don't have to spend as much money on living whilst I'm out in Asia right at the starting point of my business.
+
 **2025-12-05**: Spent the last fortnight in China. It was great, but again, work on the business was waylaid, so now I'm back in Bangkok, ready to dial in for the last month of the year.
 
 There's a Skool event a few days before Christmas, so I'm here until then at least, but then I'm going to try and save some money, so will look for volunteering opportunities on Worldpackers. 
