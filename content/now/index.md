@@ -7,9 +7,9 @@ ShowReadingTime: false
 ShowBreadCrumbs: true
 ---
 
-The now page is where I give updates on what I've been doing. The front page is great, but it gets very outdated, very quickly.
+The **/now** page is where I give updates on what I've been doing. The front page is great, but it gets very outdated, very quickly.
 
-So here's the now page, as inspired by [Derek Sivers](). It's going to be like a public diary for me.
+So here's an alternative solution, as inspired by [Derek Sivers](). It's going to be like a public diary for me.
 
 •••
 
