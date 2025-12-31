@@ -8,7 +8,7 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ---
 
-*[Read my piece 'If not now, then when?' that I wrote the other day but forgot to share!](https://tstowx.com/writing/if-not-know-then-when)*
+*[Read my piece 'If not now, then when?' that I wrote the other day but forgot to share!](https://tstowx.com/writing/if-not-now-then-when)*
 
 Here's to not beating around the bush. Because I couldn't think of anything profound to start with, these are some things (out of everything in the world) that I've liked this year...
 
