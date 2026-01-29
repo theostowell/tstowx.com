@@ -659,3 +659,89 @@ body.list .main > * {
         gap: 0.75rem;
     }
 }
+
+/* CTA Button in Header Menu */
+#menu li:has(.cta-button) {
+    display: flex;
+    align-items: center;
+}
+
+#menu .cta-button {
+    display: inline-block;
+    padding: 0.6rem 0.9rem;
+    background: #000;
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    line-height: 1.2;
+}
+
+#menu .cta-button:hover {
+    background: #333;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+#menu .cta-button span {
+    color: white !important;
+}
+
+/* Signup form styles */
+.signup-form {
+    max-width: 400px;
+    margin: 2rem 0;
+}
+
+.signup-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.signup-form input[type="text"]:focus,
+.signup-form input[type="email"]:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+.signup-submit-button {
+    background-color: #000;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.signup-submit-button:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.signup-note {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: #666;
+    font-style: italic;
+}

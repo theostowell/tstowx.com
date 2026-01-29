@@ -55,17 +55,17 @@ params:
 
 menu:
   main:
-    - name: "/now"
-      url: "/now"
-      weight: 1
     - name: "Writing"
       url: "/writing"
-      weight: 2
+      weight: 1
     - name: "Photos"
       url: "/photos"
-      weight: 3
+      weight: 2
     - name: "PARAZETTEL"
       url: "https://parazettel.com"
+      weight: 3
+    - name: "Signup"
+      url: "/signup"
       weight: 4
 
 privacy:
