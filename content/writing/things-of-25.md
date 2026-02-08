@@ -20,7 +20,7 @@ Here's to not beating around the bush. Because I couldn't think of anything prof
    
    Here's mine...
 
-![](attachments/PNG image-43BF-9513-E1-0.png)
+![Flighty app stats](/attachments/PNG%20image-43BF-9513-E1-0.png)
   
 5. Onwardticket.com: Again, travel-related (sorry). This came in clutch when I was standing at the check-in desk a couple of hours before my first flight to Vietnam.
    
@@ -94,4 +94,4 @@ Wants and priorities may change, of course, but that's for future Theo to figure
 
 For now, I'm sitting with the gratitude. Bring on 2026 -- 2025 Theo is over and out!
 
-![](static/attachments/Selfie 2025-12-31 at 21.19.11.png)
+![Selfie from 2025](/attachments/Selfie%202025-12-31%20at%2021.19.11.png)
