@@ -635,6 +635,23 @@ body.list .main > * {
     color: #bbb;
 }
 
+.lightbox-download {
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    color: #f1f1f1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 10000;
+}
+
+.lightbox-download:hover {
+    color: #bbb;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .photo-grid-uniform {
@@ -650,6 +667,11 @@ body.list .main > * {
         top: 10px;
         right: 20px;
         font-size: 30px;
+    }
+
+    .lightbox-download {
+        top: 14px;
+        right: 55px;
     }
 }
 
