@@ -42,6 +42,9 @@ params:
       url: 'https://www.instagram.com/tstowx'
       icon: 'fab fa-instagram'
       target: '_blank'
+    - name: 'Substack'
+      url: 'https://substack.com/@tstowx'
+      target: '_blank'
   ShowShareButtons: false
   ShowPostNavLinks: false
   ShowReadingTime: true
