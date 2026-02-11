@@ -620,36 +620,33 @@ body.list .main > * {
     object-fit: contain;
 }
 
-.lightbox-close {
+.lightbox-toolbar {
     position: absolute;
-    top: 20px;
-    right: 40px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.lightbox-close:hover,
-.lightbox-close:focus {
-    color: #bbb;
-}
-
-.lightbox-download {
-    position: absolute;
-    top: 20px;
-    right: 90px;
-    color: #f1f1f1;
-    cursor: pointer;
+    top: 0;
+    right: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+    gap: 0;
     z-index: 10000;
 }
 
-.lightbox-download:hover {
-    color: #bbb;
+.lightbox-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: #f1f1f1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.lightbox-button:hover {
+    opacity: 1;
+    color: #fff;
 }
 
 /* Responsive adjustments */
@@ -663,15 +660,14 @@ body.list .main > * {
         height: 250px;
     }
 
-    .lightbox-close {
-        top: 10px;
-        right: 20px;
-        font-size: 30px;
+    .lightbox-button {
+        width: 44px;
+        height: 44px;
     }
 
-    .lightbox-download {
-        top: 14px;
-        right: 55px;
+    .lightbox-button svg {
+        width: 26px;
+        height: 26px;
     }
 }
 
