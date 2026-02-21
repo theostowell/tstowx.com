@@ -210,7 +210,7 @@ body.list .main > * {
 /* Buttondown form styling */
 .embeddable-buttondown-form {
     background-color: #EEE;
-    padding: 1.25rem;
+    padding: 1.25rem 1.25rem 0;
     border-radius: 8px;
     max-width: 500px;
     margin: 0 auto;
@@ -218,7 +218,7 @@ body.list .main > * {
 
 .embeddable-buttondown-form label {
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: #333;
     font-weight: bold;
     font-size: 1.75rem;
