@@ -1,7 +1,7 @@
 ---
 title: World Tour
 description: Traveling the world, capturing stories, and building a life through photography and volunteering
-draft: false
+draft: true
 ShowShareButtons: false
 ShowReadingTime: false
 ShowBreadCrumbs: true
