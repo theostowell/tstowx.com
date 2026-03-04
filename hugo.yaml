@@ -62,8 +62,8 @@ menu:
     - name: "Photos"
       url: "/photos"
       weight: 2
-    - name: "Signup"
-      url: "/signup"
+    - name: "Businesses"
+      url: "https://indiepa.ge/tstowx"
       weight: 3
 
 privacy:
