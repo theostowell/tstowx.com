@@ -62,6 +62,14 @@ menu:
     - name: "Photos"
       url: "/photos"
       weight: 2
+    - name: "Projects"
+      url: "/photos/projects"
+      weight: 1
+      parent: "Photos"
+    - name: "Galleries"
+      url: "/photos/galleries"
+      weight: 2
+      parent: "Photos"
     - name: "Businesses"
       url: "https://indiepa.ge/tstowx"
       weight: 3

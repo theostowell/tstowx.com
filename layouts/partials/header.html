@@ -31,6 +31,22 @@
         </div>
         <ul id="menu">
             {{- range site.Menus.main }}
+            {{- if .HasChildren }}
+            <li class="menu-dropdown">
+                <span class="menu-dropdown-label">
+                    {{- .Name -}}
+                </span>
+                <ul class="menu-dropdown-content">
+                    {{- range .Children }}
+                    <li>
+                        <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
+                            {{- .Name -}}
+                        </a>
+                    </li>
+                    {{- end }}
+                </ul>
+            </li>
+            {{- else }}
             <li>
                 <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
                     <span {{- if eq .URL (relURL .URL) }} class="active" {{- end }}>
@@ -38,6 +54,7 @@
                     </span>
                 </a>
             </li>
+            {{- end }}
             {{- end }}
             <li>
                 <a href="/signup" class="cta-button" title="Travel Reccs">Travel Reccs</a>
