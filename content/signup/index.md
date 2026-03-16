@@ -7,15 +7,5 @@ ShowReadingTime: false
 ShowBreadCrumbs: false
 ---
 
-<form
-    action="https://buttondown.com/api/emails/embed-subscribe/tstowx"
-    method="post"
-    target="popupwindow"
-    onsubmit="window.open('https://buttondown.com/tstowx', 'popupwindow')"
-    class="signup-form">
-    <div class="form-group">
-        <label for="bd-email-signup">Email</label>
-        <input type="email" name="email" id="bd-email-signup" placeholder="your@email.com" required />
-    </div>
-    <button type="submit" class="signup-submit-button">Sign Up</button>
-</form>
+<div data-supascribe-embed-id="746785075979" data-supascribe-subscribe></div>
+<script src="https://js.supascribe.com/v1/loader/7QcbcihIztbMpucNNbdjdhfkMQT2.js" async></script>

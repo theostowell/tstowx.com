@@ -30,9 +30,6 @@
   {{- /* Lightbox container */ -}}
   <div id="lightbox" class="lightbox" style="display: none;">
     <div class="lightbox-toolbar">
-      <a id="lightbox-download" class="lightbox-button" href="#" download title="Download">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path d="M20.5 14.3 17.1 18V10h-2.2v7.9l-3.4-3.6L10 16l6 6.1 6-6.1ZM23 23H9v2h14Z" fill="currentColor"/></svg>
-      </a>
       <button class="lightbox-button lightbox-close" title="Close">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path d="M25 8.4 23.6 7 16 14.6 8.4 7 7 8.4l7.6 7.6L7 23.6 8.4 25l7.6-7.6 7.6 7.6 1.4-1.4-7.6-7.6Z" fill="currentColor"/></svg>
       </button>
@@ -47,7 +44,6 @@
       const lightbox = document.getElementById('lightbox');
       const lightboxImg = document.getElementById('lightbox-img');
       const lightboxClose = document.querySelector('.lightbox-close');
-      const lightboxDownload = document.getElementById('lightbox-download');
       const triggers = document.querySelectorAll('.lightbox-trigger');
 
       triggers.forEach(trigger => {
@@ -55,7 +51,6 @@
           e.preventDefault();
           lightbox.style.display = 'flex';
           lightboxImg.src = this.href;
-          lightboxDownload.href = this.href;
         });
       });
 
