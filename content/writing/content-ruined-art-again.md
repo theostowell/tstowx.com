@@ -32,18 +32,28 @@ My content stifles my art. Almost all the time.
 
 But how do we define content?
 
-Anything ‘created’, that one might call ‘art’, but was created with ulterior motives. With a certain cadence, with a certain structure, created to make money, created to improve status, none of it’s truly pure.
+Anything ‘created’, that one might call ‘art’, but was created with additional incentives and constraints. With a certain cadence, with a certain structure, created to make money, created to improve status, none of it is expression for expression’s sake.
 
 My business content isn’t art - it’s designed to earn me an income. Not even my Instagram posts (at least not to an extent) - I share them to improve my relationships and status amongst my peers.
 
 I’ve tried before to add rhythm and cadence to what should have been art. Creation free from such constraints.
 
-Numbering newsletter issues, sharing them in a certain format, at a certain time of the week (which was the format I chose for sympathising with Lawrence back when I first read his piece).
+Numbering newsletter issues, sharing them in a certain format, at a certain time of the week (the method I chose for sympathising with Lawrence back when I first read his piece).
 
-Some of them were great, and would have better served as essays I simply published. A piece of art that I’d made for the sake of creating an expression of ideas.
+Some of these issues were great, and would have better served as essays I simply published when they arose. A piece of art that I’d made for the sake nothing but expression.
+
+But I didn’t, and I haven’t been…
 
 Newsletter issues blocking real essays. Instagram-reel-progress-updates blocking personal vlogs and documentaries.
 
-But no longer. The line between content and art in my head is becoming bolder. I’ll create for me (for the most part), around things I’m interested in, attracted by, proud of, without a certain structure or cadence. Whenever the inspiration strikes.
+No longer. The line between content and art in my head is becoming bolder. I’ll create for myself (for the most part), around things I’m interested in, attracted by, proud of, without a certain structure or cadence. Whenever the inspiration strikes.
 
 And that takes priority over content. Always.
+
+---
+
+Read this on [https://tstowx.com/content-ruined-art-again](https://tstowx.com/content-ruined-art-again)!
+
+I’d love to move everything back to my personal website now that I’ve started using Substack for ProseLab marketing. It doesn’t fit in my head that they’re operated from the same account. Perhaps I’ll abolish this email list entirely.
+
+I’m not sure…
