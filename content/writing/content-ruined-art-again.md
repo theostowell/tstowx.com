@@ -14,8 +14,6 @@ ShowBreadCrumbs: true
 
 ---
 
-**My Content Ruined My Art (Again)…**
-
 More than a year ago, I read a piece by Lawrence Yeo, and I thought I understood what it meant.
 
 Long story short, I’d only began to understand.
