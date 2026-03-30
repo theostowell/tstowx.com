@@ -49,11 +49,3 @@ Newsletter issues blocking real essays. Instagram-reel-progress-updates blocking
 No longer. The line between content and art in my head is becoming bolder. I’ll create for myself (for the most part), around things I’m interested in, attracted by, proud of, without a certain structure or cadence. Whenever the inspiration strikes.
 
 And that takes priority over content. Always.
-
----
-
-Read this on [https://tstowx.com/content-ruined-art-again](https://tstowx.com/content-ruined-art-again)!
-
-I’d love to move everything back to my personal website now that I’ve started using Substack for ProseLab marketing. It doesn’t fit in my head that they’re operated from the same account. Perhaps I’ll abolish this email list entirely.
-
-I’m not sure…
