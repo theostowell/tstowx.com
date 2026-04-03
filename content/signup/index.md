@@ -1,6 +1,6 @@
 ---
 title: Signup
-description: Get travel recommendations and articles in your inbox...
+description: Get travel recommendations, videos and articles in your inbox...
 draft: false
 ShowShareButtons: false
 ShowReadingTime: false
