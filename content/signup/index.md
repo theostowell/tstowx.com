@@ -1,6 +1,6 @@
 ---
 title: Signup
-description: Get travel recommendations, videos and articles in your inbox...
+description: Sign up to my Substack for regular essays and videos...
 draft: false
 ShowShareButtons: false
 ShowReadingTime: false
