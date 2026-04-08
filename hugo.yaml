@@ -18,9 +18,11 @@ params:
   HomeInfoParams:
     Title: Part entrepreneur, part starving artist
     Content: |
-      I'm Theo - recently graduated (BSc Zoology), now travelling Southeast Asia building [PARAZETTEL](https://parazettel.com), an info-business I started whilst I was studying.
+      I'm Theo - an entrepreneur and creative. Back in 2025 I graduated BSc Zoology from University of Sheffield in the UK, but instead of choosing a career, I pursued the growth of [PARAZETTEL](https://parazettel.com), an info business I started whilst studying.
 
-      At the same time as growing the business, I'm writing essays, making videos and sending emails (after discontinuing [Fundamentalised](https://buttondown.com/tstowx/archive/), my newsletter of two-and-a-half years). You can read some of the more polished work on this website, by scrolling below.
+      I travelled for the last six months, around Asia and Australia, but now I'm back in the UK, ready to scale PARAZETTEL to the point where permanent travel/life abroad is a reality. I've also started a second internet business, a web app called [ProseLab](https://www.proselab.io) with Luca, a friend I made whilst living in Vietnam.
+
+      On this website I keep an archive of my best writing and photos, but for the most up-to-date and deepest view into my mind, head over to my [Substack](https://substack.com/@tstowx) and subscribe there!
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
