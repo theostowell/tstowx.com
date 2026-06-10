@@ -1,6 +1,6 @@
-baseURL: 'https://tstowx.com/'
-languageCode: 'en-gb'
-title: 'Theo Stowell'
+baseURL: "https://tstowx.com/"
+languageCode: "en-gb"
+title: "Theo Stowell"
 
 module:
   imports:
@@ -18,7 +18,7 @@ params:
   HomeInfoParams:
     Title: Part entrepreneur, part starving artist
     Content: |
-      **APRIL 2026:** I'm Theo - an entrepreneur and creative. Back in 2025 I graduated BSc Zoology from the University of Sheffield in the UK, but instead of choosing a career, I pursued the growth of [PARAZETTEL](https://parazettel.com), an info business I started whilst studying.
+      **APRIL 2026:** I'm Theo - an entrepreneur and creative. Last summer, I graduated BSc Zoology from the University of Sheffield in the UK. Instead of pursuing a career, I chose the growth of [PARAZETTEL](https://parazettel.com), an info business I started whilst studying.
 
       I travelled for the last six months, around Asia and Australia, but now I'm back in the UK, ready to scale PARAZETTEL to the point where near-permanent travel is a reality. I've also started a second internet business, a web app called [ProseLab](https://www.proselab.io) with Luca, a friend I made whilst living in Vietnam.
 
@@ -30,21 +30,21 @@ params:
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/safari-pinned-tab.svg"
   SocialIcons:
-    - name: 'LinkedIn'
-      url: 'https://www.linkedin.com/in/tstowx'
-      icon: 'fab fa-linkedin'
-      target: '_blank'
-    - name: 'YouTube'
-      url: 'https://www.youtube.com/@tstowx'
-      icon: 'fab fa-youtube'
-      target: '_blank'
-    - name: 'Instagram'
-      url: 'https://www.instagram.com/tstowx'
-      icon: 'fab fa-instagram'
-      target: '_blank'
-    - name: 'Substack'
-      url: 'https://substack.com/@tstowx'
-      target: '_blank'
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/tstowx"
+      icon: "fab fa-linkedin"
+      target: "_blank"
+    - name: "YouTube"
+      url: "https://www.youtube.com/@tstowx"
+      icon: "fab fa-youtube"
+      target: "_blank"
+    - name: "Instagram"
+      url: "https://www.instagram.com/tstowx"
+      icon: "fab fa-instagram"
+      target: "_blank"
+    - name: "Substack"
+      url: "https://substack.com/@tstowx"
+      target: "_blank"
   ShowShareButtons: false
   ShowPostNavLinks: false
   ShowReadingTime: true
@@ -84,7 +84,6 @@ privacy:
   youTube:
     disable: false
     privacyEnhanced: true
-  
 
 outputs:
   home:
