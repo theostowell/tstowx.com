@@ -11,6 +11,14 @@ context:
       GO_VERSION: "1.23"
 
 redirects:
+  - from: /assets/tx/js/pa-Ch8niZdikfyOY2_JeEOrq.js
+    to: https://stats.parazettel.com/js/pa-Ch8niZdikfyOY2_JeEOrq.js
+    status: 200
+    force: true
+  - from: /assets/tx/api/event
+    to: https://stats.parazettel.com/api/event
+    status: 200
+    force: true
   - from: /essays/*
     to: /writing/:splat
     status: 301
