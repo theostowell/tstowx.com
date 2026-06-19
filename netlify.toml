@@ -1,0 +1,39 @@
+[build]
+  command = "git submodule update --init --recursive && hugo"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.139.1"
+
+[context.production.environment]
+  GO_VERSION = "1.23"
+
+[[redirects]]
+  from = "/assets/tx/js/pa-Ch8niZdikfyOY2_JeEOrq.js"
+  to = "https://stats.parazettel.com/js/pa-Ch8niZdikfyOY2_JeEOrq.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/assets/tx/api/event"
+  to = "https://stats.parazettel.com/api/event"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/essays/*"
+  to = "/writing/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fundamentalised"
+  to = "https://buttondown.com/tstowx/archive/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fundamentalised/"
+  to = "https://buttondown.com/tstowx/archive/"
+  status = 301
+  force = true
