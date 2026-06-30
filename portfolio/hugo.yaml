@@ -1,0 +1,27 @@
+baseURL: "https://photo.tstowx.com/"
+languageCode: "en-gb"
+title: "Theo Stowell — Photographer"
+contentDir: "../content/photos"
+staticDir:
+  - "static"
+  - "../static"
+publishDir: "../public-portfolio"
+enableRobotsTXT: true
+disableKinds: [taxonomy, term, RSS]
+ignoreFiles:
+  - "galleries/"
+  - "projects/Italia.*25/"
+
+params:
+  description: "Photography by Theo Stowell — energetic, natural imagery for brands, venues and people."
+  email: "tstowx@proton.me"
+  instagram: "https://www.instagram.com/tstowx"
+
+imaging:
+  quality: 84
+  resampleFilter: Lanczos
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

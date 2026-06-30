@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <header class="project-hero wrap">
+    <a class="back-link" href="/#work">← All work</a>
+    <p class="eyebrow">Selected work</p>
+    <h1>{{ .Title }}</h1>
+    <div class="project-deck"><p>{{ .Description }}</p>{{ with .Content }}<div>{{ . }}</div>{{ end }}</div>
+  </header>
+  {{ $images := .Resources.ByType "image" }}
+  <section class="photo-grid" aria-label="{{ .Title }} photographs">
+    {{ range $i, $image := $images }}
+      {{ $wide := ge $image.Width $image.Height }}
+      {{ $display := cond $wide ($image.Resize "1800x webp q84") ($image.Resize "1100x webp q84") }}
+      <figure class="{{ if $wide }}wide{{ else }}portrait{{ end }}"><img src="{{ $display.RelPermalink }}" alt="Photograph from {{ $.Title }}" loading="{{ if lt $i 2 }}eager{{ else }}lazy{{ end }}" width="{{ $display.Width }}" height="{{ $display.Height }}"></figure>
+    {{ end }}
+  </section>
+  <section class="more-work wrap">
+    <p class="eyebrow">More work</p>
+    <div>
+      {{ $current := . }}
+      {{ range where site.RegularPages "Section" "projects" }}
+        {{ if and (ne .RelPermalink $current.RelPermalink) (not .Params.private) }}
+          <a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><b>View project ↗</b></a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

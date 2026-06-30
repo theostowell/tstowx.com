@@ -1,0 +1,50 @@
+{{ define "main" }}
+  {{ $projects := site.GetPage "/projects" }}
+  {{ $heroPage := $projects.GetPage "BBU" }}
+  {{ $hero := $heroPage.Resources.GetMatch "IMG-16.jpg" }}
+  <section class="hero">
+    {{ with $hero }}
+      {{ $desktop := .Resize "2200x webp q82" }}
+      {{ $mobile := .Fill "900x1200 Center webp q80" }}
+      <picture><source media="(max-width: 700px)" srcset="{{ $mobile.RelPermalink }}"><img src="{{ $desktop.RelPermalink }}" alt="Basketball player in motion during a Bristol Basketball United game" width="{{ $desktop.Width }}" height="{{ $desktop.Height }}"></picture>
+    {{ end }}
+    <div class="hero-overlay">
+      <p>Photography with movement,<br>character and a sense of place.</p>
+      <a href="#work">Selected work <span>↓</span></a>
+    </div>
+  </section>
+
+  <section class="intro wrap">
+    <p class="eyebrow">Theo Stowell / Photographer</p>
+    <h1>Natural, energetic imagery for brands, spaces and people.</h1>
+    <div class="intro-copy">
+      <p>I make photographs that feel lived-in rather than staged—from the split-second intensity of sport to the atmosphere of independent venues and emerging brands.</p>
+      <a class="text-link" href="mailto:{{ site.Params.email }}?subject=Photography%20enquiry">Discuss a project ↗</a>
+    </div>
+  </section>
+
+  <section class="work wrap" id="work">
+    <div class="section-heading"><p class="eyebrow">Selected work</p><p>01—04</p></div>
+    <div class="project-list">
+      {{ range $projects.Pages.ByDate.Reverse }}
+        {{ if not .Params.private }}
+          {{ $project := . }}
+          {{ $images := .Resources.ByType "image" }}
+          {{ $cover := index $images 0 }}
+          {{ with $cover }}{{ $cover = .Fill "1600x1050 Center webp q82" }}{{ end }}
+          <article class="project-card">
+            <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }} project">
+              <div class="project-image">{{ with $cover }}<img src="{{ .RelPermalink }}" alt="{{ $project.Title }}" loading="lazy" width="{{ .Width }}" height="{{ .Height }}">{{ end }}</div>
+              <div class="project-info"><h2>{{ .Title }}</h2><span>{{ .Description | plainify | truncate 72 }}</span><b>View project ↗</b></div>
+            </a>
+          </article>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="about wrap" id="about">
+    <p class="eyebrow">Behind the camera</p>
+    <div><h2>Observant by nature.<br>Curious by default.</h2><div class="about-copy"><p>I’m Theo, a UK-based photographer and zoology graduate. I started photographing wildlife at nine and never really stopped looking for moments worth keeping.</p><p>Today I work across sport, hospitality, travel and independent brands, bringing a documentary eye to commercial briefs.</p><a class="text-link" href="mailto:{{ site.Params.email }}?subject=Photography%20enquiry">Tell me what you’re planning ↗</a></div></div>
+  </section>
+{{ end }}

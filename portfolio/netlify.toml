@@ -1,0 +1,13 @@
+[build]
+  command = "hugo --source portfolio --destination ../public-portfolio"
+  publish = "public-portfolio"
+
+[build.environment]
+  HUGO_VERSION = "0.139.1"
+
+[[redirects]]
+  from = "https://photo.tstowx.com/photos/*"
+  to = "https://photo.tstowx.com/:splat"
+  status = 301
+  force = true
+
