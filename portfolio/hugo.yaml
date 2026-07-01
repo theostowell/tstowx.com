@@ -5,7 +5,7 @@ contentDir: "../content/photos"
 staticDir:
   - "static"
   - "../static"
-publishDir: "../public-portfolio"
+publishDir: "public"
 enableRobotsTXT: true
 disableKinds: [taxonomy, term, RSS]
 ignoreFiles:
