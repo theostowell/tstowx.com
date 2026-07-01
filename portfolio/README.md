@@ -1,4 +1,4 @@
-# photo.tstowx.com
+# photos.tstowx.com
 
 Standalone Hugo portfolio using the photography bundles in `content/photos`.
 

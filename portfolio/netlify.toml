@@ -6,7 +6,7 @@
   HUGO_VERSION = "0.139.1"
 
 [[redirects]]
-  from = "https://photo.tstowx.com/photos/*"
-  to = "https://photo.tstowx.com/:splat"
+  from = "https://photos.tstowx.com/photos/*"
+  to = "https://photos.tstowx.com/:splat"
   status = 301
   force = true
