@@ -11,6 +11,26 @@ context:
       GO_VERSION: "1.23"
 
 redirects:
+  - from: /photos
+    to: /photos/galleries/
+    status: 301
+    force: true
+  - from: /photos/
+    to: /photos/galleries/
+    status: 301
+    force: true
+  - from: /photos/projects
+    to: https://photos.tstowx.com/
+    status: 301
+    force: true
+  - from: /photos/projects/
+    to: https://photos.tstowx.com/
+    status: 301
+    force: true
+  - from: /photos/projects/*
+    to: https://photos.tstowx.com/projects/:splat
+    status: 301
+    force: true
   - from: /assets/tx/js/pa-Ch8niZdikfyOY2_JeEOrq.js
     to: https://stats.parazettel.com/js/pa-Ch8niZdikfyOY2_JeEOrq.js
     status: 200

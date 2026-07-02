@@ -18,3 +18,17 @@
 @media(max-width:1000px) and (min-width:701px){.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.brand img{width:180px}}
 @media(max-width:700px){.project-hero{padding-top:20px;padding-bottom:46px}.project-hero .back-link{margin-bottom:22px}.project-hero h1{margin:18px 0 28px}.more-work{padding-bottom:72px}}
+
+/* Justified project gallery and longer project introductions */
+.project-deck{max-width:1220px;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
+.project-deck:not(.has-content){display:block}
+.project-deck:not(.has-content)>p{max-width:900px}
+#gallery{position:relative;width:calc(100% - 16px);margin:0 8px 0;padding:0;overflow:hidden}
+#gallery .gallery-item{position:absolute;margin:0;background:#ddd;overflow:hidden}
+#gallery .gallery-item img{display:block;width:100%;height:100%;max-height:none;object-fit:cover}
+@media(max-width:700px){.project-deck:not(.has-content)>p{max-width:none}#gallery{width:calc(100% - 10px);margin-inline:5px}}
+
+/* Inter carries interface and body copy; Apple Garamond remains the display face. */
+body,button{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.intro-copy p,.about-copy p,.project-deck,.page-intro>p:last-child{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:18px;line-height:1.6}
+.footer-callout span{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}

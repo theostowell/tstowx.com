@@ -62,16 +62,8 @@ menu:
       url: "/writing"
       weight: 1
     - name: "Photos"
-      url: "/photos"
-      weight: 2
-    - name: "Projects"
-      url: "/photos/projects"
-      weight: 1
-      parent: "Photos"
-    - name: "Galleries"
       url: "/photos/galleries"
       weight: 2
-      parent: "Photos"
     - name: "Businesses"
       url: "https://trustmrr.com/founder/theostowell"
       weight: 3

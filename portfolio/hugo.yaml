@@ -10,7 +10,6 @@ enableRobotsTXT: true
 disableKinds: [taxonomy, term, RSS]
 ignoreFiles:
   - "galleries/"
-  - "projects/Italia.*25/"
 
 params:
   description: "Photography by Theo Stowell — energetic, natural imagery for brands, venues and people."

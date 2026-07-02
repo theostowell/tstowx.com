@@ -6,6 +6,9 @@
   <title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ site.Title }}</title>
   <meta name="description" content="{{ .Description | default site.Params.description }}">
   <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
 </head>
@@ -24,7 +27,7 @@
   <main>{{ block "main" . }}{{ end }}</main>
   <footer class="site-footer" id="contact">
     <p class="eyebrow">Have something in mind?</p>
-    <a class="footer-callout" href="mailto:{{ site.Params.email }}?subject=Photography%20enquiry">Let’s make something<br>worth looking at. <span aria-hidden="true">↗</span></a>
+    <a class="footer-callout" href="mailto:{{ site.Params.email }}?subject=Photography%20enquiry">Click to make it<br>worth looking at <span aria-hidden="true">↗</span></a>
     <div class="footer-meta">
       <span>Available for selected projects in the UK and beyond.</span>
       <div><a href="mailto:{{ site.Params.email }}">Email</a><a href="{{ site.Params.instagram }}">Instagram</a><a href="https://tstowx.com/photos/">Personal galleries</a></div>
