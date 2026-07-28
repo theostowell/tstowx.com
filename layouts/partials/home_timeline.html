@@ -53,6 +53,12 @@
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       {{- with .Params.timeline_summary }}<p>{{ . }}</p>{{- else }}{{- with .Description }}<p>{{ . }}</p>{{- else }}<p>{{ .Summary | plainify | htmlUnescape | truncate 170 }}</p>{{- end }}{{- end }}
     </div>
+    {{- else if and (eq $entryClass "social") (eq .Params.platform "x") .Params.author_handle .Params.post_id }}
+    <div class="timeline-tweet-entry">
+      <blockquote class="twitter-tweet" data-dnt="true">
+        <a href="https://x.com/{{ .Params.author_handle }}/status/{{ .Params.post_id }}">View this post on X</a>
+      </blockquote>
+    </div>
     {{- else }}
     <a class="timeline-card" href="{{ .RelPermalink }}">
       {{- with (.Params.timeline_image | default .Params.opengraph_image) }}<img class="timeline-media" src="{{ . }}" alt="">{{- end }}
@@ -65,6 +71,10 @@
   {{- end }}
 
 </section>
+
+{{- if where $timelinePages "Params.platform" "x" }}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{- end }}
 
 <script>
   document.addEventListener('click', function (event) {

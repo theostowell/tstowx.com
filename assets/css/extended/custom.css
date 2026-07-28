@@ -482,6 +482,16 @@ body.list .main {
     aspect-ratio: 16 / 9;
 }
 
+.timeline-tweet-entry {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 2rem 1.35rem 0;
+}
+
+.timeline-tweet-entry .twitter-tweet {
+    margin: 0 !important;
+}
+
 .youtube-video {
     position: relative;
     width: 100%;
@@ -530,6 +540,8 @@ body.list .main {
 .timeline-entry--project .timeline-card .timeline-type { color: #3f5e57; }
 .timeline-entry--video .timeline-card { background: #f8e8e6; border-color: #a7554d; }
 .timeline-entry--video .timeline-card .timeline-type { color: #9b3c35; }
+.timeline-entry--social .timeline-card { background: #edf4f8; border-color: #7fa2b8; }
+.timeline-entry--social .timeline-card .timeline-type { color: #3d708c; }
 .timeline-entry--place .timeline-card { background: #f3ead9; border-color: #b68b59; }
 .timeline-entry--place .timeline-card .timeline-type { color: #8a6134; }
 .timeline-entry--note .timeline-card { background: #e8e7ee; border-color: #77758a; }
@@ -612,6 +624,7 @@ body.list .main {
     .timeline-marker::after { top: 0.45rem; left: 7px; }
     .timeline-card { grid-column: 2; padding: 1.25rem 1.2rem 1.3rem; margin-right: 0.75rem; }
     .timeline-media, .timeline-youtube-preview, .timeline-youtube-player { width: calc(100% + 2.4rem); margin: -1.25rem -1.2rem 1rem; }
+    .timeline-tweet-entry { margin-right: 0.75rem; }
     .timeline-writing-heading, .timeline-end { margin-left: 22px; }
     .timeline-writing-heading { margin-top: 3.2rem; }
 }

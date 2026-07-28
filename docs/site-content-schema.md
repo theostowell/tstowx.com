@@ -39,7 +39,7 @@ Hugo shortcodes keep embeds portable and readable in Markdown. For a video note,
 
 ```md
 {{< youtube-video >}}
-{{< tweet USERNAME STATUS_ID >}}
+{{< x-post >}}
 {{< instagram USERNAME SHORTCODE >}}
 ```
 

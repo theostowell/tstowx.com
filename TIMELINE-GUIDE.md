@@ -123,7 +123,7 @@ post_id: "1234567890"
 ```
 
 ```md
-{{< tweet username 1234567890 >}}
+{{< x-post >}}
 ```
 
 For Instagram:

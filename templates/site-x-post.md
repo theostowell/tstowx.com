@@ -12,6 +12,6 @@ post_id: ""
 timeline_image: ""
 ---
 
-{{< tweet USERNAME STATUS_ID >}}
+{{< x-post >}}
 
 Add context for this post if useful.
