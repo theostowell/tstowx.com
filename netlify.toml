@@ -22,7 +22,21 @@
 
 [[redirects]]
   from = "/essays/*"
-  to = "/writing/:splat"
+  to = "/:splat"
+  status = 301
+  force = true
+
+# The photography archive has moved to its own site. Keep every existing
+# gallery and project link working while preventing duplicate content here.
+[[redirects]]
+  from = "/photos"
+  to = "https://photos.tstowx.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/photos/*"
+  to = "https://photos.tstowx.com/:splat"
   status = 301
   force = true
 

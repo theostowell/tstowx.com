@@ -11,24 +11,18 @@ context:
       GO_VERSION: "1.23"
 
 redirects:
+  # Mirror netlify.toml for tooling that reads the YAML configuration.
+  # All photography routes now resolve on photos.tstowx.com.
   - from: /photos
-    to: /photos/galleries/
+    to: https://photos.tstowx.com/
     status: 301
     force: true
   - from: /photos/
-    to: /photos/galleries/
-    status: 301
-    force: true
-  - from: /photos/projects
     to: https://photos.tstowx.com/
     status: 301
     force: true
-  - from: /photos/projects/
-    to: https://photos.tstowx.com/
-    status: 301
-    force: true
-  - from: /photos/projects/*
-    to: https://photos.tstowx.com/projects/:splat
+  - from: /photos/*
+    to: https://photos.tstowx.com/:splat
     status: 301
     force: true
   - from: /assets/tx/js/pa-Ch8niZdikfyOY2_JeEOrq.js
@@ -40,7 +34,7 @@ redirects:
     status: 200
     force: true
   - from: /essays/*
-    to: /writing/:splat
+    to: /:splat
     status: 301
     force: true
   - from: /fundamentalised

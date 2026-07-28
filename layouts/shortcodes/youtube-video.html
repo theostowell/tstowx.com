@@ -1,0 +1,15 @@
+{{- $id := .Page.Params.youtube_id | default (.Get 0) -}}
+{{- if $id -}}
+<div class="youtube-video">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/{{ $id }}"
+    title="{{ .Page.Title }}"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+{{- else -}}
+  {{- errorf "youtube-video shortcode on %q needs youtube_id in its front matter or a video ID argument" .Page.File.Path -}}
+{{- end -}}

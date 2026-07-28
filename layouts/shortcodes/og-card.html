@@ -1,0 +1,9 @@
+{{- $url := .Get "url" -}}
+<a class="og-card" href="{{ $url }}" target="_blank" rel="noopener">
+  {{- with .Get "image" }}<img src="{{ . }}" alt="">{{ end -}}
+  <span class="og-card__content">
+    {{- with .Get "site" }}<small>{{ . }}</small>{{ end -}}
+    <strong>{{ .Get "title" }}</strong>
+    {{- with .Get "description" }}<span>{{ . }}</span>{{ end -}}
+  </span>
+</a>

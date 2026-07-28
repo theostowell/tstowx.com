@@ -77,7 +77,9 @@
   "articleBody": {{ .Content | safeJS | htmlUnescape | plainify }},
   "wordCount" : "{{ .WordCount }}",
   "inLanguage": {{ .Language.Lang | default "en-us" }},
-  {{ if .Params.cover.image -}}
+  {{ if .Params.opengraph_image -}}
+  "image": {{ .Params.opengraph_image | absURL }},
+  {{- else if .Params.cover.image -}}
   "image":
     {{- if (ne .Params.cover.relative true) -}}
     {{ .Params.cover.image | absURL }},

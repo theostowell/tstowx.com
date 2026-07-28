@@ -1,4 +1,4 @@
-<header class="header"></header>
+<header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ site.Title }} (Alt + H)">
@@ -30,35 +30,10 @@
             </div>
         </div>
         <ul id="menu">
-            {{- range site.Menus.main }}
-            {{- if .HasChildren }}
-            <li class="menu-dropdown">
-                <span class="menu-dropdown-label">
-                    {{- .Name -}}
-                </span>
-                <ul class="menu-dropdown-content">
-                    {{- range .Children }}
-                    <li>
-                        <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
-                            {{- .Name -}}
-                        </a>
-                    </li>
-                    {{- end }}
-                </ul>
-            </li>
-            {{- else }}
             <li>
-                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
-                    <span {{- if eq .URL (relURL .URL) }} class="active" {{- end }}>
-                        {{- .Name -}}
-                    </span>
-                </a>
-            </li>
-            {{- end }}
-            {{- end }}
-            <li>
-                <a href="/signup" class="cta-button" title="Travel Reccs">Travel Reccs</a>
+                <button type="button" class="cta-button" data-supascribe-popup-trigger="840405570576" title="Subscribe to Theo's Substack">Subscribe</button>
             </li>
         </ul>
     </nav>
+    <div data-supascribe-embed-id="840405570576" data-supascribe-popup></div>
 </header>

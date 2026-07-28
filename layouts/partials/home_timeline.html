@@ -1,0 +1,83 @@
+{{- $projects := where site.RegularPages "Section" "projects" }}
+{{- $timelineItems := where site.RegularPages "Params.timeline" true }}
+{{- $publishedTimelineItems := where $timelineItems "Draft" false }}
+{{- $allTimelinePages := sort (union $projects $publishedTimelineItems) "Date" "desc" }}
+{{- $featuredTimelinePages := where $allTimelinePages "Params.timeline_featured" true }}
+{{- $standardTimelinePages := where $allTimelinePages "Params.timeline_featured" "ne" true }}
+{{- $timelinePages := union $featuredTimelinePages $standardTimelinePages }}
+<article class="first-entry home-info timeline-intro" aria-labelledby="timeline-title">
+  <header class="entry-header">
+    <h1 id="timeline-title">{{ site.Params.timelineHome.title | markdownify }}</h1>
+  </header>
+  <div class="entry-content">
+    {{ site.Params.timelineHome.content | markdownify }}
+  </div>
+  <footer class="entry-footer">
+    {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+  </footer>
+</article>
+
+<section class="life-timeline" id="timeline" aria-label="Life and work timeline">
+  <div class="timeline-rail" aria-hidden="true"></div>
+
+  {{- range $timelinePages }}
+  {{- $entryClass := .Params.timeline_type | default "writing" }}
+  {{- $entryLabel := "ESSAY" }}
+  {{- if or (eq .Section "projects") (eq $entryClass "project") }}
+    {{- $entryClass = "project" }}
+    {{- $entryLabel = "PROJECT" }}
+  {{- else if eq $entryClass "place" }}
+    {{- $entryLabel = "PLACE · TRAVEL" }}
+  {{- else if eq $entryClass "video" }}
+    {{- $entryLabel = "VIDEO" }}
+  {{- else if eq $entryClass "link" }}
+    {{- $entryLabel = "LINK" }}
+  {{- else if eq $entryClass "social" }}
+    {{- $entryLabel = "SOCIAL POST" }}
+  {{- else if eq $entryClass "image" }}
+    {{- $entryLabel = "IMAGE" }}
+  {{- else if eq $entryClass "note" }}
+    {{- $entryLabel = "NOTE" }}
+  {{- end }}
+  <article class="timeline-entry timeline-entry--{{ $entryClass }}"{{ with .Params.timeline_card_color }} style="--timeline-card-background: {{ . | safeCSS }};"{{ end }}>
+    <div class="timeline-marker" aria-hidden="true"></div>
+    {{- if and (eq $entryClass "video") .Params.youtube_id }}
+    <div class="timeline-card">
+      <button class="timeline-youtube-preview" type="button" data-youtube-id="{{ .Params.youtube_id }}" title="Play {{ .Title }}" aria-label="Play {{ .Title }}">
+        <img src="https://i.ytimg.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" alt="Thumbnail for {{ .Title }}">
+        <span class="timeline-youtube-play" aria-hidden="true"><svg viewBox="0 0 68 48" role="presentation"><path d="M66.52 7.74a8 8 0 0 0-5.63-5.66C55.88.72 34 0 34 0S12.12.72 7.11 2.08A8 8 0 0 0 1.48 7.74C.12 12.75 0 24 0 24s.12 11.25 1.48 16.26a8 8 0 0 0 5.63 5.66C12.12 47.28 34 48 34 48s21.88-.72 26.89-2.08a8 8 0 0 0 5.63-5.66C67.88 35.25 68 24 68 24s-.12-11.25-1.48-16.26Z" fill="#f03"></path><path d="m45 24-18-10v20l18-10Z" fill="#fff"></path></svg></span>
+        <span class="timeline-youtube-label">Play video</span>
+      </button>
+      <noscript><p><a href="https://www.youtube.com/watch?v={{ .Params.youtube_id }}">Watch on YouTube</a></p></noscript>
+      <time class="timeline-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.timeline_date_label | default (.Date.Format "January 2006") }}</time>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{- with .Params.timeline_summary }}<p>{{ . }}</p>{{- else }}{{- with .Description }}<p>{{ . }}</p>{{- else }}<p>{{ .Summary | plainify | htmlUnescape | truncate 170 }}</p>{{- end }}{{- end }}
+    </div>
+    {{- else }}
+    <a class="timeline-card" href="{{ .RelPermalink }}">
+      {{- with (.Params.timeline_image | default .Params.opengraph_image) }}<img class="timeline-media" src="{{ . }}" alt="">{{- end }}
+      <time class="timeline-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.timeline_date_label | default (.Date.Format "January 2006") }}</time>
+      <h2>{{ .Title }}</h2>
+      {{- with .Params.timeline_summary }}<p>{{ . }}</p>{{- else }}{{- with .Description }}<p>{{ . }}</p>{{- else }}<p>{{ .Summary | plainify | htmlUnescape | truncate 170 }}</p>{{- end }}{{- end }}
+    </a>
+    {{- end }}
+  </article>
+  {{- end }}
+
+</section>
+
+<script>
+  document.addEventListener('click', function (event) {
+    var preview = event.target.closest('.timeline-youtube-preview');
+    if (!preview) return;
+
+    var player = document.createElement('iframe');
+    player.className = 'timeline-youtube-player';
+    player.src = 'https://www.youtube-nocookie.com/embed/' + preview.dataset.youtubeId + '?autoplay=1&rel=0';
+    player.title = preview.getAttribute('title');
+    player.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    player.referrerPolicy = 'strict-origin-when-cross-origin';
+    player.allowFullscreen = true;
+    preview.replaceWith(player);
+  });
+</script>

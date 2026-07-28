@@ -22,7 +22,13 @@ params:
 
       I travelled for the last six months, around Asia and Australia, but now I'm back in the UK, ready to scale PARAZETTEL to the point where near-permanent travel is a reality. I've also started a second internet business, a web app called [ProseLab](https://www.proselab.io) with Luca, a friend I made whilst living in Vietnam.
 
-      On this website I keep an archive of my best writing and photos, but for the most up-to-date and deepest view into my mind, head over to my [Substack](https://substack.com/@tstowx) and subscribe there!
+      This is my living timeline: writing, trips, projects and the things worth keeping. Photography work lives separately at [photos.tstowx.com](https://photos.tstowx.com); for the most up-to-date and deepest view into my mind, head over to my [Substack](https://substack.com/@tstowx) and subscribe there!
+  timelineHome:
+    title: "Scaling an education brand, and building a writing education app. Photographer and aspiring essayist..."
+    content: |
+      Welcome to my personal site! I've tried to make it a 'digital CV' as such. I don't discriminate across the work that I post here, all of it is stuff I'm proud of, for whatever reason, ordered in a chronological timeline. Have a scroll through...
+
+      <I>Looking to hire me to shoot photos of your venue or at your next event? [There's a dedicated site for that which you can find at this link.](https://photos.tstowx.com)</I>
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
@@ -30,20 +36,20 @@ params:
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/safari-pinned-tab.svg"
   SocialIcons:
-    - name: "LinkedIn"
-      url: "https://www.linkedin.com/in/tstowx"
-      icon: "fab fa-linkedin"
-      target: "_blank"
-    - name: "YouTube"
-      url: "https://www.youtube.com/@tstowx"
-      icon: "fab fa-youtube"
+    - name: "Substack"
+      url: "https://substack.com/@tstowx"
       target: "_blank"
     - name: "Instagram"
       url: "https://www.instagram.com/tstowx"
       icon: "fab fa-instagram"
       target: "_blank"
-    - name: "Substack"
-      url: "https://substack.com/@tstowx"
+    - name: "YouTube"
+      url: "https://www.youtube.com/@tstowx"
+      icon: "fab fa-youtube"
+      target: "_blank"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/tstowx"
+      icon: "fab fa-linkedin"
       target: "_blank"
   ShowShareButtons: false
   ShowPostNavLinks: false
@@ -61,8 +67,8 @@ menu:
     - name: "Writing"
       url: "/writing"
       weight: 1
-    - name: "Photos"
-      url: "/photos/galleries"
+    - name: "Photography"
+      url: "https://photos.tstowx.com"
       weight: 2
     - name: "Businesses"
       url: "https://trustmrr.com/founder/theostowell"

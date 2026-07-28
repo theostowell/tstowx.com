@@ -1,4 +1,6 @@
-{{- $essays := where site.RegularPages "Section" "writing" | first 5 }}
+{{- $essays := where site.RegularPages "Params.timeline_type" "writing" }}
+{{- $essays = where $essays "Draft" false }}
+{{- $essays = first 5 (sort $essays "Date" "desc") }}
 {{- if $essays }}
 <div class="recent-essays-section">
   <header class="recent-essays-header">
@@ -17,7 +19,7 @@
   </ul>
 
   <div class="view-more-container">
-    <a href="/writing/" class="view-more-button">View more writing</a>
+    <a href="/#timeline" class="view-more-button">View more writing</a>
   </div>
 </div>
 {{- end }}

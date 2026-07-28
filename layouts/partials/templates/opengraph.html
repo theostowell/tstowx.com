@@ -9,7 +9,10 @@
 {{- with site.Title }}
 <meta property="og:site_name" content="{{ . }}">
 {{- end }}
-{{- if .Params.cover.image -}}
+{{- $opengraphImage := .Params.opengraph_image -}}
+{{- if $opengraphImage -}}
+<meta property="og:image" content="{{ $opengraphImage | absURL }}">
+{{- else if .Params.cover.image -}}
 {{- if (ne $.Params.cover.relative true) }}
 <meta property="og:image" content="{{ .Params.cover.image | absURL }}">
 {{- else }}

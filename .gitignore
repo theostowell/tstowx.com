@@ -1,4 +1,10 @@
-.obsidian/
+.obsidian/*
+!.obsidian/templates.json
+!.obsidian/plugins/
+.obsidian/plugins/*
+!.obsidian/plugins/quickadd/
+.obsidian/plugins/quickadd/*
+!.obsidian/plugins/quickadd/data.json
 .tmp.driveupload
 resources/
 public/

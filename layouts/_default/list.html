@@ -38,13 +38,8 @@
 </div>
 {{- end }}
 
-{{- if and .IsHome site.Params.homeInfoParams }}
-{{- partial "home_info.html" . }}
-{{- end }}
-
 {{- if .IsHome }}
-{{- partial "recent_essays.html" . }}
-{{- partial "recent_photos.html" . }}
+{{- partial "home_timeline.html" . }}
 {{- end }}
 
 {{- if not .IsHome }}
@@ -120,4 +115,4 @@
 
 {{- end }}{{/* end profileMode */}}
 
-{{- end }}{{- /* end main */ -}} 
+{{- end }}{{- /* end main */ -}}
