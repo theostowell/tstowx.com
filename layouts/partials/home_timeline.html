@@ -46,7 +46,6 @@
       <button class="timeline-youtube-preview" type="button" data-youtube-id="{{ .Params.youtube_id }}" title="Play {{ .Title }}" aria-label="Play {{ .Title }}">
         <img src="https://i.ytimg.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" alt="Thumbnail for {{ .Title }}">
         <span class="timeline-youtube-play" aria-hidden="true"><svg viewBox="0 0 68 48" role="presentation"><path d="M66.52 7.74a8 8 0 0 0-5.63-5.66C55.88.72 34 0 34 0S12.12.72 7.11 2.08A8 8 0 0 0 1.48 7.74C.12 12.75 0 24 0 24s.12 11.25 1.48 16.26a8 8 0 0 0 5.63 5.66C12.12 47.28 34 48 34 48s21.88-.72 26.89-2.08a8 8 0 0 0 5.63-5.66C67.88 35.25 68 24 68 24s-.12-11.25-1.48-16.26Z" fill="#f03"></path><path d="m45 24-18-10v20l18-10Z" fill="#fff"></path></svg></span>
-        <span class="timeline-youtube-label">Play video</span>
       </button>
       <noscript><p><a href="https://www.youtube.com/watch?v={{ .Params.youtube_id }}">Watch on YouTube</a></p></noscript>
       <time class="timeline-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.timeline_date_label | default (.Date.Format "January 2006") }}</time>
