@@ -56,6 +56,7 @@ If `timeline_summary` is blank, the site uses `description`; if that is blank to
 | Travel or a place-based entry | `site-article` | `place` | None |
 | A brief personal update | `site-article` | `note` | None |
 | A link worth preserving | `site-link` | `link` | `external_url`; optional `timeline_image` |
+| A post published on Substack | `site-substack-post` | `substack` | `external_url`, `opengraph_image` |
 | YouTube video | `site-video` | `video` | `youtube_id`; optional `timeline_image` |
 | X or Instagram post | `site-x-post` / `site-instagram-post` | `social` | Platform-specific fields below |
 | Photograph or image-led entry | `site-image` | `image` | `timeline_image` |
@@ -99,6 +100,18 @@ Set `external_url` to the destination. In the note body, use the `og-card` short
 ```
 
 The `image` argument is optional, as is `timeline_image` in the frontmatter.
+
+### Substack post
+
+Use `site-substack-post` for work published on Substack. The standard white timeline card links directly to the original post. Add the post URL and its Open Graph image; that image appears on the timeline just as it does for projects:
+
+```yaml
+timeline_type: substack
+external_url: "https://your-publication.substack.com/p/post-slug"
+opengraph_image: "https://substackcdn.com/image/fetch/..."
+```
+
+Use the image URL supplied by the post's `og:image` metadata, or save a copy in `static/opengraph/` and use a site-relative path instead.
 
 ### Video
 

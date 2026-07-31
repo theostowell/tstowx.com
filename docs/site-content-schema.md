@@ -27,6 +27,7 @@ description: "A slightly longer description for search and social previews."
 | `place` | `site-article` | `timeline_type: place` | Travel and place-based entries. |
 | `note` | `site-article` | `timeline_type: note` | Shorter personal updates. |
 | `link` | `site-link` | `external_url`, optional `timeline_image` | A link worth preserving, with an on-page Open Graph-style card. |
+| `substack` | `site-substack-post` | `external_url`, `opengraph_image` | A Substack post that links to the original post and uses its Open Graph image in the timeline. |
 | `video` | `site-video` | `youtube_id` | A YouTube video; it plays inline on its page and receives a YouTube thumbnail preview in the timeline. |
 | `social` | `site-x-post` / `site-instagram-post` | Platform fields below | An embedded X or Instagram post. |
 | `image` | `site-image` | `timeline_image` | A photograph or image-led entry. |

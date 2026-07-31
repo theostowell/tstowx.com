@@ -32,6 +32,8 @@
     {{- $entryLabel = "VIDEO" }}
   {{- else if eq $entryClass "link" }}
     {{- $entryLabel = "LINK" }}
+  {{- else if eq $entryClass "substack" }}
+    {{- $entryLabel = "SUBSTACK POST" }}
   {{- else if eq $entryClass "social" }}
     {{- $entryLabel = "SOCIAL POST" }}
   {{- else if eq $entryClass "image" }}
@@ -59,7 +61,7 @@
       </blockquote>
     </div>
     {{- else }}
-    <a class="timeline-card" href="{{ .RelPermalink }}">
+    <a class="timeline-card" href="{{ if and (eq $entryClass "substack") .Params.external_url }}{{ .Params.external_url }}{{ else }}{{ .RelPermalink }}{{ end }}"{{ if and (eq $entryClass "substack") .Params.external_url }} rel="noopener noreferrer"{{ end }}>
       {{- with (.Params.timeline_image | default .Params.opengraph_image) }}<img class="timeline-media" src="{{ . }}" alt="">{{- end }}
       <time class="timeline-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.timeline_date_label | default (.Date.Format "January 2006") }}</time>
       <h2>{{ .Title }}</h2>
