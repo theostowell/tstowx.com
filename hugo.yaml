@@ -24,11 +24,11 @@ params:
 
       This is my living timeline: writing, trips, projects and the things worth keeping. Photography work lives separately at [photos.tstowx.com](https://photos.tstowx.com); for the most up-to-date and deepest view into my mind, head over to my [Substack](https://substack.com/@tstowx) and subscribe there!
   timelineHome:
-    title: "Internet businesses // Photographer and essayist..."
+    title: "Internet business // Photographer and essayist..."
     content: |
       Welcome to my personal site -- I've tried to make it a 'digital CV' as such. I don't discriminate across the work that I post here, all of it is stuff I'm proud of, for whatever reason, ordered in a chronological timeline. Have a scroll through...
 
-      <I>Looking to hire me to shoot photos of your venue or at your next event? [There's a dedicated site for that which you can find at this link.](https://photos.tstowx.com)</I>
+      <I>Looking to hire me to shoot photos of your venue or at your next event? [There's a dedicated portfolio for that which you can find here.](https://photos.tstowx.com)</I>
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
