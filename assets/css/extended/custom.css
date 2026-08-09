@@ -1,26 +1,6 @@
-/*
- * How to use a custom local font file.
- *
- * 1. Create a `fonts` folder inside your `static` directory.
- *    (e.g., `/static/fonts/`)
- *
- * 2. Place your font files (e.g., .woff2, .woff) inside that folder.
- *
- * 3. Define your font below, replacing 'Your Custom Font' with the name
- *    you want to use in your CSS, and updating the URL to point to your
- *    font file. The path should start with `/fonts/`.
- */
-@font-face {
-    font-family: 'AppleGaramond';
-    src: url('/fonts/AppleGaramond.ttf') format('truetype'); /* Add other formats if you have them */
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Apply the custom font to headings */
+/* Use the native system font stack for headings. */
 h1, h2, h3, h4, h5, h6 {
-    /* Replace 'Your Custom Font' with the name you defined above */
-    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 /* Prevent horizontal scrollbar from full-bleed elements */
@@ -215,7 +195,7 @@ body.list .main {
     color: #333;
     font-weight: bold;
     font-size: 1.75rem;
-    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .embeddable-buttondown-form input[type="email"] {
@@ -335,7 +315,7 @@ body.list .main {
     display: inline-block;
     margin: 0 0 0.35rem;
     color: #817d75;
-    font-family: 'AppleGaramond', Georgia, serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     font-style: italic;
     font-weight: normal;
@@ -575,7 +555,7 @@ body.list .main {
 .timeline-end p {
     margin: 0 0 0.45rem;
     color: #777;
-    font-family: 'AppleGaramond', Georgia, serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
 }
 
@@ -640,7 +620,7 @@ body.list .main {
     font-weight: 600;
     margin-bottom: 1.5rem;
     color: #000000;
-    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .essay-month-group {
@@ -652,7 +632,7 @@ body.list .main {
     font-weight: 500;
     margin-bottom: 1rem;
     color: var(--secondary);
-    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .essay-list {
@@ -668,7 +648,7 @@ body.list .main {
 .essay-list-item a {
     color: #000000;
     text-decoration: none;
-    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 1.65rem;
 }
 
@@ -697,7 +677,7 @@ body.list .main {
     font-size: 2rem;
     font-weight: 600;
     color: #000000;
-    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .view-more-container {
@@ -740,7 +720,7 @@ body.list .main {
     font-size: 2rem;
     font-weight: 600;
     color: #000000;
-    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .recent-photos-grid {
@@ -789,7 +769,7 @@ body.list .main {
     font-weight: 600;
     margin: 0;
     color: #ffffff;
-    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -875,7 +855,7 @@ body.list .main {
     font-weight: 600;
     margin: 0;
     color: #ffffff;
-    font-family: 'AppleGaramond', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 /* Individual photo page styles */
