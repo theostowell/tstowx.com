@@ -21,6 +21,20 @@
   force = true
 
 [[redirects]]
+  from = "/lnw"
+  to = "/lnw/"
+  status = 301
+  force = true
+
+# Liquid Net Worth is served by the VPS dashboard; Netlify remains the public
+# HTTPS front door so the URL stays at tstowx.com/lnw.
+[[redirects]]
+  from = "/lnw/*"
+  to = "http://77.68.98.192/lnw/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/essays/*"
   to = "/:splat"
   status = 301

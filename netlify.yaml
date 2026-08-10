@@ -33,6 +33,16 @@ redirects:
     to: https://stats.parazettel.com/api/event
     status: 200
     force: true
+  - from: /lnw
+    to: /lnw/
+    status: 301
+    force: true
+  # Liquid Net Worth is served by the VPS dashboard; Netlify remains the public
+  # HTTPS front door so the URL stays at tstowx.com/lnw.
+  - from: /lnw/*
+    to: http://77.68.98.192/lnw/:splat
+    status: 200
+    force: true
   - from: /essays/*
     to: /:splat
     status: 301
