@@ -34,7 +34,7 @@ redirects:
     status: 200
     force: true
   - from: /lnw
-    to: /lnw/
+    to: /lnw/index.html
     status: 301
     force: true
   # Liquid Net Worth is served by the VPS dashboard; Netlify remains the public

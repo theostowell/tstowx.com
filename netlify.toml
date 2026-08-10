@@ -22,7 +22,7 @@
 
 [[redirects]]
   from = "/lnw"
-  to = "/lnw/"
+  to = "/lnw/index.html"
   status = 301
   force = true
 
