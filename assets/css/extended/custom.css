@@ -87,6 +87,36 @@ html, body {
     z-index: 50;
 }
 
+/* Hamburger navigation — mirrors the PARAZETTEL site menu. */
+.hamburger {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin-left: 8px;
+    padding: 10px;
+    gap: 5px;
+    color: var(--primary);
+    background: transparent;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hamburger:hover,.hamburger:focus-visible { background: var(--code-bg); }
+.hamburger-line { display:block; width:22px; height:2px; background:currentColor; border-radius:2px; transition:transform .2s ease,opacity .2s ease; }
+.hamburger.is-active .hamburger-line:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+.hamburger.is-active .hamburger-line:nth-child(2) { opacity:0; }
+.hamburger.is-active .hamburger-line:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+.mobile-menu { position:absolute; top:100%; left:50%; z-index:49; width:100%; max-width:calc(var(--main-width) + var(--gap) * 2); max-height:0; overflow:hidden; opacity:0; visibility:hidden; background:var(--theme); border-bottom:1px solid var(--border); box-shadow:0 8px 30px rgba(0,0,0,.12); transform:translateX(-50%) translateY(-10px); transition:max-height .25s ease,opacity .2s ease,transform .25s ease,visibility 0s linear .25s; }
+.mobile-menu.is-open { max-height:220px; opacity:1; visibility:visible; transform:translateX(-50%) translateY(0); transition:max-height .25s ease,opacity .2s ease,transform .25s ease; }
+.mobile-menu-inner { display:flex; flex-direction:column; padding:.5rem 0; }
+.mobile-menu-link { display:block; padding:1rem var(--gap); color:var(--primary) !important; font-size:1.0625rem; font-weight:500; text-decoration:none; }
+.mobile-menu-link:hover,.mobile-menu-link:focus-visible { background:var(--code-bg); }
+.header { position:relative; }
+@media (max-width:480px) { .hamburger { margin-left:2px; } #menu { margin-left:auto; } #menu .cta-button { padding:7px 10px; } }
+
 .footer {
     background-color: #eeeeee;
     width: 100%;

@@ -34,6 +34,28 @@
                 <button type="button" class="cta-button" data-supascribe-popup-trigger="840405570576" title="Subscribe to Theo's Substack">Subscribe</button>
             </li>
         </ul>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+        </button>
     </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <a href="https://photos.tstowx.com/" class="mobile-menu-link">Photos</a>
+            <a href="https://tstowx.substack.com/" class="mobile-menu-link">Essays</a>
+        </div>
+    </div>
     <div data-supascribe-embed-id="840405570576" data-supascribe-popup></div>
 </header>
+<script>
+(() => {
+  const button = document.getElementById('hamburger');
+  const menu = document.getElementById('mobile-menu');
+  const header = document.querySelector('.header');
+  if (!button || !menu || !header) return;
+  const close = () => { button.classList.remove('is-active'); button.setAttribute('aria-expanded', 'false'); menu.classList.remove('is-open'); header.classList.remove('menu-open'); };
+  button.addEventListener('click', () => { const open = menu.classList.toggle('is-open'); button.classList.toggle('is-active', open); button.setAttribute('aria-expanded', String(open)); header.classList.toggle('menu-open', open); });
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', close));
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') close(); });
+  document.addEventListener('click', event => { if (menu.classList.contains('is-open') && !menu.contains(event.target) && !button.contains(event.target)) close(); });
+})();
+</script>
