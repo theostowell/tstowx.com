@@ -85,8 +85,6 @@ html, body {
     max-width: calc(var(--main-width) + var(--gap) * 2);
     position: relative;
     z-index: 50;
-    box-sizing: border-box;
-    padding-inline: calc(var(--gap) * 2);
 }
 
 /* Header controls and dropdown mirror the PARAZETTEL pattern. */
