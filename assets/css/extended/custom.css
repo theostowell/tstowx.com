@@ -85,6 +85,8 @@ html, body {
     max-width: calc(var(--main-width) + var(--gap) * 2);
     position: relative;
     z-index: 50;
+    box-sizing: border-box;
+    padding-inline: calc(var(--gap) * 2);
 }
 
 /* Header controls and dropdown mirror the PARAZETTEL pattern. */
@@ -103,8 +105,7 @@ html, body {
 .mobile-menu-link { display:block; padding:1rem var(--gap); color:var(--primary) !important; font-size:1.0625rem; font-weight:500; text-decoration:none; }
 .mobile-menu-link:hover,.mobile-menu-link:focus-visible { background:var(--code-bg); }
 .header { position:relative; }
-/* Keep every front-page timeline/card heading on the same native system stack. */
-.timeline-card h2, .timeline-card h2 a { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; }
+/* Card headings inherit the site font instead of carrying their own typographic system. */
 @media (max-width:480px) { .mobile-menu-controls { gap:0; } .mobile-menu-controls .cta-button { padding:7px 10px; } }
 
 .footer {
@@ -381,10 +382,9 @@ body.list .main {
 .timeline-card h2 {
     max-width: 720px;
     margin: 0.45rem 0 0.55rem;
+    font: inherit;
     font-size: clamp(2rem, 4vw, 3.1rem);
-    font-weight: normal;
-    letter-spacing: -0.035em;
-    line-height: 0.95;
+    line-height: 1.1;
 }
 
 .timeline-card h2 a {
