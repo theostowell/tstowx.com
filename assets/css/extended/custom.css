@@ -19,6 +19,42 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Apple Garamond", Georgia, serif;
 }
 
+/* Keep page titles and in-page headings visually between regular and bold. */
+.post-header .post-title,
+.page-header h1,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    font-weight: 500;
+    -webkit-text-stroke: 0.2px currentColor;
+}
+
+.post-header .post-title,
+.page-header h1 {
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+}
+
+.post-content h1,
+.post-content h2 {
+    margin: 2.25rem 0 0.85rem;
+    letter-spacing: -0.025em;
+    line-height: 1.08;
+}
+
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    margin: 1.75rem 0 0.65rem;
+    letter-spacing: -0.015em;
+    line-height: 1.12;
+}
+
 /* Prevent horizontal scrollbar from full-bleed elements */
 html, body {
     overflow-x: hidden;
@@ -197,6 +233,62 @@ body.list .main {
     padding-top: 0;
 }
 
+/*
+ * Detail pages use the same paper-card language as the home timeline.
+ * This covers essays, projects, videos, places, notes and social posts,
+ * while leaving list pages and redirects untouched.
+ */
+body:has(.post-single) {
+    background: var(--code-bg);
+}
+
+.post-single {
+    margin-bottom: 1.5rem;
+    padding: 2.25rem 2.35rem 1.5rem;
+    overflow: hidden;
+    border: 1px solid #d9d6d0;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.post-single-hero {
+    margin: -2.25rem -2.35rem 2rem;
+    overflow: hidden;
+    background: #d9d6d0;
+    line-height: 0;
+}
+
+.post-single-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+}
+
+.post-single .post-header {
+    margin-top: 0;
+}
+
+.post-single .post-content > :first-child {
+    margin-top: 0;
+}
+
+/* PaperMod reserves 56px above this footer, even when its tag list is empty. */
+.post-single .post-footer {
+    margin-top: 0;
+}
+
+@media (max-width: 480px) {
+    .post-single {
+        padding: 1.25rem 1.2rem 1rem;
+    }
+
+    .post-single-hero {
+        margin: -1.25rem -1.2rem 1.5rem;
+    }
+}
+
 /* Add spacing between paragraphs in home info */
 .home-info .entry-content p {
     margin-bottom: 1rem;
@@ -302,8 +394,9 @@ body.list .main {
 }
 
 .timeline-intro .entry-header h1 {
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.035em;
+    -webkit-text-stroke: 0.2px currentColor;
 }
 
 .timeline-intro .entry-footer {
@@ -407,9 +500,10 @@ body.list .main {
     max-width: 720px;
     margin: 0.45rem 0 0.55rem;
     font-size: clamp(2rem, 4vw, 3.1rem);
-    font-weight: normal;
+    font-weight: 500;
     letter-spacing: -0.035em;
     line-height: 0.95;
+    -webkit-text-stroke: 0.2px currentColor;
 }
 
 .timeline-card h2 a {

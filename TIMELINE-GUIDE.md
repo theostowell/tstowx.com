@@ -49,17 +49,17 @@ If `timeline_summary` is blank, the site uses `description`; if that is blank to
 
 ## Choose a template
 
-| What you are publishing | Template | `timeline_type` | Extra fields |
-| --- | --- | --- | --- |
-| Essay, article or substantial piece of writing | `site-article` | `writing` | None |
-| A project you made | `site-project` | `project` | `external_url`, `external_label` |
-| Travel or a place-based entry | `site-article` | `place` | None |
-| A brief personal update | `site-article` | `note` | None |
-| A link worth preserving | `site-link` | `link` | `external_url`; optional `timeline_image` |
-| A post published on Substack | `site-substack-post` | `substack` | `external_url`, `opengraph_image` |
-| YouTube video | `site-video` | `video` | `youtube_id`; optional `timeline_image` |
-| X or Instagram post | `site-x-post` / `site-instagram-post` | `social` | Platform-specific fields below |
-| Photograph or image-led entry | `site-image` | `image` | `timeline_image` |
+| What you are publishing                        | Template                              | `timeline_type` | Extra fields                              |
+| ---------------------------------------------- | ------------------------------------- | --------------- | ----------------------------------------- |
+| Essay, article or substantial piece of writing | `site-article`                        | `writing`       | None                                      |
+| A project you made                             | `site-project`                        | `project`       | `external_url`, `external_label`          |
+| Travel or a place-based entry                  | `site-article`                        | `place`         | None                                      |
+| A brief personal update                        | `site-article`                        | `note`          | None                                      |
+| A link worth preserving                        | `site-link`                           | `link`          | `external_url`; optional `timeline_image` |
+| A post published on Substack                   | `site-substack-post`                  | `substack`      | `external_url`, `opengraph_image`         |
+| YouTube video                                  | `site-video`                          | `video`         | `youtube_id`; optional `timeline_image`   |
+| X or Instagram post                            | `site-x-post` / `site-instagram-post` | `social`        | Platform-specific fields below            |
+| Photograph or image-led entry                  | `site-image`                          | `image`         | `timeline_image`                          |
 
 For a place or note, start with `site-article` and only replace `timeline_type: writing` with `place` or `note`.
 
