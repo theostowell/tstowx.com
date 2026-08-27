@@ -301,6 +301,11 @@ body.list .main {
     padding: 0;
 }
 
+.timeline-intro .entry-header h1 {
+    font-weight: 400;
+    letter-spacing: -0.035em;
+}
+
 .timeline-intro .entry-footer {
     margin-bottom: 0.4rem;
 }
