@@ -9,3 +9,4 @@ description: "It’s been a long time since the fateful day at the end of May 20
 external_url: "https://substack.com/@tstowx/p-194509217"
 opengraph_image: "https://substackcdn.com/image/youtube/w_728,c_limit/op_ZvUdDstg"
 ---
+
