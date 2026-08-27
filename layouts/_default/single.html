@@ -1,17 +1,25 @@
 {{- define "main" }}
 
 {{- $heroImage := .Params.opengraph_image -}}
-{{- $heroFallback := "" -}}
-{{- if and (not $heroImage) .Params.youtube_id -}}
-  {{- $heroImage = printf "https://i.ytimg.com/vi/%s/maxresdefault.jpg" .Params.youtube_id -}}
-  {{- $heroFallback = printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" .Params.youtube_id -}}
-{{- end -}}
+{{- $youtubeID := .Params.youtube_id -}}
 
 <article class="post-single">
+  {{- if $youtubeID }}
+  <div class="post-single-hero post-single-hero--video">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/{{ $youtubeID }}"
+      title="{{ .Title }}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  {{- else }}
   {{- with $heroImage }}
   <div class="post-single-hero">
-    <img src="{{ . }}" alt="{{ $.Title }}" loading="eager" fetchpriority="high"{{ with $heroFallback }} onerror="this.onerror=null;this.src='{{ . }}';"{{ end }}>
+    <img src="{{ . }}" alt="{{ $.Title }}" loading="eager" fetchpriority="high">
   </div>
+  {{- end }}
   {{- end }}
 
   <header class="post-header">

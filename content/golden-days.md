@@ -8,5 +8,3 @@ timeline_summary: "A reminder to record the ordinary, brilliant days that will n
 description: "A personal film about documenting the golden days while they are still happening."
 youtube_id: "bMHCHMvbIL8"
 ---
-
-{{< youtube-video >}}

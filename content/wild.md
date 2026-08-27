@@ -8,5 +8,3 @@ timeline_summary: "A film following the drive to find and photograph the natural
 description: "The story of a wildlife photographer and the pursuit of wild places and animals."
 youtube_id: "EU0u8MX10ps"
 ---
-
-{{< youtube-video >}}

@@ -9,6 +9,4 @@ description: ""
 youtube_id: ""
 ---
 
-{{< youtube-video >}}
-
 Add a short introduction or production note.

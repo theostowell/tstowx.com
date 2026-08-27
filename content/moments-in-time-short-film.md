@@ -8,5 +8,3 @@ timeline_summary: "A short film about the small moments that become worth keepin
 description: "A cinematic reflection on the passing moments that shape a life."
 youtube_id: "UwjIVVPNsrs"
 ---
-
-{{< youtube-video >}}

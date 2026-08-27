@@ -8,5 +8,3 @@ timeline_summary: "A one-day, 60-kilometre crossing from Sheffield to Manchester
 description: "A film of a 60-kilometre Peak District walk from Sheffield to Manchester, completed in a day."
 youtube_id: "KFhFK1mq-qs"
 ---
-
-{{< youtube-video >}}

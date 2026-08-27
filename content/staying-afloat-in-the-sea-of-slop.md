@@ -8,5 +8,3 @@ timeline_summary: "On staying intentional while making work in an internet satur
 description: "A reflection on creating thoughtful work while navigating an increasingly noisy online world."
 youtube_id: "BQdd4qsNMtU"
 ---
-
-{{< youtube-video >}}

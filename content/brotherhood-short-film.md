@@ -8,5 +8,3 @@ timeline_summary: "A short film about friendship, shared experience and brotherh
 description: "A short film exploring brotherhood through time spent together."
 youtube_id: "wzbavJKAZ2U"
 ---
-
-{{< youtube-video >}}
