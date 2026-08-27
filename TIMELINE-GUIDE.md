@@ -52,7 +52,7 @@ If `timeline_summary` is blank, the site uses `description`; if that is blank to
 | What you are publishing                        | Template                              | `timeline_type` | Extra fields                              |
 | ---------------------------------------------- | ------------------------------------- | --------------- | ----------------------------------------- |
 | Essay, article or substantial piece of writing | `site-article`                        | `writing`       | None                                      |
-| A project you made                             | `site-project`                        | `project`       | `external_url`, `external_label`          |
+| A project you made                             | `site-project`                        | `project`       | `external_url`, `external_label`, `redirect_to_project` |
 | Travel or a place-based entry                  | `site-article`                        | `place`         | None                                      |
 | A brief personal update                        | `site-article`                        | `note`          | None                                      |
 | A link worth preserving                        | `site-link`                           | `link`          | `external_url`; optional `timeline_image` |
@@ -62,6 +62,8 @@ If `timeline_summary` is blank, the site uses `description`; if that is blank to
 | Photograph or image-led entry                  | `site-image`                          | `image`         | `timeline_image`                          |
 
 For a place or note, start with `site-article` and only replace `timeline_type: writing` with `place` or `note`.
+
+For a project, leave `redirect_to_project: false` to keep its page on this site. Change it to `true` to send the homepage card and direct page visits to `external_url`.
 
 ## Type-specific details
 

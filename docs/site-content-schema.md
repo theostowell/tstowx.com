@@ -23,7 +23,7 @@ description: "A slightly longer description for search and social previews."
 | Type | Obsidian template | Extra frontmatter | What it is for |
 | --- | --- | --- | --- |
 | `writing` | `site-article` | — | Essays, articles and standalone writing. |
-| `project` | `site-project` | `external_url`, `external_label` | A permanent page for something you have made. |
+| `project` | `site-project` | `external_url`, `external_label`, `redirect_to_project` | A permanent page for something you have made. |
 | `place` | `site-article` | `timeline_type: place` | Travel and place-based entries. |
 | `note` | `site-article` | `timeline_type: note` | Shorter personal updates. |
 | `link` | `site-link` | `external_url`, optional `timeline_image` | A link worth preserving, with an on-page Open Graph-style card. |
@@ -52,7 +52,7 @@ For ordinary links, use the local `og-card` shortcode. It does not scrape third-
 
 ## Projects and URLs
 
-Each project gets one dedicated Markdown note. Write the project story in the note and put the live destination in `external_url`; the homepage card will offer both the permanent project page and the external project link.
+Each project gets one dedicated Markdown note. Write the project story in the note and put the live destination in `external_url`. Leave `redirect_to_project: false` to keep the permanent project page. Set it to `true` to send both the homepage card and direct visits to the live project instead.
 
 The existing project pages remain in `content/projects/` so their current `/projects/.../` URLs keep working. New timeline notes can be created directly in `content/` as described above.
 

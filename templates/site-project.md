@@ -12,6 +12,7 @@ timeline_card_color: ""
 opengraph_image: ""
 external_url: ""
 external_label: "Visit project"
+redirect_to_project: false
 timeline_image: ""
 ---
 

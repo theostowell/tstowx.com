@@ -11,6 +11,7 @@ timeline_card_color: "#E9D1C3"
 opengraph_image: "/opengraph/proselab.png"
 external_url: https://www.proselab.io
 external_label: Visit ProseLab
+redirect_to_project: false
 ---
 
 ProseLab is a writing practice app I’m building with Luca. It uses passages from classic prose and focused prompts to help writers analyse, practise and improve their own work.

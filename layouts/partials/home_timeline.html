@@ -60,8 +60,9 @@
         <a href="https://x.com/{{ .Params.author_handle }}/status/{{ .Params.post_id }}">View this post on X</a>
       </blockquote>
     </div>
-    {{- else }}
-    <a class="timeline-card" href="{{ if and (eq $entryClass "substack") .Params.external_url }}{{ .Params.external_url }}{{ else }}{{ .RelPermalink }}{{ end }}"{{ if and (eq $entryClass "substack") .Params.external_url }} rel="noopener noreferrer"{{ end }}>
+  {{- else }}
+    {{- $linksExternally := and .Params.external_url (or (eq $entryClass "substack") (and (eq $entryClass "project") .Params.redirect_to_project)) }}
+    <a class="timeline-card" href="{{ if $linksExternally }}{{ .Params.external_url }}{{ else }}{{ .RelPermalink }}{{ end }}"{{ if $linksExternally }} rel="noopener noreferrer"{{ end }}>
       {{- with (.Params.timeline_image | default .Params.opengraph_image) }}<img class="timeline-media" src="{{ . }}" alt="">{{- end }}
       <time class="timeline-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.timeline_date_label | default (.Date.Format "January 2006") }}</time>
       <h2>{{ .Title }}</h2>
