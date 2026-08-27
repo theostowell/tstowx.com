@@ -40,13 +40,13 @@ However things need to change, because I haven't got a hope of doing so on £600
 
 Fear not, though, let me break down my current income streams and why I'm optimistic that they're going to develop well enough and robustly enough to support me next time around.
 
-First, PARAZETTEL's not going anywhere as a brand and force for education in the personal knowledge management space. Even though I shut down the paid template because moving more and more towards being fundamentally opposed to this as good education, we've got alternatives launching right around the corner...
+First, [PARAZETTEL](https://parazettel.com)'s not going anywhere as a brand and force for education in the personal knowledge management space. Even though I shut down the paid template because moving more and more towards being fundamentally opposed to this as good education, we've got alternatives launching right around the corner...
 
-This includes first the book Minimal Note-Taking, which I've been working on for about a year now (I know this because I got billed for the minimalnotetaking.com domain renewal the other day), as well as a brand-new program called PARAZETTEL Foundations, designed to teach people the things that I talk about in the book in a little more of a hands-on, community-focused way.
+This includes first the book [Minimal Note-Taking](https://parazettel.com/book), which I've been working on for about a year now (I know this because I got billed for the minimalnotetaking.com domain renewal the other day), as well as a brand-new program called [PARAZETTEL Foundations](https://parazettel.com/signup/foundations), designed to teach people the things that I talk about in the book in a little more of a hands-on, community-focused way.
 
 Right now, these two, and especially getting the book off my plate, are my priority. And then, as soon as this is done, I've got quite a swathe of time opening up to try and scale a few other things I've been wanting to for a while.
 
-This includes ProseLab - the writing training platform I started in Vietnam with my friend Luca, and a new venture closely related to PARAZETTEL called Obssistant. ProseLab already has paying customers and loads of potential, we only need to dial in the funnel and distribution and we'll be off to the races.
+This includes [ProseLab](https://www.proselab.io) - the writing training platform I started in Vietnam with my friend Luca, and a new venture closely related to PARAZETTEL called [Obssistant](https://obssistant.com). ProseLab already has paying customers and loads of potential, we only need to dial in the funnel and distribution and we'll be off to the races.
 
 Obssistant is much more closely related to the existing PARAZETTEL business - but it's going to be oriented around tying AI into work, business and personal knowledge to create personal apps and make better use of the data that I have, at a fundamental level, been teaching people to collect and organise well for the last three years.
 
@@ -70,4 +70,20 @@ This means that even when we're in a (dare I say) quiet period of business then 
 
 •••
 
-So that's the rundown of all the ways that I'm either already earning or planning to earn over the winter. However I can't get too lost down the path of just chasing whatever's going to pay the most during that split second. I need sustainable income, which means pivoting to focus on monthly recurring revenue in all of m
+So that's the rundown of all the ways that I'm either already earning or planning to earn over the winter. However I can't get too lost down the path of just chasing whatever's going to pay the most during that split second. I need sustainable income, which means pivoting to focus on monthly recurring revenue amongst all of the projects.
+
+I've done that with the PARAZETTEL discontinuation, favouring PARAZETTEL Foundations instead, and ProseLab by nature is a monthly subscription price -- add that to the royalties I get every month for writing articles, as well as other payments through tasking and 
+
+I'm still not sure yet what I'm going to spend my life doing, if I do dedicate it completely to one cause -- dependent upon how successful we are with these current endeavours in seven months time I might pursue a job in London (or somewhere else in the world), working for another business.
+
+*(in fact, this is probably worth another update some days down the line)*
+
+Right now, though, I still look favourably on building a personal legacy and portfolio. It's something that will stay with me and continue paying me throughout my entire life, as the input that I'm required to provide from my end decreases as I share more and more videos and articles, and the compounding effect is best started as early as possible.
+
+•••
+
+I intend to continue to update you on this list, because I've realised more recently that my brain is melting again because I'm pushing so hard into getting the book done. I'm scrolling more and have made less space for personal writing like this that provides a nice break.
+
+As well as this I've not made a video talking to camera in a long time, which is one of the best habits to come from being a presence on the internet, so I need to forget trying to make things perfect and get back to that too.
+
+Sorry, it's a long one. But thank you for reading!
