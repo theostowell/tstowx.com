@@ -88,7 +88,7 @@ html, body {
 }
 
 /* Header controls and dropdown mirror the PARAZETTEL pattern. */
-.mobile-menu-controls { display:flex; align-items:center; gap:4px; margin-left:auto; }
+.mobile-menu-controls { display:flex; align-items:center; gap:4px; margin-left:auto; margin-inline-end:var(--gap); }
 .mobile-menu-controls .cta-button { display:inline-block; padding:.6rem .9rem; color:#fff !important; background:#000; border:0; border-radius:4px; font:inherit; font-weight:500; line-height:1.2; cursor:pointer; }
 .mobile-menu-controls .cta-button:hover { background:#333; }
 .hamburger { display:inline-flex; flex-direction:column; justify-content:center; align-items:center; width:44px; height:44px; padding:10px; gap:5px; color:var(--primary); background:transparent; border:0; border-radius:4px; cursor:pointer; }
