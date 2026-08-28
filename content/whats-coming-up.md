@@ -1,6 +1,6 @@
 ---
 title: "Well, What's Next?"
-date: 2026-08-27
+date: 2026-08-28
 draft: false
 timeline: true
 timeline_type: writing
@@ -10,13 +10,13 @@ opengraph_image: "/opengraph/whats-coming-up.png"
 timeline_image: "/attachments/CleanShot%202026-08-27%20at%2015.35.59@2x.png"
 ---
 
-The other day I logged into TrustMRR, recreating my account there, and added all of my businesses into the dashboard there.
+TrustMRR is a platform where you can list your online ventures and their verified revenue if you build on the internet, processing payments through Stripe, Lemon Squeezy and the like.
 
-You get to see in your profile how much you and your startups have earned over three years. Here's what my chart looks like at the moment...
+You get to see in your profile how much you and your businesses have earned over the years, and anyone who's interested can see how much revenue you've generated. Here's what my chart looks like at the moment...
 
-![TrustMRR earnings chart](/attachments/CleanShot%202026-08-27%20at%2015.35.59@2x.png)
+![TrustMRR earnings chart](/attachments/CleanShot%202026-08-28%20at%2013.22.49@2x.png)
 
-As you can see, we're three years in, and we've not moved anywhere significant. I can point to the spikes in revenue coming from the five launches of my product, which I retired completely in the final spike that you can see in the chart, across the end of May and the start of June this year.
+As you can see, we're three years in, and we've not moved anywhere significant. I can point to the spikes in revenue coming from the five launches of my popular Obsidian template PARAZETTEL, which I retired completely in the final spike that you can see in the chart, across the end of May and the start of June this year.
 
 We had some other revenue covering the middle of 2025, from the community that we launched over this time, enough to make sure that this period stood up to scratch as well, but no more...
 
@@ -34,9 +34,9 @@ One of my closest friends and friendships, that started and continued pretty muc
 
 Of course I'm thrilled for them and excited for the experience, but I want to be out and gone from my childhood home, where I've returned to after the prior winter's travel by then as well.
 
-That leaves me with roughly seven months to get prepared so that I have a real stab at independence this time, rather than just travelling and trying to keep the fragments of a business that hasn't truly developed itself running at the same time.
+That leaves me with roughly seven months to get prepared so that I have a real stab at independence this time, rather than just travelling and trying to keep the fragments of a business that hasn't truly developed itself running whilst I'm doing so.
 
-However things need to change, because I haven't got a hope of doing so on £6000/year from the single business.
+Things need to change however, because I haven't got a hope of doing so on £6000/year from the single business.
 
 Fear not, though, let me break down my current income streams and why I'm optimistic that they're going to develop well enough and robustly enough to support me next time around.
 
@@ -68,19 +68,15 @@ Having a degree and some level of professional knowledge of writing and marketin
 
 This means that even when we're in a (dare I say) quiet period of business then I can head and do some tasking to bring a little more money in. It's paid out quickly and into Stripe, a platform I'm already set up on, so the admin was pretty easy.
 
-•••
-
 So that's the rundown of all the ways that I'm either already earning or planning to earn over the winter. However I can't get too lost down the path of just chasing whatever's going to pay the most during that split second. I need sustainable income, which means pivoting to focus on monthly recurring revenue amongst all of the projects.
 
-I've done that with the PARAZETTEL discontinuation, favouring PARAZETTEL Foundations instead, and ProseLab by nature is a monthly subscription price -- add that to the royalties I get every month for writing articles, as well as other payments through tasking and 
+I've done that with the PARAZETTEL discontinuation, favouring PARAZETTEL Foundations instead, and ProseLab by nature is a monthly subscription price -- add that to the royalties I get every month for writing articles, as well as other payments through tasking. 
 
 I'm still not sure yet what I'm going to spend my life doing, if I do dedicate it completely to one cause -- dependent upon how successful we are with these current endeavours in seven months time I might pursue a job in London (or somewhere else in the world), working for another business.
 
 *(in fact, this is probably worth another update some days down the line)*
 
 Right now, though, I still look favourably on building a personal legacy and portfolio. It's something that will stay with me and continue paying me throughout my entire life, as the input that I'm required to provide from my end decreases as I share more and more videos and articles, and the compounding effect is best started as early as possible.
-
-•••
 
 I intend to continue to update you on this list, because I've realised more recently that my brain is melting again because I'm pushing so hard into getting the book done. I'm scrolling more and have made less space for personal writing like this that provides a nice break.
 
