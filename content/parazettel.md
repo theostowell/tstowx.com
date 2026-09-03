@@ -8,6 +8,7 @@ description: An education business about thinking, learning and making better no
 timeline_featured: true
 timeline_date_label: "September 2023 — Present"
 timeline_card_color: "#E9E4FA"
+timeline_image: /attachments/parazettel-foundations-card.webp
 external_url: https://trustmrr.com/startup/parazettel
 external_label: Visit PARAZETTEL
 redirect_to_project: true
