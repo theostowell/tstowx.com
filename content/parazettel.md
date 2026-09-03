@@ -8,9 +8,9 @@ description: An education business about thinking, learning and making better no
 timeline_featured: true
 timeline_date_label: "September 2023 — Present"
 timeline_card_color: "#E9E4FA"
-external_url: https://parazettel.com
+external_url: https://trustmrr.com/startup/parazettel
 external_label: Visit PARAZETTEL
-redirect_to_project: false
+redirect_to_project: true
 ---
 
 PARAZETTEL is the education business I started alongside university. It is where I explore better ways to think, learn and keep knowledge useful.

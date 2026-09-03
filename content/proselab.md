@@ -9,9 +9,9 @@ timeline_featured: true
 timeline_date_label: "March 2026 — Present"
 timeline_card_color: "#E9D1C3"
 opengraph_image: "/opengraph/proselab.png"
-external_url: https://www.proselab.io
+external_url: https://trustmrr.com/startup/proselab
 external_label: Visit ProseLab
-redirect_to_project: false
+redirect_to_project: true
 ---
 
 ProseLab is a writing practice app I’m building with Luca. It uses passages from classic prose and focused prompts to help writers analyse, practise and improve their own work.
