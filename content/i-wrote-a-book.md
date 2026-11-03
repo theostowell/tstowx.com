@@ -1,7 +1,7 @@
 ---
 title: "I Wrote a Book"
 date: 2026-09-25
-draft: false
+draft: true
 timeline: true
 timeline_type: writing
 timeline_summary: ""
