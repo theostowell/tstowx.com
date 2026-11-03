@@ -35,6 +35,49 @@
         "mode": "default"
       },
       "fileExistsMode": "Nothing"
+    },
+    {
+      "id": "d8a95960-0020-41f0-8cdb-bcf6c09dc1fa",
+      "name": "New Quick",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "Inbox/{{DATE:YYYYMMDDHHmmss}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": ""
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "considerSubsections": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "focus": true,
+        "mode": "default"
+      },
+      "captureToCanvasNodeId": "",
+      "activeFileWritePosition": "cursor"
     }
   ],
   "inputPrompt": "multi-line",
@@ -134,5 +177,7 @@
     "addDefaultAIProviders": true,
     "removeMacroIndirection": true,
     "migrateFileOpeningSettings": true
-  }
+  },
+  "persistInputPromptDrafts": true,
+  "useSelectionAsCaptureValue": true
 }
