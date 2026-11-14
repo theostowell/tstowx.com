@@ -8,7 +8,7 @@ description: "Prose drills and re-writes, learn and improve from the Classics...
 timeline_featured: true
 timeline_date_label: "March 2026 — Present"
 timeline_card_color: "#E9D1C3"
-opengraph_image: "/opengraph/proselab.png"
+opengraph_image: "/opengraph/proselab.webp"
 external_url: https://trustmrr.com/startup/proselab
 external_label: Visit ProseLab
 redirect_to_project: true

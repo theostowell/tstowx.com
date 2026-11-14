@@ -6,7 +6,7 @@ timeline: true
 timeline_type: writing
 timeline_summary: "I can't just disappear into nothing, so what's on the cards as plans going forward?"
 description: ""
-opengraph_image: "/opengraph/whats-coming-up.png"
+opengraph_image: "/opengraph/whats-coming-up.webp"
 timeline_image: "/attachments/CleanShot%202026-08-27%20at%2015.35.59@2x.png"
 external_url: "https://tstowx.substack.com/p/whats-coming-up"
 ---
