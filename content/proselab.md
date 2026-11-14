@@ -4,7 +4,7 @@ date: 2026-03-04
 draft: false
 timeline: true
 timeline_type: project
-description: "A practice ground for writers, built with Luca: learn from the classics, then make the work your own."
+description: "Prose drills and re-writes, learn and improve from the Classics..."
 timeline_featured: true
 timeline_date_label: "March 2026 — Present"
 timeline_card_color: "#E9D1C3"

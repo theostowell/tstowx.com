@@ -36,10 +36,9 @@ params:
     title: "Part entrepreneur, *part starving artist\\.\\.\\.*"
     intro: |
       I'm Theo, a Zoology graduate who chose to build internet businesses instead of a career. I run [PARAZETTEL](https://parazettel.com), an education business about thinking and note-taking, and I'm building [ProseLab](https://www.proselab.io) with Luca. In between, I write, make films and take photographs.
-    status: "Back in the UK, scaling PARAZETTEL and ProseLab. The book is out."
+    status: "UK-based (for now), scaling PARAZETTEL and ProseLab through Q4 and into the new year, before considering relocation."
     location: "United Kingdom"
     timezone: "Europe/London"
-    newsletterIssues: "100+"
     photography:
       url: "https://photos.tstowx.com"
       blurb: "Sport, hospitality, travel and independent brands, in the UK and worldwide. Available for hire."
@@ -48,10 +47,6 @@ params:
         - "/attachments/home/photo-hkg-mac-china.webp"
         - "/attachments/home/photo-raly-iv.webp"
         - "/attachments/home/photo-pipers.webp"
-    travel:
-      image: "/attachments/home/travel-passport-2025.jpg"
-      title: "2025, from the window seat"
-      stats: "19 flights · 21,962 miles · 10 countries"
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
