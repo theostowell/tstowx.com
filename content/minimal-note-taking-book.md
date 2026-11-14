@@ -5,7 +5,7 @@ draft: false
 timeline: true
 timeline_type: project
 timeline_summary: "My book on building a simpler note-taking system around your work, rather than the latest app or template."
-descriptpleaion: "A practical guide to building and maintaining a simple, effective note-taking system that works for you."
+description: "A practical guide to building and maintaining a simple, effective note-taking system that works for you."
 opengraph_image: "/opengraph/minimal-note-taking-book.webp"
 external_url: "https://parazettel.com/book/"
 external_label: "Get the book"

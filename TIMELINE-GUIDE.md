@@ -183,7 +183,9 @@ timeline_image: "/attachments/my-photo.jpg"
 - Do not paste a computer path into `timeline_image`; use a site path beginning with `/attachments/`.
 - The built-in post embeds use the IDs from their URLs, not the full URLs.
 - The `/now` page remains a standalone page. It is not shown on the homepage timeline.
-- The homepage title and introductory copy are in `hugo.yaml`, under `params.timelineHome`.
+- The homepage is now a dashboard (`layouts/partials/home_dashboard.html`). Its hero, "Now" status, stats, photography and travel copy live in `hugo.yaml` under `params.dashboard`.
+- Venture tiles come from `timeline_featured` project notes that set `trustmrr_embed` (plus optional `website_url` and `dashboard_accent`). The newest non-featured `project` becomes the "Latest launch" tile; `video` notes fill the films row; the archive grid shows everything else, with filters.
+- The old chronological timeline still lives at `/timeline/`. Its intro copy is in `hugo.yaml` under `params.timelineHome`.
 
 ## Before publishing
 

@@ -1,0 +1,13 @@
+{{- /* Where a dashboard card should send the reader. Mirrors the timeline rules. */ -}}
+{{- $type := .Params.timeline_type | default "writing" }}
+{{- $href := .RelPermalink }}
+{{- $external := false }}
+{{- if and .Params.external_url (or (eq $type "substack") (and (eq $type "project") .Params.redirect_to_project)) }}
+  {{- $href = .Params.external_url }}
+  {{- $external = true }}
+{{- end }}
+{{- if and (eq $type "social") (eq .Params.platform "x") .Params.author_handle .Params.post_id }}
+  {{- $href = printf "https://x.com/%s/status/%s" .Params.author_handle .Params.post_id }}
+  {{- $external = true }}
+{{- end }}
+{{- return (dict "href" $href "external" $external) }}

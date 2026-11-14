@@ -14,6 +14,11 @@
     font-display: swap;
 }
 
+/* Sharp corners throughout: PaperMod's own cards, code blocks and buttons read --radius. */
+:root {
+    --radius: 0;
+}
+
 /* Use Apple Garamond for display headings throughout the site. */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Apple Garamond", Georgia, serif;
@@ -85,7 +90,7 @@ html, body {
     margin: 20px 0;
     background-color: white;
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 0;
     flex-direction: row;
     gap: 8px;
 }
@@ -146,9 +151,9 @@ html, body {
 
 /* Header controls and dropdown mirror the PARAZETTEL pattern. */
 .mobile-menu-controls { display:flex; align-items:center; gap:4px; margin-left:auto; margin-inline-end:var(--gap); }
-.mobile-menu-controls .cta-button { display:inline-block; padding:.6rem .9rem; color:#fff !important; background:#000; border:0; border-radius:4px; font:inherit; font-weight:500; line-height:1.2; cursor:pointer; }
+.mobile-menu-controls .cta-button { display:inline-block; padding:.6rem .9rem; color:#fff !important; background:#000; border:0; border-radius:0; font:inherit; font-weight:500; line-height:1.2; cursor:pointer; }
 .mobile-menu-controls .cta-button:hover { background:#333; }
-.hamburger { display:inline-flex; flex-direction:column; justify-content:center; align-items:center; width:44px; height:44px; padding:10px; gap:5px; color:var(--primary); background:transparent; border:0; border-radius:4px; cursor:pointer; }
+.hamburger { display:inline-flex; flex-direction:column; justify-content:center; align-items:center; width:44px; height:44px; padding:10px; gap:5px; color:var(--primary); background:transparent; border:0; border-radius:0; cursor:pointer; }
 .hamburger:hover,.hamburger:focus-visible { background:var(--code-bg); }
 .hamburger-line { display:block; width:22px; height:2px; background:currentColor; border-radius:2px; transition:transform .2s ease,opacity .2s ease; }
 .hamburger.is-active .hamburger-line:nth-child(1) { transform:translateY(7px) rotate(45deg); }
@@ -247,7 +252,7 @@ body:has(.post-single) {
     padding: 2.25rem 2.35rem 1.5rem;
     overflow: hidden;
     border: 1px solid #d9d6d0;
-    border-radius: 4px;
+    border-radius: 0;
     background: #fff;
 }
 
@@ -330,7 +335,7 @@ body:has(.post-single) {
 .embeddable-buttondown-form {
     background-color: #EEE;
     padding: 1.25rem 1.25rem 0;
-    border-radius: 8px;
+    border-radius: 0;
     max-width: 500px;
     margin: 0 auto;
 }
@@ -349,7 +354,7 @@ body:has(.post-single) {
     padding: 0.75rem;
     margin-bottom: 1rem;
     border: 1px solid #333;
-    border-radius: 4px;
+    border-radius: 0;
     font-size: 1.12rem;
     box-sizing: border-box;
     background-color: white;
@@ -370,7 +375,7 @@ body:has(.post-single) {
     color: white;
     padding: 0.75rem 2rem;
     border: 2px solid #000;
-    border-radius: 4px;
+    border-radius: 0;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -500,7 +505,7 @@ body:has(.post-single) {
     padding: 1.4rem 1.65rem 1.5rem;
     margin-right: 2rem;
     border: 1px solid #d9d6d0;
-    border-radius: 4px;
+    border-radius: 0;
     background: #fff;
     color: inherit;
     text-decoration: none;
@@ -539,7 +544,7 @@ body:has(.post-single) {
     max-width: none;
     max-height: 270px;
     margin: -1.4rem -1.65rem 1rem;
-    border-radius: 3px 3px 0 0;
+    border-radius: 0;
     object-fit: cover;
 }
 
@@ -551,7 +556,7 @@ body:has(.post-single) {
     margin: -1.4rem -1.65rem 1rem;
     overflow: hidden;
     border: 0;
-    border-radius: 3px 3px 0 0;
+    border-radius: 0;
     background: #171717;
     cursor: pointer;
     aspect-ratio: 16 / 9;
@@ -597,7 +602,7 @@ body:has(.post-single) {
     width: calc(100% + 3.3rem);
     margin: -1.4rem -1.65rem 1rem;
     border: 0;
-    border-radius: 3px 3px 0 0;
+    border-radius: 0;
     background: #171717;
     aspect-ratio: 16 / 9;
 }
@@ -617,7 +622,7 @@ body:has(.post-single) {
     width: 100%;
     margin: 1.5rem 0;
     overflow: hidden;
-    border-radius: var(--radius);
+    border-radius: 0;
     aspect-ratio: 16 / 9;
     background: #171717;
 }
@@ -635,7 +640,7 @@ body:has(.post-single) {
     margin: 1.25rem 0;
     overflow: hidden;
     border: 1px solid var(--border);
-    border-radius: var(--radius);
+    border-radius: 0;
     color: var(--primary);
     text-decoration: none;
 }
@@ -845,7 +850,7 @@ body:has(.post-single) {
     color: white;
     padding: 0.75rem 2rem;
     border: 2px solid #000;
-    border-radius: 4px;
+    border-radius: 0;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
@@ -886,7 +891,7 @@ body:has(.post-single) {
 .recent-photo-item {
     position: relative;
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: 0;
 }
 
 .recent-photo-item a {
@@ -970,7 +975,7 @@ body:has(.post-single) {
     position: relative;
     overflow: hidden;
     display: block;
-    border-radius: 4px;
+    border-radius: 0;
 }
 
 .photo-grid-uniform-item a {
@@ -1156,7 +1161,7 @@ body:has(.post-single) {
     transform: translateX(-50%) translateY(-4px);
     background: var(--theme);
     border: 1px solid var(--border);
-    border-radius: var(--radius);
+    border-radius: 0;
     padding: 0.5rem 0;
     min-width: 140px;
     z-index: 200;
@@ -1205,7 +1210,7 @@ body:has(.post-single) {
     background: #000;
     color: white !important;
     text-decoration: none !important;
-    border-radius: 4px;
+    border-radius: 0;
     font-weight: 500;
     transition: all 0.2s ease;
     line-height: 1.2;
@@ -1255,7 +1260,7 @@ body:has(#supascribe-popup-widget) {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #333;
-    border-radius: 4px;
+    border-radius: 0;
     font-size: 1rem;
     box-sizing: border-box;
     background-color: white;
@@ -1272,7 +1277,7 @@ body:has(#supascribe-popup-widget) {
     color: white;
     padding: 0.75rem 2rem;
     border: 2px solid #000;
-    border-radius: 4px;
+    border-radius: 0;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;

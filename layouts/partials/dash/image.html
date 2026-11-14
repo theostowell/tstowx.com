@@ -1,0 +1,6 @@
+{{- /* Card image: timeline_image → opengraph_image → YouTube thumbnail. */ -}}
+{{- $img := .Params.timeline_image | default .Params.opengraph_image | default "" }}
+{{- if and (not $img) .Params.youtube_id }}
+  {{- $img = printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" .Params.youtube_id }}
+{{- end }}
+{{- return $img }}

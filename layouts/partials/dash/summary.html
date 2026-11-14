@@ -1,0 +1,2 @@
+{{- /* One-line card copy: timeline_summary → description → opening of the note. */ -}}
+{{- with .Params.timeline_summary }}{{ . }}{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | htmlUnescape | truncate 150 }}{{ end }}{{ end -}}

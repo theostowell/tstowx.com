@@ -1,0 +1,348 @@
+{{- /*
+  Homepage dashboard: a bento grid of ventures, launches, films, writing and
+  photography, followed by a filterable card archive of every timeline note.
+  Copy lives in hugo.yaml under params.dashboard. The old chronological view
+  lives on at /timeline/.
+*/ -}}
+{{- $d := site.Params.dashboard }}
+{{- $projects := where site.RegularPages "Section" "projects" }}
+{{- $timelineItems := where (where site.RegularPages "Params.timeline" true) "Draft" false }}
+{{- $all := sort (union $projects $timelineItems) "Date" "desc" }}
+{{- $featured := where $all "Params.timeline_featured" true }}
+{{- $ventures := sort (where $featured "Params.trustmrr_embed" "!=" nil) "Date" "asc" }}
+{{- $rest := where $all "Params.timeline_featured" "ne" true }}
+{{- $films := where $rest "Params.timeline_type" "video" }}
+{{- $writing := where $rest "Params.timeline_type" "in" (slice "writing" "substack" "place" "note") }}
+{{- $launches := where $rest "Params.timeline_type" "project" }}
+{{- $places := where $rest "Params.timeline_type" "place" }}
+{{- $palette := slice "#F3EEE4" "#E4ECDF" "#E9E4FA" "#F4E1D6" "#DDE8F0" "#F1E9C9" }}
+
+<script>document.documentElement.classList.add('dash-js');</script>
+
+<div class="dash" id="dashboard">
+
+  {{- /* ── Hero ─────────────────────────────────────────────── */}}
+  <section class="dash-grid" aria-label="Introduction">
+    <article class="tile tile--hero dash-reveal">
+      <h1 class="hero-title">{{ $d.title | markdownify }}</h1>
+      <div class="hero-intro">{{ $d.intro | markdownify }}</div>
+      <div class="hero-actions">
+        <button type="button" class="dash-btn dash-btn--dark" data-supascribe-popup-trigger="840405570576">Subscribe to the newsletter</button>
+        <a class="dash-btn dash-btn--outline" href="#archive">Browse everything <span aria-hidden="true">↓</span></a>
+      </div>
+    </article>
+
+    <article class="tile tile--now dash-reveal">
+      <div class="now-head">
+        <span class="now-live"><span class="now-dot" aria-hidden="true"></span>Now</span>
+        <span class="now-clock" data-dash-clock data-tz="{{ $d.timezone | default "Europe/London" }}">{{ $d.location }}</span>
+      </div>
+      <p class="now-status">{{ $d.status }}</p>
+      {{- with site.GetPage "/now" }}{{ if not .Draft }}
+      <a class="tile-link" href="{{ .RelPermalink }}">What I'm doing now <span class="arrow" aria-hidden="true">→</span></a>
+      {{- end }}{{ end }}
+    </article>
+
+    <article class="tile tile--elsewhere dash-reveal">
+      <h3 class="elsewhere-title">Elsewhere</h3>
+      <ul class="elsewhere-list">
+        {{- range site.Params.SocialIcons }}
+        <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer"><span>{{ .name }}</span><span class="arrow" aria-hidden="true">↗</span></a></li>
+        {{- end }}
+        <li><a href="{{ $d.photography.url }}" target="_blank" rel="noopener noreferrer"><span>Photography</span><span class="arrow" aria-hidden="true">↗</span></a></li>
+      </ul>
+    </article>
+
+    <div class="tile tile--stats dash-reveal" role="list" aria-label="By the numbers">
+      <div class="stat" role="listitem"><strong data-count="{{ len $ventures }}">{{ len $ventures }}</strong><span>businesses with verified revenue</span></div>
+      <div class="stat" role="listitem"><strong data-count="{{ len $writing }}">{{ len $writing }}</strong><span>essays &amp; posts on this site</span></div>
+      <div class="stat" role="listitem"><strong data-count="{{ len $films }}">{{ len $films }}</strong><span>films &amp; videos</span></div>
+      <div class="stat" role="listitem"><strong>{{ $d.newsletterIssues }}</strong><span>newsletter issues since 2023</span></div>
+    </div>
+  </section>
+
+  {{- /* ── Ventures ─────────────────────────────────────────── */}}
+  {{- with $ventures }}
+  <header class="dash-section-head">
+    <h2>The businesses, with the receipts.</h2>
+    <p>Revenue charts are verified live by TrustMRR, straight from the payment processor.</p>
+  </header>
+  <section class="dash-grid" aria-label="Ventures">
+    {{- range . }}
+    <article class="tile tile--venture dash-reveal" style="--venture-bg: {{ .Params.timeline_card_color | default "#F3EEE4" | safeCSS }}; --venture-accent: {{ .Params.dashboard_accent | default "#171717" | safeCSS }};">
+      {{- $img := partial "dash/image.html" . }}
+      {{- $site := .Params.website_url | default .Params.external_url }}
+      <a class="venture-media" href="{{ $site }}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+        {{- with $img }}<img src="{{ . }}" alt="" loading="lazy">{{ end }}
+      </a>
+      <div class="venture-body">
+        <h3><a href="{{ $site }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a></h3>
+        <p>{{ partial "dash/summary.html" . }}</p>
+        <div class="venture-chart">
+          <iframe src="{{ .Params.trustmrr_embed }}" title="{{ .Title }}: TrustMRR verified revenue chart" width="640" height="360" loading="lazy"></iframe>
+        </div>
+        <div class="venture-actions">
+          <a class="dash-btn dash-btn--accent" href="{{ $site }}" target="_blank" rel="noopener noreferrer">Visit {{ .Title }} <span class="arrow" aria-hidden="true">↗</span></a>
+          {{- with .Params.external_url }}
+          <a class="dash-btn dash-btn--outline" href="{{ . }}" target="_blank" rel="noopener noreferrer">Revenue on TrustMRR <span class="arrow" aria-hidden="true">↗</span></a>
+          {{- end }}
+        </div>
+      </div>
+    </article>
+    {{- end }}
+  </section>
+  {{- end }}
+
+  {{- /* ── Latest launch + travel ───────────────────────────── */}}
+  <section class="dash-grid" aria-label="Highlights">
+    {{- with index $launches 0 }}
+    {{- $link := partial "dash/link.html" . }}
+    <a class="tile tile--launch dash-reveal" href="{{ $link.href }}"{{ if $link.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+      {{- with partial "dash/image.html" . }}<div class="launch-media"><img src="{{ . }}" alt="" loading="lazy"></div>{{ end }}
+      <div class="launch-body">
+        <h3>{{ .Title }}</h3>
+        <p>{{ partial "dash/summary.html" . }} Out {{ .Date.Format "January 2006" }}.</p>
+        <span class="tile-link">{{ .Params.external_label | default "Take a look" }} <span class="arrow" aria-hidden="true">{{ if $link.external }}↗{{ else }}→{{ end }}</span></span>
+      </div>
+    </a>
+    {{- end }}
+
+    {{- with $d.travel }}
+    {{- $place := index $places 0 }}
+    <a class="tile tile--travel dash-reveal" href="{{ with $place }}{{ .RelPermalink }}{{ else }}#archive{{ end }}">
+      <div class="travel-media"><img src="{{ .image }}" alt="Map of Theo's 2025 flights across Europe, Asia and Australia" loading="lazy"></div>
+      <div class="travel-overlay">
+        <h3>{{ .title }}</h3>
+        <p class="travel-stats">{{ .stats }}</p>
+        {{- with $place }}<span class="tile-link">Read: {{ .Title }} <span class="arrow" aria-hidden="true">→</span></span>{{ end }}
+      </div>
+    </a>
+    {{- end }}
+  </section>
+
+  {{- /* ── Films ────────────────────────────────────────────── */}}
+  {{- with $films }}
+  <section class="tile tile--films dash-reveal" aria-labelledby="films-title">
+    <div class="films-head">
+      <div>
+        <h2 id="films-title">Things I've filmed.</h2>
+      </div>
+      <div class="films-controls">
+        <button type="button" class="films-nav" data-films-scroll="-1" aria-label="Scroll films left">←</button>
+        <button type="button" class="films-nav" data-films-scroll="1" aria-label="Scroll films right">→</button>
+      </div>
+    </div>
+    <div class="films-track" data-films-track>
+      {{- range . }}
+      <a class="film" href="{{ .RelPermalink }}">
+        <div class="film-thumb">
+          <img src="https://i.ytimg.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" alt="" loading="lazy">
+          <span class="film-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+        </div>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2006" }}</time>
+        <h3>{{ .Title }}</h3>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+  {{- /* ── Writing + photography ────────────────────────────── */}}
+  <section class="dash-grid" aria-label="Writing and photography">
+    <article class="tile tile--writing dash-reveal">
+      <div class="writing-head">
+        <div>
+          <h2>Words, mostly.</h2>
+        </div>
+        <a class="tile-link" href="https://substack.com/@tstowx" target="_blank" rel="noopener noreferrer">Substack <span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+      <ol class="writing-list">
+        {{- range first 6 $writing }}
+        {{- $link := partial "dash/link.html" . }}
+        <li>
+          <a href="{{ $link.href }}"{{ if $link.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+            <span class="writing-title">{{ .Title }}</span>
+            <span class="arrow" aria-hidden="true">{{ if $link.external }}↗{{ else }}→{{ end }}</span>
+          </a>
+        </li>
+        {{- end }}
+      </ol>
+    </article>
+
+    {{- with $d.photography }}
+    <a class="tile tile--photos dash-reveal" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+      <div class="photo-mosaic" aria-hidden="true">
+        {{- range .images }}<img src="{{ . }}" alt="" loading="lazy">{{ end }}
+      </div>
+      <div class="photos-body">
+        <h3>See the portfolio</h3>
+        <p>{{ .blurb }}</p>
+        <span class="tile-link">photos.tstowx.com <span class="arrow" aria-hidden="true">↗</span></span>
+      </div>
+    </a>
+    {{- end }}
+  </section>
+
+  {{- /* ── Archive ──────────────────────────────────────────── */}}
+  <section class="dash-archive" id="archive" aria-labelledby="archive-title">
+    <header class="dash-section-head">
+      <h2 id="archive-title">Everything worth keeping.</h2>
+      <p>Writing, films, launches, trips and posts, newest first. <a href="/timeline/">Prefer it as a timeline?</a></p>
+    </header>
+
+    <div class="archive-filters" role="toolbar" aria-label="Filter the archive">
+      <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="chip" data-filter="writing" aria-pressed="false">Essays</button>
+      <button type="button" class="chip" data-filter="substack" aria-pressed="false">Substack</button>
+      <button type="button" class="chip" data-filter="video" aria-pressed="false">Films</button>
+      <button type="button" class="chip" data-filter="project" aria-pressed="false">Projects</button>
+      <button type="button" class="chip" data-filter="place" aria-pressed="false">Travel</button>
+      <button type="button" class="chip" data-filter="social" aria-pressed="false">Posts on X</button>
+    </div>
+
+    <div class="archive-grid" data-archive>
+      {{- range $i, $p := $rest }}
+      {{- $type := .Params.timeline_type | default "writing" }}
+      {{- if eq .Section "projects" }}{{ $type = "project" }}{{ end }}
+      {{- $filter := $type }}
+      {{- if eq $type "note" }}{{ $filter = "writing" }}{{ end }}
+      {{- $link := partial "dash/link.html" . }}
+      {{- $img := partial "dash/image.html" . }}
+      {{- $bg := .Params.timeline_card_color | default (index $palette (mod $i (len $palette))) }}
+      <a class="card card--{{ $type }}{{ if and (not $img) (ne $type "social") }} card--text{{ end }} dash-reveal" data-type="{{ $filter }}" href="{{ $link.href }}"{{ if $link.external }} target="_blank" rel="noopener noreferrer"{{ end }}{{ if and (not $img) (ne $type "social") }} style="--card-bg: {{ $bg | safeCSS }};"{{ end }}>
+        {{- with $img }}
+        <div class="card-media{{ if eq $type "video" }} card-media--video{{ end }}">
+          <img src="{{ . }}" alt="" loading="lazy">
+          {{- if eq $type "video" }}<span class="film-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>{{ end }}
+        </div>
+        {{- end }}
+        <div class="card-body">
+          <div class="card-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.timeline_date_label | default (.Date.Format "Jan 2006") }}</time>
+          </div>
+          {{- if eq $type "social" }}
+          <p class="card-social">@{{ .Params.author_handle }} on X <span class="arrow" aria-hidden="true">↗</span></p>
+          {{- else }}
+          <h3>{{ .Title }}</h3>
+          <p>{{ partial "dash/summary.html" . }}</p>
+          {{- end }}
+        </div>
+      </a>
+      {{- end }}
+    </div>
+
+    <div class="archive-more">
+      <button type="button" class="dash-btn dash-btn--outline" data-archive-more hidden>Show everything</button>
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+  var root = document.getElementById('dashboard');
+  if (!root) return;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Reveal tiles and cards as they scroll into view. */
+  var revealables = root.querySelectorAll('.dash-reveal');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-in');
+        io.unobserve(entry.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    revealables.forEach(function (el) { io.observe(el); });
+  } else {
+    revealables.forEach(function (el) { el.classList.add('is-in'); });
+  }
+
+  /* Count the stats up the first time they appear. */
+  var counters = root.querySelectorAll('[data-count]');
+  function countUp(el) {
+    var target = parseInt(el.dataset.count, 10) || 0, start = null;
+    function step(t) {
+      if (!start) start = t;
+      var p = Math.min((t - start) / 1100, 1);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var co = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        countUp(entry.target);
+        co.unobserve(entry.target);
+      });
+    });
+    counters.forEach(function (el) { el.textContent = '0'; co.observe(el); });
+  }
+
+  /* Local time where Theo is. */
+  var clock = root.querySelector('[data-dash-clock]');
+  if (clock && window.Intl) {
+    var place = clock.textContent.trim();
+    var fmt = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: clock.dataset.tz });
+    var tick = function () { clock.textContent = place + ' · ' + fmt.format(new Date()); };
+    tick();
+    setInterval(tick, 15000);
+  }
+
+  /* Films carousel arrows. */
+  var track = root.querySelector('[data-films-track]');
+  root.querySelectorAll('[data-films-scroll]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (!track) return;
+      track.scrollBy({ left: track.clientWidth * 0.8 * Number(btn.dataset.filmsScroll), behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+  });
+
+  /* Archive filters and "show everything". */
+  var LIMIT = 18;
+  var grid = root.querySelector('[data-archive]');
+  var more = root.querySelector('[data-archive-more]');
+  var chips = root.querySelectorAll('.archive-filters .chip');
+  var cards = grid ? Array.prototype.slice.call(grid.children) : [];
+  var current = 'all', expanded = false;
+
+  chips.forEach(function (chip) {
+    var f = chip.dataset.filter;
+    var n = f === 'all' ? cards.length : cards.filter(function (c) { return c.dataset.type === f; }).length;
+    if (!n) { chip.hidden = true; return; }
+    var count = document.createElement('span');
+    count.className = 'chip-count';
+    count.textContent = n;
+    chip.appendChild(count);
+    chip.addEventListener('click', function () {
+      current = f;
+      chips.forEach(function (c) {
+        var on = c === chip;
+        c.classList.toggle('is-active', on);
+        c.setAttribute('aria-pressed', String(on));
+      });
+      render(true);
+    });
+  });
+
+  function render(fromUser) {
+    var shown = 0, matching = 0;
+    cards.forEach(function (card) {
+      var match = current === 'all' || card.dataset.type === current;
+      if (match) matching++;
+      var visible = match && (expanded || current !== 'all' || shown < LIMIT);
+      card.hidden = !visible;
+      if (visible) { shown++; if (fromUser) card.classList.add('is-in'); }
+    });
+    if (more) {
+      more.hidden = expanded || current !== 'all' || matching <= LIMIT;
+      more.textContent = 'Show all ' + matching;
+    }
+  }
+  if (more) more.addEventListener('click', function () { expanded = true; render(true); });
+  render();
+})();
+</script>

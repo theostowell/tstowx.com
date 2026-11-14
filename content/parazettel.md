@@ -12,6 +12,9 @@ timeline_image: /attachments/parazettel-foundations-card.webp
 external_url: https://trustmrr.com/startup/parazettel
 external_label: Visit PARAZETTEL
 redirect_to_project: true
+website_url: https://parazettel.com
+trustmrr_embed: "https://trustmrr.com/embed/parazettel?theme=light&period=12m&color=violet"
+dashboard_accent: "#6D4EE0"
 ---
 
 PARAZETTEL is the education business I started alongside university. It is where I explore better ways to think, learn and keep knowledge useful.

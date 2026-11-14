@@ -29,6 +29,29 @@ params:
       Welcome to my personal site -- I've tried to make it a 'digital CV' as such. I don't discriminate across the work that I post here, all of it is stuff I'm proud of, for whatever reason, ordered in a chronological timeline. Have a scroll through...
 
       <I>Looking to hire me to shoot photos of your venue or at your next event? [There's a dedicated portfolio for that which you can find here.](https://photos.tstowx.com)</I>
+  # The homepage dashboard (layouts/partials/home_dashboard.html).
+  # Ventures come from featured project notes with `trustmrr_embed` set;
+  # films, writing and the archive are pulled from timeline notes automatically.
+  dashboard:
+    title: "Part entrepreneur, *part starving artist\\.\\.\\.*"
+    intro: |
+      I'm Theo, a Zoology graduate who chose to build internet businesses instead of a career. I run [PARAZETTEL](https://parazettel.com), an education business about thinking and note-taking, and I'm building [ProseLab](https://www.proselab.io) with Luca. In between, I write, make films and take photographs.
+    status: "Back in the UK, scaling PARAZETTEL and ProseLab. The book is out."
+    location: "United Kingdom"
+    timezone: "Europe/London"
+    newsletterIssues: "100+"
+    photography:
+      url: "https://photos.tstowx.com"
+      blurb: "Sport, hospitality, travel and independent brands, in the UK and worldwide. Available for hire."
+      images:
+        - "/attachments/home/photo-bbu.webp"
+        - "/attachments/home/photo-hkg-mac-china.webp"
+        - "/attachments/home/photo-raly-iv.webp"
+        - "/attachments/home/photo-pipers.webp"
+    travel:
+      image: "/attachments/home/travel-passport-2025.jpg"
+      title: "2025, from the window seat"
+      stats: "19 flights · 21,962 miles · 10 countries"
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
