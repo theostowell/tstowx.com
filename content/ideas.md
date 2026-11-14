@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/ideas"
+opengraph_image: "/opengraph/ideas-card.webp"
 ---
 
 When you have an idea, there might be some kind of temptation to save it for a more suitable time to share.

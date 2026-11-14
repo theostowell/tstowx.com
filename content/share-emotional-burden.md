@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/share-emotional-burden"
+opengraph_image: "/opengraph/share-emotional-burden-card.webp"
 ---
 
 For the most part, we can keep control of our emotions. Sometimes emotions get stronger though, not only for ourselves but for others too.

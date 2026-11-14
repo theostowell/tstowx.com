@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/create"
+opengraph_image: "/opengraph/create.webp"
 ---
 
 In capitalist society, humans default to consumption.

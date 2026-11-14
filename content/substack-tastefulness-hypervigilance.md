@@ -7,7 +7,7 @@ timeline_type: substack
 timeline_summary: "I wrote this in like 20 mins but it makes a point..."
 description: "I wrote this in like 20 mins but it makes a point..."
 external_url: "https://tstowx.substack.com/p/the-curse-of-tastefulness-x-hypervigilance"
-opengraph_image: ""
+opengraph_image: "/opengraph/substack-tastefulness-hypervigilance-card.webp"
 ---
 
 The timeline card links directly to the Substack post.

@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/short-form"
+opengraph_image: "/opengraph/short-form-card.webp"
 ---
 
 > _“I have made this longer than usual because I have not had time to make it shorter.”_

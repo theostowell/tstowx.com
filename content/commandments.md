@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/commandments"
+opengraph_image: "/opengraph/commandments-card.webp"
 ---
 
 _Originally, this note was going to be completely private. I started writing these commandments with no intention of sharing but the further in I got, the more I realised the piece looked like [Twenty observations from 20 years on Earth](/twenty/), a piece I published almost exactly a year ago (I’m turning 21 on Thursday)._

@@ -7,4 +7,5 @@ timeline_type: video
 timeline_summary: "A short film about friendship, shared experience and brotherhood."
 description: "A short film exploring brotherhood through time spent together."
 youtube_id: "wzbavJKAZ2U"
+opengraph_image: "/opengraph/brotherhood-short-film.webp"
 ---

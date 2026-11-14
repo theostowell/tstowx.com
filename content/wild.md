@@ -7,4 +7,5 @@ timeline_type: video
 timeline_summary: "A film following the drive to find and photograph the natural world."
 description: "The story of a wildlife photographer and the pursuit of wild places and animals."
 youtube_id: "EU0u8MX10ps"
+opengraph_image: "/opengraph/wild.webp"
 ---

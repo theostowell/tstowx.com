@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/number-based-goals"
+opengraph_image: "/opengraph/number-based-goals-card.webp"
 ---
 
 Everyone sets goals, especially number-based ones, and there are clear reasons why. Improved motivation, along with the satisfaction of achievement are two such examples.

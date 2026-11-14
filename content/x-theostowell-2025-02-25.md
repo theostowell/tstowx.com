@@ -7,6 +7,7 @@ timeline_type: social
 platform: x
 author_handle: theostowell
 post_id: "1894352022863859950"
+opengraph_image: "/opengraph/x-theostowell-2025-02-25.webp"
 ---
 
 {{< x-post >}}

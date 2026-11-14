@@ -58,6 +58,15 @@ The `!` makes Netlify override the file Hugo still writes at that path. That fil
 
 The card uses `timeline_summary`, then `description`, then the opening of the note. `timeline_image` is an optional card image (`/attachments/photo.jpg`).
 
+## Card and share images
+
+`opengraph_image` is one field with two jobs: the archive card and the share preview. Every note points it at a local file in `static/opengraph/` (1200×630 webp), so the built site never depends on a CDN for a card.
+
+- `scripts/fetch_card_images.py` — scrapes a real image: Substack cover then first body image, X media via `cdn.syndication.twimg.com`, the YouTube thumbnail, or any other `external_url`'s `og:image`. Downloads, cover-crops to 1200×630, writes the frontmatter.
+- `scripts/make_title_cards.py` — draws a title card in Instrument Serif on cream for notes with no image anywhere. Substack's `og:image` for a text-only post is the publication's generic subscribe card, identical across posts, so scraping yields nothing usable there.
+
+Both are idempotent (they skip notes that already have an image) and both need Pillow. `--force` on `make_title_cards.py` redraws.
+
 ## Embedding
 
 The shortcodes still exist for the rare note whose body is worth writing here. They read the same frontmatter:

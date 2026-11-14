@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/twenty"
+opengraph_image: "/opengraph/twenty-card.webp"
 ---
 
 I turned 20 yesterday, which is crazy. I still remember my 10th birthday. That’s half a lifetime ago now.

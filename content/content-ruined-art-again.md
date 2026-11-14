@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/content-ruined-art-again"
+opengraph_image: "/opengraph/content-ruined-art-again-card.webp"
 ---
 
 **_I wrote this piece with pen and paper before typing it up here. A deliberate rejection of digital interfaces (the same ones I interact with and post content from)._**

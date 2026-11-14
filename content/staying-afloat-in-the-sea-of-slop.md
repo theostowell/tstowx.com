@@ -7,6 +7,7 @@ timeline_type: video
 timeline_summary: "Using AI (specifically Claude Code) in note-taking and knowledge management has been all across the internet..."
 description: "Using AI (specifically Claude Code) in note-taking and knowledge management has been all across the internet..."
 youtube_id: "BQdd4qsNMtU"
+opengraph_image: "/opengraph/staying-afloat-in-the-sea-of-slop.webp"
 ---
 
 Using AI (specifically Claude Code) in note-taking and knowledge management has been all across the internet for the last week or so.

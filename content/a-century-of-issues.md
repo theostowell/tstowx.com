@@ -7,6 +7,7 @@ timeline_type: video
 timeline_summary: "A reflection on one hundred issues and the direction of the work from here."
 description: "A video marking one hundred issues and looking ahead to what comes next."
 youtube_id: "op_ZvUdDstg"
+opengraph_image: "/opengraph/a-century-of-issues.webp"
 ---
 
 It’s been a long time since the fateful day at the end of May 2023 when I decided to publish my first newsletter issue.

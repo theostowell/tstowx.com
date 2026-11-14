@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/things-of-25"
+opengraph_image: "/opengraph/things-of-25-card.webp"
 ---
 
 *[Read my piece 'If not now, then when?' that I wrote the other day but forgot to share!](https://tstowx.com/if-not-now-then-when/)*

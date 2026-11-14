@@ -70,6 +70,23 @@ So: paste a URL into `external_url` and the card goes there.
 | A book or other product | `project` | `external_url` to the product page |
 | A link worth keeping | `link` | `external_url` |
 
+## Card and share images
+
+Every card wants an image: the archive looks broken when half of it is text. The site keeps one 1200×630 webp per note in `static/opengraph/` and points `opengraph_image` at it, so nothing is fetched from a CDN at runtime.
+
+Two scripts fill the gap, and both are safe to re-run — they only touch notes that have no image:
+
+```bash
+python3 scripts/fetch_card_images.py --write    # scrape the platform
+python3 scripts/make_title_cards.py --write     # draw a card for text-only posts
+```
+
+`fetch_card_images.py` asks the platform, in order: the post's own image (Substack cover, then the first real image in the body), X media, the YouTube thumbnail, then the Open Graph image of any `external_url`. That covers films, posts and any post written around a picture.
+
+`make_title_cards.py` covers what has nowhere to scrape: plenty of the older essays are text-only on Substack, and Substack serves the same generic subscribe card as their `og:image`. It draws the title in the site's own Instrument Serif on cream, and takes a couple of seconds per note.
+
+Both need Pillow (`pip install pillow`). Drop the output in the repo rather than hotlinking: the images are part of the site now.
+
 ## Redirects and old links
 
 The build writes `_redirects` from the same rule, so every entry’s own URL is a real 301 to its platform home — including the legacy `/writing/…` aliases:
@@ -93,5 +110,6 @@ Adding entries never means touching a template: the dashboard, the archive, the 
 - Is the thing itself already live on its platform?
 - Is `external_url` (or `youtube_id`) filled in — and correct?
 - Is `date` right, `timeline: true` set, and `timeline_type` right?
+- Does the card have an image? (`python3 scripts/fetch_card_images.py --write` first, then `make_title_cards.py --write`)
 - Does `timeline_summary` make sense on its own?
 - Have you changed `draft` to `false`?

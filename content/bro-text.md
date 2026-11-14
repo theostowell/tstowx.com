@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/bro-text"
+opengraph_image: "/opengraph/bro-text-card.webp"
 ---
 
 After building in the online business space for a little over half a year, I’ve noticed there’s a pattern developing…

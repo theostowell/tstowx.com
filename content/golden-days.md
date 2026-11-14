@@ -7,6 +7,7 @@ timeline_type: video
 timeline_summary: "A reminder to record the ordinary, brilliant days that will not come around again."
 description: ""
 youtube_id: "bMHCHMvbIL8"
+opengraph_image: "/opengraph/golden-days.webp"
 ---
 
 I don't expect you to watch all of this. Could call it episode one of 'recording videos I hope my future self might enjoy'.

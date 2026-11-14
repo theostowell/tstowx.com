@@ -7,5 +7,5 @@ timeline_type: substack
 timeline_summary: "My content ruined my art."
 description: "My content ruined my art."
 external_url: "https://substack.com/@tstowx/p-209224183"
-opengraph_image: "https://substackcdn.com/image/fetch/$s_!Pu4m!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftstowx.substack.com%2Ftwitter%2Fsubscribe-card.jpg%3Fv%3D-1793901013%26version%3D9"
+opengraph_image: "/opengraph/substack-040-content-ruined-art.webp"
 ---

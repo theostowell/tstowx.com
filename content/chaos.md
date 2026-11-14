@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/chaos"
+opengraph_image: "/opengraph/chaos-card.webp"
 ---
 
 Have you ever touched chaos?
