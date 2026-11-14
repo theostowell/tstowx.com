@@ -17,16 +17,13 @@
 /* Sharp corners throughout: PaperMod's own cards, code blocks and buttons read --radius. */
 :root {
     --radius: 0;
-    /* A roomier header, closer to the Substack publication's. */
-    --header-height: 92px;
-}
-
-@media (max-width: 620px) {
-    :root { --header-height: 72px; }
+    /* Header sizing, matched to the Substack publication's header. */
+    --header-height: 76px;
 }
 
 /* No motion anywhere on the site, including the theme and embedded widgets.
-   Hover states (underlines, colour changes) still apply, just instantly. */
+   Hover states (underlines, colour changes) still apply, just instantly.
+   The one exception is the homepage's "Now" sonar dot, which overrides this. */
 *, *::before, *::after {
     animation: none !important;
     transition: none !important;
@@ -176,7 +173,7 @@ html, body {
 }
 
 .logo a img {
-    width: 210px;
+    width: 178px;
     height: auto;
 }
 
@@ -190,20 +187,17 @@ html, body {
 .mobile-menu-controls { display:flex; align-items:center; gap:4px; margin-left:auto; margin-inline-end:var(--gap); }
 .mobile-menu-controls .cta-button { display:inline-block; padding:.6rem .9rem; color:#fff !important; background:#000; border:0; border-radius:0; font:inherit; font-weight:500; line-height:1.2; cursor:pointer; }
 .mobile-menu-controls .cta-button:hover { background:#333; }
-.hamburger { display:inline-flex; flex-direction:column; justify-content:center; align-items:center; width:44px; height:44px; padding:10px; gap:5px; color:var(--primary); background:transparent; border:0; border-radius:0; cursor:pointer; }
-.hamburger:hover,.hamburger:focus-visible { background:var(--code-bg); }
-.hamburger-line { display:block; width:22px; height:2px; background:currentColor; border-radius:2px; }
-.hamburger.is-active .hamburger-line:nth-child(1) { transform:translateY(7px) rotate(45deg); }
-.hamburger.is-active .hamburger-line:nth-child(2) { opacity:0; }
-.hamburger.is-active .hamburger-line:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
-.mobile-menu { position:absolute; top:100%; left:50%; z-index:49; width:100%; max-width:calc(var(--main-width) + var(--gap) * 2); max-height:0; overflow:hidden; opacity:0; visibility:hidden; background:var(--theme); border-bottom:1px solid var(--border); box-shadow:0 8px 30px rgba(0,0,0,.12); transform:translateX(-50%) translateY(-10px); }
-.mobile-menu.is-open { max-height:220px; opacity:1; visibility:visible; transform:translateX(-50%) translateY(0); }
-.mobile-menu-inner { display:flex; flex-direction:column; padding:.5rem 0; }
-.mobile-menu-link { display:block; padding:1rem var(--gap); color:var(--primary) !important; font-size:1.0625rem; font-weight:500; text-decoration:none; }
-.mobile-menu-link:hover,.mobile-menu-link:focus-visible { background:var(--code-bg); }
 .header { position:relative; }
 .timeline-card h2, .timeline-card h2 a { font-family:var(--font-heading); }
-@media (max-width:480px) { .logo a img { width:min(180px,38vw); } .mobile-menu-controls { gap:0; } .mobile-menu-controls .cta-button { padding:7px 10px; } }
+/* Tablet and mobile: a compact header like Substack's (64px bar, small wordmark,
+   smaller Subscribe button). */
+@media (max-width:900px) {
+    :root { --header-height: 64px; }
+    .logo { padding-top:3px; }
+    .logo a img { width:112px; }
+    .mobile-menu-controls { gap:2px; }
+    .mobile-menu-controls .cta-button { padding:7px 11px; font-size:14px; }
+}
 
 .footer {
     background-color: #eeeeee;

@@ -5,7 +5,7 @@
 :root {
     --dash-gap: 14px;
     --dash-radius: 0;
-    --dash-paper: #f5f2ec;
+    --dash-paper: #f5f5f5;
     --dash-ink: #161513;
     --dash-line: #e2ddd3;
     --dash-muted: #6b675f;
@@ -15,14 +15,13 @@
 /* The homepage runs full width, keeping only the theme's standard gutter. */
 body:has(.dash) { background: var(--dash-paper); }
 body:has(.dash) .main,
-body:has(.dash) .nav,
-body:has(.dash) .mobile-menu { max-width: none; }
+body:has(.dash) .nav { max-width: none; }
 body:has(.dash) .main { padding-top: .5rem; }
 
 .dash {
     color: var(--dash-ink);
     font-family: var(--dash-sans);
-    padding-bottom: 4rem;
+    padding-bottom: 0;
 }
 
 .dash a { text-decoration: none; }
@@ -165,6 +164,25 @@ a.tile:focus-visible,
     border-radius: 50%;
     background: #2fa84f;
 }
+/* Sonar pulse: two rings ripple out from the dot, half a cycle apart.
+   This is the one animation allowed on the site (see the motion rule in custom.css). */
+.now-dot::before,
+.now-dot::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(47, 168, 79, .45);
+    animation: now-sonar 2.4s cubic-bezier(.2, .6, .35, 1) infinite !important;
+}
+.now-dot::after { animation-delay: 1.2s !important; }
+@keyframes now-sonar {
+    0%   { transform: scale(1);   opacity: .9; }
+    100% { transform: scale(3.6); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .now-dot::before, .now-dot::after { display: none; }
+}
 .now-clock { color: var(--dash-muted); font-variant-numeric: tabular-nums; }
 
 .now-status {
@@ -173,6 +191,13 @@ a.tile:focus-visible,
     font-size: 1.65rem;
     line-height: 1.08;
     letter-spacing: -.02em;
+}
+/* Tablets (cards side by side at half width): show only the first sentence,
+   ending in an ellipsis. Desktop and phones show the whole status. */
+@media (min-width: 621px) and (max-width: 960px) {
+    .now-status:has(.status-more) .status-stop,
+    .now-status .status-more { display: none; }
+    .now-status:has(.status-more) .status-lead::after { content: "\2026"; }
 }
 
 .tile--now .tile-link { margin-top: auto; padding-top: 1rem; align-self: flex-start; border: 0; }
@@ -185,12 +210,16 @@ a.tile:focus-visible,
 .elsewhere-list li + li { border-top: 1px solid var(--dash-line); }
 .elsewhere-list a {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: .55rem 0;
     color: var(--dash-ink);
     font-weight: 500;
 }
-.elsewhere-list a:hover span:first-child { text-decoration: underline; text-underline-offset: .2em; }
+.elsewhere-list a:hover .social-label { text-decoration: underline; text-underline-offset: .2em; }
+.social-name { display: inline-flex; align-items: center; gap: .65rem; }
+.social-icon { display: inline-flex; width: 18px; height: 18px; flex: none; }
+.social-icon svg { width: 100%; height: 100%; }
 
 /* ── Section headings ─────────────────────────────────────── */
 .dash-section-head { margin: 3.2rem 0 1.2rem; max-width: 640px; }
@@ -207,7 +236,7 @@ a.tile:focus-visible,
 }
 
 
-.venture-body { display: flex; flex: 1; flex-direction: column; padding: 1.4rem 1.5rem 1.5rem; }
+.venture-body { display: flex; flex: 1; flex-direction: column; padding: 1.6rem; }
 .venture-meta { margin-bottom: .8rem; }
 .venture-body h3 a { color: inherit; }
 .venture-body > p { margin: 0 0 1.2rem; color: #4a4741; line-height: 1.5; }
@@ -218,7 +247,9 @@ a.tile:focus-visible,
     border: 1px solid rgba(0, 0, 0, .08);
     border-radius: 0;
     background: #fff;
-    aspect-ratio: 16 / 9;
+    /* TrustMRR's chart card is a fixed 344px tall with 8px margins, so the frame
+       needs 360px at any width to show the whole chart, axis labels included. */
+    height: 360px;
 }
 .venture-chart iframe { display: block; width: 100%; height: 100%; border: 0; }
 
@@ -283,7 +314,7 @@ a.tile:focus-visible,
 .film-play svg { width: 22px; height: 22px; margin-left: 3px; }
 
 /* ── Writing ──────────────────────────────────────────────── */
-.tile--writing { grid-column: span 7; }
+.tile--writing { grid-column: span 7; padding-bottom: 1rem; }
 .writing-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
 .writing-head .tile-link { margin: 0; }
 
@@ -294,7 +325,7 @@ a.tile:focus-visible,
     grid-template-columns: 5.5rem 1fr auto;
     align-items: baseline;
     gap: .8rem;
-    padding: .8rem 0;
+    padding: .7rem 0;
     color: var(--dash-ink);
 }
 .writing-list time { color: var(--dash-muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
@@ -303,13 +334,16 @@ a.tile:focus-visible,
 
 /* ── Photography ──────────────────────────────────────────── */
 .tile--photos { grid-column: span 5; display: flex; flex-direction: column; padding: 0; }
-.photo-mosaic { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; background: #fff; }
-.photo-mosaic img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
-.photos-body { padding: 1.3rem 1.5rem 1.5rem; }
+.photo-mosaic { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.photo-mosaic img { display: block; width: 100%; aspect-ratio: 5 / 3; object-fit: cover; }
+.photos-body { padding: 1.4rem 1.6rem 1.6rem; }
 .photos-body > p { margin: 0; color: #4a4741; line-height: 1.5; }
+.photos-body h3 .arrow { font-family: var(--dash-sans); font-size: .7em; vertical-align: .12em; }
+.tile--photos:hover .photos-title,
+.tile--photos:focus-visible .photos-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .12em; }
 
 /* ── Archive ──────────────────────────────────────────────── */
-.dash-archive { margin-top: 2rem; }
+.dash-archive { margin-top: 0; }
 
 .archive-filters {
     position: sticky;
@@ -318,8 +352,8 @@ a.tile:focus-visible,
     display: flex;
     flex-wrap: wrap;
     gap: .45rem;
-    margin: 0 0 1.2rem;
-    padding: .6rem 0;
+    margin: calc(var(--dash-gap) * -1) 0 0;
+    padding: var(--dash-gap) 0;
     background: color-mix(in srgb, var(--dash-paper) 88%, transparent);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -367,10 +401,8 @@ a.tile:focus-visible,
 .card-body > p { margin: 0; color: #55524c; font-size: .9rem; line-height: 1.5; }
 
 /* Text-only essays become typographic cards with a soft colour wash. */
-.card--text { background: var(--card-bg, #f3eee4); border-color: rgba(0, 0, 0, .06); }
 .card--text .card-body { padding: 1.3rem 1.3rem 1.5rem; }
 .card--text h3 { margin-top: .6rem; font-size: clamp(1.8rem, 2.6vw, 2.2rem); line-height: .98; }
-.card--text .card-body > p { color: #4a4741; }
 
 .card--tweet { background: #141414; border-color: #242424; }
 .card--tweet .tweet-fallback {
@@ -391,7 +423,7 @@ a.tile:focus-visible,
 .card--tweet:hover { border-color: #242424; }
 .card--tweet.is-embedded:hover { border-color: transparent; }
 
-.archive-more { display: flex; justify-content: center; margin: 2.75rem 0 1.5rem; }
+.archive-more { display: flex; justify-content: center; margin: 2.75rem 0 2.5rem; }
 .dash [hidden] { display: none !important; }
 
 /* ── Responsive ───────────────────────────────────────────── */
@@ -406,13 +438,19 @@ a.tile:focus-visible,
 @media (max-width: 620px) {
     :root { --dash-gap: 10px; }
     .tile { padding: 1.3rem; }
-    .tile--hero { padding: 1.6rem 1.4rem; min-height: 0; }
+    .tile--venture, .tile--photos { padding: 0; }
+    .tile--films { padding: 1.3rem 0; }
+    .venture-body, .photos-body { padding: 1.3rem; }
+    .tile--hero { padding: 1.6rem 1.3rem; min-height: 0; }
     .hero-title { font-size: clamp(2.7rem, 13vw, 3.6rem); }
     .tile--now, .tile--elsewhere { grid-column: span 12; }
     .films-head { padding: 0 1.3rem 1rem; }
     .films-track { grid-auto-columns: 78%; padding: 0 1.3rem .4rem; scroll-padding: 0 1.3rem; }
     .films-controls { display: none; }
-    .venture-chart { aspect-ratio: auto; height: 300px; }
+    /* On narrow screens the chart's header wraps onto a second line. */
+    .venture-chart { height: 384px; }
+    .archive-filters { gap: .35rem; }
+    .chip { padding: .45rem .65rem; font-size: .82rem; gap: .35rem; }
     .writing-list a { grid-template-columns: 1fr auto; }
     .writing-list time { grid-column: 1 / -1; }
 }

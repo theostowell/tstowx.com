@@ -36,9 +36,16 @@ params:
     title: "Part entrepreneur, *part starving artist\\.\\.\\.*"
     intro: |
       I'm Theo, a Zoology graduate who chose to build internet businesses instead of a career. I run [PARAZETTEL](https://parazettel.com), an education business about thinking and note-taking, and I'm building [ProseLab](https://www.proselab.io) with Luca. In between, I write, make films and take photographs.
-    status: "UK-based (for now), scaling PARAZETTEL and ProseLab through Q4 and into the new year, before considering relocation."
-    location: "United Kingdom"
+    status: "UK-based (for now), scaling PARAZETTEL and ProseLab through Q4 and into the new year, before relocation. Considering Vietnam or South Korea for early 2027."
+    # The Now tile shows "City, CC · local time", pulled live from this nomads.com
+    # profile. `location` is shown until that loads (or if it can't). The clock uses
+    # `timezone`, so it only shows while Nomads puts you in `homeCountry`.
+    nomads: "tstowx"
+    location: "Bristol, UK"
     timezone: "Europe/London"
+    homeCountry: "UK"
+    # Platforms from SocialIcons (below) to leave out of the homepage Socials tile.
+    hiddenSocials: ["LinkedIn"]
     photography:
       url: "https://photos.tstowx.com"
       blurb: "Sport, hospitality, travel and independent brands, in the UK and worldwide. Available for hire."

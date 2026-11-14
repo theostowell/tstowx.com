@@ -1,5 +1,5 @@
 ---
-title: "Sheffield to Manchester in 12 Hours: 60 Kilometres Across the Peak District in 1 Day"
+title: "Sheffield to Manchester in 12 Hours: 60 Kilometres Across the Peak District"
 date: 2025-01-01
 draft: false
 timeline: true
