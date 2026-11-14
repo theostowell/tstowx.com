@@ -11,6 +11,7 @@ hideFooter: false
 ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
+external_url: "https://tstowx.substack.com/p/limiting-distractions"
 ---
 
 A common perspective is that social media hijacks your attention, ruining your focus and ability to work.

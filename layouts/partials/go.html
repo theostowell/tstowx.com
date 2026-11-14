@@ -1,0 +1,16 @@
+{{- /*
+  Fallback for a note whose home is off-site. The redirect itself fires from
+  head.html and from the generated _redirects (Netlify serves that as a 301);
+  this block is what a reader sees if a redirect is ever blocked.
+*/ -}}
+{{- $url := .url -}}
+{{- $label := .label | default "the original post" -}}
+<article class="post-single go-elsewhere">
+  <header class="post-header">
+    <h1 class="post-title">{{ .title }}</h1>
+  </header>
+  <div class="post-content">
+    <p>This one lives on {{ $label }} rather than here. If you are not moved automatically,
+      <a href="{{ $url }}">carry on to {{ $label }} <span aria-hidden="true">↗</span></a>.</p>
+  </div>
+</article>

@@ -11,6 +11,7 @@ hideFooter: false
 ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
+external_url: "https://tstowx.substack.com/p/number-based-goals"
 ---
 
 Everyone sets goals, especially number-based ones, and there are clear reasons why. Improved motivation, along with the satisfaction of achievement are two such examples.

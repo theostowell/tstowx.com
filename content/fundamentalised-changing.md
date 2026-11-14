@@ -11,6 +11,7 @@ hideFooter: false
 ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
+external_url: "https://tstowx.substack.com/p/fundamentalised-changing"
 ---
 
 In short, yes, we are. One more time.

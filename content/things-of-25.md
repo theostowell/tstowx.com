@@ -11,6 +11,7 @@ hideFooter: false
 ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
+external_url: "https://tstowx.substack.com/p/things-of-25"
 ---
 
 *[Read my piece 'If not now, then when?' that I wrote the other day but forgot to share!](https://tstowx.com/if-not-now-then-when/)*

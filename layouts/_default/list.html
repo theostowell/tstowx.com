@@ -85,7 +85,8 @@
     {{- partial "post_meta.html" . -}}
   </footer>
   {{- end }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  {{- $link := partial "outbound.html" . }}
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ $link.url }}"{{ if $link.external }} target="_blank" rel="noopener noreferrer"{{ end }}></a>
 </article>
 {{- end }}
 

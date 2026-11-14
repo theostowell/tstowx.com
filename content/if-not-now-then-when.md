@@ -11,6 +11,7 @@ hideFooter: false
 ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
+external_url: "https://tstowx.substack.com/p/if-not-now-then-when"
 ---
 
 I've just booked flights to Australia.

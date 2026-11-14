@@ -11,6 +11,7 @@ hideFooter: false
 ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
+external_url: "https://tstowx.substack.com/p/meeting-luca-and-proselab-io"
 ---
 
 Ever since I left Australia, I’ve been in Da Nang, Vietnam.

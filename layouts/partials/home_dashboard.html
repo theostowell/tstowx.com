@@ -94,7 +94,8 @@
     </div>
     <div class="films-track" data-films-track>
       {{- range . }}
-      <a class="film" href="{{ .RelPermalink }}">
+      {{- $film := partial "outbound.html" . }}
+      <a class="film" href="{{ $film.url }}"{{ if $film.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
         <div class="film-thumb">
           <img src="https://i.ytimg.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" alt="" loading="lazy">
           <span class="film-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
@@ -119,7 +120,7 @@
         {{- range first 8 $writing }}
         {{- $link := partial "dash/link.html" . }}
         <li>
-          <a href="{{ $link.href }}"{{ if $link.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+          <a href="{{ $link.url }}"{{ if $link.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
             <span class="writing-title">{{ .Title }}</span>
             <span class="arrow" aria-hidden="true">{{ if $link.external }}↗{{ else }}→{{ end }}</span>
@@ -169,7 +170,7 @@
         </a>
       </div>
       {{- else }}
-      <a class="card card--{{ $type }}{{ if and (not $img) (ne $type "social") }} card--text{{ end }}" data-type="{{ $filter }}" href="{{ $link.href }}"{{ if $link.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+      <a class="card card--{{ $type }}{{ if and (not $img) (ne $type "social") }} card--text{{ end }}" data-type="{{ $filter }}" href="{{ $link.url }}"{{ if $link.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
         {{- with $img }}
         <div class="card-media{{ if eq $type "video" }} card-media--video{{ end }}">
           <img src="{{ . }}" alt="" loading="lazy">

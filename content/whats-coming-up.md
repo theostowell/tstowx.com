@@ -8,6 +8,7 @@ timeline_summary: "I can't just disappear into nothing, so what's on the cards a
 description: ""
 opengraph_image: "/opengraph/whats-coming-up.png"
 timeline_image: "/attachments/CleanShot%202026-08-27%20at%2015.35.59@2x.png"
+external_url: "https://tstowx.substack.com/p/whats-coming-up"
 ---
 
 TrustMRR is a platform where you can list your online ventures and their verified revenue if you build on the internet, processing payments through Stripe, Lemon Squeezy and the like.

@@ -90,7 +90,7 @@ params:
 menu:
   main:
     - name: "Writing"
-      url: "/writing"
+      url: "https://tstowx.substack.com"
       weight: 1
     - name: "Photography"
       url: "https://photos.tstowx.com"
@@ -108,10 +108,27 @@ privacy:
     disable: false
     privacyEnhanced: true
 
+# Every note is an index entry: the writing lives on Substack, films on
+# YouTube, posts on X. The layout templates send readers to those homes, and
+# this extra output renders the same mapping as real 301s in _redirects, which
+# Netlify applies before it serves anything.
+mediaTypes:
+  text/netlify:
+    delimiter: ""
+    suffixes: [""]
+
+outputFormats:
+  redirects:
+    mediaType: text/netlify
+    baseName: "_redirects"
+    isPlainText: true
+    notAlternative: true
+
 outputs:
   home:
     - HTML
     - RSS
+    - redirects
   section:
     - HTML
     - RSS

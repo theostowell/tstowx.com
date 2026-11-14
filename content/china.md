@@ -12,6 +12,7 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 timeline_type: place
+external_url: "https://tstowx.substack.com/p/china"
 ---
 
 So I spent the last couple of weeks in one of the most notoriously awkward-to-travel places – China.

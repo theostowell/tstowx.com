@@ -10,7 +10,8 @@
   <ul class="essay-list">
     {{- range $essays }}
     <li class="essay-list-item">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{- $link := partial "outbound.html" . }}
+      <a href="{{ $link.url }}"{{ if $link.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Title }}</a>
       <div class="essay-meta">
         {{- partial "post_meta.html" . -}}
       </div>

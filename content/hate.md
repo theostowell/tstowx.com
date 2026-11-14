@@ -11,6 +11,7 @@ hideFooter: false
 ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
+external_url: "https://tstowx.substack.com/p/hate"
 ---
 
 After building in the online business space for a little over half a year, I’ve noticed there’s a pattern developing…

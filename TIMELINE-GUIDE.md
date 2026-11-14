@@ -1,22 +1,19 @@
-# Publishing to the timeline
+# Publishing to tstowx.com
 
-This vault is also the source for `tstowx.com`. A Markdown note becomes a page on the site; selected notes also appear on the homepage timeline.
+This vault is the source for `tstowx.com`, and `tstowx.com` is an **index**, not a publishing platform. Nothing is hosted here. Essays live on Substack, films on YouTube, posts on X, ventures on their own sites and photographs on `photos.tstowx.com`.
 
-The short version: create a note in `content/`, apply the right template from `Templates/`, fill in its frontmatter, write the post, then change `draft` to `false` when it is ready to go live.
+So a note in `content/` is a pointer: a title, a date, a card summary and the URL the thing actually lives at. The site sends readers straight there, and its own `/slug/` URL 301s to the same place, so there is no second copy to keep in sync and nothing to maintain twice.
 
 ## The normal workflow
 
-1. In Obsidian, create a new note.
-2. Run **Templates: Insert template** and choose the appropriate `site-...` template from the `Templates` folder. (The folder is already configured in Obsidian.)
-3. Save the note in `content/`. The filename becomes the URL, so use a simple, descriptive, lower-case filename with hyphens: `content/building-proselab.md` → `/building-proselab/`.
-4. Fill in the frontmatter at the top, then write the entry below it.
-5. Keep `draft: true` while working. Set `draft: false` to publish it in the next site build.
+1. Publish the thing where it belongs — Substack, YouTube, X, a venture site.
+2. In Obsidian, create a note in `content/`. The filename becomes the local URL (`content/building-proselab.md` → `/building-proselab/`), so use a simple, lower-case filename with hyphens.
+3. Fill in the frontmatter below and paste the URL into `external_url`. You do not need to write a body.
+4. Keep `draft: true` while you think about it; set `draft: false` when it should appear on the site.
 
-There is also an Obsidian QuickAdd command called **New article**. It creates an article note directly in `content/`; use it for a normal writing entry, then change `timeline_type` if it is really a place or a short note.
+That is the whole job. If the thing is a film, put the YouTube ID in `youtube_id` instead of a URL and the site works out the rest.
 
-## The frontmatter: the small schema to remember
-
-Every new timeline entry should have this shape:
+## The frontmatter
 
 ```yaml
 ---
@@ -25,176 +22,76 @@ date: 2026-07-26
 draft: true
 timeline: true
 timeline_type: writing
-timeline_summary: "One crisp sentence for the homepage card."
-description: "A slightly fuller description for search and social previews."
+timeline_summary: "One crisp sentence for the card."
+external_url: "https://tstowx.substack.com/p/the-post"
 ---
 ```
 
 | Field | What it controls | Rules of thumb |
 | --- | --- | --- |
-| `title` | Page and timeline title | Write it for a reader, not as a filename. |
-| `date` | Timeline order and displayed month | Use `YYYY-MM-DD`. Newest dates appear first. |
-| `draft` | Whether Hugo publishes the page | Use `true` until it is ready, then `false`. |
-| `timeline` | Whether the note is added to the homepage timeline | Set this to `true` for every new timeline note. |
-| `timeline_type` | The card’s label and behaviour | Choose one of the types below. |
-| `timeline_featured` | Whether an entry stays above the chronological timeline | Optional. Use `true` for an ongoing flagship project or other permanent entity. |
-| `timeline_date_label` | The date text displayed on the card | Optional. Use it for a range, e.g. `"March 2026 — present"`; the normal `date` still controls ordering. |
-| `timeline_card_color` | Background colour of the timeline card | Optional. Use a hex value such as `"#E9E4FA"`. |
-| `timeline_summary` | Copy on the homepage card | Keep it to one useful sentence. It is preferred over all other summaries. |
-| `description` | Search/social preview and fallback card copy | A little longer is fine. |
-| `timeline_image` | Image shown in the timeline card | Optional. Use a site path, e.g. `"/attachments/photo.jpg"`. |
-| `opengraph_image` | Image used when the page is shared on social media and, when no `timeline_image` is set, on its timeline card | Optional. Store it in `static/opengraph/` and use a path such as `"/opengraph/project-name.png"`. |
+| `title` | Card and page title | Write it for a reader, not as a filename. |
+| `date` | Order and displayed month | `YYYY-MM-DD`. Newest first. |
+| `draft` | Whether the entry appears | `true` until you want it live. |
+| `timeline` | Whether the note is on the homepage | `true` for every entry. |
+| `timeline_type` | The card’s label and behaviour | One of the types below. |
+| `timeline_summary` | The card copy | One useful sentence. Preferred over `description`. |
+| `external_url` | Where the entry actually lives | The platform URL. This is the important one. |
+| `description` | Search and social previews, fallback card copy | Slightly longer is fine. |
+| `timeline_featured` | Keeps a flagship entry above the dated archive | Optional. Ventures only. |
+| `timeline_date_label` | Date text on the card | Optional, for ranges: `"March 2026 — Present"`. |
+| `timeline_card_color` | Card background | Optional hex, e.g. `"#E9E4FA"`. |
+| `timeline_image` | Card image | Optional site path, e.g. `/attachments/photo.jpg`. |
+| `opengraph_image` | Share image, and card image when `timeline_image` is empty | Optional. Put the file in `static/opengraph/`. |
 
-If `timeline_summary` is blank, the site uses `description`; if that is blank too, it uses the opening of the note. Filling in `timeline_summary` deliberately will make the homepage much better.
+If `timeline_summary` is blank the site uses `description`, then the opening of the note. Fill it in deliberately — it is what the homepage reads like.
 
-## Choose a template
+## Where the card links
 
-| What you are publishing                        | Template                              | `timeline_type` | Extra fields                              |
-| ---------------------------------------------- | ------------------------------------- | --------------- | ----------------------------------------- |
-| Essay, article or substantial piece of writing | `site-article`                        | `writing`       | None                                      |
-| A project you made                             | `site-project`                        | `project`       | `external_url`, `external_label`, `redirect_to_project` |
-| Travel or a place-based entry                  | `site-article`                        | `place`         | None                                      |
-| A brief personal update                        | `site-article`                        | `note`          | None                                      |
-| A link worth preserving                        | `site-link`                           | `link`          | `external_url`; optional `timeline_image` |
-| A post published on Substack                   | `site-substack-post`                  | `substack`      | `external_url`, `opengraph_image`         |
-| YouTube video                                  | `site-video`                          | `video`         | `youtube_id`; optional `timeline_image`   |
-| X or Instagram post                            | `site-x-post` / `site-instagram-post` | `social`        | Platform-specific fields below            |
-| Photograph or image-led entry                  | `site-image`                          | `image`         | `timeline_image`                          |
+Every card, list item and single page asks `layouts/partials/outbound.html` where to send the reader. It checks, in this order:
 
-For a place or note, start with `site-article` and only replace `timeline_type: writing` with `place` or `note`.
+1. `youtube_id` → `https://www.youtube.com/watch?v=…`
+2. `platform: x` with `author_handle` and `post_id` → the post on X
+3. `timeline_type: project` with `website_url` → the project’s own site
+4. `external_url` → exactly as pasted
+5. nothing → the entry stays on this site (the safe fallback, but not what you want)
 
-For a project, leave `redirect_to_project: false` to keep its page on this site. Change it to `true` to send the homepage card and direct page visits to `external_url`.
+So: paste a URL into `external_url` and the card goes there.
 
-## Type-specific details
+## Types at a glance
 
-### Project
+| What you published | `timeline_type` | Fields that matter |
+| --- | --- | --- |
+| Essay or article on Substack | `writing` or `substack` | `external_url` (add `opengraph_image` for a richer card) |
+| Travel or place-based piece | `place` | `external_url` |
+| Short personal update | `note` | `external_url` |
+| Film or vlog on YouTube | `video` | `youtube_id` |
+| Post on X | `social` | `platform: x`, `author_handle`, `post_id` |
+| A venture | `project` | `website_url`, plus `external_url` for its TrustMRR page, `trustmrr_embed`, `dashboard_accent` |
+| A book or other product | `project` | `external_url` to the product page |
+| A link worth keeping | `link` | `external_url` |
 
-Projects get a dedicated page. Add the live destination as metadata:
+## Redirects and old links
 
-```yaml
-external_url: "https://example.com"
-external_label: "Visit project"
-```
+The build writes `_redirects` from the same rule, so every entry’s own URL is a real 301 to its platform home — including the legacy `/writing/…` aliases:
 
-To give a project a dedicated social-sharing image without placing an image in the page itself, put its PNG or JPG in `static/opengraph/` and add:
+- `https://tstowx.com/bro-text/` → the Substack post
+- `https://tstowx.com/wild/` → the film on YouTube
+- `https://tstowx.com/parazettel/` → `parazettel.com`
 
-```yaml
-opengraph_image: "/opengraph/project-name.png"
-```
+Those pages also carry `noindex` and a canonical pointing at the platform, so search results consolidate there instead of competing with a copy here. The RSS feed links items to the platform too and never mirrors a body that lives elsewhere.
 
-For an ongoing project that should remain above the dated archive, add:
+## What does still live here
 
-```yaml
-timeline_featured: true
-timeline_date_label: "March 2026 — present"
-```
+- The homepage dashboard (`layouts/partials/home_dashboard.html`). Its hero, "Now" status, photography blurb and socials live in `hugo.yaml` under `params.dashboard`.
+- The chronological index at `/timeline/`.
+- `/now`, `/signup` and `/cv` (a redirect to the PDF).
 
-Use a separate, normally dated timeline note for specific launches, milestones and updates.
+Adding entries never means touching a template: the dashboard, the archive, the filters and the timeline all read the same notes.
 
-Put the story, context and links in the body of the note. Existing legacy projects live in `content/projects/`; they remain on the timeline automatically so their old `/projects/.../` links keep working. New projects can live directly in `content/` when made with the timeline template.
+## Before you publish
 
-### Link
-
-Set `external_url` to the destination. In the note body, use the `og-card` shortcode to create a stable, hand-written preview card (the site does not fetch webpage metadata during builds):
-
-```md
-{{< og-card url="https://example.com" title="Link title" description="Why it is worth opening." site="example.com" image="/attachments/cover.jpg" >}}
-```
-
-The `image` argument is optional, as is `timeline_image` in the frontmatter.
-
-### Substack post
-
-Use `site-substack-post` for work published on Substack. The standard white timeline card links directly to the original post. Add the post URL and its Open Graph image; that image appears on the timeline just as it does for projects:
-
-```yaml
-timeline_type: substack
-external_url: "https://your-publication.substack.com/p/post-slug"
-opengraph_image: "https://substackcdn.com/image/fetch/..."
-```
-
-Use the image URL supplied by the post's `og:image` metadata, or save a copy in `static/opengraph/` and use a site-relative path instead.
-
-### Video
-
-Put only the YouTube ID in `youtube_id`—not the whole URL. The template uses that metadata to create both the video page player and its YouTube preview in the homepage timeline:
-
-```yaml
-youtube_id: "dQw4w9WgXcQ"
-```
-
-```md
-{{< youtube-video >}}
-```
-
-### Social post
-
-For X:
-
-```yaml
-platform: x
-author_handle: "username"
-post_id: "1234567890"
-```
-
-```md
-{{< x-post >}}
-```
-
-For Instagram:
-
-```yaml
-platform: instagram
-author_handle: "username"
-post_shortcode: "ABCdef123"
-```
-
-```md
-{{< instagram username ABCdef123 >}}
-```
-
-### Image
-
-Put the original image in `static/attachments/`, then refer to it from both the frontmatter and body with `/attachments/...`:
-
-```yaml
-timeline_image: "/attachments/my-photo.jpg"
-```
-
-```md
-![A useful description of the photo](/attachments/my-photo.jpg)
-```
-
-## Where things belong
-
-| Location | Purpose |
-| --- | --- |
-| `content/` | New standalone timeline notes and pages. |
-| `content/` | All standalone writing, project and timeline notes. A filename becomes its root URL. |
-| `content/projects/` | Existing project pages whose `/projects/.../` URLs must stay intact. |
-| `Templates/` | The source templates to insert in Obsidian. Edit these when changing the default starting shape for future notes. |
-| `static/attachments/` | Images and other files served by the site. Refer to them as `/attachments/filename.ext`. |
-
-## Homepage behaviour and common gotchas
-
-- Timeline entries are sorted by `date`, newest first.
-- `timeline: true` is the switch for new notes in `content/`. Without it, the page exists but is not added to the homepage timeline.
-- A page with `draft: true` is not public in the production build, even if `timeline: true` is set.
-- Do not paste a computer path into `timeline_image`; use a site path beginning with `/attachments/`.
-- The built-in post embeds use the IDs from their URLs, not the full URLs.
-- The `/now` page remains a standalone page. It is not shown on the homepage timeline.
-- The homepage is now a dashboard (`layouts/partials/home_dashboard.html`). Its hero, "Now" status, stats, photography and travel copy live in `hugo.yaml` under `params.dashboard`.
-- Venture tiles come from `timeline_featured` project notes that set `trustmrr_embed` (plus optional `website_url` and `dashboard_accent`). The newest non-featured `project` becomes the "Latest launch" tile; `video` notes fill the films row; the archive grid shows everything else, with filters.
-- The old chronological timeline still lives at `/timeline/`. Its intro copy is in `hugo.yaml` under `params.timelineHome`.
-
-## Before publishing
-
-- Is the note in `content/` and named sensibly?
-- Is `date` correct?
-- Is `timeline: true` present?
-- Is the `timeline_type` correct?
+- Is the thing itself already live on its platform?
+- Is `external_url` (or `youtube_id`) filled in — and correct?
+- Is `date` right, `timeline: true` set, and `timeline_type` right?
 - Does `timeline_summary` make sense on its own?
-- Are any images in `static/attachments/` and referenced as `/attachments/...`?
 - Have you changed `draft` to `false`?
-
-The technical reference behind this guide is kept in `docs/site-content-schema.md`; this file is the day-to-day version.

@@ -11,6 +11,7 @@ hideFooter: false
 ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
+external_url: "https://tstowx.substack.com/p/purposeful-action"
 ---
 
 I’ve tried building a meditation habit many times. It never works out in the long-term and although it’s good for clearing and controlling my mind in the moment, there’s something I’ve found that’s better…

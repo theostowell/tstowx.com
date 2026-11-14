@@ -11,6 +11,7 @@ hideFooter: false
 ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
+external_url: "https://tstowx.substack.com/p/twenty"
 ---
 
 I turned 20 yesterday, which is crazy. I still remember my 10th birthday. That’s half a lifetime ago now.

@@ -1,0 +1,49 @@
+{{- /*
+  The single place that decides where a note sends the reader.
+
+  Nothing on this site is hosted here any more: the writing lives on Substack,
+  the films on YouTube, the posts on X and the ventures on their own sites.
+  This repo is the index, so every card, list item and single page asks this
+  partial for its outbound URL instead of hard-coding a rule.
+
+  Priority: YouTube → X → project site → explicit external_url → this site.
+  Adding something new means pasting the URL it lives at into front matter;
+  if there is no URL yet the note simply renders here, which is the safe
+  failure.
+
+  Returns dict "url", "external" (bool), "platform" (substack|youtube|x|web|site).
+*/ -}}
+{{- $type := .Params.timeline_type | default "" -}}
+{{- $url := "" -}}
+{{- $platform := "site" -}}
+
+{{- if .Params.youtube_id -}}
+  {{- $url = printf "https://www.youtube.com/watch?v=%s" .Params.youtube_id -}}
+  {{- $platform = "youtube" -}}
+{{- else if and (eq .Params.platform "x") .Params.author_handle .Params.post_id -}}
+  {{- $url = printf "https://x.com/%s/status/%s" .Params.author_handle .Params.post_id -}}
+  {{- $platform = "x" -}}
+{{- else if and (eq $type "project") .Params.website_url -}}
+  {{- $url = .Params.website_url -}}
+  {{- $platform = "web" -}}
+{{- else -}}
+  {{- with .Params.external_url -}}
+    {{- $url = . -}}
+    {{- if findRE `substack\.com` . 1 -}}
+      {{- $platform = "substack" -}}
+    {{- else if findRE `(youtube\.com|youtu\.be)` . 1 -}}
+      {{- $platform = "youtube" -}}
+    {{- else if findRE `(^|//|\.)x\.com` . 1 -}}
+      {{- $platform = "x" -}}
+    {{- else -}}
+      {{- $platform = "web" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $labels := dict "substack" "Substack" "youtube" "YouTube" "x" "X" "web" "its own site" "site" "this site" -}}
+{{- $external := ne $platform "site" -}}
+{{- if not $external -}}
+  {{- $url = .RelPermalink -}}
+{{- end -}}
+{{- return (dict "url" $url "external" $external "platform" $platform "label" (index $labels $platform)) -}}

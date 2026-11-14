@@ -1,6 +1,7 @@
 ---
 title: Writing
 draft: false
-layout: redirect
-redirect_to: "/#timeline"
+aliases:
+  - "/essays/"
+external_url: "https://tstowx.substack.com/"
 ---

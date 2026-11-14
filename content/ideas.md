@@ -11,6 +11,7 @@ hideFooter: false
 ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
+external_url: "https://tstowx.substack.com/p/ideas"
 ---
 
 When you have an idea, there might be some kind of temptation to save it for a more suitable time to share.

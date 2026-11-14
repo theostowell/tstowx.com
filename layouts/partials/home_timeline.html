@@ -51,7 +51,8 @@
       </button>
       <noscript><p><a href="https://www.youtube.com/watch?v={{ .Params.youtube_id }}">Watch on YouTube</a></p></noscript>
       <time class="timeline-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.timeline_date_label | default (.Date.Format "January 2006") }}</time>
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{- $video := partial "outbound.html" . }}
+      <h2><a href="{{ $video.url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a></h2>
       {{- with .Params.timeline_summary }}<p>{{ . }}</p>{{- else }}{{- with .Description }}<p>{{ . }}</p>{{- else }}<p>{{ .Summary | plainify | htmlUnescape | truncate 170 }}</p>{{- end }}{{- end }}
     </div>
     {{- else if and (eq $entryClass "social") (eq .Params.platform "x") .Params.author_handle .Params.post_id }}
@@ -61,8 +62,8 @@
       </blockquote>
     </div>
   {{- else }}
-    {{- $linksExternally := and .Params.external_url (or (eq $entryClass "substack") (and (eq $entryClass "project") .Params.redirect_to_project)) }}
-    <a class="timeline-card" href="{{ if $linksExternally }}{{ .Params.external_url }}{{ else }}{{ .RelPermalink }}{{ end }}"{{ if $linksExternally }} rel="noopener noreferrer"{{ end }}>
+    {{- $link := partial "outbound.html" . }}
+    <a class="timeline-card" href="{{ $link.url }}"{{ if $link.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
       {{- with (.Params.timeline_image | default .Params.opengraph_image) }}<img class="timeline-media" src="{{ . }}" alt="">{{- end }}
       <time class="timeline-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.timeline_date_label | default (.Date.Format "January 2006") }}</time>
       <h2>{{ .Title }}</h2>
