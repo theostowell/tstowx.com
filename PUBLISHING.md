@@ -97,10 +97,9 @@ Those pages also carry `noindex` and a canonical pointing at the platform, so se
 ## What does still live here
 
 - The homepage dashboard (`layouts/partials/home_dashboard.html`). Its hero, "Now" status, photography blurb and socials live in `hugo.yaml` under `params.dashboard`.
-- The chronological index at `/timeline/`.
-- `/now`, `/signup` and `/cv` (a redirect to the PDF).
+- `/signup` and `/cv` (a redirect to the PDF).
 
-Adding entries never means touching a template: the dashboard, the archive, the filters and the timeline all read the same notes.
+Adding entries never means touching a template: the dashboard, the archive and its filters all read the same notes.
 
 ## Before you publish
 

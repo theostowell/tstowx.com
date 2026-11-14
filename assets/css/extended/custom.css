@@ -188,7 +188,7 @@ html, body {
 .mobile-menu-controls .cta-button { display:inline-block; padding:.6rem .9rem; color:#fff !important; background:#000; border:0; border-radius:0; font:inherit; font-weight:500; line-height:1.2; cursor:pointer; }
 .mobile-menu-controls .cta-button:hover { background:#333; }
 .header { position:relative; }
-.timeline-card h2, .timeline-card h2 a { font-family:var(--font-heading); }
+
 /* Tablet and mobile: a compact header like Substack's (64px bar, small wordmark,
    smaller Subscribe button). */
 @media (max-width:900px) {
@@ -264,13 +264,13 @@ a {
     color: #000000;
 }
 
-/* Keep the timeline within the standard PaperMod reading width. */
+/* Keep list pages within the standard PaperMod reading width. */
 body.list .main {
     padding-top: 0;
 }
 
 /*
- * Detail pages use the same paper-card language as the home timeline.
+ * Detail pages use the same paper-card language as the homepage.
  * This covers essays, projects, videos, places, notes and social posts,
  * while leaving list pages and redirects untouched.
  */
@@ -435,215 +435,6 @@ body:has(.post-single) {
     text-decoration: none;
 }
 
-/* Home timeline */
-.timeline-intro {
-    min-height: 260px;
-    margin: calc(var(--gap) * 1.75) 0 calc(var(--gap) * 1.35);
-    padding: 0;
-}
-
-.timeline-intro .entry-header h1 {
-    font-weight: 500;
-    letter-spacing: -0.035em;
-    -webkit-text-stroke: 0.2px currentColor;
-}
-
-.timeline-intro .entry-footer {
-    margin-bottom: 0.4rem;
-}
-
-.timeline-kicker,
-.timeline-type {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 0.66rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    line-height: 1.35;
-}
-
-.timeline-actions a,
-.timeline-end a {
-    color: #111;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 0.8rem;
-    font-weight: 650;
-    text-decoration: none;
-}
-
-.timeline-actions a:hover,
-.timeline-end a:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.25em;
-}
-
-.life-timeline {
-    position: relative;
-    padding-bottom: 7rem;
-}
-
-.timeline-rail {
-    position: absolute;
-    top: 0;
-    bottom: 3rem;
-    left: 21px;
-    width: 1px;
-    background: #d9d6d0;
-}
-
-.timeline-entry {
-    position: relative;
-    display: grid;
-    grid-template-columns: 42px minmax(0, 1fr);
-    padding-bottom: 1.35rem;
-}
-
-.timeline-date {
-    display: inline-block;
-    margin: 0 0 0.35rem;
-    color: #817d75;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-style: italic;
-    font-weight: normal;
-    letter-spacing: 0.01em;
-    line-height: 1;
-}
-
-.timeline-marker {
-    position: relative;
-}
-
-.timeline-marker::after {
-    position: absolute;
-    top: 1.53rem;
-    left: 16px;
-    z-index: 1;
-    width: 10px;
-    height: 10px;
-    box-sizing: border-box;
-    border: 2px solid #171717;
-    border-radius: 50%;
-    background: var(--timeline-card-background, #fff);
-    content: "";
-}
-
-.timeline-card {
-    position: relative;
-    display: block;
-    min-height: 180px;
-    padding: 1.4rem 1.65rem 1.5rem;
-    margin-right: 2rem;
-    border: 1px solid #d9d6d0;
-    border-radius: 0;
-    background: #fff;
-    color: inherit;
-    text-decoration: none;
-}
-
-.timeline-card .timeline-type {
-    color: #62615e;
-}
-
-.timeline-card h2 {
-    max-width: 720px;
-    margin: 0.45rem 0 0.55rem;
-    font-size: clamp(2rem, 4vw, 3.1rem);
-    font-weight: 500;
-    letter-spacing: -0.035em;
-    line-height: 0.95;
-    -webkit-text-stroke: 0.2px currentColor;
-}
-
-.timeline-card h2 a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.timeline-card > p:not(.timeline-type) {
-    max-width: 610px;
-    margin: 0;
-    color: #5d5b57;
-    font-size: 0.98rem;
-    line-height: 1.45;
-}
-
-.timeline-media {
-    display: block;
-    width: calc(100% + 3.3rem);
-    max-width: none;
-    max-height: 270px;
-    margin: -1.4rem -1.65rem 1rem;
-    border-radius: 0;
-    object-fit: cover;
-}
-
-.timeline-youtube-preview {
-    position: relative;
-    display: block;
-    width: calc(100% + 3.3rem);
-    padding: 0;
-    margin: -1.4rem -1.65rem 1rem;
-    overflow: hidden;
-    border: 0;
-    border-radius: 0;
-    background: #171717;
-    cursor: pointer;
-    aspect-ratio: 16 / 9;
-}
-
-.timeline-youtube-preview img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    object-fit: cover;
-}
-
-.timeline-youtube-preview::after {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, transparent 52%, rgba(0, 0, 0, 0.46));
-    content: "";
-}
-
-.timeline-youtube-play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    width: 68px;
-    height: 48px;
-    transform: translate(-50%, -50%);
-}
-
-.timeline-youtube-play svg { display: block; width: 100%; height: 100%; }
-.timeline-youtube-preview:hover .timeline-youtube-play,
-
-.timeline-youtube-preview:focus-visible {
-    outline: 3px solid #111;
-    outline-offset: -5px;
-}
-
-.timeline-youtube-player {
-    display: block;
-    width: calc(100% + 3.3rem);
-    margin: -1.4rem -1.65rem 1rem;
-    border: 0;
-    border-radius: 0;
-    background: #171717;
-    aspect-ratio: 16 / 9;
-}
-
-.timeline-tweet-entry {
-    width: 100%;
-    max-width: 550px;
-    margin: 0 2rem 1.35rem 0;
-}
-
-.timeline-tweet-entry .twitter-tweet {
-    margin: 0 !important;
-}
 
 .youtube-video {
     position: relative;
@@ -683,92 +474,6 @@ body:has(.post-single) {
 @media (max-width: 500px) {
     .og-card { flex-direction: column; }
     .og-card > img { width: 100%; max-height: 200px; }
-}
-
-.timeline-entry--project .timeline-card {
-    background: var(--timeline-card-background, #fff);
-}
-
-.timeline-arrow {
-    position: absolute;
-    top: 1.15rem;
-    right: 1.35rem;
-    color: #111;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.timeline-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.1rem;
-    margin-top: 1.3rem;
-}
-
-.timeline-writing-heading {
-    margin: 4rem 0 1.5rem 112px;
-}
-
-.timeline-writing-heading .timeline-type { color: #777; }
-
-.timeline-writing-heading h2 {
-    margin: 0.35rem 0 0;
-    font-size: clamp(2.7rem, 5vw, 4.25rem);
-    font-weight: normal;
-    letter-spacing: -0.045em;
-    line-height: 0.9;
-}
-
-.timeline-writing-heading > p:last-child {
-    margin: 0.6rem 0 0;
-    color: #777;
-}
-
-.timeline-entry--writing .timeline-card {
-    min-height: 142px;
-}
-
-.timeline-entry--writing .timeline-card h2 {
-    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-}
-
-.timeline-end {
-    margin: 3rem 0 0 112px;
-    padding: 2rem 0;
-    border-top: 1px solid #d9d6d0;
-}
-
-.timeline-end p {
-    margin: 0 0 0.45rem;
-    color: #777;
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-}
-
-@media (max-width: 900px) {
-    .timeline-intro {
-        margin-bottom: calc(var(--gap) * 1.8);
-    }
-}
-
-@media (max-width: 700px) {
-    .timeline-intro {
-        min-height: 220px;
-    }
-    .timeline-rail { left: 11px; }
-
-    .timeline-entry {
-        grid-template-columns: 22px minmax(0, 1fr);
-        padding-bottom: 1rem;
-    }
-
-    .timeline-marker { grid-column: 1; }
-    .timeline-marker::after { top: 0.45rem; left: 7px; }
-    .timeline-card { grid-column: 2; padding: 1.25rem 1.2rem 1.3rem; margin-right: 0.75rem; }
-    .timeline-media, .timeline-youtube-preview, .timeline-youtube-player { width: calc(100% + 2.4rem); margin: -1.25rem -1.2rem 1rem; }
-    .timeline-tweet-entry { margin-right: 0.75rem; }
-    .timeline-writing-heading, .timeline-end { margin-left: 22px; }
-    .timeline-writing-heading { margin-top: 3.2rem; }
 }
 
 /* Essays vertical layout */

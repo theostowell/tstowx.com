@@ -23,12 +23,6 @@ params:
       I travelled for the last six months, around Asia and Australia, but now I'm back in the UK, ready to scale PARAZETTEL to the point where near-permanent travel is a reality. I've also started a second internet business, a web app called [ProseLab](https://www.proselab.io) with Luca, a friend I made whilst living in Vietnam.
 
       This is my living timeline: writing, trips, projects and the things worth keeping. Photography work lives separately at [photos.tstowx.com](https://photos.tstowx.com); for the most up-to-date and deepest view into my mind, head over to my [Substack](https://substack.com/@tstowx) and subscribe there!
-  timelineHome:
-    title: "I'm Theo, an entrepreneur and serial creator..."
-    content: |
-      Welcome to my personal site -- I've tried to make it a 'digital CV' as such. I don't discriminate across the work that I post here, all of it is stuff I'm proud of, for whatever reason, ordered in a chronological timeline. Have a scroll through...
-
-      <I>Looking to hire me to shoot photos of your venue or at your next event? [There's a dedicated portfolio for that which you can find here.](https://photos.tstowx.com)</I>
   # The homepage dashboard (layouts/partials/home_dashboard.html).
   # Ventures come from featured project notes with `trustmrr_embed` set;
   # films, writing and the archive are pulled from timeline notes automatically.

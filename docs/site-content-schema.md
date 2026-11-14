@@ -2,7 +2,7 @@
 
 This vault is also the Hugo site, and the site is an index. Notes in `content/` describe something published elsewhere and point at it; the site itself renders no post bodies. `external_url` is therefore the field that matters.
 
-The day-to-day version of this document is `TIMELINE-GUIDE.md`.
+The day-to-day version of this document is `PUBLISHING.md`.
 
 ## Required frontmatter
 
@@ -28,7 +28,7 @@ external_url: "https://tstowx.substack.com/p/the-post"
 4. `external_url` → verbatim
 5. `.RelPermalink` (this site)
 
-It returns `dict "url" "external" "platform" "label"`, and everything that renders a link consumes it: the dashboard cards, the films row, the essays list, the archive grid, the `/timeline/` cards, list pages and the RSS items.
+It returns `dict "url" "external" "platform" "label"`, and everything that renders a link consumes it: the dashboard cards, the films row, the essays list, the archive grid, list pages and the RSS items.
 
 ## Redirects
 
@@ -79,4 +79,4 @@ The shortcodes still exist for the rare note whose body is worth writing here. T
 
 ## Editable homepage copy
 
-The hero heading, intro, Now status, photography blurb and socials live in [`hugo.yaml`](../hugo.yaml) under `params.dashboard`. The intro copy on the chronological index lives under `params.timelineHome`.
+The hero heading, intro, Now status, photography blurb and socials live in [`hugo.yaml`](../hugo.yaml) under `params.dashboard`.

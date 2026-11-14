@@ -1,8 +1,7 @@
 {{- /*
   Homepage dashboard: a bento grid of ventures, films, writing and
   photography, followed by a filterable card archive of every timeline note.
-  Copy lives in hugo.yaml under params.dashboard. The old chronological view
-  lives on at /timeline/.
+  Copy lives in hugo.yaml under params.dashboard.
 */ -}}
 {{- $d := site.Params.dashboard }}
 {{- $projects := where site.RegularPages "Section" "projects" }}

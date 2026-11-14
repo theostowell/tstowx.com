@@ -40,6 +40,31 @@
   status = 301
   force = true
 
+# /timeline/ and /now/ retired: send old inbound links home rather than to a 404.
+[[redirects]]
+  from = "/timeline"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/timeline/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/now"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/now/*"
+  to = "/"
+  status = 301
+  force = true
+
 # The photography archive has moved to its own site. Keep every existing
 # gallery and project link working while preventing duplicate content here.
 [[redirects]]
