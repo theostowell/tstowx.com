@@ -12,7 +12,6 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/desires"
-opengraph_image: "/opengraph/desires-card.webp"
 ---
 
 So much of what we do on a daily basis is fuelled by our desires. But we spend so little time thinking about where our desires come from.

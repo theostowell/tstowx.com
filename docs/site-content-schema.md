@@ -60,12 +60,10 @@ The card uses `timeline_summary`, then `description`, then the opening of the no
 
 ## Card and share images
 
-`opengraph_image` is one field with two jobs: the archive card and the share preview. Every note points it at a local file in `static/opengraph/` (1200×630 webp), so the built site never depends on a CDN for a card.
+`opengraph_image` is one field with two jobs: the archive card and the share preview. When it is set, it points at a local file in `static/opengraph/` (1200×630 webp), so the built site never depends on a CDN for a card.
 
-- `scripts/fetch_card_images.py` — scrapes a real image: Substack cover then first body image, X media via `cdn.syndication.twimg.com`, the YouTube thumbnail, or any other `external_url`'s `og:image`. Downloads, cover-crops to 1200×630, writes the frontmatter.
-- `scripts/make_title_cards.py` — draws a title card in Instrument Serif on cream for notes with no image anywhere. Substack's `og:image` for a text-only post is the publication's generic subscribe card, identical across posts, so scraping yields nothing usable there.
-
-Both are idempotent (they skip notes that already have an image) and both need Pillow. `--force` on `make_title_cards.py` redraws.
+- `scripts/fetch_card_images.py` — scrapes the real image: Substack cover then first body image, X media via `cdn.syndication.twimg.com`, the YouTube thumbnail, or any other `external_url`'s `og:image`. Downloads, cover-crops to 1200×630, writes the frontmatter. Idempotent; needs Pillow.
+- A note with no image renders as a text card (`.card--text`). That is deliberate: no generated stand-ins. A text-only Substack post serves the publication's generic subscribe card as its `og:image`, which is not an image of the post, so it stays a text card unless a picture is supplied by hand (`proselab`, `content-ruined-art-again`).
 
 ## Embedding
 

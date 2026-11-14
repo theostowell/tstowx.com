@@ -12,7 +12,6 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/overthinking"
-opengraph_image: "/opengraph/overthinking-card.webp"
 ---
 
 I was recently talking with one of my friends on the topic of thinking too much. We’re both the kind of people who like to rationalise everything we do with frames of reference - decisions aren’t taken lightly.

@@ -12,7 +12,6 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/farewell-adobe"
-opengraph_image: "/opengraph/farewell-adobe-card.webp"
 ---
 
 Adobe Creative Cloud is my longest-standing software subscription.

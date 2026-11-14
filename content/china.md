@@ -13,7 +13,6 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 timeline_type: place
 external_url: "https://tstowx.substack.com/p/china"
-opengraph_image: "/opengraph/china-card.webp"
 ---
 
 So I spent the last couple of weeks in one of the most notoriously awkward-to-travel places – China.

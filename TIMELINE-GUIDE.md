@@ -72,20 +72,17 @@ So: paste a URL into `external_url` and the card goes there.
 
 ## Card and share images
 
-Every card wants an image: the archive looks broken when half of it is text. The site keeps one 1200×630 webp per note in `static/opengraph/` and points `opengraph_image` at it, so nothing is fetched from a CDN at runtime.
-
-Two scripts fill the gap, and both are safe to re-run — they only touch notes that have no image:
+A card only gets an image when the thing itself has one. No image means a text card — the typographic card the archive has always used — never a stand-in.
 
 ```bash
-python3 scripts/fetch_card_images.py --write    # scrape the platform
-python3 scripts/make_title_cards.py --write     # draw a card for text-only posts
+python3 scripts/fetch_card_images.py --write
 ```
 
-`fetch_card_images.py` asks the platform, in order: the post's own image (Substack cover, then the first real image in the body), X media, the YouTube thumbnail, then the Open Graph image of any `external_url`. That covers films, posts and any post written around a picture.
+That asks the platform for the real thing, in order: the post's own image (Substack cover, then the first real image in the body), X media, the YouTube thumbnail, then the Open Graph image of any `external_url`. It stores a 1200×630 webp in `static/opengraph/` and points `opengraph_image` at it, so nothing is fetched from a CDN at runtime. Safe to re-run: it skips notes that already have an image.
 
-`make_title_cards.py` covers what has nowhere to scrape: plenty of the older essays are text-only on Substack, and Substack serves the same generic subscribe card as their `og:image`. It draws the title in the site's own Instrument Serif on cream, and takes a couple of seconds per note.
+Plenty of the older essays are text-only on Substack, and Substack serves the same generic subscribe card as their `og:image` — that is not a usable image, and those posts stay text cards. If one deserves a picture, supply it yourself: drop the file in `static/opengraph/` and point `opengraph_image` at it, as `proselab` and `content-ruined-art-again` do.
 
-Both need Pillow (`pip install pillow`). Drop the output in the repo rather than hotlinking: the images are part of the site now.
+The script needs Pillow (`pip install pillow`). Drop output in the repo rather than hotlinking: the images are part of the site now.
 
 ## Redirects and old links
 
@@ -110,6 +107,6 @@ Adding entries never means touching a template: the dashboard, the archive, the 
 - Is the thing itself already live on its platform?
 - Is `external_url` (or `youtube_id`) filled in — and correct?
 - Is `date` right, `timeline: true` set, and `timeline_type` right?
-- Does the card have an image? (`python3 scripts/fetch_card_images.py --write` first, then `make_title_cards.py --write`)
+- Does the card have an image? (`python3 scripts/fetch_card_images.py --write`) A text card is fine; a stand-in image is not.
 - Does `timeline_summary` make sense on its own?
 - Have you changed `draft` to `false`?

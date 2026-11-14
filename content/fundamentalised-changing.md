@@ -12,7 +12,6 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/fundamentalised-changing"
-opengraph_image: "/opengraph/fundamentalised-changing-card.webp"
 ---
 
 In short, yes, we are. One more time.

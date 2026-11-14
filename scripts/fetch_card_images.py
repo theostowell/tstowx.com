@@ -36,7 +36,7 @@ CONTENT = os.path.join(ROOT, "content")
 OUT = os.path.join(ROOT, "static", "opengraph")
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"}
-SIZE = (1200, 630)
+SIZE = (1200, 675)  # .card-media is aspect-ratio 16/9; og:image tolerates the same file
 
 
 def fetch(url: str, binary: bool = False, timeout: int = 30):

@@ -12,7 +12,6 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/value"
-opengraph_image: "/opengraph/value-card.webp"
 ---
 
 > _“Money rules the world.”_

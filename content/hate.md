@@ -12,7 +12,6 @@ ShowShareButtons: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 external_url: "https://tstowx.substack.com/p/hate"
-opengraph_image: "/opengraph/hate-card.webp"
 ---
 
 After building in the online business space for a little over half a year, I’ve noticed there’s a pattern developing…
