@@ -8,7 +8,7 @@
 {{- $timelineItems := where (where site.RegularPages "Params.timeline" true) "Draft" false }}
 {{- $all := sort (union $projects $timelineItems) "Date" "desc" }}
 {{- $featured := where $all "Params.timeline_featured" true }}
-{{- $ventures := sort (where $featured "Params.trustmrr_embed" "!=" nil) "Date" "asc" }}
+{{- $ventures := sort (where $featured "Params.trustmrr_badge" "!=" nil) "Date" "asc" }}
 {{- $rest := where $all "Params.timeline_featured" "ne" true }}
 {{- $films := where $rest "Params.timeline_type" "video" }}
 {{- $writing := where $rest "Params.timeline_type" "in" (slice "writing" "substack" "place" "note") }}
@@ -61,17 +61,17 @@
     {{- range . }}
     <article class="tile tile--venture" style="--venture-bg: {{ .Params.timeline_card_color | default "#F3EEE4" | safeCSS }}; --venture-accent: {{ .Params.dashboard_accent | default "#171717" | safeCSS }};">
       {{- $site := .Params.website_url | default .Params.external_url }}
+      {{- with partial "dash/image.html" . }}
+      <a class="venture-media" href="{{ $site }}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="{{ . }}" alt="" loading="lazy"></a>
+      {{- end }}
       <div class="venture-body">
-        <h3><a href="{{ $site }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a></h3>
+        <h3><a href="{{ $site }}" target="_blank" rel="noopener noreferrer"><span class="venture-title">{{ .Title }}</span> <span class="arrow" aria-hidden="true">↗</span></a></h3>
         <p>{{ partial "dash/summary.html" . }}</p>
-        <div class="venture-chart">
-          <iframe src="{{ .Params.trustmrr_embed }}" title="{{ .Title }}: TrustMRR verified revenue chart" width="640" height="360" loading="lazy"></iframe>
-        </div>
         <div class="venture-actions">
           <a class="dash-btn dash-btn--accent" href="{{ $site }}" target="_blank" rel="noopener noreferrer">Visit {{ .Title }} <span class="arrow" aria-hidden="true">↗</span></a>
-          {{- with .Params.external_url }}
-          <a class="dash-btn dash-btn--outline" href="{{ . }}" target="_blank" rel="noopener noreferrer">Revenue on TrustMRR <span class="arrow" aria-hidden="true">↗</span></a>
-          {{- end }}
+          <a class="venture-badge" href="{{ .Params.external_url | default "https://trustmrr.com" }}" target="_blank" rel="noopener noreferrer" title="{{ .Title }}'s verified revenue on TrustMRR">
+            <img src="{{ .Params.trustmrr_badge }}" alt="{{ .Title }}: TrustMRR verified revenue badge" width="103" height="42" loading="lazy">
+          </a>
         </div>
       </div>
     </article>
