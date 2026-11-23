@@ -12,7 +12,7 @@ There's been more than a short period of relative radio silence from me recently
 
 Luckily I've not given up, and there's a reason for the time that I've spent off. In short, I've been writing a book!
 
-![[Helium 2026-09-25 15.43.55.png]]
+![Minimal Note-Taking](/attachments/Helium%202026-09-25%2015.43.55.png)
 
 It's for the PARAZETTEL business, and it's called Minimal Note-Taking, and it's all about how to simplify the process of choosing how to work with your personal knowledge, based on goals and priorities, rather than what the best internet marketing teams want to force on you.
 
