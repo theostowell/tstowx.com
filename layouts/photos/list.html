@@ -1,0 +1,34 @@
+{{- define "main" }}
+<div class="photos-container">
+  <header class="page-header photos-header">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}
+    <div class="post-description">{{ . }}</div>
+    {{- end }}
+  </header>
+
+  {{- with .Content }}
+  <div class="post-content">{{ . }}</div>
+  {{- end }}
+
+  <div class="photo-grid-uniform">
+    {{- range .Pages }}
+    {{- $images := .Resources.Match "*.webp" }}
+    {{- if $images }}
+    {{- $cover := index $images 0 }}
+    <article class="photo-grid-uniform-item">
+      <a href="{{ .Permalink }}">
+        <div class="photo-grid-uniform-image">
+          <img src="{{ ($cover.Fill "800x600 q82").Permalink }}" alt="{{ .Title }}" loading="lazy" width="800" height="600">
+        </div>
+        <div class="photo-grid-uniform-title">
+          <h2>{{ .Title }}</h2>
+          <p>{{ len $images }} photographs</p>
+        </div>
+      </a>
+    </article>
+    {{- end }}
+    {{- end }}
+  </div>
+</div>
+{{- end }}

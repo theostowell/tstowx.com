@@ -1,0 +1,60 @@
+{{- define "main" }}
+<div class="photo-page-container">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}
+    <div class="post-description">{{ . }}</div>
+    {{- end }}
+  </header>
+
+  {{- with .Content }}
+  <div class="post-content">{{ . }}</div>
+  {{- end }}
+
+  {{- $images := .Resources.Match "*.webp" }}
+  {{- if gt (len $images) 0 }}
+  <div id="gallery" style="visibility: hidden; height: 1px; overflow: hidden">
+    {{- range $images }}
+    <div class="gallery-item">
+      <a href="{{ .Permalink }}" class="lightbox-trigger">
+        <img src="{{ .Permalink }}" alt="{{ .Title }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
+      </a>
+    </div>
+    {{- end }}
+  </div>
+
+  <div id="lightbox" class="lightbox" style="display: none;">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="">
+  </div>
+
+  <script src="/js/justified-gallery.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxClose = document.querySelector('.lightbox-close');
+
+      document.querySelectorAll('.lightbox-trigger').forEach(function (trigger) {
+        trigger.addEventListener('click', function (e) {
+          e.preventDefault();
+          lightbox.style.display = 'flex';
+          lightboxImg.src = this.href;
+        });
+      });
+
+      function closeLightbox() { lightbox.style.display = 'none'; }
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox || e.target === lightboxImg) closeLightbox();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && lightbox.style.display === 'flex') closeLightbox();
+      });
+    });
+  </script>
+  {{- end }}
+
+  <p class="galleries-return"><a href="{{ "/photos/" | relURL }}">All galleries</a></p>
+</div>
+{{- end }}

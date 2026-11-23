@@ -89,9 +89,12 @@ menu:
     - name: "Photography"
       url: "https://photos.tstowx.com"
       weight: 2
+    - name: "Galleries"
+      url: "/photos/"
+      weight: 3
     - name: "Businesses"
       url: "https://trustmrr.com/founder/theostowell"
-      weight: 3
+      weight: 4
 
 privacy:
   x:

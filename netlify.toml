@@ -65,17 +65,23 @@
   status = 301
   force = true
 
-# The photography archive has moved to its own site. Keep every existing
-# gallery and project link working while preventing duplicate content here.
+# The galleries live here now, at /photos/<gallery>/. Old gallery links keep working; only
+# the client projects still forward to the photography site.
 [[redirects]]
-  from = "/photos"
-  to = "https://photos.tstowx.com/"
+  from = "/photos/galleries/:gallery"
+  to = "/photos/:gallery"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/photos/*"
-  to = "https://photos.tstowx.com/:splat"
+  from = "/photos/galleries/:gallery/*"
+  to = "/photos/:gallery"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/photos/projects/*"
+  to = "https://photos.tstowx.com/projects/:splat"
   status = 301
   force = true
 
