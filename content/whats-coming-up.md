@@ -57,7 +57,7 @@ I talk about this in the first few articles that I wrote on the topic - I was ve
 
 Aside from this there are a few other things on my plate (as if it wasn't enough already) -- I've been shooting photos for people, continuing with RALY with the intention to freelance as another source of income...
 
-![RALY](/attachments/CleanShot%202026-08-27%20at%2020.32.00.gif)
+<video src="/attachments/raly.mp4" autoplay loop muted playsinline aria-label="RALY" style="width:100%;height:auto"></video>
 
 I've got a new portfolio up and running, so that I've got somewhere deliberate to send prospects and others. Again, photography is a true love of mine, so I don't want to dilute it by taking on a lot of stress in the field, running a full freelance business, but if I can pick up some work for clients that I like and make it profitable enough to buy myself some better kit then that's even more than I could have hoped for.
 
