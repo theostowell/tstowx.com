@@ -14,12 +14,15 @@
   <div class="photo-grid-uniform">
     {{- range .Pages }}
     {{- $images := .Resources.Match "*.webp" }}
-    {{- if $images }}
-    {{- $cover := index $images 0 }}
+    {{- $card := .Resources.Get "card.webp" }}
+    {{- if and $images (not $card) }}
+    {{- $card = index $images 0 }}
+    {{- end }}
+    {{- if $card }}
     <article class="photo-grid-uniform-item">
       <a href="{{ .Permalink }}">
         <div class="photo-grid-uniform-image">
-          <img src="{{ ($cover.Fill "800x600 q82").Permalink }}" alt="{{ .Title }}" loading="lazy" width="800" height="600">
+          <img src="{{ $card.RelPermalink }}" alt="{{ .Title }}" loading="lazy" width="800" height="600">
         </div>
         <div class="photo-grid-uniform-title">
           <h2>{{ .Title }}</h2>
