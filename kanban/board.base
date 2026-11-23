@@ -1,0 +1,47 @@
+filters:
+  and:
+    - file.folder == "kanban"
+    - file.hasTag("category/content")
+
+properties:
+  file.name:
+    displayName: Piece
+  property.status:
+    displayName: Status
+  property.type:
+    displayName: Type
+  property.date:
+    displayName: Date
+  property.summary:
+    displayName: Card copy
+  property.external_url:
+    displayName: Lives at
+
+views:
+  - type: table
+    name: Board
+    order:
+      - file.name
+      - status
+      - type
+      - date
+      - summary
+    sort:
+      - property: status
+        direction: ASC
+      - property: date
+        direction: DESC
+  - type: table
+    name: To publish
+    filters:
+      and:
+        - status != "shipped"
+        - status != "backlog"
+    order:
+      - file.name
+      - status
+      - type
+      - external_url
+    sort:
+      - property: date
+        direction: DESC

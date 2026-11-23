@@ -17,3 +17,7 @@ static/.DS_Store
 
 # Task inbox and Kanban cards: private, and this repo is public
 Inbox/
+
+# Content kanban: the machinery lives here, the cards are private
+kanban/*.md
+!kanban/README.md
