@@ -1,0 +1,21 @@
+{{- /*
+  Shown under any essay hosted here that was also published on Substack:
+  a way to read it in the Substack app (comments, likes, restacks) and to
+  subscribe there. Context: the page.
+*/ -}}
+{{- $out := partial "outbound.html" . -}}
+{{- with $out.substack }}
+<aside class="substack-cta" aria-label="Read and subscribe on Substack">
+  <p class="substack-cta-text">
+    {{- if eq $.Section "fm" -}}
+    This issue of Fundamentalised went out on {{ $.Date.Format "2 January 2006" }}. New writing still arrives by email first, through Substack.
+    {{- else -}}
+    This essay is also on Substack, where new writing arrives by email first.
+    {{- end -}}
+  </p>
+  <div class="substack-cta-actions">
+    <a class="substack-cta-button substack-cta-button--primary" href="{{ site.Params.substackURL | default "https://tstowx.substack.com" }}/subscribe" target="_blank" rel="noopener">Subscribe on Substack</a>
+    <a class="substack-cta-button" href="{{ . }}" target="_blank" rel="noopener">Read on Substack <span aria-hidden="true">↗</span></a>
+  </div>
+</aside>
+{{- end }}

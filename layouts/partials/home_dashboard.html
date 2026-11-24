@@ -261,6 +261,40 @@
     });
   });
 
+  /* Masonry in reading order: visible cards are dealt round-robin into columns,
+     so the newest run left to right across each row instead of down each column.
+     Column count mirrors the old CSS (up to 5 columns, at least 320px wide). */
+  var cols = [], colCount = 0;
+  function columnsFor(width) {
+    var gap = parseFloat(getComputedStyle(grid).columnGap) || 0;
+    return Math.max(1, Math.min(5, Math.floor((width + gap) / (320 + gap))));
+  }
+  function layout(force) {
+    if (!grid) return;
+    var n = columnsFor(grid.clientWidth);
+    if (!force && n === colCount) return;
+    colCount = n;
+    grid.classList.add('is-rowed');
+    cols.forEach(function (c) { c.remove(); });
+    cols = [];
+    for (var i = 0; i < n; i++) {
+      var col = document.createElement('div');
+      col.className = 'archive-col';
+      cols.push(col);
+      grid.appendChild(col);
+    }
+    var v = 0;
+    cards.forEach(function (card) {
+      if (card.hidden) { grid.appendChild(card); return; }
+      cols[v++ % n].appendChild(card);
+    });
+  }
+  var resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () { layout(false); }, 150);
+  });
+
   function render() {
     var shown = 0, matching = 0;
     cards.forEach(function (card) {
@@ -270,6 +304,7 @@
       card.hidden = !visible;
       if (visible) shown++;
     });
+    layout(true);
     if (more) {
       more.hidden = expanded || current !== 'all' || matching <= LIMIT;
       more.textContent = 'Show all ' + matching;

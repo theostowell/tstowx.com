@@ -8,13 +8,13 @@ timeline_summary: "It's been well over a year since I left university to build P
 description: "It's been well over a year since I left university to build PARAZETTEL full-time, but if I'm being honest with myself, I've not yet 'gone pro'. This week that started to change."
 ---
 
-It's been well over a year since I left university to focus on building PARAZETTEL full-time, but if I'm being honest with myself, I've not yet 'gone pro'.
+It's been well over a year since I left university to focus on building my education business PARAZETTEL full-time, but if I'm being honest with myself, I've not yet 'gone pro'.
 
 What this means to me is that I've still rather been working well within my means, not taking risks, not going pedal to the metal in trying to scale PARAZETTEL.
 
 In other words, not taking responsibility. And this is a general theme across my life that I want to change.
 
-I'm 23 years old now, and the years aren't getting any slower. I've been doing the writing that led to PARAZETTEL's existence for pretty much four years now and in truth, as I mentioned in [Well, What's Next?](https://tstowx.substack.com/p/whats-coming-up), progress has been a little stagnant for a while.
+The years aren't getting any slower. I've been doing the writing that led to PARAZETTEL's existence since 2023 now and in truth, I could be doing much, much more.
 
 Drake dropped *Thank Me Later* at 23 for fuck's sake.
 
@@ -30,13 +30,15 @@ The world has changed in my niche, and indeed across all niches and the industry
 
 With the rise of AI, it's getting harder and harder to build out something that people really respect, especially through the written word.
 
-Hence, I've pivoted to marketing more through video, and teaching through close-knit groups, making sure that everyone who wants to learn <<UNRESOLVED: finish this sentence>>
+Hence, I've pivoted to marketing more through video, and teaching through close-knit groups, making sure that everyone who wants to learn about note-taking has somewhere, and more importantly some*one* to learn from.
 
-I'm banking on the idea that curation alongside expertise is going to be one of the most valuable things going forward...
+I'm banking on the idea that human curation and human connection alongside expertise is going to be one of the most valuable things going forward...
 
 The internet is so full of things these days that for something that you find important in your life, you need a few really trustworthy sources that you can go to, to keep yourself on a sensible path.
 
 And this is what I'm trying to be now with note-taking through Obsidian, because I believe as well that managing your ideas and, if you will, 'personal context' is going to be more and more important as improving technology replaces roles that lack individuality or specialist knowledge.
+
+People will need to stay on the right path to make things work, and this makes things easier for me, because this is what I've been doing for a long time.
 
 So, all of this is a long way of saying that I've been thinking for a long time about how best to do this, and have actually already started the process of going pro.
 

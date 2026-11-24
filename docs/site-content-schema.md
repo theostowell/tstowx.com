@@ -1,6 +1,10 @@
 # Site content system
 
-This vault is also the Hugo site, and the site is an index. Notes in `content/` describe something published elsewhere and point at it; the site itself renders no post bodies. `external_url` is therefore the field that matters.
+This vault is also the Hugo site. Writing is hosted here: a note whose `external_url` is a Substack post renders on this site once it has a body, with a "Subscribe on Substack / Read on Substack" box underneath (`layouts/partials/substack_cta.html`). A Substack note with no body yet still forwards to Substack. Films, X posts and ventures stay off-site: those notes describe something published elsewhere and point at it.
+
+- Fill an essay's body from Substack: `python3 scripts/import_substack.py note content/<note>.md`
+- Fundamentalised issues live at `/fm/NNN/` as page bundles (`content/fm/001/index.md` + images, `issue:` in front matter). Import one with `python3 scripts/import_substack.py fm <number> <substack-url-or-id>`.
+- `/writing/` lists every hosted essay (`layouts/_default/essays.html`).
 
 The day-to-day version of this document is `PUBLISHING.md`.
 
@@ -25,10 +29,10 @@ external_url: "https://tstowx.substack.com/p/the-post"
 1. `youtube_id` → `https://www.youtube.com/watch?v={id}`
 2. `platform: x` + `author_handle` + `post_id` → `https://x.com/{handle}/status/{id}`
 3. `timeline_type: project` + `website_url` → that site
-4. `external_url` → verbatim
+4. `external_url` → verbatim, except a Substack URL on a note with a body, which stays on this site
 5. `.RelPermalink` (this site)
 
-It returns `dict "url" "external" "platform" "label"`, and everything that renders a link consumes it: the dashboard cards, the films row, the essays list, the archive grid, list pages and the RSS items.
+It returns `dict "url" "external" "platform" "label" "substack"`, and everything that renders a link consumes it: the dashboard cards, the films row, the essays list, the archive grid, list pages and the RSS items.
 
 ## Redirects
 

@@ -373,6 +373,9 @@ a.tile:focus-visible,
 .chip-count { opacity: .55; font-size: .76rem; font-variant-numeric: tabular-nums; }
 
 .archive-grid { columns: 5 320px; column-gap: var(--dash-gap); }
+/* With JS, cards are dealt into columns left-to-right so the newest read across each row. */
+.archive-grid.is-rowed { columns: auto; display: flex; align-items: flex-start; gap: var(--dash-gap); }
+.archive-col { flex: 1 1 0; min-width: 0; }
 
 .card {
     display: block;

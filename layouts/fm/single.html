@@ -1,0 +1,43 @@
+{{- define "main" }}
+{{- /* One Fundamentalised issue, hosted here. Prev/next follow the issue number. */ -}}
+{{- $n := int .Params.issue -}}
+{{- $older := "" -}}{{- $newer := "" -}}
+{{- range .Parent.Pages.ByParam "issue" -}}
+  {{- $i := int .Params.issue -}}
+  {{- if lt $i $n }}{{ $older = . }}{{ end -}}
+  {{- if and (gt $i $n) (not $newer) }}{{ $newer = . }}{{ end -}}
+{{- end -}}
+<article class="post-single">
+  <header class="post-header">
+    <div class="post-meta"><a href="{{ .Parent.RelPermalink }}">Fundamentalised</a> · Issue {{ printf "%03d" (int .Params.issue) }}</div>
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- with .Description }}
+    <div class="post-description">{{ . }}</div>
+    {{- end }}
+    <div class="post-meta">{{- partial "post_meta.html" . -}}</div>
+  </header>
+
+  <div class="post-content">
+    {{- partial "anchored_headings.html" .Content -}}
+  </div>
+
+  {{- partial "substack_cta.html" . }}
+
+  <footer class="post-footer">
+    <nav class="paginav">
+      {{- with $older }}
+      <a class="prev" href="{{ .RelPermalink }}">
+        <span class="title">« {{ printf "%03d" (int .Params.issue) }}</span><br>
+        <span>{{ .Title }}</span>
+      </a>
+      {{- end }}
+      {{- with $newer }}
+      <a class="next" href="{{ .RelPermalink }}">
+        <span class="title">{{ printf "%03d" (int .Params.issue) }} »</span><br>
+        <span>{{ .Title }}</span>
+      </a>
+      {{- end }}
+    </nav>
+  </footer>
+</article>
+{{- end }}

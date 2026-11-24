@@ -84,7 +84,7 @@ params:
 menu:
   main:
     - name: "Writing"
-      url: "https://tstowx.substack.com"
+      url: "/writing/"
       weight: 1
     - name: "Photography"
       url: "https://photos.tstowx.com"

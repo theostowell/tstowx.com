@@ -1,9 +1,9 @@
 {{- define "main" }}
 
 {{- /*
-  Nothing published on this site any more: writing, films and posts are hosted
-  on Substack, YouTube and X. A note with an off-site home shows where it went
-  (the redirect itself fires from head and from the generated _redirects).
+  Essays render here (with a Substack read/subscribe box underneath); films,
+  posts and ventures live off-site, and a note with an off-site home shows
+  where it went (the redirect itself fires from head and the generated _redirects).
 */ -}}
 {{- $out := partial "outbound.html" . -}}
 {{- if $out.external -}}
@@ -71,6 +71,8 @@
     {{- else }}{{ .Content }}{{ end }}
   </div>
   {{- end }}
+
+  {{- partial "substack_cta.html" . }}
 
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}

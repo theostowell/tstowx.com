@@ -1,21 +1,24 @@
 {{- /*
   The single place that decides where a note sends the reader.
 
-  Nothing on this site is hosted here any more: the writing lives on Substack,
-  the films on YouTube, the posts on X and the ventures on their own sites.
-  This repo is the index, so every card, list item and single page asks this
-  partial for its outbound URL instead of hard-coding a rule.
+  The writing is hosted here; films live on YouTube, posts on X and the
+  ventures on their own sites. Every card, list item and single page asks this
+  partial for its URL instead of hard-coding a rule.
 
   Priority: YouTube → X → project site → explicit external_url → this site.
-  Adding something new means pasting the URL it lives at into front matter;
-  if there is no URL yet the note simply renders here, which is the safe
-  failure.
 
-  Returns dict "url", "external" (bool), "platform" (substack|youtube|x|web|site).
+  A Substack external_url no longer sends the reader away: if the note has its
+  text, the essay renders here and the Substack URL comes back as "substack"
+  so the page can offer "read on Substack / subscribe". A Substack note with
+  no body yet still forwards to Substack, which is the safe failure.
+
+  Returns dict "url", "external" (bool), "platform" (substack|youtube|x|web|site),
+  "label", "substack" (the post's Substack URL, or "").
 */ -}}
 {{- $type := .Params.timeline_type | default "" -}}
 {{- $url := "" -}}
 {{- $platform := "site" -}}
+{{- $substack := "" -}}
 
 {{- if .Params.youtube_id -}}
   {{- $url = printf "https://www.youtube.com/watch?v=%s" .Params.youtube_id -}}
@@ -30,7 +33,12 @@
   {{- with .Params.external_url -}}
     {{- $url = . -}}
     {{- if findRE `substack\.com` . 1 -}}
-      {{- $platform = "substack" -}}
+      {{- $substack = . -}}
+      {{- if strings.TrimSpace $.RawContent -}}
+        {{- $platform = "site" -}}
+      {{- else -}}
+        {{- $platform = "substack" -}}
+      {{- end -}}
     {{- else if findRE `(youtube\.com|youtu\.be)` . 1 -}}
       {{- $platform = "youtube" -}}
     {{- else if findRE `(^|//|\.)x\.com` . 1 -}}
@@ -46,4 +54,4 @@
 {{- if not $external -}}
   {{- $url = .RelPermalink -}}
 {{- end -}}
-{{- return (dict "url" $url "external" $external "platform" $platform "label" (index $labels $platform)) -}}
+{{- return (dict "url" $url "external" $external "platform" $platform "label" (index $labels $platform) "substack" $substack) -}}

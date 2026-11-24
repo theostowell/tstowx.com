@@ -1,0 +1,39 @@
+{{- define "main" }}
+{{- /*
+  /writing/: every essay hosted on this site, newest first, grouped by year.
+  Essays are the notes of type writing/substack/place/note that render here
+  (see outbound.html); Fundamentalised issues get one link to /fm/.
+*/ -}}
+{{- $essays := slice -}}
+{{- range where (where site.RegularPages "Params.timeline_type" "in" (slice "writing" "substack" "place" "note")) "Section" "ne" "fm" -}}
+  {{- if not (partial "outbound.html" .).external }}{{ $essays = $essays | append . }}{{ end -}}
+{{- end -}}
+<div class="essays-container">
+  <header class="page-header essays-full-width-header">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}
+    <div class="post-description">{{ . | markdownify }}</div>
+    {{- end }}
+  </header>
+
+  {{- with site.GetPage "/fm" }}
+  <p class="essays-fm-link">Looking for the newsletter? Every issue of <a href="{{ .RelPermalink }}">Fundamentalised</a> is archived here too.</p>
+  {{- end }}
+
+  <div class="essays-vertical-list">
+    {{- range ($essays | collections.Uniq).GroupByDate "2006" }}
+    <div class="essay-year-group">
+      <h2 class="essay-year-heading">{{ .Key }}</h2>
+      <ul class="essay-list">
+        {{- range .Pages }}
+        <li class="essay-list-item">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <div class="essay-meta">{{ .Date.Format "2 January" }}{{ with .ReadingTime }} · {{ . }} min read{{ end }}</div>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+  </div>
+</div>
+{{- end }}

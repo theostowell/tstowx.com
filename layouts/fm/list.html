@@ -1,0 +1,29 @@
+{{- define "main" }}
+{{- /*
+  Fundamentalised back issues, hosted here at /fm/<number>/.
+  Each issue is a page bundle (content/fm/001/index.md + its images) with an
+  `issue` number in front matter; the list runs newest first.
+*/ -}}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}
+  <div class="post-description">{{ . | markdownify }}</div>
+  {{- end }}
+</header>
+
+{{- with .Content }}
+<div class="post-content">{{ . }}</div>
+{{- end }}
+
+<ol class="fm-issues">
+  {{- range (.Pages.ByParam "issue").Reverse }}
+  <li class="fm-issue">
+    <a href="{{ .RelPermalink }}">
+      <span class="fm-issue-number">{{ printf "%03d" (int .Params.issue) }}</span>
+      <span class="fm-issue-title">{{ .Title }}</span>
+      <time class="fm-issue-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+    </a>
+  </li>
+  {{- end }}
+</ol>
+{{- end }}
