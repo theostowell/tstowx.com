@@ -87,14 +87,11 @@ menu:
       url: "https://tstowx.substack.com"
       weight: 1
     - name: "Photography"
-      url: "https://photos.tstowx.com"
-      weight: 2
-    - name: "Galleries"
       url: "/photos/"
-      weight: 3
+      weight: 2
     - name: "Businesses"
       url: "https://trustmrr.com/founder/theostowell"
-      weight: 4
+      weight: 3
 
 privacy:
   x:

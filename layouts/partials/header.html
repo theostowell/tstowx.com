@@ -29,6 +29,17 @@
                 {{- end }}
             </div>
         </div>
+        {{- with site.Menus.main }}
+        <ul id="menu">
+            {{- range . }}
+            <li>
+                <a href="{{ .URL | absLangURL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener"{{ end }}{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>
+                    <span>{{ .Name }}</span>
+                </a>
+            </li>
+            {{- end }}
+        </ul>
+        {{- end }}
         <div class="mobile-menu-controls">
             <button type="button" class="cta-button" data-supascribe-popup-trigger="840405570576" title="Subscribe to Theo's Substack">Subscribe</button>
         </div>
