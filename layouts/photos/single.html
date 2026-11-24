@@ -11,13 +11,15 @@
   <div class="post-content">{{ . }}</div>
   {{- end }}
 
-  {{- $images := .Resources.Match "*.webp" }}
-  {{- if gt (len $images) 0 }}
+  {{- $key := path.Base .File.Dir }}
+  {{- $cdn := "https://cdn.tstowx.com/galleries" }}
+  {{- $gallery := index site.Data.galleries $key }}
+  {{- with $gallery }}
   <div id="gallery" style="visibility: hidden; height: 1px; overflow: hidden">
-    {{- range $images }}
+    {{- range .files }}
     <div class="gallery-item">
-      <a href="{{ .Permalink }}" class="lightbox-trigger">
-        <img src="{{ .Permalink }}" alt="{{ .Title }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
+      <a href="{{ $cdn }}/{{ $key }}/{{ .name }}" class="lightbox-trigger">
+        <img src="{{ $cdn }}/{{ $key }}/{{ .name }}" alt="{{ $key }} photograph" width="{{ .w }}" height="{{ .h }}" loading="lazy">
       </a>
     </div>
     {{- end }}

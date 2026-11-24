@@ -12,21 +12,19 @@
   {{- end }}
 
   <div class="photo-grid-uniform">
+    {{- $cdn := "https://cdn.tstowx.com/galleries" }}
     {{- range .Pages }}
-    {{- $images := .Resources.Match "*.webp" }}
-    {{- $card := .Resources.Get "card.webp" }}
-    {{- if and $images (not $card) }}
-    {{- $card = index $images 0 }}
-    {{- end }}
-    {{- if $card }}
+    {{- $key := path.Base .File.Dir }}
+    {{- $gallery := index site.Data.galleries $key }}
+    {{- with $gallery }}
     <article class="photo-grid-uniform-item">
-      <a href="{{ .Permalink }}">
+      <a href="{{ $.Permalink }}{{ $key }}/">
         <div class="photo-grid-uniform-image">
-          <img src="{{ $card.RelPermalink }}" alt="{{ .Title }}" loading="lazy" width="800" height="600">
+          <img src="{{ $cdn }}/{{ $key }}/{{ .card }}" alt="{{ $key }} photographs" loading="lazy" width="800" height="600">
         </div>
         <div class="photo-grid-uniform-title">
-          <h2>{{ .Title }}</h2>
-          <p>{{ len $images }} photographs</p>
+          <h2>{{ $key | humanize | title }}</h2>
+          <p>{{ len .files }} photographs</p>
         </div>
       </a>
     </article>
