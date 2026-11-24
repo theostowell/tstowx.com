@@ -40,14 +40,13 @@ params:
     homeCountry: "UK"
     # Platforms from SocialIcons (below) to leave out of the homepage Socials tile.
     hiddenSocials: ["LinkedIn"]
-    photography:
-      url: "https://photos.tstowx.com"
-      blurb: "Sport, hospitality, travel and independent brands, in the UK and worldwide. Available for hire."
-      images:
-        - "/attachments/home/photo-bbu.webp"
-        - "/attachments/home/photo-hkg-mac-china.webp"
-        - "/attachments/home/photo-raly-iv.webp"
-        - "/attachments/home/photo-pipers.webp"
+    # The card in the writing row. Copy lives here so the template stays markup.
+    fundamentalised:
+      url: "/fm/"
+      title: "Fundamentalised"
+      kicker: "Back issues"
+      blurb: "The newsletter, end to end — every issue I've sent, from the early dispatches to the last letter."
+      link: "Read the back issues"
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
@@ -87,14 +86,11 @@ menu:
       url: "/writing/"
       weight: 1
     - name: "Photography"
-      url: "https://photos.tstowx.com"
-      weight: 2
-    - name: "Galleries"
       url: "/photos/"
-      weight: 3
+      weight: 2
     - name: "Businesses"
       url: "https://trustmrr.com/founder/theostowell"
-      weight: 4
+      weight: 3
 
 privacy:
   x:
