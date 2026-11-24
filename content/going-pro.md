@@ -1,7 +1,7 @@
 ---
 title: "Going Pro (Drake Dropped Thank Me Later at 23)"
 date: 2026-11-23
-draft: true
+draft: false
 timeline: true
 timeline_type: writing
 timeline_summary: "It's been well over a year since I left university to build PARAZETTEL full-time, but I've not yet 'gone pro'."
