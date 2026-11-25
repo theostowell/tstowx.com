@@ -338,13 +338,13 @@ a.tile:focus-visible,
 .tile--photos:focus-visible .photos-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .12em; }
 
 /* ── Fundamentalised card (back issues) ───────────────────── */
-.tile--fundamentalised { grid-column: span 5; display: flex; padding: 0; background: #f3eee4; }
-.fundamentalised-body { display: flex; flex-direction: column; justify-content: center; gap: .55rem; padding: 1.6rem; }
+.tile--fundamentalised { grid-column: span 5; display: flex; padding: 1.6rem; }
+.fundamentalised-body { display: flex; flex-direction: column; gap: .5rem; width: 100%; }
 .fundamentalised-kicker { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--dash-muted); }
-.fundamentalised-body h3 { margin: 0; font-size: clamp(1.5rem, 2.4vw, 2rem); line-height: 1.1; }
+.fundamentalised-body h3 { margin: 0 0 .2rem; font-family: var(--font-heading); font-size: 2.6rem; line-height: 1; letter-spacing: -.02em; }
 .fundamentalised-body h3 .arrow { font-family: var(--dash-sans); font-size: .6em; vertical-align: .14em; }
 .fundamentalised-body > p { margin: 0; color: #4a4741; line-height: 1.5; }
-.fundamentalised-link { margin-top: .35rem; font-size: .9rem; font-weight: 500; border-bottom: 1px solid currentColor; align-self: flex-start; padding-bottom: 1px; }
+.fundamentalised-link { margin-top: .6rem; font-size: .9rem; font-weight: 500; border-bottom: 1px solid currentColor; align-self: flex-start; padding-bottom: 1px; }
 .tile--fundamentalised:hover .fundamentalised-title,
 .tile--fundamentalised:focus-visible .fundamentalised-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .12em; }
 
@@ -467,6 +467,7 @@ a.tile:focus-visible,
     .tile--films { padding: 1.3rem 0; }
     .venture-body, .photos-body { padding: 1.3rem; }
     .tile--hero { padding: 1.3rem; min-height: 0; }
+    .tile--fundamentalised { padding: 1.3rem; }
     .hero-title { font-size: 3.6rem; }
     .tile--now, .tile--elsewhere { grid-column: span 12; }
     .films-head { padding: 0 1.3rem 1rem; }
