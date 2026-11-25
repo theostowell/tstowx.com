@@ -107,6 +107,36 @@
   </section>
   {{- end }}
 
+  {{- /* ── Photography galleries ────────────────────────────── */}}
+  {{- $order := slice "wildlife" "landscape" "street" "commercial" }}
+  {{- $galleries := slice }}
+  {{- range $order }}
+    {{- $name := . }}
+    {{- with index site.Data.galleries $name }}
+      {{- $galleries = $galleries | append (dict "key" $name "data" .) }}
+    {{- end }}
+  {{- end }}
+  {{- with $galleries }}
+  <section class="home-galleries" aria-labelledby="galleries-title">
+    <div class="galleries-head">
+      <h2 id="galleries-title">Photography</h2>
+      <a class="tile-link" href="{{ "/photos/" | relLangURL }}">All galleries <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+    <div class="galleries-grid">
+      {{- range . }}
+      {{- $g := .key }}{{ $gd := .data }}
+      <a class="gallery-card" href="{{ printf "/photos/%s/" $g | relLangURL }}">
+        <img src="https://cdn.tstowx.com/galleries/{{ $g }}/{{ $gd.card }}" alt="" loading="lazy" width="800" height="600">
+        <div class="gallery-card-body">
+          <h3>{{ $g | humanize | title }}</h3>
+          <p>{{ len $gd.files }} photographs</p>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
   {{- /* ── Writing + photography ────────────────────────────── */}}
   <section class="dash-grid" aria-label="Writing and photography">
     <article class="tile tile--writing">
@@ -140,36 +170,6 @@
     </a>
     {{- end }}
   </section>
-
-  {{- /* ── Photography galleries ────────────────────────────── */}}
-  {{- $order := slice "wildlife" "landscape" "street" "commercial" }}
-  {{- $galleries := slice }}
-  {{- range $order }}
-    {{- $name := . }}
-    {{- with index site.Data.galleries $name }}
-      {{- $galleries = $galleries | append (dict "key" $name "data" .) }}
-    {{- end }}
-  {{- end }}
-  {{- with $galleries }}
-  <section class="home-galleries" aria-labelledby="galleries-title">
-    <div class="galleries-head">
-      <h2 id="galleries-title">Photography</h2>
-      <a class="tile-link" href="{{ "/photos/" | relLangURL }}">All galleries <span class="arrow" aria-hidden="true">→</span></a>
-    </div>
-    <div class="galleries-grid">
-      {{- range . }}
-      {{- $g := .key }}{{ $gd := .data }}
-      <a class="gallery-card" href="{{ printf "/photos/%s/" $g | relLangURL }}">
-        <img src="https://cdn.tstowx.com/galleries/{{ $g }}/{{ $gd.card }}" alt="" loading="lazy" width="800" height="600">
-        <div class="gallery-card-body">
-          <h3>{{ $g | humanize | title }}</h3>
-          <p>{{ len $gd.files }} photographs</p>
-        </div>
-      </a>
-      {{- end }}
-    </div>
-  </section>
-  {{- end }}
 
   <section class="dash-archive" id="archive" aria-label="Archive">
 
