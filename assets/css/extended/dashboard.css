@@ -113,7 +113,7 @@ a.tile:focus-visible,
 .hero-title {
     max-width: 13ch;
     margin: 0 0 1.2rem;
-    font-size: clamp(2.9rem, 3.2vw + 1.55rem, 4.8rem);
+    font-size: 5.6rem;
     line-height: .9;
     letter-spacing: -.045em !important;
 }
@@ -467,6 +467,7 @@ a.tile:focus-visible,
     .tile--films { padding: 1.3rem 0; }
     .venture-body, .photos-body { padding: 1.3rem; }
     .tile--hero { padding: 1.3rem; min-height: 0; }
+    .hero-title { font-size: 3.6rem; }
     .tile--now, .tile--elsewhere { grid-column: span 12; }
     .films-head { padding: 0 1.3rem 1rem; }
     .films-track { grid-auto-columns: 78%; padding: 0 1.3rem .4rem; scroll-padding: 0 1.3rem; }
