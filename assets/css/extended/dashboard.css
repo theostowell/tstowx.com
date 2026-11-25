@@ -338,15 +338,12 @@ a.tile:focus-visible,
 .tile--photos:focus-visible .photos-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .12em; }
 
 /* ── Fundamentalised card (back issues) ───────────────────── */
-.tile--fundamentalised { grid-column: span 5; display: flex; padding: 1.6rem; }
-.fundamentalised-body { display: flex; flex-direction: column; gap: .5rem; width: 100%; }
-.fundamentalised-kicker { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--dash-muted); }
-.fundamentalised-body h3 { margin: 0 0 .2rem; font-family: var(--font-heading); font-size: 2.6rem; line-height: 1; letter-spacing: -.02em; }
-.fundamentalised-body h3 .arrow { font-family: var(--dash-sans); font-size: .6em; vertical-align: .14em; }
-.fundamentalised-body > p { margin: 0; color: #4a4741; line-height: 1.5; }
-.fundamentalised-link { margin-top: .6rem; font-size: .9rem; font-weight: 500; border-bottom: 1px solid currentColor; align-self: flex-start; padding-bottom: 1px; }
-.tile--fundamentalised:hover .fundamentalised-title,
-.tile--fundamentalised:focus-visible .fundamentalised-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .12em; }
+.tile--fundamentalised { grid-column: span 5; display: flex; flex-direction: column; padding: 1.6rem; }
+.fundamentalised-title { color: inherit; }
+.fundamentalised-title .arrow { font-family: var(--dash-sans); font-size: .6em; vertical-align: .14em; }
+.fundamentalised-title:hover, .fundamentalised-title:focus-visible { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .12em; }
+.fundamentalised-blurb { margin: 0 0 1rem; color: #4a4741; line-height: 1.5; }
+.tile--fundamentalised .writing-list { margin-top: 0; }
 
 /* ── Photography strip on the homepage ────────────────────── */
 .home-galleries { margin-bottom: var(--dash-gap); }

@@ -156,14 +156,30 @@
     </article>
 
     {{- with $d.fundamentalised }}
-    <a class="tile tile--fundamentalised" href="{{ .url | relLangURL }}">
-      <div class="fundamentalised-body">
-        {{- with .kicker }}<span class="fundamentalised-kicker">{{ . }}</span>{{ end }}
-        <h3><span class="fundamentalised-title">{{ .title }}</span> <span class="arrow" aria-hidden="true">→</span></h3>
-        <p>{{ .blurb }}</p>
-        {{- with .link }}<span class="fundamentalised-link">{{ . }} <span aria-hidden="true">→</span></span>{{ end }}
+    {{- $fm := where site.RegularPages "Section" "fm" }}
+    <article class="tile tile--fundamentalised">
+      <div class="writing-head">
+        <div>
+          <h2><a class="fundamentalised-title" href="{{ .url | relLangURL }}">{{ .title }} <span class="arrow" aria-hidden="true">→</span></a></h2>
+        </div>
       </div>
-    </a>
+      {{- with .blurb }}<p class="fundamentalised-blurb">{{ . }}</p>{{ end }}
+      {{- with .issues }}
+      <ol class="writing-list">
+        {{- range . }}
+        {{- with index (where $fm "Params.issue" .) 0 }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+            <span class="writing-title">{{ .Title }}</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        {{- end }}
+        {{- end }}
+      </ol>
+      {{- end }}
+    </article>
     {{- end }}
   </section>
 

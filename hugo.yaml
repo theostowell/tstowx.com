@@ -44,9 +44,9 @@ params:
     fundamentalised:
       url: "/fm/"
       title: "Fundamentalised"
-      kicker: "Back issues"
       blurb: "The newsletter, end to end — every issue I've sent, from the early dispatches to the last letter."
-      link: "Read the back issues"
+      # Issue numbers, in the order they appear on the card. Swap these for any other issues.
+      issues: [100, 97, 81, 79, 69]
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
