@@ -117,11 +117,7 @@
     {{- end }}
   {{- end }}
   {{- with $galleries }}
-  <section class="home-galleries" aria-labelledby="galleries-title">
-    <div class="galleries-head">
-      <h2 id="galleries-title">Photography</h2>
-      <a class="tile-link" href="{{ "/photos/" | relLangURL }}">All galleries <span class="arrow" aria-hidden="true">→</span></a>
-    </div>
+  <section class="home-galleries" aria-label="Photography galleries">
     <div class="galleries-grid">
       {{- range . }}
       {{- $g := .key }}{{ $gd := .data }}
