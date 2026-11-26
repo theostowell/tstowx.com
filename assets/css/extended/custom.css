@@ -899,16 +899,17 @@ body:has(#supascribe-popup-widget) {
   }
 }
 
-/* "Read on Substack / Subscribe" box under hosted essays */
+/* Subscribe box under hosted essays and issues — sits outside the article card,
+   unbordered, square-cornered, with the Substack mark in each button. */
 .substack-cta {
-  margin: 2.5rem 0 1rem;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius, 8px);
-  background: var(--entry);
+  margin: 2rem 0 1.5rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 .substack-cta-text {
   margin: 0 0 1rem;
+  max-width: 62ch;
   color: var(--secondary);
   font-size: 0.95rem;
 }
@@ -918,25 +919,74 @@ body:has(#supascribe-popup-widget) {
   gap: 0.75rem;
 }
 .substack-cta-button {
-  display: inline-block;
-  padding: 0.55rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.6rem 1.15rem;
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: 0;
+  background: transparent;
+  color: var(--primary);
   font-size: 0.9rem;
   font-weight: 500;
+  line-height: 1.2;
   text-decoration: none;
-  color: var(--primary);
   box-shadow: none;
 }
-.substack-cta-button:hover {
-  border-color: var(--primary);
+.substack-cta-icon {
+  display: block;
+  width: 0.95rem;
+  height: 0.95rem;
+  flex: none;
 }
 .substack-cta-button--primary {
   background: #ff6719; /* Substack orange */
   border-color: #ff6719;
   color: #fff;
 }
-.substack-cta-button--primary:hover {
-  background: #e85a10;
-  border-color: #e85a10;
+.substack-cta-button--primary:hover { background: #e85a10; border-color: #e85a10; color: #fff; }
+.substack-cta-button--ghost:hover { border-color: var(--primary); }
+
+/* Previous / next issue, under the subscribe box */
+.issue-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2.25rem 0 2.5rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid #d9d6d0;
+}
+.issue-nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: inherit;
+  text-decoration: none;
+}
+.issue-nav-item--next { text-align: right; align-items: flex-end; }
+.issue-nav-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--secondary);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.issue-nav-arrow { font-size: 0.95rem; line-height: 1; }
+.issue-nav-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+.issue-nav-item:hover .issue-nav-title,
+.issue-nav-item:focus-visible .issue-nav-title {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+@media (max-width: 620px) {
+  .issue-nav { grid-template-columns: 1fr; gap: 1.5rem; }
+  .issue-nav-item--next { text-align: left; align-items: flex-start; }
 }

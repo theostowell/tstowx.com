@@ -1,21 +1,29 @@
 {{- /*
-  Shown under any essay hosted here that was also published on Substack:
-  a way to read it in the Substack app (comments, likes, restacks) and to
-  subscribe there. Context: the page.
+  Shown under any essay or issue hosted here that was also published on Substack:
+  a way to subscribe there. The Substack-hosted copy is no longer offered — the
+  page you are on is the copy — so the second button points back into the archive
+  on this site. Context: the page.
 */ -}}
 {{- $out := partial "outbound.html" . -}}
 {{- with $out.substack }}
-<aside class="substack-cta" aria-label="Read and subscribe on Substack">
+{{- $isIssue := eq $.Section "fm" -}}
+<aside class="substack-cta" aria-label="Subscribe to the newsletter">
   <p class="substack-cta-text">
-    {{- if eq $.Section "fm" -}}
+    {{- if $isIssue -}}
     This issue of Fundamentalised went out on {{ $.Date.Format "2 January 2006" }}. New writing still arrives by email first, through Substack.
     {{- else -}}
     This essay is also on Substack, where new writing arrives by email first.
     {{- end -}}
   </p>
   <div class="substack-cta-actions">
-    <a class="substack-cta-button substack-cta-button--primary" href="{{ site.Params.substackURL | default "https://tstowx.substack.com" }}/subscribe" target="_blank" rel="noopener">Subscribe on Substack</a>
-    <a class="substack-cta-button" href="{{ . }}" target="_blank" rel="noopener">Read on Substack <span aria-hidden="true">↗</span></a>
+    <a class="substack-cta-button substack-cta-button--primary" href="{{ site.Params.substackURL | default "https://tstowx.substack.com" }}/subscribe" target="_blank" rel="noopener">
+      <svg class="substack-cta-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+      <span>Subscribe on Substack</span>
+    </a>
+    <a class="substack-cta-button substack-cta-button--ghost" href="{{ if $isIssue }}{{ $.Parent.RelPermalink }}{{ else }}{{ "writing/" | relLangURL }}{{ end }}">
+      <svg class="substack-cta-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+      <span>{{ if $isIssue }}All back issues{{ else }}All essays{{ end }}</span>
+    </a>
   </div>
 </aside>
 {{- end }}

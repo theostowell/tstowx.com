@@ -21,23 +21,24 @@
     {{- partial "anchored_headings.html" .Content -}}
   </div>
 
-  {{- partial "substack_cta.html" . }}
-
-  <footer class="post-footer">
-    <nav class="paginav">
-      {{- with $older }}
-      <a class="prev" href="{{ .RelPermalink }}">
-        <span class="title">« {{ printf "%03d" (int .Params.issue) }}</span><br>
-        <span>{{ .Title }}</span>
-      </a>
-      {{- end }}
-      {{- with $newer }}
-      <a class="next" href="{{ .RelPermalink }}">
-        <span class="title">{{ printf "%03d" (int .Params.issue) }} »</span><br>
-        <span>{{ .Title }}</span>
-      </a>
-      {{- end }}
-    </nav>
-  </footer>
 </article>
+
+{{- partial "substack_cta.html" . }}
+
+{{- if or $older $newer }}
+<nav class="issue-nav" aria-label="More issues">
+  {{- with $older }}
+  <a class="issue-nav-item issue-nav-item--prev" href="{{ .RelPermalink }}">
+    <span class="issue-nav-label"><span class="issue-nav-arrow" aria-hidden="true">←</span> Issue {{ printf "%03d" (int .Params.issue) }}</span>
+    <span class="issue-nav-title">{{ .Title }}</span>
+  </a>
+  {{- end }}
+  {{- with $newer }}
+  <a class="issue-nav-item issue-nav-item--next" href="{{ .RelPermalink }}">
+    <span class="issue-nav-label">Issue {{ printf "%03d" (int .Params.issue) }} <span class="issue-nav-arrow" aria-hidden="true">→</span></span>
+    <span class="issue-nav-title">{{ .Title }}</span>
+  </a>
+  {{- end }}
+</nav>
+{{- end }}
 {{- end }}

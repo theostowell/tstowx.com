@@ -72,8 +72,6 @@
   </div>
   {{- end }}
 
-  {{- partial "substack_cta.html" . }}
-
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
@@ -93,6 +91,8 @@
   {{- partial "comments.html" . }}
   {{- end }}
   </article>
+
+  {{- partial "substack_cta.html" . }}
   {{- end }}{{/* end else: a real page hosted here */}}
 
   {{- end }}{{/* end main */}}
