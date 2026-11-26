@@ -25,17 +25,18 @@
 
 {{- partial "substack_cta.html" . }}
 
+{{- /* Older on the left, newer on the right; a lone neighbour takes the whole row. */ -}}
 {{- if or $older $newer }}
 <nav class="issue-nav" aria-label="More issues">
   {{- with $older }}
-  <a class="issue-nav-item issue-nav-item--prev" href="{{ .RelPermalink }}">
-    <span class="issue-nav-label"><span class="issue-nav-arrow" aria-hidden="true">←</span> Issue {{ printf "%03d" (int .Params.issue) }}</span>
+  <a class="issue-nav-item issue-nav-item--prev" href="{{ .RelPermalink }}" rel="prev">
+    <span class="issue-nav-label"><span class="issue-nav-arrow" aria-hidden="true">←</span><span>Issue {{ printf "%03d" (int .Params.issue) }}</span></span>
     <span class="issue-nav-title">{{ .Title }}</span>
   </a>
   {{- end }}
   {{- with $newer }}
-  <a class="issue-nav-item issue-nav-item--next" href="{{ .RelPermalink }}">
-    <span class="issue-nav-label">Issue {{ printf "%03d" (int .Params.issue) }} <span class="issue-nav-arrow" aria-hidden="true">→</span></span>
+  <a class="issue-nav-item issue-nav-item--next" href="{{ .RelPermalink }}" rel="next">
+    <span class="issue-nav-label"><span>Issue {{ printf "%03d" (int .Params.issue) }}</span><span class="issue-nav-arrow" aria-hidden="true">→</span></span>
     <span class="issue-nav-title">{{ .Title }}</span>
   </a>
   {{- end }}
