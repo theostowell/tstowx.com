@@ -693,61 +693,6 @@ body:has(.post-single) {
     color: var(--secondary);
 }
 
-/* Uniform grid for list pages (project/gallery thumbnails) */
-.photo-grid-uniform {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    width: 100%;
-}
-
-.photo-grid-uniform-item {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    border-radius: 0;
-}
-
-.photo-grid-uniform-item a {
-    display: block;
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-}
-
-.photo-grid-uniform-image {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-
-.photo-grid-uniform-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.photo-grid-uniform-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-    width: 100%;
-}
-
-.photo-grid-uniform-title h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0;
-    color: #ffffff;
-    font-family: var(--font-heading);
-}
-
 /* Individual photo page styles */
 .photo-page-container {
     display: flex;
@@ -764,113 +709,6 @@ body:has(.post-single) {
 }
 
 /* Justified gallery styles */
-#gallery {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.gallery-item {
-    position: absolute;
-    overflow: hidden;
-}
-
-.gallery-item a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    cursor: zoom-in;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Lightbox styles */
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.95);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.lightbox-content {
-    max-width: 90%;
-    max-height: 90vh;
-    object-fit: contain;
-}
-
-.lightbox-toolbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    gap: 0;
-    z-index: 10000;
-}
-
-.lightbox-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    color: #f1f1f1;
-    background: none;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    opacity: 0.85;
-}
-
-.lightbox-button:hover {
-    opacity: 1;
-    color: #fff;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .photo-grid-uniform {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 0.75rem;
-    }
-
-    .photo-grid-uniform-image {
-        height: 250px;
-    }
-
-    .lightbox-button {
-        width: 44px;
-        height: 44px;
-    }
-
-    .lightbox-button svg {
-        width: 26px;
-        height: 26px;
-    }
-}
-
-@media (max-width: 480px) {
-    .photo-grid-uniform {
-        grid-template-columns: 1fr;
-        gap: 0.75rem;
-    }
-}
-
 /* Dropdown menu */
 .menu-dropdown {
     position: relative;
@@ -1061,18 +899,35 @@ body:has(#supascribe-popup-widget) {
   }
 }
 
-/* "Read on Substack / Subscribe" box under hosted essays */
+/* The end of a hosted essay or issue: a colophon (the Substack note and its two
+   routes) and, on issues, the previous/next pager. Both sit outside the article
+   card, unbordered, inset to the card's text column (its padding plus its 1px
+   border) so they line up with the body text above. Spacing runs on two steps:
+   3rem between blocks, 1.5rem inside them. */
 .substack-cta {
-  margin: 2.5rem 0 1rem;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius, 8px);
-  background: var(--entry);
+  margin: 3rem calc(2.35rem + 1px) 1.5rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+/* A short ink rule opens the colophon, like the rule over a book's footnotes. */
+.substack-cta::before {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 1px;
+  margin-bottom: 1.5rem;
+  background: var(--primary);
 }
 .substack-cta-text {
-  margin: 0 0 1rem;
-  color: var(--secondary);
-  font-size: 0.95rem;
+  margin: 0 0 1.5rem;
+  max-width: 34em;
+  color: var(--primary);
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.3;
+  text-wrap: balance;
 }
 .substack-cta-actions {
   display: flex;
@@ -1080,25 +935,138 @@ body:has(#supascribe-popup-widget) {
   gap: 0.75rem;
 }
 .substack-cta-button {
-  display: inline-block;
-  padding: 0.55rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 2.75rem;
+  padding: 0 1.15rem;
+  border: 1px solid var(--primary);
+  border-radius: 0;
+  background: transparent;
   color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
   box-shadow: none;
 }
-.substack-cta-button:hover {
-  border-color: var(--primary);
+.substack-cta-icon {
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  flex: none;
 }
 .substack-cta-button--primary {
   background: #ff6719; /* Substack orange */
   border-color: #ff6719;
   color: #fff;
 }
-.substack-cta-button--primary:hover {
-  background: #e85a10;
-  border-color: #e85a10;
+.substack-cta-button--primary:hover { background: #e85a10; border-color: #e85a10; color: #fff; }
+.substack-cta-button--ghost:hover { background: var(--primary); color: var(--theme); }
+.substack-cta-button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Previous / next issue: a ruled row under the colophon, older on the left and
+   newer on the right, split by a hairline. A lone neighbour (first and last
+   issues) takes the whole row instead of leaving half of it empty. */
+.issue-nav {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  margin: 3rem calc(2.35rem + 1px) 1.5rem;
+  border-top: 1px solid #d9d6d0;
+  border-bottom: 1px solid #d9d6d0;
+}
+.issue-nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+  padding: 1.5rem 0;
+  color: inherit;
+  text-decoration: none;
+}
+.issue-nav-item--prev {
+  grid-column: 1;
+  padding-right: 1.5rem;
+}
+.issue-nav-item--next {
+  grid-column: 2;
+  padding-left: 1.5rem;
+  border-left: 1px solid #d9d6d0;
+  align-items: flex-end;
+  text-align: right;
+}
+.issue-nav-item:only-child {
+  grid-column: 1 / -1;
+  padding-inline: 0;
+  border-left: 0;
+  align-items: flex-start;
+  text-align: left;
+}
+.issue-nav-label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45em;
+  color: var(--secondary);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.issue-nav-arrow {
+  color: var(--primary);
+  letter-spacing: 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+.issue-nav-title {
+  max-width: 22em;
+  color: var(--primary);
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+.issue-nav-item:hover .issue-nav-title,
+.issue-nav-item:focus-visible .issue-nav-title {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+.issue-nav-item:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+}
+@media (max-width: 600px) {
+  .issue-nav { grid-template-columns: minmax(0, 1fr); }
+  .issue-nav-item--prev,
+  .issue-nav-item--next {
+    grid-column: 1;
+    padding: 1.25rem 0;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .issue-nav-item--next { border-left: 0; }
+  .issue-nav-item--prev + .issue-nav-item--next { border-top: 1px solid #d9d6d0; }
+}
+/* Matches the card's narrow-screen padding (1.2rem); the two routes stack full width. */
+@media (max-width: 480px) {
+  .substack-cta,
+  .issue-nav {
+    margin-left: calc(1.2rem + 1px);
+    margin-right: calc(1.2rem + 1px);
+  }
+  .substack-cta-text { font-size: 1.2rem; }
+  .substack-cta-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .substack-cta-button { white-space: normal; }
 }

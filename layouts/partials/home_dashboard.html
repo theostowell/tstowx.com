@@ -107,6 +107,32 @@
   </section>
   {{- end }}
 
+  {{- /* ── Photography galleries ────────────────────────────── */}}
+  {{- $order := slice "wildlife" "landscape" "street" "commercial" }}
+  {{- $galleries := slice }}
+  {{- range $order }}
+    {{- $name := . }}
+    {{- with index site.Data.galleries $name }}
+      {{- $galleries = $galleries | append (dict "key" $name "data" .) }}
+    {{- end }}
+  {{- end }}
+  {{- with $galleries }}
+  <section class="home-galleries" aria-label="Photography galleries">
+    <div class="galleries-grid">
+      {{- range . }}
+      {{- $g := .key }}{{ $gd := .data }}
+      <a class="gallery-card" href="{{ printf "/photos/%s/" $g | relLangURL }}">
+        <img src="https://cdn.tstowx.com/galleries/{{ $g }}/{{ $gd.card }}" alt="" loading="lazy" width="800" height="600">
+        <div class="gallery-card-body">
+          <h3>{{ $g | humanize | title }}</h3>
+          <p>{{ len $gd.files }} photographs</p>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
   {{- /* ── Writing + photography ────────────────────────────── */}}
   <section class="dash-grid" aria-label="Writing and photography">
     <article class="tile tile--writing">
@@ -130,46 +156,32 @@
     </article>
 
     {{- with $d.fundamentalised }}
-    <a class="tile tile--fundamentalised" href="{{ .url | relLangURL }}">
-      <div class="fundamentalised-body">
-        {{- with .kicker }}<span class="fundamentalised-kicker">{{ . }}</span>{{ end }}
-        <h3><span class="fundamentalised-title">{{ .title }}</span> <span class="arrow" aria-hidden="true">→</span></h3>
-        <p>{{ .blurb }}</p>
-        {{- with .link }}<span class="fundamentalised-link">{{ . }} <span aria-hidden="true">→</span></span>{{ end }}
-      </div>
-    </a>
-    {{- end }}
-  </section>
-
-  {{- /* ── Photography galleries ────────────────────────────── */}}
-  {{- $order := slice "wildlife" "landscape" "street" "commercial" }}
-  {{- $galleries := slice }}
-  {{- range $order }}
-    {{- $name := . }}
-    {{- with index site.Data.galleries $name }}
-      {{- $galleries = $galleries | append (dict "key" $name "data" .) }}
-    {{- end }}
-  {{- end }}
-  {{- with $galleries }}
-  <section class="home-galleries" aria-labelledby="galleries-title">
-    <div class="galleries-head">
-      <h2 id="galleries-title">Photography</h2>
-      <a class="tile-link" href="{{ "/photos/" | relLangURL }}">All galleries <span class="arrow" aria-hidden="true">→</span></a>
-    </div>
-    <div class="galleries-grid">
-      {{- range . }}
-      {{- $g := .key }}{{ $gd := .data }}
-      <a class="gallery-card" href="{{ printf "/photos/%s/" $g | relLangURL }}">
-        <img src="https://cdn.tstowx.com/galleries/{{ $g }}/{{ $gd.card }}" alt="" loading="lazy" width="800" height="600">
-        <div class="gallery-card-body">
-          <h3>{{ $g | humanize | title }}</h3>
-          <p>{{ len $gd.files }} photographs</p>
+    {{- $fm := where site.RegularPages "Section" "fm" }}
+    <article class="tile tile--fundamentalised">
+      <div class="writing-head">
+        <div>
+          <h2><a class="fundamentalised-title" href="{{ .url | relLangURL }}">{{ .title }} <span class="arrow" aria-hidden="true">→</span></a></h2>
         </div>
-      </a>
+      </div>
+      {{- with .blurb }}<p class="fundamentalised-blurb">{{ . }}</p>{{ end }}
+      {{- with .issues }}
+      <ol class="writing-list">
+        {{- range . }}
+        {{- with index (where $fm "Params.issue" .) 0 }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+            <span class="writing-title">{{ .Title }}</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        {{- end }}
+        {{- end }}
+      </ol>
       {{- end }}
-    </div>
+    </article>
+    {{- end }}
   </section>
-  {{- end }}
 
   <section class="dash-archive" id="archive" aria-label="Archive">
 

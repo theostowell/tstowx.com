@@ -57,6 +57,28 @@
   </script>
   {{- end }}
 
-  <p class="galleries-return"><a href="{{ "/photos/" | relURL }}">All galleries</a></p>
+  {{- $others := slice }}
+  {{- range $k, $v := site.Data.galleries }}
+    {{- if ne $k $key }}{{ $others = $others | append (dict "key" $k "data" $v) }}{{ end }}
+  {{- end }}
+  {{- with $others }}
+  <section class="more-galleries" aria-labelledby="more-galleries-heading">
+    <div class="more-galleries-head">
+      <h2 id="more-galleries-heading">More galleries</h2>
+      <a class="more-galleries-all" href="{{ "/photos/" | relURL }}">All four galleries <span aria-hidden="true">&rarr;</span></a>
+    </div>
+    <div class="galleries-grid galleries-grid--three">
+      {{- range . }}
+      <a class="gallery-card" href="{{ printf "/photos/%s/" .key | relLangURL }}">
+        <img src="https://cdn.tstowx.com/galleries/{{ .key }}/{{ .data.card }}" alt="" loading="lazy" width="800" height="600">
+        <div class="gallery-card-body">
+          <h3>{{ .key | humanize | title }}</h3>
+          <p>{{ len .data.files }} photographs</p>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
 </div>
 {{- end }}
