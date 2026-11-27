@@ -287,13 +287,13 @@ body:has(.photo-page-container) .nav { max-width: none; }
    description below runs full width. ─────────────────────────────────── */
 .gallery-title-row {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     flex-wrap: wrap;
     gap: .4rem 1.25rem;
 }
 
-.gallery-title-row h1 {
-    margin-bottom: 0;
+.gallery-page-header .gallery-title-row h1 {
+    margin: 0;
 }
 
 .gallery-page-header .post-description {
@@ -303,13 +303,14 @@ body:has(.photo-page-container) .nav { max-width: none; }
 .gallery-randomise {
     display: inline-flex;
     align-items: center;
-    gap: .4rem;
+    gap: .5rem;
     padding: .25rem 0;
     background: none;
     color: var(--secondary);
     border: 0;
     font: inherit;
-    font-size: .78rem;
+    font-size: .9rem;
+    line-height: 1;
     letter-spacing: .06em;
     text-transform: uppercase;
     cursor: pointer;
