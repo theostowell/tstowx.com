@@ -121,6 +121,77 @@ function createJustifiedLayout(aspectRatios, config) {
   };
 }
 
+// --- Balanced shuffle -------------------------------------------------------
+// A plain shuffle can pile all the portraits into one row, or leave a row
+// stretched tall or squashed flat. Instead we try lots of random orders, score
+// each layout, and keep the best. Every visit still gets a fresh random order.
+
+function shuffleIndices(n) {
+  const a = Array.from({ length: n }, (_, i) => i);
+  for (let i = n - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function scoreOrder(ratios, order, config) {
+  const layout = createJustifiedLayout(order.map(i => ratios[i]), config);
+  const boxes = layout.boxes;
+  const portraitShare = ratios.filter(r => r < 1).length / ratios.length;
+
+  // Group boxes into rows by their top position.
+  const rows = [];
+  boxes.forEach((box, k) => {
+    const last = rows[rows.length - 1];
+    if (last && Math.abs(last.top - box.top) < 0.5) last.idx.push(k);
+    else rows.push({ top: box.top, height: box.height, idx: [k] });
+  });
+
+  let cost = 0;
+  rows.forEach((row, r) => {
+    const isLast = r === rows.length - 1;
+    const rowRatios = row.idx.map(k => ratios[order[k]]);
+
+    // Rows should sit close to the target height (log scale so tall and flat count equally).
+    if (!isLast) cost += Math.pow(Math.log(row.height / config.rowHeight), 2) * 4;
+
+    // Portraits and landscapes should be spread through the rows, not clumped.
+    const portraits = rowRatios.filter(a => a < 1).length;
+    cost += Math.pow(portraits / rowRatios.length - portraitShare, 2) * 1.5;
+
+    // Penalise a lone image filling a whole row.
+    if (rowRatios.length === 1 && rows.length > 1) cost += 2;
+
+    // The last row should be reasonably full rather than one stranded photo.
+    if (isLast && rows.length > 1) {
+      const used = row.idx.reduce((s, k) => s + boxes[k].width, 0) + (row.idx.length - 1) * config.spacing;
+      const fill = used / config.rowWidth;
+      if (fill < 0.6) cost += (0.6 - fill) * 4;
+    }
+  });
+
+  // Avoid two very similar images (same aspect ratio) landing next to each other too often.
+  for (let k = 1; k < order.length; k++) {
+    if (Math.abs(ratios[order[k]] - ratios[order[k - 1]]) < 0.01 && ratios[order[k]] < 1) cost += 0.05;
+  }
+
+  return cost / Math.max(rows.length, 1);
+}
+
+function pickBalancedOrder(ratios, config) {
+  if (ratios.length < 3 || !config.rowWidth) return shuffleIndices(ratios.length);
+  const tries = 150;
+  let best = null;
+  let bestCost = Infinity;
+  for (let t = 0; t < tries; t++) {
+    const order = shuffleIndices(ratios.length);
+    const cost = scoreOrder(ratios, order, config);
+    if (cost < bestCost) { bestCost = cost; best = order; }
+  }
+  return best;
+}
+
 // Initialize gallery when DOM is ready
 function initJustifiedGallery() {
   const gallery = document.getElementById('gallery');
@@ -131,13 +202,24 @@ function initJustifiedGallery() {
   const heightTolerance = 0.25;
 
   let currentWidth = 0;
-  const galleryItems = gallery.querySelectorAll('.gallery-item');
-  const aspectRatios = Array.from(galleryItems).map(item => {
+  const originalItems = Array.from(gallery.querySelectorAll('.gallery-item'));
+  const originalRatios = originalItems.map(item => {
     const img = item.querySelector('img');
     img.style.width = '100%';
     img.style.height = 'auto';
     return parseFloat(img.getAttribute('width')) / parseFloat(img.getAttribute('height'));
   });
+
+  // Random but balanced order: shuffle many times, keep the one whose rows look most even.
+  const order = pickBalancedOrder(originalRatios, {
+    rowWidth: gallery.getBoundingClientRect().width || window.innerWidth,
+    spacing: spacing,
+    rowHeight: rowHeight,
+    heightTolerance: heightTolerance
+  });
+  const galleryItems = order.map(i => originalItems[i]);
+  const aspectRatios = order.map(i => originalRatios[i]);
+  galleryItems.forEach(item => gallery.appendChild(item)); // DOM order matches, so tabbing follows the grid
 
   function layoutGallery() {
     if (currentWidth === gallery.getBoundingClientRect().width) return;

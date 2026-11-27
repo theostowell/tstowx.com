@@ -2,7 +2,6 @@ filters:
   and:
     - file.folder == "kanban"
     - file.hasTag("category/content")
-
 properties:
   file.name:
     displayName: Piece
@@ -16,7 +15,6 @@ properties:
     displayName: Card copy
   property.external_url:
     displayName: Lives at
-
 views:
   - type: table
     name: Board
