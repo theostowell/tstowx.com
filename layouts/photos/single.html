@@ -1,16 +1,16 @@
 {{- define "main" }}
 <div class="photo-page-container">
   <header class="page-header gallery-page-header">
-    <div class="gallery-page-header-text">
+    <div class="gallery-title-row">
       <h1>{{ .Title }}</h1>
-      {{- with .Description }}
-      <div class="post-description">{{ . }}</div>
-      {{- end }}
+      <button type="button" id="gallery-randomise" class="gallery-randomise" hidden>
+        <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
+        Randomise
+      </button>
     </div>
-    <button type="button" id="gallery-randomise" class="gallery-randomise" hidden>
-      <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
-      Randomise
-    </button>
+    {{- with .Description }}
+    <div class="post-description">{{ . }}</div>
+    {{- end }}
   </header>
 
   {{- with .Content }}
@@ -21,7 +21,7 @@
   {{- $cdn := "https://cdn.tstowx.com/galleries" }}
   {{- $gallery := index site.Data.galleries $key }}
   {{- with $gallery }}
-  <div id="gallery" data-page-size="24" style="visibility: hidden; height: 1px; overflow: hidden">
+  <div id="gallery" data-page-size="28" style="visibility: hidden; height: 1px; overflow: hidden">
     {{- range .files }}
     <div class="gallery-item">
       <a href="{{ $cdn }}/{{ $key }}/{{ .name }}" class="lightbox-trigger">

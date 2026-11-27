@@ -283,48 +283,55 @@ body:has(.photo-page-container) .nav { max-width: none; }
     }
 }
 
-/* ── Gallery page header: title on the left, Randomise on the right ─────── */
-.gallery-page-header {
+/* ── Gallery page header: Randomise sits just right of the title; the
+   description below runs full width. ─────────────────────────────────── */
+.gallery-title-row {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1.5rem;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: .4rem 1.25rem;
 }
 
-.gallery-page-header-text {
-    min-width: 0;
+.gallery-title-row h1 {
+    margin-bottom: 0;
+}
+
+.gallery-page-header .post-description {
+    margin-top: 1rem;
 }
 
 .gallery-randomise {
-    flex: none;
     display: inline-flex;
     align-items: center;
-    gap: .45rem;
-    margin-top: .4rem;
-    padding: .5rem .85rem;
-    background: transparent;
-    color: var(--primary);
-    border: 1px solid var(--border);
-    border-radius: 0;
+    gap: .4rem;
+    padding: .25rem 0;
+    background: none;
+    color: var(--secondary);
+    border: 0;
     font: inherit;
     font-size: .78rem;
     letter-spacing: .06em;
     text-transform: uppercase;
     cursor: pointer;
-    transition: border-color .15s ease, background-color .15s ease;
+    transition: color .15s ease;
 }
 
 .gallery-randomise:hover,
 .gallery-randomise:focus-visible {
-    border-color: var(--primary);
+    color: var(--primary);
 }
 
-.gallery-randomise:active svg {
-    transform: rotate(180deg);
+.gallery-randomise:focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: 3px;
 }
 
 .gallery-randomise svg {
     transition: transform .3s ease;
+}
+
+.gallery-randomise:active svg {
+    transform: rotate(180deg);
 }
 
 .gallery-randomise[hidden] {
@@ -369,9 +376,3 @@ body:has(.photo-page-container) .nav { max-width: none; }
     }
 }
 
-@media (max-width: 620px) {
-    .gallery-randomise {
-        margin-top: .2rem;
-        padding: .45rem .7rem;
-    }
-}
