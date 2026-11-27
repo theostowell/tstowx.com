@@ -282,3 +282,96 @@ body:has(.photo-page-container) .nav { max-width: none; }
         aspect-ratio: 5 / 4;
     }
 }
+
+/* ── Gallery page header: title on the left, Randomise on the right ─────── */
+.gallery-page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.gallery-page-header-text {
+    min-width: 0;
+}
+
+.gallery-randomise {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    margin-top: .4rem;
+    padding: .5rem .85rem;
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    font: inherit;
+    font-size: .78rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: border-color .15s ease, background-color .15s ease;
+}
+
+.gallery-randomise:hover,
+.gallery-randomise:focus-visible {
+    border-color: var(--primary);
+}
+
+.gallery-randomise:active svg {
+    transform: rotate(180deg);
+}
+
+.gallery-randomise svg {
+    transition: transform .3s ease;
+}
+
+.gallery-randomise[hidden] {
+    display: none;
+}
+
+/* A quick fade while a new order is dealt. */
+#gallery {
+    transition: opacity .18s ease;
+}
+
+#gallery.is-reshuffling {
+    opacity: 0;
+}
+
+/* ── Load more ──────────────────────────────────────────────────────────── */
+/* The grid already leaves 4rem under itself; pull the button up into that gap. */
+.gallery-load-more {
+    margin: -2rem 0 4rem;
+    text-align: center;
+}
+
+.gallery-load-more[hidden] {
+    display: none;
+}
+
+.gallery-load-more .view-more-button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.gallery-load-more-count {
+    margin: .75rem 0 0;
+    color: var(--secondary);
+    font-size: .82rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #gallery,
+    .gallery-randomise svg {
+        transition: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .gallery-randomise {
+        margin-top: .2rem;
+        padding: .45rem .7rem;
+    }
+}

@@ -124,21 +124,25 @@ function createJustifiedLayout(aspectRatios, config) {
 // --- Balanced shuffle -------------------------------------------------------
 // A plain shuffle can pile all the portraits into one row, or leave a row
 // stretched tall or squashed flat. Instead we try lots of random orders, score
-// each layout, and keep the best. Every visit still gets a fresh random order.
+// the part of the layout people will actually see, and keep the best. Every
+// visit (and every press of Randomise) still gets a fresh random order.
 
-function shuffleIndices(n) {
-  const a = Array.from({ length: n }, (_, i) => i);
-  for (let i = n - 1; i > 0; i--) {
+const SHUFFLE_TRIES = 150;
+
+function shuffled(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
 }
 
-function scoreOrder(ratios, order, config) {
-  const layout = createJustifiedLayout(order.map(i => ratios[i]), config);
+// Score the first `count` ratios of a sequence. Lower is better.
+function scoreSequence(seq, count, portraitShare, config) {
+  const ratios = seq.slice(0, count);
+  const layout = createJustifiedLayout(ratios, config);
   const boxes = layout.boxes;
-  const portraitShare = ratios.filter(r => r < 1).length / ratios.length;
 
   // Group boxes into rows by their top position.
   const rows = [];
@@ -151,7 +155,7 @@ function scoreOrder(ratios, order, config) {
   let cost = 0;
   rows.forEach((row, r) => {
     const isLast = r === rows.length - 1;
-    const rowRatios = row.idx.map(k => ratios[order[k]]);
+    const rowRatios = row.idx.map(k => ratios[k]);
 
     // Rows should sit close to the target height (log scale so tall and flat count equally).
     if (!isLast) cost += Math.pow(Math.log(row.height / config.rowHeight), 2) * 4;
@@ -163,7 +167,7 @@ function scoreOrder(ratios, order, config) {
     // Penalise a lone image filling a whole row.
     if (rowRatios.length === 1 && rows.length > 1) cost += 2;
 
-    // The last row should be reasonably full rather than one stranded photo.
+    // The bottom row should be reasonably full rather than one stranded photo.
     if (isLast && rows.length > 1) {
       const used = row.idx.reduce((s, k) => s + boxes[k].width, 0) + (row.idx.length - 1) * config.spacing;
       const fill = used / config.rowWidth;
@@ -171,28 +175,29 @@ function scoreOrder(ratios, order, config) {
     }
   });
 
-  // Avoid two very similar images (same aspect ratio) landing next to each other too often.
-  for (let k = 1; k < order.length; k++) {
-    if (Math.abs(ratios[order[k]] - ratios[order[k - 1]]) < 0.01 && ratios[order[k]] < 1) cost += 0.05;
-  }
-
   return cost / Math.max(rows.length, 1);
 }
 
-function pickBalancedOrder(ratios, config) {
-  if (ratios.length < 3 || !config.rowWidth) return shuffleIndices(ratios.length);
-  const tries = 150;
+// Keep `fixed` as it is, shuffle `rest` behind it, and return the most balanced
+// result, judged over the first `count` items.
+function balancedShuffle(fixed, rest, count, ratioOf, portraitShare, config) {
+  if (rest.length < 3 || !config.rowWidth) return fixed.concat(shuffled(rest));
+  const head = fixed.map(ratioOf);
   let best = null;
   let bestCost = Infinity;
-  for (let t = 0; t < tries; t++) {
-    const order = shuffleIndices(ratios.length);
-    const cost = scoreOrder(ratios, order, config);
-    if (cost < bestCost) { bestCost = cost; best = order; }
+  for (let t = 0; t < SHUFFLE_TRIES; t++) {
+    const candidate = shuffled(rest);
+    const seq = head.concat(candidate.map(ratioOf));
+    const cost = scoreSequence(seq, Math.min(count, seq.length), portraitShare, config);
+    if (cost < bestCost) { bestCost = cost; best = candidate; }
   }
-  return best;
+  return fixed.concat(best);
 }
 
-// Initialize gallery when DOM is ready
+// --- Gallery ----------------------------------------------------------------
+// Shows a first batch of photos, a Load more button for the rest, and a
+// Randomise button that deals a fresh, balanced first batch.
+
 function initJustifiedGallery() {
   const gallery = document.getElementById('gallery');
   if (!gallery) return;
@@ -200,40 +205,45 @@ function initJustifiedGallery() {
   const spacing = 8;
   const rowHeight = 288;
   const heightTolerance = 0.25;
+  const pageSize = parseInt(gallery.dataset.pageSize, 10) || 24;
 
-  let currentWidth = 0;
-  const originalItems = Array.from(gallery.querySelectorAll('.gallery-item'));
-  const originalRatios = originalItems.map(item => {
+  const loadMoreWrap = document.getElementById('gallery-load-more');
+  const loadMoreBtn = loadMoreWrap && loadMoreWrap.querySelector('button');
+  const loadMoreCount = loadMoreWrap && loadMoreWrap.querySelector('.gallery-load-more-count');
+  const randomiseBtn = document.getElementById('gallery-randomise');
+
+  const allItems = Array.from(gallery.querySelectorAll('.gallery-item'));
+  const ratio = new Map();
+  allItems.forEach(item => {
     const img = item.querySelector('img');
     img.style.width = '100%';
     img.style.height = 'auto';
-    return parseFloat(img.getAttribute('width')) / parseFloat(img.getAttribute('height'));
+    ratio.set(item, parseFloat(img.getAttribute('width')) / parseFloat(img.getAttribute('height')));
   });
+  const ratioOf = item => ratio.get(item);
+  const portraitShare = allItems.filter(i => ratioOf(i) < 1).length / Math.max(allItems.length, 1);
 
-  // Random but balanced order: shuffle many times, keep the one whose rows look most even.
-  const order = pickBalancedOrder(originalRatios, {
-    rowWidth: gallery.getBoundingClientRect().width || window.innerWidth,
-    spacing: spacing,
-    rowHeight: rowHeight,
-    heightTolerance: heightTolerance
-  });
-  const galleryItems = order.map(i => originalItems[i]);
-  const aspectRatios = order.map(i => originalRatios[i]);
-  galleryItems.forEach(item => gallery.appendChild(item)); // DOM order matches, so tabbing follows the grid
+  let order = allItems;
+  let shown = 0;
+  let currentWidth = 0;
 
-  function layoutGallery() {
-    if (currentWidth === gallery.getBoundingClientRect().width) return;
-    currentWidth = gallery.getBoundingClientRect().width;
-
-    const layout = createJustifiedLayout(aspectRatios, {
-      rowWidth: currentWidth,
+  function config() {
+    return {
+      rowWidth: gallery.getBoundingClientRect().width || window.innerWidth,
       spacing: spacing,
       rowHeight: rowHeight,
       heightTolerance: heightTolerance
-    });
+    };
+  }
 
-    galleryItems.forEach((item, index) => {
-      const { width, height, top, left } = layout.boxes[index];
+  function layout() {
+    currentWidth = gallery.getBoundingClientRect().width;
+    const visible = order.slice(0, shown);
+    const result = createJustifiedLayout(visible.map(ratioOf), config());
+
+    visible.forEach((item, index) => {
+      const { width, height, top, left } = result.boxes[index];
+      item.style.display = '';
       item.style.position = 'absolute';
       item.style.width = width + 'px';
       item.style.height = height + 'px';
@@ -241,16 +251,63 @@ function initJustifiedGallery() {
       item.style.left = left + 'px';
       item.style.overflow = 'hidden';
     });
+    order.slice(shown).forEach(item => { item.style.display = 'none'; });
 
     gallery.style.position = 'relative';
-    gallery.style.height = layout.containerHeight + 'px';
+    gallery.style.height = Math.max(result.containerHeight, 0) + 'px';
+    gallery.style.overflow = '';
     gallery.style.visibility = '';
   }
 
-  window.addEventListener('resize', layoutGallery);
-  window.addEventListener('orientationchange', layoutGallery);
-  layoutGallery();
-  layoutGallery(); // Run twice to ensure proper layout
+  function render() {
+    // DOM order matches the grid, so tabbing and screen readers follow what you see.
+    order.forEach(item => gallery.appendChild(item));
+    layout();
+    if (loadMoreWrap) {
+      const left = order.length - shown;
+      loadMoreWrap.hidden = left <= 0;
+      if (loadMoreCount) loadMoreCount.textContent = `Showing ${shown} of ${order.length}`;
+    }
+  }
+
+  function deal() {
+    shown = Math.min(pageSize, allItems.length);
+    order = balancedShuffle([], allItems, shown, ratioOf, portraitShare, config());
+    render();
+  }
+
+  function loadMore() {
+    const next = Math.min(shown + pageSize, order.length);
+    order = balancedShuffle(order.slice(0, shown), order.slice(shown), next, ratioOf, portraitShare, config());
+    const firstNew = order[shown];
+    shown = next;
+    render();
+    // Move focus to the first new photo so keyboard users carry on from where they were.
+    const link = firstNew && firstNew.querySelector('a');
+    if (link) link.focus({ preventScroll: true });
+  }
+
+  if (loadMoreBtn) loadMoreBtn.addEventListener('click', loadMore);
+
+  if (randomiseBtn) {
+    randomiseBtn.hidden = allItems.length < 2;
+    randomiseBtn.addEventListener('click', () => {
+      gallery.classList.add('is-reshuffling');
+      setTimeout(() => {
+        deal();
+        gallery.classList.remove('is-reshuffling');
+      }, 180);
+    });
+  }
+
+  function onResize() {
+    if (currentWidth !== gallery.getBoundingClientRect().width) layout();
+  }
+  window.addEventListener('resize', onResize);
+  window.addEventListener('orientationchange', onResize);
+
+  deal();
+  onResize(); // a scrollbar can appear after the first layout and narrow the gallery
 }
 
 // Run when DOM is loaded
